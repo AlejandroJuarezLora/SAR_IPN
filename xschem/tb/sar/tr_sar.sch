@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -57,20 +58,22 @@ C {devices/lab_wire.sym} 710 -220 0 0 {name=l19 sig_type=std_logic lab=vinp}
 C {devices/gnd.sym} 680 -90 0 0 {name=l20 lab=GND}
 C {devices/code.sym} 340 -170 0 0 {
 name=STDCELLS 
-only_toplevel=false 
+only_toplevel=false
 format="tcleval( @value )"
 value="
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_4.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/decap/sky130_fd_sc_hd__decap_8.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/decap/sky130_fd_sc_hd__decap_3.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/buf/sky130_fd_sc_hd__buf_1.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_1.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_2.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/tap/sky130_fd_sc_hd__tap_2.spice"
+.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_4.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/decap/sky130_fd_sc_hd__decap_8.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/decap/sky130_fd_sc_hd__decap_3.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/buf/sky130_fd_sc_hd__buf_1.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_1.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_2.spice
+*.include \\\\$::SKYWATER_STDCELLS\\\\/cells/tap/sky130_fd_sc_hd__tap_2.spice
+"
 }
 C {devices/code.sym} 40 -170 0 0 {
 name=NGSPICE 
-only_toplevel=false 
+only_toplevel=false
 format="tcleval( @value )"
 value=".options method trap
 *.options method gear
@@ -83,8 +86,8 @@ value=".options method trap
 .param MC_SWITCH=0
 .param vin=1
 .param vcm=0.7
-.param vsigp=\\"\{vcm + vin/2\}\\"
-.param vsign=\\"\{vcm - vin/2\}\\"
+.param vsigp=1.2
+.param vsign=0.2
 
 .tran 100e-9 48e-6
 
@@ -158,7 +161,7 @@ only_toplevel=true
 format="tcleval( @value )"
 spice_ignore="tcleval($cmdline_ignore)"
 value="* FET CORNERS
-.include \\\\$::SKYWATER_MODELS\\\\/corners/tt.spice
+*.include \\\\$::SKYWATER_MODELS\\\\/corners/tt.spice
 *.include \\\\$::SKYWATER_MODELS\\\\/corners/ff.spice
 *.include \\\\$::SKYWATER_MODELS\\\\/corners/ss.spice
 *.include \\\\$::SKYWATER_MODELS\\\\/corners/sf.spice
@@ -208,3 +211,12 @@ C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}
 C {devices/launcher.sym} 200 -430 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
+C {devices/code.sym} 180 -350 0 0 {name=TT_MODELS
+only_toplevel=false
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}

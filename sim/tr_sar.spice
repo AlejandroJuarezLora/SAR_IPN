@@ -1,0 +1,696 @@
+** sch_path: /home/alex/Desktop/sar/xschem/tb/sar/tr_sar.sch
+**.subckt tr_sar
+V1 vss GND 0
+.save i(v1)
+V2 vdd GND 1.4
+.save i(v2)
+V4 vinn GND vsign
+.save i(v4)
+V5 vinp GND vsigp
+.save i(v5)
+Vclk clk GND PULSE(0 1 1e-9 1e-9 1e-9 2e-6 4e-6)
+.save i(vclk)
+Ven en GND PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)
+.save i(ven)
+V3 cal GND 0
+.save i(v3)
+xsar vdd vdd vss result[7] result[6] result[5] result[4] result[3] result[2] result[1] result[0]
++ vinn vss clk vinp en valid cal rstn sar
+V7 rstn GND 1.4
+.save i(v7)
+**** begin user architecture code
+
+.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_4.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/decap/sky130_fd_sc_hd__decap_8.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/decap/sky130_fd_sc_hd__decap_3.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/buf/sky130_fd_sc_hd__buf_1.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_1.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_2.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/tap/sky130_fd_sc_hd__tap_2.spice
+
+ .options method trap
+*.options method gear
+.options gmin 1e-15
+.options abstol 1e-15
+.options reltol 0.0001
+.options vntol 0.1e-6
+.options warn 1
+
+.param MC_SWITCH=0
+.param vin=1
+.param vcm=0.7
+.param vsigp=1.2
+.param vsign=0.2
+
+.tran 100e-9 48e-6
+
+.control
+
+run
+
+meas tran d0 find v(xsar.res0) at=47e-6
+meas tran d1 find v(xsar.res1) at=47e-6
+meas tran d2 find v(xsar.res2) at=47e-6
+meas tran d3 find v(xsar.res3) at=47e-6
+meas tran d4 find v(xsar.res4) at=47e-6
+meas tran d5 find v(xsar.res5) at=47e-6
+meas tran d6 find v(xsar.res6) at=47e-6
+meas tran d7 find v(xsar.res7) at=47e-6
+
+* meas tran d0 find v(xsar.result0) at=47e-6
+* meas tran d1 find v(xsar.result1) at=47e-6
+* meas tran d2 find v(xsar.result2) at=47e-6
+* meas tran d3 find v(xsar.result3) at=47e-6
+* meas tran d4 find v(xsar.result4) at=47e-6
+* meas tran d5 find v(xsar.result5) at=47e-6
+* meas tran d6 find v(xsar.result6) at=47e-6
+* meas tran d7 find v(xsar.result7) at=47e-6
+
+meas tran vpmax max xsar.vp
+meas tran vpmin min xsar.vp
+meas tran vpend find v(xsar.vp) at=39e-6
+
+meas tran vnmax max xsar.vn
+meas tran vnmin min xsar.vn
+meas tran vnend find v(xsar.vn) at=39e-6
+
+print d0
+print d1
+print d2
+print d3
+print d4
+print d5
+print d6
+print d7
+
+print vpmax
+print vpmin
+
+print vnmax
+print vnmin
+
+print vpend
+print vnend
+
+.endc
+ * FET CORNERS
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ff.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ss.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/sf.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/fs.spice
+
+* TT + R + C
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt_rmax_cmax.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt_rmin_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt_rmax_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt_rmin_cmax.spice
+
+* FF + R + C
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ff_rmax_cmax.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ff_rmin_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ff_rmax_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ff_rmin_cmax.spice
+
+
+* SS + R + C
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ss_rmax_cmax.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ss_rmin_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ss_rmax_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/ss_rmin_cmax.spice
+
+* SF + R + C
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/sf_rmax_cmax.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/sf_rmin_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/sf_rmax_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/sf_rmin_cmax.spice
+
+* FS + R + C
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/fs_rmax_cmax.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/fs_rmin_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/fs_rmax_cmin.spice
+*.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/fs_rmin_cmax.spice
+
+** opencircuitdesign pdks install
+.lib /home/alex/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  sar/sar/sar.sym # of pins=12
+** sym_path: /home/alex/Desktop/sar/xschem/sar/sar/sar.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/sar/sar.sch
+.subckt sar avdd dvdd dvss result[7] result[6] result[5] result[4] result[3] result[2] result[1]
++ result[0] vinn avss clk vinp en valid cal rstn
+*.iopin avss
+*.iopin avdd
+*.iopin dvss
+*.iopin dvdd
+*.ipin vinp
+*.ipin vinn
+*.opin result[7],result[6],result[5],result[4],result[3],result[2],result[1],result[0]
+*.ipin clk
+*.ipin en
+*.opin valid
+*.ipin cal
+*.ipin rstn
+xlat avdd comp net1 avss outn outp latch
+**** begin user architecture code
+.include /home/alex/Desktop/sar/xschem/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic.sp
+
+**** end user architecture code
+xdn vn sample avdd avss vinn ctln[7] ctln[6] ctln[5] ctln[4] ctln[3] ctln[2] ctln[1] ctln[0] avss
++ dac
+xdp vp sample avdd avss vinp ctlp[7] ctlp[6] ctlp[5] ctlp[4] ctlp[3] ctlp[2] ctlp[1] ctlp[0] avdd
++ dac
+xcom avss avdd clkc outp vp outn vn trim[4] trim[3] trim[2] trim[1] trim[0] trimb[4] trimb[3]
++ trimb[2] trimb[1] trimb[0] comparator
+**** begin user architecture code
+Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dctlp0
++ dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5 dctln6 dctln7
++ dtrim0 dtrim1 dtrim2 dtrim3 dtrim4 dtrimb0 dtrimb1 dtrimb2 dtrimb3 dtrimb4 dclkc sar_logic
+
+.model adc_buff adc_bridge(in_low = 0.2 in_high=0.8)
+.model dac_buff dac_bridge(out_high = 1.2)
+
+Aad [clk rstn en comp cal] [dclk drstn den dcomp dcal] adc_buff
+Ada [dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4
++ dctln5 dctln6 dctln7 dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dclkc] [ctlp_0_ ctlp_1_ ctlp_2_
++ ctlp_3_ ctlp_4_ ctlp_5_ ctlp_6_ ctlp_7_ ctln_0_ ctln_1_ ctln_2_ ctln_3_ ctln_4_ ctln_5_ ctln_6_ ctln_7_
++ res0 res1 res2 res3 res4 res5 res6 res7 sample clkc] dac_buff
+Ada2 [dtrim4 dtrim3 dtrim2 dtrim1 dtrim0 dtrimb4 dtrimb3 dtrimb2 dtrimb1 dtrimb0] [trim_4_ trim_3_
++ trim_2_ trim_1_ trim_0_ trimb_4_ trimb_3_ trimb_2_ trimb_1_ trimb_0_ ] dac_buff
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  sar/latch/latch.sym # of pins=6
+** sym_path: /home/alex/Desktop/sar/xschem/sar/latch/latch.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/latch/latch.sch
+.subckt latch vdd Q Qn vss R S
+*.ipin S
+*.ipin R
+*.iopin vss
+*.iopin vdd
+*.opin Q
+*.opin Qn
+x1 vdd Qn Q vss inv_lvt
+x2 vdd Q Qn vss inv_lvt
+x3 vdd R net2 vss inv_lvt
+x4 vdd S net1 vss inv_lvt
+XM4 Q net2 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Qn net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  sar/dac/dac.sym # of pins=7
+** sym_path: /home/alex/Desktop/sar/xschem/sar/dac/dac.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/dac/dac.sch
+.subckt dac out sample vdd vss vin ctl[7] ctl[6] ctl[5] ctl[4] ctl[3] ctl[2] ctl[1] ctl[0] dum
+*.ipin vin
+*.ipin sample
+*.opin out
+*.ipin ctl[7],ctl[6],ctl[5],ctl[4],ctl[3],ctl[2],ctl[1],ctl[0]
+*.ipin dum
+*.iopin vdd
+*.iopin vss
+xca out n6 n0 n5 n4 n2 ndum n3 n1 n7 carray
+xi6 ctl[6] vss vss vdd vdd n6 sky130_fd_sc_hd__inv_2
+xi5 ctl[5] vss vss vdd vdd n5 sky130_fd_sc_hd__inv_2
+xi4 ctl[4] vss vss vdd vdd n4 sky130_fd_sc_hd__inv_2
+xi3 ctl[3] vss vss vdd vdd n3 sky130_fd_sc_hd__inv_2
+xi2 ctl[2] vss vss vdd vdd n2 sky130_fd_sc_hd__inv_2
+xi1 ctl[1] vss vss vdd vdd n1 sky130_fd_sc_hd__inv_2
+xi0 ctl[0] vss vss vdd vdd n0 sky130_fd_sc_hd__inv_2
+xidum dum vss vss vdd vdd ndum sky130_fd_sc_hd__inv_2
+xi7 ctl[7] vss vss vdd vdd n7 sky130_fd_sc_hd__inv_2
+xswt out sample vdd vin vss sw_top
+.ends
+
+
+* expanding   symbol:  sar/comparator/comparator.sym # of pins=9
+** sym_path: /home/alex/Desktop/sar/xschem/sar/comparator/comparator.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/comparator/comparator.sch
+.subckt comparator vss vdd clk outp vp outn vn trim[4] trim[3] trim[2] trim[1] trim[0] trimb[4]
++ trimb[3] trimb[2] trimb[1] trimb[0]
+*.ipin vn
+*.ipin vp
+*.ipin clk
+*.iopin vdd
+*.iopin vss
+*.opin outp
+*.opin outn
+*.ipin trim[4],trim[3],trim[2],trim[1],trim[0]
+*.ipin trimb[4],trimb[3],trimb[2],trimb[1],trimb[0]
+x2 in trim[4] trim[3] trim[2] trim[1] trim[0] vss trim
+x3 ip trimb[4] trimb[3] trimb[2] trimb[1] trimb[0] vss trim
+XM1 in clk vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 outn clk vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 outn outp vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMl4 outp outn vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 outp clk vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 ip clk vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMl2 outp outn ip vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMl1 outn outp in vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMinn in vn diff vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMinp ip vp diff vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMdiff diff clk vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  logic/inv_lvt.sym # of pins=4
+** sym_path: /home/alex/Desktop/sar/xschem/tb/sar/logic/inv_lvt.sym
+** sch_path: /home/alex/Desktop/sar/xschem/tb/sar/logic/inv_lvt.sch
+.subckt inv_lvt vdd in out vss
+*.iopin vdd
+*.iopin vss
+*.ipin in
+*.opin out
+XM3 out in vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  sar/dac/carray.sym # of pins=10
+** sym_path: /home/alex/Desktop/sar/xschem/sar/dac/carray.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/dac/carray.sch
+.subckt carray top n6 n0 n5 n4 n2 ndum n3 n1 n7
+*.iopin top
+*.iopin n7
+*.iopin n6
+*.iopin n5
+*.iopin n4
+*.iopin n2
+*.iopin n0
+*.iopin ndum
+*.iopin n3
+*.iopin n1
+xcdum top ndum unitcap
+xc0 top n0 unitcap
+xc1[1] top n1 unitcap
+xc1[0] top n1 unitcap
+xc2[3] top n2 unitcap
+xc2[2] top n2 unitcap
+xc2[1] top n2 unitcap
+xc2[0] top n2 unitcap
+xc3[7] top n3 unitcap
+xc3[6] top n3 unitcap
+xc3[5] top n3 unitcap
+xc3[4] top n3 unitcap
+xc3[3] top n3 unitcap
+xc3[2] top n3 unitcap
+xc3[1] top n3 unitcap
+xc3[0] top n3 unitcap
+xc4[15] top n4 unitcap
+xc4[14] top n4 unitcap
+xc4[13] top n4 unitcap
+xc4[12] top n4 unitcap
+xc4[11] top n4 unitcap
+xc4[10] top n4 unitcap
+xc4[9] top n4 unitcap
+xc4[8] top n4 unitcap
+xc4[7] top n4 unitcap
+xc4[6] top n4 unitcap
+xc4[5] top n4 unitcap
+xc4[4] top n4 unitcap
+xc4[3] top n4 unitcap
+xc4[2] top n4 unitcap
+xc4[1] top n4 unitcap
+xc4[0] top n4 unitcap
+xc5[31] top n5 unitcap
+xc5[30] top n5 unitcap
+xc5[29] top n5 unitcap
+xc5[28] top n5 unitcap
+xc5[27] top n5 unitcap
+xc5[26] top n5 unitcap
+xc5[25] top n5 unitcap
+xc5[24] top n5 unitcap
+xc5[23] top n5 unitcap
+xc5[22] top n5 unitcap
+xc5[21] top n5 unitcap
+xc5[20] top n5 unitcap
+xc5[19] top n5 unitcap
+xc5[18] top n5 unitcap
+xc5[17] top n5 unitcap
+xc5[16] top n5 unitcap
+xc5[15] top n5 unitcap
+xc5[14] top n5 unitcap
+xc5[13] top n5 unitcap
+xc5[12] top n5 unitcap
+xc5[11] top n5 unitcap
+xc5[10] top n5 unitcap
+xc5[9] top n5 unitcap
+xc5[8] top n5 unitcap
+xc5[7] top n5 unitcap
+xc5[6] top n5 unitcap
+xc5[5] top n5 unitcap
+xc5[4] top n5 unitcap
+xc5[3] top n5 unitcap
+xc5[2] top n5 unitcap
+xc5[1] top n5 unitcap
+xc5[0] top n5 unitcap
+xc6[63] top n6 unitcap
+xc6[62] top n6 unitcap
+xc6[61] top n6 unitcap
+xc6[60] top n6 unitcap
+xc6[59] top n6 unitcap
+xc6[58] top n6 unitcap
+xc6[57] top n6 unitcap
+xc6[56] top n6 unitcap
+xc6[55] top n6 unitcap
+xc6[54] top n6 unitcap
+xc6[53] top n6 unitcap
+xc6[52] top n6 unitcap
+xc6[51] top n6 unitcap
+xc6[50] top n6 unitcap
+xc6[49] top n6 unitcap
+xc6[48] top n6 unitcap
+xc6[47] top n6 unitcap
+xc6[46] top n6 unitcap
+xc6[45] top n6 unitcap
+xc6[44] top n6 unitcap
+xc6[43] top n6 unitcap
+xc6[42] top n6 unitcap
+xc6[41] top n6 unitcap
+xc6[40] top n6 unitcap
+xc6[39] top n6 unitcap
+xc6[38] top n6 unitcap
+xc6[37] top n6 unitcap
+xc6[36] top n6 unitcap
+xc6[35] top n6 unitcap
+xc6[34] top n6 unitcap
+xc6[33] top n6 unitcap
+xc6[32] top n6 unitcap
+xc6[31] top n6 unitcap
+xc6[30] top n6 unitcap
+xc6[29] top n6 unitcap
+xc6[28] top n6 unitcap
+xc6[27] top n6 unitcap
+xc6[26] top n6 unitcap
+xc6[25] top n6 unitcap
+xc6[24] top n6 unitcap
+xc6[23] top n6 unitcap
+xc6[22] top n6 unitcap
+xc6[21] top n6 unitcap
+xc6[20] top n6 unitcap
+xc6[19] top n6 unitcap
+xc6[18] top n6 unitcap
+xc6[17] top n6 unitcap
+xc6[16] top n6 unitcap
+xc6[15] top n6 unitcap
+xc6[14] top n6 unitcap
+xc6[13] top n6 unitcap
+xc6[12] top n6 unitcap
+xc6[11] top n6 unitcap
+xc6[10] top n6 unitcap
+xc6[9] top n6 unitcap
+xc6[8] top n6 unitcap
+xc6[7] top n6 unitcap
+xc6[6] top n6 unitcap
+xc6[5] top n6 unitcap
+xc6[4] top n6 unitcap
+xc6[3] top n6 unitcap
+xc6[2] top n6 unitcap
+xc6[1] top n6 unitcap
+xc6[0] top n6 unitcap
+xc7[127] top n7 unitcap
+xc7[126] top n7 unitcap
+xc7[125] top n7 unitcap
+xc7[124] top n7 unitcap
+xc7[123] top n7 unitcap
+xc7[122] top n7 unitcap
+xc7[121] top n7 unitcap
+xc7[120] top n7 unitcap
+xc7[119] top n7 unitcap
+xc7[118] top n7 unitcap
+xc7[117] top n7 unitcap
+xc7[116] top n7 unitcap
+xc7[115] top n7 unitcap
+xc7[114] top n7 unitcap
+xc7[113] top n7 unitcap
+xc7[112] top n7 unitcap
+xc7[111] top n7 unitcap
+xc7[110] top n7 unitcap
+xc7[109] top n7 unitcap
+xc7[108] top n7 unitcap
+xc7[107] top n7 unitcap
+xc7[106] top n7 unitcap
+xc7[105] top n7 unitcap
+xc7[104] top n7 unitcap
+xc7[103] top n7 unitcap
+xc7[102] top n7 unitcap
+xc7[101] top n7 unitcap
+xc7[100] top n7 unitcap
+xc7[99] top n7 unitcap
+xc7[98] top n7 unitcap
+xc7[97] top n7 unitcap
+xc7[96] top n7 unitcap
+xc7[95] top n7 unitcap
+xc7[94] top n7 unitcap
+xc7[93] top n7 unitcap
+xc7[92] top n7 unitcap
+xc7[91] top n7 unitcap
+xc7[90] top n7 unitcap
+xc7[89] top n7 unitcap
+xc7[88] top n7 unitcap
+xc7[87] top n7 unitcap
+xc7[86] top n7 unitcap
+xc7[85] top n7 unitcap
+xc7[84] top n7 unitcap
+xc7[83] top n7 unitcap
+xc7[82] top n7 unitcap
+xc7[81] top n7 unitcap
+xc7[80] top n7 unitcap
+xc7[79] top n7 unitcap
+xc7[78] top n7 unitcap
+xc7[77] top n7 unitcap
+xc7[76] top n7 unitcap
+xc7[75] top n7 unitcap
+xc7[74] top n7 unitcap
+xc7[73] top n7 unitcap
+xc7[72] top n7 unitcap
+xc7[71] top n7 unitcap
+xc7[70] top n7 unitcap
+xc7[69] top n7 unitcap
+xc7[68] top n7 unitcap
+xc7[67] top n7 unitcap
+xc7[66] top n7 unitcap
+xc7[65] top n7 unitcap
+xc7[64] top n7 unitcap
+xc7[63] top n7 unitcap
+xc7[62] top n7 unitcap
+xc7[61] top n7 unitcap
+xc7[60] top n7 unitcap
+xc7[59] top n7 unitcap
+xc7[58] top n7 unitcap
+xc7[57] top n7 unitcap
+xc7[56] top n7 unitcap
+xc7[55] top n7 unitcap
+xc7[54] top n7 unitcap
+xc7[53] top n7 unitcap
+xc7[52] top n7 unitcap
+xc7[51] top n7 unitcap
+xc7[50] top n7 unitcap
+xc7[49] top n7 unitcap
+xc7[48] top n7 unitcap
+xc7[47] top n7 unitcap
+xc7[46] top n7 unitcap
+xc7[45] top n7 unitcap
+xc7[44] top n7 unitcap
+xc7[43] top n7 unitcap
+xc7[42] top n7 unitcap
+xc7[41] top n7 unitcap
+xc7[40] top n7 unitcap
+xc7[39] top n7 unitcap
+xc7[38] top n7 unitcap
+xc7[37] top n7 unitcap
+xc7[36] top n7 unitcap
+xc7[35] top n7 unitcap
+xc7[34] top n7 unitcap
+xc7[33] top n7 unitcap
+xc7[32] top n7 unitcap
+xc7[31] top n7 unitcap
+xc7[30] top n7 unitcap
+xc7[29] top n7 unitcap
+xc7[28] top n7 unitcap
+xc7[27] top n7 unitcap
+xc7[26] top n7 unitcap
+xc7[25] top n7 unitcap
+xc7[24] top n7 unitcap
+xc7[23] top n7 unitcap
+xc7[22] top n7 unitcap
+xc7[21] top n7 unitcap
+xc7[20] top n7 unitcap
+xc7[19] top n7 unitcap
+xc7[18] top n7 unitcap
+xc7[17] top n7 unitcap
+xc7[16] top n7 unitcap
+xc7[15] top n7 unitcap
+xc7[14] top n7 unitcap
+xc7[13] top n7 unitcap
+xc7[12] top n7 unitcap
+xc7[11] top n7 unitcap
+xc7[10] top n7 unitcap
+xc7[9] top n7 unitcap
+xc7[8] top n7 unitcap
+xc7[7] top n7 unitcap
+xc7[6] top n7 unitcap
+xc7[5] top n7 unitcap
+xc7[4] top n7 unitcap
+xc7[3] top n7 unitcap
+xc7[2] top n7 unitcap
+xc7[1] top n7 unitcap
+xc7[0] top n7 unitcap
+.ends
+
+
+* expanding   symbol:  sar/sw/sw_top.sym # of pins=5
+** sym_path: /home/alex/Desktop/sar/xschem/sar/sw/sw_top.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/sw/sw_top.sch
+.subckt sw_top out en vdd in vss
+*.iopin out
+*.ipin en
+*.iopin vss
+*.iopin vdd
+*.iopin in
+x2 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+x4 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
+x1 VGND VNB VPB VPWR sky130_fd_sc_hd__decap_3
+XM1 in en_buf out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=10 m=10
+XM2 in en out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=10 m=10
+.ends
+
+
+* expanding   symbol:  sar/comparator/trim.sym # of pins=3
+** sym_path: /home/alex/Desktop/sar/xschem/sar/comparator/trim.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/comparator/trim.sch
+.subckt trim drain d[4] d[3] d[2] d[1] d[0] vss
+*.iopin vss
+*.ipin d[4],d[3],d[2],d[1],d[0]
+*.opin drain
+x4[7] drain n4 trimcap
+x4[6] drain n4 trimcap
+x4[5] drain n4 trimcap
+x4[4] drain n4 trimcap
+x4[3] drain n4 trimcap
+x4[2] drain n4 trimcap
+x4[1] drain n4 trimcap
+x4[0] drain n4 trimcap
+x3[3] drain n3 trimcap
+x3[2] drain n3 trimcap
+x3[1] drain n3 trimcap
+x3[0] drain n3 trimcap
+x2[1] drain n2 trimcap
+x2[0] drain n2 trimcap
+x1 drain n1 trimcap
+x0 drain n0 trimcap
+XM4[7] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[6] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[5] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[4] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[3] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[2] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[1] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4[0] n4 d[4] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3[3] n3 d[3] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3[2] n3 d[3] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3[1] n3 d[3] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3[0] n3 d[3] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2[1] n2 d[2] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2[0] n2 d[2] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 n1 d[1] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 n0 d[0] vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  sar/unitcap/unitcap.sym # of pins=2
+** sym_path: /home/alex/Desktop/sar/xschem/sar/unitcap/unitcap.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/unitcap/unitcap.sch
+.subckt unitcap cp cn
+*.iopin cp
+*.iopin cn
+XC2 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
+.ends
+
+
+* expanding   symbol:  sar/comparator/trimcap.sym # of pins=2
+** sym_path: /home/alex/Desktop/sar/xschem/sar/comparator/trimcap.sym
+** sch_path: /home/alex/Desktop/sar/xschem/sar/comparator/trimcap.sch
+.subckt trimcap cp cn
+*.iopin cp
+*.iopin cn
+C1 cp cn 2f m=1
+.ends
+
+.GLOBAL GND
+.end

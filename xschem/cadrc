@@ -7,8 +7,15 @@
 # Also specify the location of the pdk.
 #------------------------------------------------------------
 
+#export PRJ="$(realpath "$(pwd)/../")"
+#export XSCHEMRC="$PRJ/design/xschemrc"
+#export SIM="$PRJ/sim"
+#export PDKPATH="$(realpath "$(pwd)/../pdk")"
+#export SKY130_PDK_PATH="$PDKPATH/libraries"
+
+#modificado por alex lora el 3-may2023
 export PRJ="$(realpath "$(pwd)/../")"
-export XSCHEMRC="$PRJ/design/xschemrc"
+export XSCHEMRC="$PRJ/xschem/xschemrc"
 export SIM="$PRJ/sim"
-export PDKPATH="$(realpath "$(pwd)/../pdk")"
-export SKY130_PDK_PATH="$PDKPATH/libraries"
+export PDKPATH="$PDK_ROOT"
+export SKY130_PDK_PATH="$PDKPATH/$PDK"

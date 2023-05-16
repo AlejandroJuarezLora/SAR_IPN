@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -106,7 +107,7 @@ C {devices/lab_wire.sym} 330 -680 1 0 {name=l14 sig_type=std_logic lab=avdd}
 C {devices/opin.sym} -210 -230 2 1 {name=p14 lab=valid}
 C {devices/ipin.sym} -210 -310 0 1 {name=p15 lab=cal}
 C {devices/lab_wire.sym} 780 -370 3 0 {name=l2 sig_type=std_logic lab=avss}
-C {code.sym} -220 -160 0 0 {name=INCLUDES only_toplevel=false 
+C {devices/code.sym} -220 -160 0 0 {name=INCLUDES only_toplevel=false 
 format="tcleval(@value )"
 value=".include \\\\$::DESIGN_PATH\\\\/sar/control/cmos_cells_digital.sp
 .include \\\\$::DESIGN_PATH\\\\/sar/control/sar_logic.sp

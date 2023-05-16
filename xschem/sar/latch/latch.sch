@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -45,19 +46,18 @@ C {devices/iopin.sym} 95 -900 0 0 {name=p2 lab=vdd}
 C {devices/opin.sym} 485 -930 0 0 {name=p5 lab=Q}
 C {devices/opin.sym} 285 -930 2 0 {name=p8 lab=Qn}
 C {logic/inv_lvt.sym} 500 -910 0 0 {name=x1}
-C {lab_wire.sym} 390 -910 3 0 {name=l2 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 390 -950 3 1 {name=l1 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 390 -910 3 0 {name=p4 sig_type=std_logic lab=vss}
+C {devices/lab_wire.sym} 390 -950 3 1 {name=p3 sig_type=std_logic lab=vdd}
 C {logic/inv_lvt.sym} 280 -810 0 1 {name=x2}
-C {lab_wire.sym} 390 -810 1 1 {name=l3 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 390 -850 1 0 {name=l4 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 390 -810 1 1 {name=p10 sig_type=std_logic lab=vss}
+C {devices/lab_wire.sym} 390 -850 1 0 {name=p9 sig_type=std_logic lab=vdd}
 C {logic/inv_lvt.sym} 480 -740 0 1 {name=x3}
-C {lab_wire.sym} 590 -740 1 1 {name=l5 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 590 -780 1 0 {name=l6 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 590 -740 1 1 {name=p11 sig_type=std_logic lab=vss}
+C {devices/lab_wire.sym} 590 -780 1 0 {name=p14 sig_type=std_logic lab=vdd}
 C {logic/inv_lvt.sym} 300 -740 0 0 {name=x4}
-C {lab_wire.sym} 190 -740 3 0 {name=l7 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 190 -780 3 1 {name=l8 sig_type=std_logic lab=vdd}
-C {sky130_primitives/nfet_01v8_lvt.sym} 290 -760 0 0 {name=M3
-
+C {devices/lab_wire.sym} 190 -740 3 0 {name=p12 sig_type=std_logic lab=vss}
+C {devices/lab_wire.sym} 190 -780 3 1 {name=p13 sig_type=std_logic lab=vdd}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 490 -760 0 1 {name=M4
 L=0.4
 W=1
 nf=1
@@ -69,8 +69,9 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
-spiceprefix=X}
-C {sky130_primitives/nfet_01v8_lvt.sym} 490 -760 0 1 {name=M1
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 290 -760 0 0 {name=M1
 L=0.4
 W=1
 nf=1
@@ -82,4 +83,5 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
-spiceprefix=X}
+spiceprefix=X
+}

@@ -1,7 +1,7 @@
-.SUBCKT BUF A Y
+.subckt BUF A Y
 .model buffer d_buffer
 Abuf A Y buffer
-.ENDS NOT
+.ends NOT
 
 .SUBCKT NOT A Y
 .model not d_inverter

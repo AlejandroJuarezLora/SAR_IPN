@@ -70,7 +70,7 @@ value="
 *.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_2.spice
 *.include \\\\$::SKYWATER_STDCELLS\\\\/cells/tap/sky130_fd_sc_hd__tap_2.spice
 "
-}
+place=header}
 C {devices/code.sym} 40 -170 0 0 {
 name=NGSPICE 
 only_toplevel=false
@@ -88,7 +88,10 @@ value=".options method trap
 .param vcm=0.7
 .param vsigp=1.2
 .param vsign=0.2
-
+.param VPWR=1.8
+.param VGND=0
+.param VPB=1.8 
+.param VNB=0
 .tran 100e-9 48e-6
 
 .control
@@ -139,7 +142,8 @@ print vnmin
 print vpend
 print vnend
 
-.endc"}
+.endc"
+place=end}
 C {devices/lab_wire.sym} 940 -450 0 1 {name=l15 sig_type=std_logic lab=result[7:0]}
 C {devices/lab_wire.sym} 710 -360 3 0 {name=l16 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 750 -360 3 0 {name=l23 sig_type=std_logic lab=vss}
@@ -155,11 +159,11 @@ C {devices/vsource.sym} 1090 -440 0 0 {name=Ven value="PULSE(0 1 0.5e-6 0.1e-6 0
 C {devices/lab_wire.sym} 1120 -500 0 0 {name=l35 sig_type=std_logic lab=en}
 C {devices/gnd.sym} 1090 -370 0 0 {name=l36 lab=GND}
 C {devices/lab_wire.sym} 870 -360 3 0 {name=l37 sig_type=std_logic lab=en}
-C {devices/code.sym} 190 -170 0 0 {
+C {devices/code.sym} 30 -640 0 0 {
 name=CORNERS 
 only_toplevel=true 
 format="tcleval( @value )"
-spice_ignore="tcleval($cmdline_ignore)"
+spice_ignore=true
 value="* FET CORNERS
 *.include \\\\$::SKYWATER_MODELS\\\\/corners/tt.spice
 *.include \\\\$::SKYWATER_MODELS\\\\/corners/ff.spice
@@ -211,12 +215,14 @@ C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}
 C {devices/launcher.sym} 200 -430 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
-C {devices/code.sym} 180 -350 0 0 {name=TT_MODELS
+C {devices/code.sym} 150 -650 0 0 {name=TT_MODELS
 only_toplevel=false
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
 "
-spice_ignore=false}
+spice_ignore=true
+place=header}
+C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
+place=header}

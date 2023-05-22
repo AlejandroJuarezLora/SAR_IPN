@@ -410,3 +410,17 @@ set netlist_type spice
 set hspice_netlist 1
 set initial_geometry {1920x1080}
 set persistent_command 1
+
+#----------------------------------------------------------------------
+# change default [] with some other characters for bussed signals 
+# in spice netlists (example: data[7] --> data<7>) 
+#set bus_replacement_char {<>} 
+#----------------------------------------------------------------------
+set bus_replacement_char {__}
+
+#----------------------------------------------------------------------
+# tcl files to load at startup
+#----------------------------------------------------------------------
+lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
+lappend tcl_files ${PDK_ROOT}/${PDK}/libs.tech/xschem/scripts/sky130_models.tcl
+

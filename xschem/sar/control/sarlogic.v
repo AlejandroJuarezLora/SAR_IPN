@@ -1,6 +1,5 @@
 `timescale 1ns/10ps
-
-
+`define USE_POWER_PINS 1
 module sar_logic(
     input           clk,
     input           rstn,

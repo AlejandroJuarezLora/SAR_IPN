@@ -18,4 +18,5 @@ dfflibmap -liberty /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd
 abc -liberty /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 splitnets -ports
 opt
-write_spice sar_logic_sky.sp 
+write_spice -pos VPWR -neg VGND sar_logic_sky.sp 
+write_blif test.blif

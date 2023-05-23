@@ -2,197 +2,202 @@
 
 .SUBCKT sar_logic clk rstn en comp cal valid result_0_ result_1_ result_2_ result_3_ result_4_ result_5_ result_6_ result_7_ sample ctlp_0_ ctlp_1_ ctlp_2_ ctlp_3_ ctlp_4_ ctlp_5_ ctlp_6_ ctlp_7_ ctln_0_ ctln_1_ ctln_2_ ctln_3_ ctln_4_ ctln_5_ ctln_6_ ctln_7_ trim_0_ trim_1_ trim_2_ trim_3_ trim_4_ trimb_0_ trimb_1_ trimb_2_ trimb_3_ trimb_4_ clkc
 X0 state_0_ 1 sky130_fd_sc_hd__clkinv_1
-X1 en 2 sky130_fd_sc_hd__clkinv_1
-X2 state_0_ state_1_ valid state_2_ sky130_fd_sc_hd__nor3b_1
-X3 state_0_ 3 state_1_ sky130_fd_sc_hd__lpflow_isobufsrc_1
-X4 state_2_ state_0_ 4 state_1_ sky130_fd_sc_hd__and3b_1
-X5 state_2_ 5 state_0_ state_1_ sky130_fd_sc_hd__nand3b_1
-X6 state_0_ state_2_ 6 sky130_fd_sc_hd__nor2_1
-X7 state_1_ 6 7 sky130_fd_sc_hd__nand2_1
-X8 5 7 sample sky130_fd_sc_hd__nand2_1
-X9 trim_mask_0_ trim_val_0_ trimb_0_ sky130_fd_sc_hd__nor2_1
-X10 trimb_0_ trim_0_ sky130_fd_sc_hd__clkinv_1
-X11 trim_val_1_ trim_mask_1_ trimb_1_ sky130_fd_sc_hd__nor2_1
-X12 trimb_1_ trim_1_ sky130_fd_sc_hd__clkinv_1
-X13 trim_val_2_ trim_mask_2_ trimb_2_ sky130_fd_sc_hd__nor2_1
-X14 trimb_2_ trim_2_ sky130_fd_sc_hd__clkinv_1
-X15 trim_val_3_ trim_mask_3_ trimb_3_ sky130_fd_sc_hd__nor2_1
-X16 trimb_3_ trim_3_ sky130_fd_sc_hd__clkinv_1
-X17 trim_val_4_ trim_mask_4_ trimb_4_ sky130_fd_sc_hd__nor2_1
-X18 trimb_4_ trim_4_ sky130_fd_sc_hd__clkinv_1
-X19 mask_0_ result_0_ ctln_0_ sky130_fd_sc_hd__nor2_1
-X20 ctln_0_ ctlp_0_ sky130_fd_sc_hd__clkinv_1
-X21 mask_1_ result_1_ ctln_1_ sky130_fd_sc_hd__nor2_1
-X22 ctln_1_ ctlp_1_ sky130_fd_sc_hd__clkinv_1
-X23 mask_2_ result_2_ ctln_2_ sky130_fd_sc_hd__nor2_1
-X24 ctln_2_ ctlp_2_ sky130_fd_sc_hd__clkinv_1
-X25 mask_3_ result_3_ ctln_3_ sky130_fd_sc_hd__nor2_1
-X26 ctln_3_ ctlp_3_ sky130_fd_sc_hd__clkinv_1
-X27 mask_4_ result_4_ ctln_4_ sky130_fd_sc_hd__nor2_1
-X28 ctln_4_ ctlp_4_ sky130_fd_sc_hd__clkinv_1
-X29 mask_5_ result_5_ ctln_5_ sky130_fd_sc_hd__nor2_1
-X30 ctln_5_ ctlp_5_ sky130_fd_sc_hd__clkinv_1
-X31 mask_6_ result_6_ ctln_6_ sky130_fd_sc_hd__nor2_1
-X32 ctln_6_ ctlp_6_ sky130_fd_sc_hd__clkinv_1
-X33 mask_7_ result_7_ ctln_7_ sky130_fd_sc_hd__nor2_1
-X34 ctln_7_ ctlp_7_ sky130_fd_sc_hd__clkinv_1
-X35 cal_itt_0_ cal_itt_1_ 8 sky130_fd_sc_hd__nand2_1
-X36 cal_itt_0_ cal_itt_1_ 9 cal_itt_2_ cal_itt_3_ sky130_fd_sc_hd__and4b_1
-X37 trim_mask_0_ 9 10 sky130_fd_sc_hd__nand2_1
-X38 11 cal_itt_0_ 10 5 sky130_fd_sc_hd__a21oi_1
-X39 12 state_2_ en 3 sky130_fd_sc_hd__o21ai_0
-X40 12 13 sky130_fd_sc_hd__clkinv_1
-X41 14 cal_itt_0_ 12 11 sky130_fd_sc_hd__a21o_1
-X42 cal_itt_0_ cal_itt_1_ 15 sky130_fd_sc_hd__nor2_1
-X43 cal_itt_1_ 12 16 sky130_fd_sc_hd__nand2_1
-X44 17 trim_mask_0_ 9 8 sky130_fd_sc_hd__a21oi_1
-X45 18 5 15 16 17 sky130_fd_sc_hd__o31ai_1
-X46 cal_itt_2_ 8 19 sky130_fd_sc_hd__xor2_1
-X47 20 10 19 5 sky130_fd_sc_hd__a21oi_1
-X48 21 cal_itt_2_ 12 20 sky130_fd_sc_hd__a21o_1
-X49 22 cal_itt_0_ cal_itt_1_ 5 cal_itt_2_ sky130_fd_sc_hd__a31oi_1
-X50 23 12 22 cal_itt_3_ sky130_fd_sc_hd__o21a_1
-X51 5 24 9 sky130_fd_sc_hd__lpflow_inputiso1p_1
-X52 state_0_ 25 state_2_ sky130_fd_sc_hd__lpflow_isobufsrc_1
-X53 state_2_ state_1_ 26 state_0_ sky130_fd_sc_hd__nor3b_1
-X54 en 26 27 sky130_fd_sc_hd__and2_0
-X55 28 cal_count_0_ 24 27 sky130_fd_sc_hd__a21oi_1
-X56 29 cal_count_0_ 5 28 sky130_fd_sc_hd__o21ai_0
-X57 30 cal_count_0_ cal_count_1_ comp sky130_fd_sc_hd__a21boi_0
-X58 cal_count_0_ cal_count_1_ 31 sky130_fd_sc_hd__nor2_1
-X59 cal_count_0_ cal_count_1_ 32 comp sky130_fd_sc_hd__and3b_1
-X60 30 31 33 32 sky130_fd_sc_hd__nor3_1
-X61 cal_count_0_ cal_count_1_ 34 comp sky130_fd_sc_hd__nor3b_1
-X62 35 24 33 13 cal_count_1_ 34 sky130_fd_sc_hd__o32a_1
-X63 32 34 36 sky130_fd_sc_hd__nor2_1
-X64 37 cal_count_2_ 36 24 sky130_fd_sc_hd__o21ba_1
-X65 38 24 36 cal_count_2_ sky130_fd_sc_hd__o21ai_0
-X66 39 12 37 38 sky130_fd_sc_hd__o21ai_0
-X67 cal_count_3_ 12 40 sky130_fd_sc_hd__nand2_1
-X68 cal_count_2_ 41 32 34 sky130_fd_sc_hd__mux2i_1
-X69 cal_count_3_ 41 42 sky130_fd_sc_hd__xor2_1
-X70 43 24 42 40 sky130_fd_sc_hd__o21ai_0
-X71 en_co_clk 27 44 sky130_fd_sc_hd__nor2_1
-X72 45 trim_mask_0_ 9 5 sky130_fd_sc_hd__a21oi_1
-X73 3 25 46 sky130_fd_sc_hd__nor2_1
-X74 en_co_clk 46 47 sky130_fd_sc_hd__nand2_1
-X75 state_1_ state_0_ 48 state_2_ sky130_fd_sc_hd__and3b_1
-X76 48 49 mask_0_ sky130_fd_sc_hd__lpflow_isobufsrc_1
-X77 26 45 50 49 sky130_fd_sc_hd__nor3_1
-X78 51 47 50 44 sky130_fd_sc_hd__a21oi_1
-X79 4 9 52 sky130_fd_sc_hd__and2_0
-X80 4 9 53 sky130_fd_sc_hd__nand2_1
-X81 state_0_ state_2_ 54 state_1_ sky130_fd_sc_hd__nor3_1
-X82 state_1_ calibrate 6 55 sky130_fd_sc_hd__and3_1
-X83 54 56 55 sky130_fd_sc_hd__lpflow_inputiso1p_1
-X84 57 trim_mask_0_ cal_count_3_ trim_val_0_ 52 sky130_fd_sc_hd__a31oi_1
-X85 56 57 58 sky130_fd_sc_hd__nor2_1
-X86 59 cal_count_3_ 52 trim_val_1_ sky130_fd_sc_hd__a21oi_1
-X87 trimb_1_ 56 60 59 sky130_fd_sc_hd__nor3_1
-X88 61 cal_count_3_ 52 trim_val_2_ sky130_fd_sc_hd__a21oi_1
-X89 trimb_2_ 56 62 61 sky130_fd_sc_hd__nor3_1
-X90 63 cal_count_3_ 52 trim_val_3_ sky130_fd_sc_hd__a21oi_1
-X91 trimb_3_ 56 64 63 sky130_fd_sc_hd__nor3_1
-X92 trim_val_4_ 65 55 sky130_fd_sc_hd__lpflow_isobufsrc_1
-X93 66 cal_count_3_ trim_mask_4_ 54 65 52 sky130_fd_sc_hd__a311o_1
-X94 67 4 55 24 sky130_fd_sc_hd__o21ai_0
-X95 68 trim_mask_1_ 52 67 trim_mask_0_ sky130_fd_sc_hd__a22o_1
-X96 69 trim_mask_2_ 52 67 trim_mask_1_ sky130_fd_sc_hd__a22o_1
-X97 70 trim_mask_3_ 52 67 trim_mask_2_ sky130_fd_sc_hd__a22o_1
-X98 71 trim_mask_4_ 52 67 trim_mask_3_ sky130_fd_sc_hd__a22o_1
-X99 72 trim_mask_4_ 53 55 sky130_fd_sc_hd__a21o_1
-X100 73 state_1_ en 25 sky130_fd_sc_hd__o21ai_0
-X101 74 mask_1_ 48 73 mask_0_ sky130_fd_sc_hd__a22o_1
-X102 75 mask_2_ 48 73 mask_1_ sky130_fd_sc_hd__a22o_1
-X103 76 mask_3_ 48 73 mask_2_ sky130_fd_sc_hd__a22o_1
-X104 77 mask_4_ 48 73 mask_3_ sky130_fd_sc_hd__a22o_1
-X105 78 mask_5_ 48 73 mask_4_ sky130_fd_sc_hd__a22o_1
-X106 79 mask_6_ 48 73 mask_5_ sky130_fd_sc_hd__a22o_1
-X107 80 mask_7_ 48 73 mask_6_ sky130_fd_sc_hd__a22o_1
-X108 mask_7_ 27 81 sky130_fd_sc_hd__nor2_1
-X109 48 81 82 sky130_fd_sc_hd__nor2_1
-X110 83 state_2_ state_1_ state_0_ sky130_fd_sc_hd__a21oi_1
-X111 state_2_ state_1_ 84 sky130_fd_sc_hd__nand2_1
-X112 85 state_2_ state_1_ 45 sky130_fd_sc_hd__a21oi_1
-X113 86 2 26 49 83 sky130_fd_sc_hd__a211oi_1
-X114 87 trim_mask_0_ 53 85 86 1 sky130_fd_sc_hd__o221ai_1
-X115 27 49 88 sky130_fd_sc_hd__nor2_1
-X116 89 calibrate 7 84 88 sky130_fd_sc_hd__o211ai_1
-X117 90 mask_0_ 48 55 4 sky130_fd_sc_hd__a211oi_1
-X118 84 90 91 sky130_fd_sc_hd__nand2_1
-X119 cal 27 92 sky130_fd_sc_hd__nand2_1
-X120 93 12 45 calibrate sky130_fd_sc_hd__o21ai_0
-X121 92 93 94 sky130_fd_sc_hd__nand2_1
-X122 comp 48 95 sky130_fd_sc_hd__and2_0
-X123 96 mask_0_ 95 result_0_ sky130_fd_sc_hd__a21oi_1
-X124 27 96 97 sky130_fd_sc_hd__nor2_1
-X125 98 mask_1_ 95 result_1_ sky130_fd_sc_hd__a21oi_1
-X126 27 98 99 sky130_fd_sc_hd__nor2_1
-X127 100 mask_2_ 95 result_2_ sky130_fd_sc_hd__a21oi_1
-X128 27 100 101 sky130_fd_sc_hd__nor2_1
-X129 102 mask_3_ 95 result_3_ sky130_fd_sc_hd__a21oi_1
-X130 27 102 103 sky130_fd_sc_hd__nor2_1
-X131 104 mask_4_ 95 result_4_ sky130_fd_sc_hd__a21oi_1
-X132 27 104 105 sky130_fd_sc_hd__nor2_1
-X133 106 mask_5_ 95 result_5_ sky130_fd_sc_hd__a21oi_1
-X134 27 106 107 sky130_fd_sc_hd__nor2_1
-X135 108 mask_6_ 95 result_6_ sky130_fd_sc_hd__a21oi_1
-X136 27 108 109 sky130_fd_sc_hd__nor2_1
-X137 110 mask_7_ 95 result_7_ sky130_fd_sc_hd__a21oi_1
-X138 27 110 111 sky130_fd_sc_hd__nor2_1
-X139 en_co_clk clkc clk sky130_fd_sc_hd__lpflow_isobufsrc_1
-X140 clk result_0_ 97 rstn sky130_fd_sc_hd__dfrtp_1
-X141 clk result_1_ 99 rstn sky130_fd_sc_hd__dfrtp_1
-X142 clk result_2_ 101 rstn sky130_fd_sc_hd__dfrtp_1
-X143 clk result_3_ 103 rstn sky130_fd_sc_hd__dfrtp_1
-X144 clk result_4_ 105 rstn sky130_fd_sc_hd__dfrtp_1
-X145 clk result_5_ 107 rstn sky130_fd_sc_hd__dfrtp_1
-X146 clk result_6_ 109 rstn sky130_fd_sc_hd__dfrtp_1
-X147 clk result_7_ 111 rstn sky130_fd_sc_hd__dfrtp_1
-X148 clk calibrate 94 rstn sky130_fd_sc_hd__dfrtp_1
-X149 clk state_0_ 87 rstn sky130_fd_sc_hd__dfrtp_1
-X150 clk state_1_ 89 rstn sky130_fd_sc_hd__dfrtp_1
-X151 clk state_2_ 91 rstn sky130_fd_sc_hd__dfrtp_1
-X152 clk mask_0_ 74 rstn sky130_fd_sc_hd__dfrtp_1
-X153 clk mask_1_ 75 rstn sky130_fd_sc_hd__dfrtp_1
-X154 clk mask_2_ 76 rstn sky130_fd_sc_hd__dfrtp_1
-X155 clk mask_3_ 77 rstn sky130_fd_sc_hd__dfrtp_1
-X156 clk mask_4_ 78 rstn sky130_fd_sc_hd__dfrtp_1
-X157 clk mask_5_ 79 rstn sky130_fd_sc_hd__dfrtp_1
-X158 clk mask_6_ 80 rstn sky130_fd_sc_hd__dfrtp_1
-X159 clk mask_7_ 82 rstn sky130_fd_sc_hd__dfrtp_1
-X160 clk trim_mask_0_ 68 rstn sky130_fd_sc_hd__dfrtp_1
-X161 clk trim_mask_1_ 69 rstn sky130_fd_sc_hd__dfrtp_1
-X162 clk trim_mask_2_ 70 rstn sky130_fd_sc_hd__dfrtp_1
-X163 clk trim_mask_3_ 71 rstn sky130_fd_sc_hd__dfrtp_1
-X164 clk trim_mask_4_ 72 rstn sky130_fd_sc_hd__dfrtp_1
-X165 clk trim_val_0_ 58 rstn sky130_fd_sc_hd__dfrtp_1
-X166 clk trim_val_1_ 60 rstn sky130_fd_sc_hd__dfrtp_1
-X167 clk trim_val_2_ 62 rstn sky130_fd_sc_hd__dfrtp_1
-X168 clk trim_val_3_ 64 rstn sky130_fd_sc_hd__dfrtp_1
-X169 clk trim_val_4_ 66 rstn sky130_fd_sc_hd__dfrtp_1
-X170 clk en_co_clk 51 rstn sky130_fd_sc_hd__dfrtp_1
-X171 clk cal_count_0_ 29 rstn sky130_fd_sc_hd__dfstp_2
-X172 clk cal_count_1_ 35 rstn sky130_fd_sc_hd__dfstp_2
-X173 clk cal_count_2_ 39 rstn sky130_fd_sc_hd__dfstp_2
-X174 clk cal_count_3_ 43 rstn sky130_fd_sc_hd__dfrtp_1
-X175 clk cal_itt_0_ 14 rstn sky130_fd_sc_hd__dfrtp_1
-X176 clk cal_itt_1_ 18 rstn sky130_fd_sc_hd__dfrtp_1
-X177 clk cal_itt_2_ 21 rstn sky130_fd_sc_hd__dfrtp_1
-X178 clk cal_itt_3_ 23 rstn sky130_fd_sc_hd__dfrtp_1
-X179 sky130_fd_sc_hd__decap_12
-X180 sky130_fd_sc_hd__decap_3
-X181 sky130_fd_sc_hd__decap_4
-X182 sky130_fd_sc_hd__decap_6
-X183 sky130_fd_sc_hd__decap_8
-X184 _NC0 sky130_fd_sc_hd__diode_2
-X185 _NC1 sky130_fd_sc_hd__lpflow_bleeder_1
-X186 sky130_fd_sc_hd__lpflow_decapkapwr_12
-X187 sky130_fd_sc_hd__lpflow_decapkapwr_3
-X188 sky130_fd_sc_hd__lpflow_decapkapwr_4
-X189 sky130_fd_sc_hd__lpflow_decapkapwr_6
-X190 sky130_fd_sc_hd__lpflow_decapkapwr_8
-V0 co_clk Vss DC 0
+X1 state_0_ 2 state_1_ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X2 state_0_ 3 state_1_ sky130_fd_sc_hd__nand2b_1
+X3 state_2_ state_0_ 4 state_1_ sky130_fd_sc_hd__and3b_1
+X4 state_2_ 5 state_0_ state_1_ sky130_fd_sc_hd__nand3b_1
+X5 state_0_ state_2_ 6 state_1_ sky130_fd_sc_hd__nor3b_1
+X6 4 sample 6 sky130_fd_sc_hd__lpflow_inputiso1p_1
+X7 state_0_ state_1_ valid state_2_ sky130_fd_sc_hd__nor3b_1
+X8 mask_0_ result_0_ ctln_0_ sky130_fd_sc_hd__nor2_1
+X9 ctln_0_ ctlp_0_ sky130_fd_sc_hd__clkinv_1
+X10 result_1_ mask_1_ ctln_1_ sky130_fd_sc_hd__nor2_1
+X11 ctln_1_ ctlp_1_ sky130_fd_sc_hd__clkinv_1
+X12 result_2_ mask_2_ ctln_2_ sky130_fd_sc_hd__nor2_1
+X13 ctln_2_ ctlp_2_ sky130_fd_sc_hd__clkinv_1
+X14 result_3_ mask_3_ ctln_3_ sky130_fd_sc_hd__nor2_1
+X15 ctln_3_ ctlp_3_ sky130_fd_sc_hd__clkinv_1
+X16 result_4_ mask_4_ ctln_4_ sky130_fd_sc_hd__nor2_1
+X17 ctln_4_ ctlp_4_ sky130_fd_sc_hd__clkinv_1
+X18 result_5_ mask_5_ ctln_5_ sky130_fd_sc_hd__nor2_1
+X19 ctln_5_ ctlp_5_ sky130_fd_sc_hd__clkinv_1
+X20 result_6_ mask_6_ ctln_6_ sky130_fd_sc_hd__nor2_1
+X21 ctln_6_ ctlp_6_ sky130_fd_sc_hd__clkinv_1
+X22 result_7_ mask_7_ ctln_7_ sky130_fd_sc_hd__nor2_1
+X23 ctln_7_ ctlp_7_ sky130_fd_sc_hd__clkinv_1
+X24 cal_itt_0_ cal_itt_1_ 7 sky130_fd_sc_hd__nand2_1
+X25 cal_itt_0_ cal_itt_1_ 8 cal_itt_2_ cal_itt_3_ sky130_fd_sc_hd__and4b_1
+X26 cal_itt_0_ 9 cal_itt_1_ cal_itt_2_ cal_itt_3_ sky130_fd_sc_hd__nand4b_1
+X27 trim_mask_0_ 8 10 sky130_fd_sc_hd__nand2_1
+X28 11 cal_itt_0_ 10 5 sky130_fd_sc_hd__a21oi_1
+X29 state_2_ en 12 sky130_fd_sc_hd__nor2_1
+X30 3 12 13 sky130_fd_sc_hd__nor2_1
+X31 14 state_2_ en 2 sky130_fd_sc_hd__o21ai_0
+X32 15 cal_itt_0_ 14 11 sky130_fd_sc_hd__a21o_1
+X33 cal_itt_0_ cal_itt_1_ 16 sky130_fd_sc_hd__nor2_1
+X34 cal_itt_1_ 14 17 sky130_fd_sc_hd__nand2_1
+X35 18 trim_mask_0_ 8 7 sky130_fd_sc_hd__a21oi_1
+X36 19 5 16 17 18 sky130_fd_sc_hd__o31ai_1
+X37 cal_itt_2_ 7 20 sky130_fd_sc_hd__xor2_1
+X38 21 10 20 5 sky130_fd_sc_hd__a21oi_1
+X39 22 cal_itt_2_ 14 21 sky130_fd_sc_hd__a21o_1
+X40 23 cal_itt_0_ cal_itt_1_ 5 cal_itt_2_ sky130_fd_sc_hd__a31oi_1
+X41 24 14 23 cal_itt_3_ sky130_fd_sc_hd__o21a_1
+X42 4 9 25 sky130_fd_sc_hd__nand2_1
+X43 state_0_ 26 state_2_ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X44 state_2_ state_1_ 27 state_0_ sky130_fd_sc_hd__nor3b_1
+X45 en 27 28 sky130_fd_sc_hd__and2_0
+X46 29 cal_count_0_ 25 28 sky130_fd_sc_hd__a21oi_1
+X47 30 cal_count_0_ 5 29 sky130_fd_sc_hd__o21ai_0
+X48 31 cal_count_0_ cal_count_1_ comp sky130_fd_sc_hd__a21boi_0
+X49 cal_count_0_ cal_count_1_ 32 sky130_fd_sc_hd__nor2_1
+X50 cal_count_0_ cal_count_1_ 33 comp sky130_fd_sc_hd__and3b_1
+X51 31 32 34 33 sky130_fd_sc_hd__nor3_1
+X52 cal_count_0_ cal_count_1_ 35 comp sky130_fd_sc_hd__nor3b_1
+X53 36 25 34 13 cal_count_1_ 35 sky130_fd_sc_hd__o32a_1
+X54 33 35 37 sky130_fd_sc_hd__nor2_1
+X55 cal_count_2_ 37 38 sky130_fd_sc_hd__xnor2_1
+X56 39 cal_count_2_ 13 25 38 sky130_fd_sc_hd__o22a_1
+X57 cal_count_3_ 14 40 sky130_fd_sc_hd__nand2_1
+X58 cal_count_2_ 41 33 35 sky130_fd_sc_hd__mux2i_1
+X59 cal_count_3_ 41 42 sky130_fd_sc_hd__xor2_1
+X60 43 25 42 40 sky130_fd_sc_hd__o21ai_0
+X61 en_co_clk 28 44 sky130_fd_sc_hd__nor2_1
+X62 45 trim_mask_0_ 8 5 sky130_fd_sc_hd__a21oi_1
+X63 2 26 46 sky130_fd_sc_hd__nor2_1
+X64 en_co_clk 46 47 sky130_fd_sc_hd__nand2_1
+X65 state_1_ state_0_ 48 state_2_ sky130_fd_sc_hd__and3b_1
+X66 48 49 mask_0_ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X67 27 45 50 49 sky130_fd_sc_hd__nor3_1
+X68 51 47 50 44 sky130_fd_sc_hd__a21oi_1
+X69 5 9 52 sky130_fd_sc_hd__nor2_1
+X70 state_0_ state_2_ 53 state_1_ sky130_fd_sc_hd__nor3_1
+X71 calibrate 6 54 sky130_fd_sc_hd__nand2_1
+X72 54 55 53 sky130_fd_sc_hd__nand2b_1
+X73 trim_mask_0_ trim_val_0_ trimb_0_ sky130_fd_sc_hd__nor2_1
+X74 trimb_0_ trim_0_ sky130_fd_sc_hd__clkinv_1
+X75 56 trim_mask_0_ cal_count_3_ trim_val_0_ 52 sky130_fd_sc_hd__a31oi_1
+X76 55 56 57 sky130_fd_sc_hd__nor2_1
+X77 58 cal_count_3_ 52 trim_val_1_ sky130_fd_sc_hd__a21oi_1
+X78 trim_val_1_ trim_mask_1_ trimb_1_ sky130_fd_sc_hd__nor2_1
+X79 trimb_1_ trim_1_ sky130_fd_sc_hd__clkinv_1
+X80 55 58 59 trimb_1_ sky130_fd_sc_hd__nor3_1
+X81 60 cal_count_3_ 52 trim_val_2_ sky130_fd_sc_hd__a21oi_1
+X82 trim_val_2_ trim_mask_2_ trimb_2_ sky130_fd_sc_hd__nor2_1
+X83 trimb_2_ trim_2_ sky130_fd_sc_hd__clkinv_1
+X84 55 60 61 trimb_2_ sky130_fd_sc_hd__nor3_1
+X85 62 cal_count_3_ 52 trim_val_3_ sky130_fd_sc_hd__a21oi_1
+X86 trim_val_3_ trim_mask_3_ trimb_3_ sky130_fd_sc_hd__nor2_1
+X87 trimb_3_ trim_3_ sky130_fd_sc_hd__clkinv_1
+X88 55 62 63 trimb_3_ sky130_fd_sc_hd__nor3_1
+X89 64 trim_val_4_ 54 53 sky130_fd_sc_hd__a21oi_1
+X90 cal_count_3_ trim_mask_4_ 65 52 sky130_fd_sc_hd__nand3_1
+X91 64 65 66 sky130_fd_sc_hd__nand2_1
+X92 6 67 calibrate sky130_fd_sc_hd__nand2b_1
+X93 sample 25 68 67 sky130_fd_sc_hd__nand3_1
+X94 69 trim_mask_1_ 52 68 trim_mask_0_ sky130_fd_sc_hd__a22o_1
+X95 70 trim_mask_2_ 52 68 trim_mask_1_ sky130_fd_sc_hd__a22o_1
+X96 71 trim_mask_3_ 52 68 trim_mask_2_ sky130_fd_sc_hd__a22o_1
+X97 72 trim_mask_4_ 52 68 trim_mask_3_ sky130_fd_sc_hd__a22o_1
+X98 73 5 9 trim_mask_4_ sky130_fd_sc_hd__o21ai_0
+X99 54 73 74 sky130_fd_sc_hd__nand2_1
+X100 state_2_ en 75 3 sky130_fd_sc_hd__nor3_1
+X101 76 state_1_ en 26 sky130_fd_sc_hd__o21ai_0
+X102 77 mask_1_ 48 76 mask_0_ sky130_fd_sc_hd__a22o_1
+X103 78 mask_2_ 48 76 mask_1_ sky130_fd_sc_hd__a22o_1
+X104 79 mask_3_ 48 76 mask_2_ sky130_fd_sc_hd__a22o_1
+X105 80 mask_4_ 48 76 mask_3_ sky130_fd_sc_hd__a22o_1
+X106 81 mask_5_ 48 76 mask_4_ sky130_fd_sc_hd__a22o_1
+X107 82 mask_6_ 48 76 mask_5_ sky130_fd_sc_hd__a22o_1
+X108 83 mask_7_ 48 76 mask_6_ sky130_fd_sc_hd__a22o_1
+X109 mask_7_ 28 84 sky130_fd_sc_hd__nor2_1
+X110 48 84 85 sky130_fd_sc_hd__nor2_1
+X111 86 state_2_ state_1_ state_0_ sky130_fd_sc_hd__a21oi_1
+X112 state_2_ state_1_ 87 sky130_fd_sc_hd__nand2_1
+X113 88 state_2_ state_1_ 45 sky130_fd_sc_hd__a21oi_1
+X114 trim_mask_0_ 5 89 9 sky130_fd_sc_hd__nor3_1
+X115 49 75 90 86 89 sky130_fd_sc_hd__nor4_1
+X116 91 1 88 90 sky130_fd_sc_hd__o21ai_0
+X117 28 49 92 sky130_fd_sc_hd__nor2_1
+X118 67 87 93 92 sky130_fd_sc_hd__nand3_1
+X119 mask_0_ 48 94 sky130_fd_sc_hd__nand2_1
+X120 95 state_0_ state_1_ state_2_ sky130_fd_sc_hd__o21ai_0
+X121 54 94 96 95 sky130_fd_sc_hd__nand3_1
+X122 cal 28 97 sky130_fd_sc_hd__nand2_1
+X123 98 14 45 calibrate sky130_fd_sc_hd__o21ai_0
+X124 97 98 99 sky130_fd_sc_hd__nand2_1
+X125 comp 48 100 sky130_fd_sc_hd__and2_0
+X126 101 mask_0_ 100 result_0_ sky130_fd_sc_hd__a21oi_1
+X127 28 101 102 sky130_fd_sc_hd__nor2_1
+X128 103 mask_1_ 100 result_1_ sky130_fd_sc_hd__a21oi_1
+X129 28 103 104 sky130_fd_sc_hd__nor2_1
+X130 105 mask_2_ 100 result_2_ sky130_fd_sc_hd__a21oi_1
+X131 28 105 106 sky130_fd_sc_hd__nor2_1
+X132 107 mask_3_ 100 result_3_ sky130_fd_sc_hd__a21oi_1
+X133 28 107 108 sky130_fd_sc_hd__nor2_1
+X134 109 mask_4_ 100 result_4_ sky130_fd_sc_hd__a21oi_1
+X135 28 109 110 sky130_fd_sc_hd__nor2_1
+X136 111 mask_5_ 100 result_5_ sky130_fd_sc_hd__a21oi_1
+X137 28 111 112 sky130_fd_sc_hd__nor2_1
+X138 113 mask_6_ 100 result_6_ sky130_fd_sc_hd__a21oi_1
+X139 28 113 114 sky130_fd_sc_hd__nor2_1
+X140 115 mask_7_ 100 result_7_ sky130_fd_sc_hd__a21oi_1
+X141 28 115 116 sky130_fd_sc_hd__nor2_1
+X142 trim_val_4_ trim_mask_4_ trimb_4_ sky130_fd_sc_hd__nor2_1
+X143 trimb_4_ trim_4_ sky130_fd_sc_hd__clkinv_1
+X144 en_co_clk clkc clk sky130_fd_sc_hd__lpflow_isobufsrc_1
+X145 clk result_0_ 102 rstn sky130_fd_sc_hd__dfrtp_1
+X146 clk result_1_ 104 rstn sky130_fd_sc_hd__dfrtp_1
+X147 clk result_2_ 106 rstn sky130_fd_sc_hd__dfrtp_1
+X148 clk result_3_ 108 rstn sky130_fd_sc_hd__dfrtp_1
+X149 clk result_4_ 110 rstn sky130_fd_sc_hd__dfrtp_1
+X150 clk result_5_ 112 rstn sky130_fd_sc_hd__dfrtp_1
+X151 clk result_6_ 114 rstn sky130_fd_sc_hd__dfrtp_1
+X152 clk result_7_ 116 rstn sky130_fd_sc_hd__dfrtp_1
+X153 clk calibrate 99 rstn sky130_fd_sc_hd__dfrtp_1
+X154 clk state_0_ 91 rstn sky130_fd_sc_hd__dfrtp_1
+X155 clk state_1_ 93 rstn sky130_fd_sc_hd__dfrtp_1
+X156 clk state_2_ 96 rstn sky130_fd_sc_hd__dfrtp_1
+X157 clk mask_0_ 77 rstn sky130_fd_sc_hd__dfrtp_1
+X158 clk mask_1_ 78 rstn sky130_fd_sc_hd__dfrtp_1
+X159 clk mask_2_ 79 rstn sky130_fd_sc_hd__dfrtp_1
+X160 clk mask_3_ 80 rstn sky130_fd_sc_hd__dfrtp_1
+X161 clk mask_4_ 81 rstn sky130_fd_sc_hd__dfrtp_1
+X162 clk mask_5_ 82 rstn sky130_fd_sc_hd__dfrtp_1
+X163 clk mask_6_ 83 rstn sky130_fd_sc_hd__dfrtp_1
+X164 clk mask_7_ 85 rstn sky130_fd_sc_hd__dfrtp_1
+X165 clk trim_mask_0_ 69 rstn sky130_fd_sc_hd__dfrtp_1
+X166 clk trim_mask_1_ 70 rstn sky130_fd_sc_hd__dfrtp_1
+X167 clk trim_mask_2_ 71 rstn sky130_fd_sc_hd__dfrtp_1
+X168 clk trim_mask_3_ 72 rstn sky130_fd_sc_hd__dfrtp_1
+X169 clk trim_mask_4_ 74 rstn sky130_fd_sc_hd__dfrtp_1
+X170 clk trim_val_0_ 57 rstn sky130_fd_sc_hd__dfrtp_1
+X171 clk trim_val_1_ 59 rstn sky130_fd_sc_hd__dfrtp_1
+X172 clk trim_val_2_ 61 rstn sky130_fd_sc_hd__dfrtp_1
+X173 clk trim_val_3_ 63 rstn sky130_fd_sc_hd__dfrtp_1
+X174 clk trim_val_4_ 66 rstn sky130_fd_sc_hd__dfrtp_1
+X175 clk en_co_clk 51 rstn sky130_fd_sc_hd__dfrtp_1
+X176 clk cal_count_0_ 30 rstn sky130_fd_sc_hd__dfstp_2
+X177 clk cal_count_1_ 36 rstn sky130_fd_sc_hd__dfstp_2
+X178 clk cal_count_2_ 39 rstn sky130_fd_sc_hd__dfstp_2
+X179 clk cal_count_3_ 43 rstn sky130_fd_sc_hd__dfrtp_1
+X180 clk cal_itt_0_ 15 rstn sky130_fd_sc_hd__dfrtp_1
+X181 clk cal_itt_1_ 19 rstn sky130_fd_sc_hd__dfrtp_1
+X182 clk cal_itt_2_ 22 rstn sky130_fd_sc_hd__dfrtp_1
+X183 clk cal_itt_3_ 24 rstn sky130_fd_sc_hd__dfrtp_1
+X184 sky130_fd_sc_hd__decap_12
+X185 sky130_fd_sc_hd__decap_3
+X186 sky130_fd_sc_hd__decap_4
+X187 sky130_fd_sc_hd__decap_6
+X188 sky130_fd_sc_hd__decap_8
+X189 _NC0 sky130_fd_sc_hd__diode_2
+X190 _NC1 sky130_fd_sc_hd__lpflow_bleeder_1
+X191 sky130_fd_sc_hd__lpflow_decapkapwr_12
+X192 sky130_fd_sc_hd__lpflow_decapkapwr_3
+X193 sky130_fd_sc_hd__lpflow_decapkapwr_4
+X194 sky130_fd_sc_hd__lpflow_decapkapwr_6
+X195 sky130_fd_sc_hd__lpflow_decapkapwr_8
+V0 co_clk VGND DC 0
 .ENDS sar_logic
 
 ************************

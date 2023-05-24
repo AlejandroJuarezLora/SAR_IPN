@@ -1,33 +1,17 @@
-
-
-read_liberty -setattr USE_POWER_PINS  -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-#read_verilog -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v 
+read_verilog -DUSE_POWER_PINS[=1] -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v
+#read_liberty -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog sarlogic.v
-#hierarchy -check -top sar_logic ##si se ejecuta, no se crea como subcircuito
-
-
 proc
-flatten  
-opt_expr
-opt_clean
-check
-opt
-wreduce
-peepopt
-opt_clean
-#techmap -map /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v
-techmap
 opt
 fsm
-opt -fast
+opt
 memory 
-opt_clean
-
-
+opt
+techmap
+opt
 dfflibmap -liberty /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 abc -liberty /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 splitnets -ports
-opt
-clean
-#write_spice -pos VPWR -neg VGND sar_logic_sky.sp 
+#opt
+#clean
 write_spice sar_logic_sky.sp

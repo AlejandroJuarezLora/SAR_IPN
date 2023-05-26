@@ -222,7 +222,8 @@ value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
-spice_ignore=true
+spice_ignore=false
 place=header}
 C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
-place=header}
+place=header
+spice_ignore=true}

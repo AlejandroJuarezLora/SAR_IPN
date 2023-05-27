@@ -75,13 +75,13 @@ C {devices/code.sym} 40 -170 0 0 {
 name=NGSPICE 
 only_toplevel=false
 format="tcleval( @value )"
-value=".options method trap
-*.options method gear
-.options gmin 1e-15
-.options abstol 1e-15
-.options reltol 0.0001
-.options vntol 0.1e-6
-.options warn 1
+value="*.options method trap
+.options method=gear
+.options gmin=1e-15
+.options abstol=1e-15
+.options reltol=0.0001
+.options vntol=0.1e-6
+.options warn=1
 
 .param MC_SWITCH=0
 .param vin=1
@@ -92,7 +92,7 @@ value=".options method trap
 .param VGND=0
 .param VPB=1.8 
 .param VNB=0
-.tran 100e-9 48e-6
+.tran 100e-9 1e-6
 
 .control
 
@@ -151,7 +151,7 @@ C {devices/lab_wire.sym} 710 -540 3 1 {name=l24 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 750 -540 3 1 {name=l25 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 610 -400 0 0 {name=l27 sig_type=std_logic lab=vinn}
 C {devices/lab_wire.sym} 610 -500 0 0 {name=l28 sig_type=std_logic lab=vinp}
-C {devices/vsource.sym} 1130 -160 0 0 {name=Vclk value="PULSE(0 1 1e-9 1e-9 1e-9 2e-6 4e-6)"}
+C {devices/vsource.sym} 1130 -160 0 0 {name=Vclk value="PULSE(0 1 1e-9 10e-9 10e-9 2e-6 4e-6)"}
 C {devices/lab_wire.sym} 1160 -220 0 0 {name=l31 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 1130 -90 0 0 {name=l32 lab=GND}
 C {devices/lab_wire.sym} 840 -360 3 0 {name=l33 sig_type=std_logic lab=clk}

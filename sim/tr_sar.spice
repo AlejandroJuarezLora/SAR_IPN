@@ -22,7 +22,7 @@ V4 vinn GND vsign
 .save i(v4)
 V5 vinp GND vsigp
 .save i(v5)
-Vclk clk GND PULSE(0 1 1e-9 1e-9 1e-9 2e-6 4e-6)
+Vclk clk GND PULSE(0 1 1e-9 10e-9 10e-9 2e-6 4e-6)
 .save i(vclk)
 Ven en GND PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)
 .save i(ven)
@@ -592,13 +592,13 @@ C1 cp cn 2f m=1
 
 .GLOBAL GND
 **** begin user architecture code
- .options method trap
-*.options method gear
-.options gmin 1e-15
-.options abstol 1e-15
-.options reltol 0.0001
-.options vntol 0.1e-6
-.options warn 1
+ *.options method trap
+.options method=gear
+.options gmin=1e-15
+.options abstol=1e-15
+.options reltol=0.0001
+.options vntol=0.1e-6
+.options warn=1
 
 .param MC_SWITCH=0
 .param vin=1
@@ -609,7 +609,7 @@ C1 cp cn 2f m=1
 .param VGND=0
 .param VPB=1.8
 .param VNB=0
-.tran 100e-9 48e-6
+.tran 100e-9 1e-6
 
 .control
 

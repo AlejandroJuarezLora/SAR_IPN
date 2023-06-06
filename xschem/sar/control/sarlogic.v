@@ -1,7 +1,5 @@
 `timescale 1ns/10ps
 module sar_logic(
-	input		avdd,
-	input		avss,
     input           clk,
     input           rstn,
     input           en,

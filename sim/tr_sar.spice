@@ -10,8 +10,12 @@
 *.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/tap/sky130_fd_sc_hd__tap_2.spice
 
 
-** opencircuitdesign pdks install
-.lib /home/alex/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/alex/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /home/alex/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/alex/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/alex/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
 
 **.subckt tr_sar
 V1 vss GND 0
@@ -22,15 +26,15 @@ V4 vinn GND vsign
 .save i(v4)
 V5 vinp GND vsigp
 .save i(v5)
-Vclk clk GND PULSE(0 1 1e-9 10e-9 10e-9 2e-6 4e-6)
+Vclk clk GND PULSE(0 1 2e-6 10e-9 10e-9 2e-6 4e-6)
 .save i(vclk)
-Ven en GND PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)
+Ven en GND 1
 .save i(ven)
 V3 cal GND 0
 .save i(v3)
 xsar vdd vdd vss result_7_ result_6_ result_5_ result_4_ result_3_ result_2_ result_1_ result_0_
 + vinn vss clk vinp en valid cal rstn sar
-V7 rstn GND 1.4
+V7 rstn GND PULSE(0 1 2e-6 10e-9 10e-9 100e-6 200e-6)
 .save i(v7)
 **.ends
 
@@ -68,8 +72,13 @@ xcom avss avdd clkc outp vp outn vn trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trim
 **** begin user architecture code
 
 
+Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dctlp0
++ dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5 dctln6 dctln7
++ dtrim0 dtrim1 dtrim2 dtrim3 dtrim4 dtrimb0 dtrimb1 dtrimb2 dtrimb3 dtrimb4 dclkc sar_logic
+
 .model adc_buff adc_bridge(in_low = 0.2 in_high=0.8)
 .model dac_buff dac_bridge(out_high = 1.2)
+
 Aad [clk rstn en comp cal] [dclk drstn den dcomp dcal] adc_buff
 Ada [dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4
 + dctln5 dctln6 dctln7 dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dclkc] [ctlp_0_ ctlp_1_ ctlp_2_
@@ -77,9 +86,7 @@ Ada [dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln
 + res0 res1 res2 res3 res4 res5 res6 res7 sample clkc] dac_buff
 Ada2 [dtrim4 dtrim3 dtrim2 dtrim1 dtrim0 dtrimb4 dtrimb3 dtrimb2 dtrimb1 dtrimb0] [trim_4_ trim_3_
 + trim_2_ trim_1_ trim_0_ trimb_4_ trimb_3_ trimb_2_ trimb_1_ trimb_0_ ] dac_buff
-Xuut dvdd dvss dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7
-+ dsamp dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5
-+ dctln6 dctln7 dtrim0 dtrim1 dtrim2 dtrim3 dtrim4 dtrimb0 dtrimb1 dtrimb2 dtrimb3 dtrimb4 dclkc sar_logic
+
 
 
 **** end user architecture code
@@ -594,10 +601,10 @@ C1 cp cn 2f m=1
 **** begin user architecture code
  *.options method trap
 .options method=gear
-.options gmin=1e-15
-.options abstol=1e-15
-.options reltol=0.0001
-.options vntol=0.1e-6
+.options gmin=1e-6
+.options abstol=1e-8
+.options reltol=0.01
+.options vntol=1e-6
 .options warn=1
 
 .param MC_SWITCH=0
@@ -609,55 +616,13 @@ C1 cp cn 2f m=1
 .param VGND=0
 .param VPB=1.8
 .param VNB=0
-.tran 100e-9 1e-6
+.tran 100e-9 48e-6
 
 .control
 
+save all
 run
-
-meas tran d0 find v(xsar.res0) at=47e-6
-meas tran d1 find v(xsar.res1) at=47e-6
-meas tran d2 find v(xsar.res2) at=47e-6
-meas tran d3 find v(xsar.res3) at=47e-6
-meas tran d4 find v(xsar.res4) at=47e-6
-meas tran d5 find v(xsar.res5) at=47e-6
-meas tran d6 find v(xsar.res6) at=47e-6
-meas tran d7 find v(xsar.res7) at=47e-6
-
-* meas tran d0 find v(xsar.result0) at=47e-6
-* meas tran d1 find v(xsar.result1) at=47e-6
-* meas tran d2 find v(xsar.result2) at=47e-6
-* meas tran d3 find v(xsar.result3) at=47e-6
-* meas tran d4 find v(xsar.result4) at=47e-6
-* meas tran d5 find v(xsar.result5) at=47e-6
-* meas tran d6 find v(xsar.result6) at=47e-6
-* meas tran d7 find v(xsar.result7) at=47e-6
-
-meas tran vpmax max xsar.vp
-meas tran vpmin min xsar.vp
-meas tran vpend find v(xsar.vp) at=39e-6
-
-meas tran vnmax max xsar.vn
-meas tran vnmin min xsar.vn
-meas tran vnend find v(xsar.vn) at=39e-6
-
-print d0
-print d1
-print d2
-print d3
-print d4
-print d5
-print d6
-print d7
-
-print vpmax
-print vpmin
-
-print vnmax
-print vnmin
-
-print vpend
-print vnend
+write tr_sar.raw
 
 .endc
 **** end user architecture code

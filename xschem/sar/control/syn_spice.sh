@@ -1,5 +1,3 @@
-#read_liberty -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-#read_verilog -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v
 read_verilog -DFUNCTIONAL -DSIM -DUSE_POWER_PINS -DUNIT_DELAY -lib /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v
 read_verilog sarlogic.v
 synth

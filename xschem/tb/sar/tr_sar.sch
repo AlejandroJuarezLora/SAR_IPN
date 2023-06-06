@@ -5,6 +5,25 @@ K {}
 V {}
 S {}
 E {}
+B 2 640 -1070 1440 -670 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=10e-6
+divx=5
+subdivx=1
+node=""
+color=""
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 P 4 5 0 -660 1370 -660 1370 0 0 0 0 -660 {}
 P 4 2 500 -660 500 0 {}
 P 4 2 -0 -250 500 -250 {}
@@ -77,10 +96,10 @@ only_toplevel=false
 format="tcleval( @value )"
 value="*.options method trap
 .options method=gear
-.options gmin=1e-15
-.options abstol=1e-15
-.options reltol=0.0001
-.options vntol=0.1e-6
+.options gmin=1e-6
+.options abstol=1e-8
+.options reltol=0.01
+.options vntol=1e-6
 .options warn=1
 
 .param MC_SWITCH=0
@@ -92,55 +111,13 @@ value="*.options method trap
 .param VGND=0
 .param VPB=1.8 
 .param VNB=0
-.tran 100e-9 1e-6
+.tran 100e-9 48e-6
 
 .control
 
+save all
 run
-
-meas tran d0 find v(xsar.res0) at=47e-6
-meas tran d1 find v(xsar.res1) at=47e-6
-meas tran d2 find v(xsar.res2) at=47e-6
-meas tran d3 find v(xsar.res3) at=47e-6
-meas tran d4 find v(xsar.res4) at=47e-6
-meas tran d5 find v(xsar.res5) at=47e-6
-meas tran d6 find v(xsar.res6) at=47e-6
-meas tran d7 find v(xsar.res7) at=47e-6
-
-* meas tran d0 find v(xsar.result0) at=47e-6
-* meas tran d1 find v(xsar.result1) at=47e-6
-* meas tran d2 find v(xsar.result2) at=47e-6
-* meas tran d3 find v(xsar.result3) at=47e-6
-* meas tran d4 find v(xsar.result4) at=47e-6
-* meas tran d5 find v(xsar.result5) at=47e-6
-* meas tran d6 find v(xsar.result6) at=47e-6
-* meas tran d7 find v(xsar.result7) at=47e-6
-
-meas tran vpmax max xsar.vp
-meas tran vpmin min xsar.vp
-meas tran vpend find v(xsar.vp) at=39e-6
-
-meas tran vnmax max xsar.vn
-meas tran vnmin min xsar.vn
-meas tran vnend find v(xsar.vn) at=39e-6
-
-print d0
-print d1
-print d2
-print d3
-print d4
-print d5
-print d6
-print d7
-
-print vpmax
-print vpmin
-
-print vnmax
-print vnmin
-
-print vpend
-print vnend
+write tr_sar.raw
 
 .endc"
 place=end}
@@ -151,11 +128,11 @@ C {devices/lab_wire.sym} 710 -540 3 1 {name=l24 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 750 -540 3 1 {name=l25 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 610 -400 0 0 {name=l27 sig_type=std_logic lab=vinn}
 C {devices/lab_wire.sym} 610 -500 0 0 {name=l28 sig_type=std_logic lab=vinp}
-C {devices/vsource.sym} 1130 -160 0 0 {name=Vclk value="PULSE(0 1 1e-9 10e-9 10e-9 2e-6 4e-6)"}
+C {devices/vsource.sym} 1130 -160 0 0 {name=Vclk value="PULSE(0 1 2e-6 10e-9 10e-9 2e-6 4e-6)"}
 C {devices/lab_wire.sym} 1160 -220 0 0 {name=l31 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 1130 -90 0 0 {name=l32 lab=GND}
 C {devices/lab_wire.sym} 840 -360 3 0 {name=l33 sig_type=std_logic lab=clk}
-C {devices/vsource.sym} 1090 -440 0 0 {name=Ven value="PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)"}
+C {devices/vsource.sym} 1090 -440 0 0 {name=Ven value=1}
 C {devices/lab_wire.sym} 1120 -500 0 0 {name=l35 sig_type=std_logic lab=en}
 C {devices/gnd.sym} 1090 -370 0 0 {name=l36 lab=GND}
 C {devices/lab_wire.sym} 870 -360 3 0 {name=l37 sig_type=std_logic lab=en}
@@ -210,7 +187,7 @@ C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
 C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
 C {sar/sar/sar.sym} 890 -270 0 0 {name=xsar}
-C {devices/vsource.sym} 580 -160 0 0 {name=V7 value=1.4}
+C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PULSE(0 1 2e-6 10e-9 10e-9 100e-6 200e-6)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}
@@ -222,8 +199,8 @@ value="
 ** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
-spice_ignore=false
+spice_ignore=true
 place=header}
 C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
 place=header
-spice_ignore=true}
+spice_ignore=false}

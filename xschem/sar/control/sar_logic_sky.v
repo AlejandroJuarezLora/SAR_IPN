@@ -182,7 +182,7 @@ module sar_logic(clk, rstn, en, comp, cal, valid, \result[0] , \result[1] , \res
   output \trimb[4] ;
   output valid;
   sky130_fd_sc_hd__clkinv_1 _107_ (
-    .A(\state[2] ),
+    .A(\state[2]),
     .Y(_039_)
   );
   sky130_fd_sc_hd__clkinv_1 _108_ (

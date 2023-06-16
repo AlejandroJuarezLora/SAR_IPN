@@ -7,6 +7,5 @@ dfflibmap -liberty /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd
 splitnets -ports
 opt
 clean
-#write_spice sar_logic_sky.sp
-write_verilog -noattr sar_logic_sky.v
+write_spice sar_logic_sky.sp
 #show

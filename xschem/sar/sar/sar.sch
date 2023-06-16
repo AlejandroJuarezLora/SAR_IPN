@@ -102,9 +102,9 @@ C {devices/lab_wire.sym} 780 -370 3 0 {name=l2 sig_type=std_logic lab=avss}
 C {devices/code.sym} -220 -160 0 0 {name=INCLUDES only_toplevel=false 
 format="tcleval(@value )"
 value="
-*.include $::DESIGN_PATH/sar/control/cmos_cells_digital.sp
-*.include $::DESIGN_PATH/sar/control/sar_logic.sp
-.include $::DESIGN_PATH/sar/control/sar_logic_sky.sp
+.include $::DESIGN_PATH/sar/control/cmos_cells_digital.sp
+.include $::DESIGN_PATH/sar/control/sar_logic.sp
+*.include $::DESIGN_PATH/sar/control/sar_logic_sky.v
 "
 spice_ignore=false
 }
@@ -163,7 +163,7 @@ C {devices/noconn.sym} 1220 -70 0 0 {name=l28
 }
 C {devices/ipin.sym} -100 -320 0 1 {name=p2 lab=rstn
 }
-C {devices/code.sym} -70 -180 0 0 {name=s1 only_toplevel=false value="
+C {devices/code.sym} -70 -180 0 0 {name=buses only_toplevel=false value="
 Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5 dctln6 dctln7 dtrim0 dtrim1 dtrim2 dtrim3 dtrim4 dtrimb0 dtrimb1 dtrimb2 dtrimb3 dtrimb4 dclkc sar_logic
 
 .model adc_buff adc_bridge(in_low = 0.2 in_high=0.8)

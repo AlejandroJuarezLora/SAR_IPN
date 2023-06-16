@@ -26,15 +26,15 @@ V4 vinn GND vsign
 .save i(v4)
 V5 vinp GND vsigp
 .save i(v5)
-Vclk clk GND PULSE(0 1 2e-6 10e-9 10e-9 2e-6 4e-6)
+Vclk clk GND PULSE(0 1 1e-9 1e-9 1e-9 2e-6 4e-6)
 .save i(vclk)
-Ven en GND 1
+Ven en GND PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)
 .save i(ven)
 V3 cal GND 0
 .save i(v3)
 xsar vdd vdd vss result_7_ result_6_ result_5_ result_4_ result_3_ result_2_ result_1_ result_0_
 + vinn vss clk vinp en valid cal rstn sar
-V7 rstn GND PULSE(0 1 2e-6 10e-9 10e-9 100e-6 200e-6)
+V7 rstn GND 1.4
 .save i(v7)
 **.ends
 
@@ -58,9 +58,9 @@ V7 rstn GND PULSE(0 1 2e-6 10e-9 10e-9 100e-6 200e-6)
 xlat avdd comp net1 avss outn outp latch
 **** begin user architecture code
 
-*.include /home/alex/Desktop/sar/xschem/sar/control/cmos_cells_digital.sp
-*.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic.sp
-.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic_sky.sp
+.include /home/alex/Desktop/sar/xschem/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic.sp
+*.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic_sky.v
 
 **** end user architecture code
 xdn vn sample avdd avss vinn ctln_7_ ctln_6_ ctln_5_ ctln_4_ ctln_3_ ctln_2_ ctln_1_ ctln_0_ avss
@@ -599,31 +599,73 @@ C1 cp cn 2f m=1
 
 .GLOBAL GND
 **** begin user architecture code
- *.options method trap
-.options method=gear
-.options gmin=1e-6
-.options abstol=1e-8
-.options reltol=0.01
-.options vntol=1e-6
-.options warn=1
+
+.options method trap
+*.options method gear
+.options gmin 1e-15
+.options abstol 1e-15
+.options reltol 0.0001
+.options vntol 0.1e-6
+.options warn 1
 
 .param MC_SWITCH=0
 .param vin=1
 .param vcm=0.7
 .param vsigp=1.2
 .param vsign=0.2
-.param VPWR=1.8
-.param VGND=0
-.param VPB=1.8
-.param VNB=0
-.tran 100e-9 48e-6
 
+.tran 100e-9 48e-6
+.save all
 .control
 
-save all
 run
 write tr_sar.raw
+meas tran d0 find v(xsar.res0) at=47e-6
+meas tran d1 find v(xsar.res1) at=47e-6
+meas tran d2 find v(xsar.res2) at=47e-6
+meas tran d3 find v(xsar.res3) at=47e-6
+meas tran d4 find v(xsar.res4) at=47e-6
+meas tran d5 find v(xsar.res5) at=47e-6
+meas tran d6 find v(xsar.res6) at=47e-6
+meas tran d7 find v(xsar.res7) at=47e-6
+
+* meas tran d0 find v(xsar.result0) at=47e-6
+* meas tran d1 find v(xsar.result1) at=47e-6
+* meas tran d2 find v(xsar.result2) at=47e-6
+* meas tran d3 find v(xsar.result3) at=47e-6
+* meas tran d4 find v(xsar.result4) at=47e-6
+* meas tran d5 find v(xsar.result5) at=47e-6
+* meas tran d6 find v(xsar.result6) at=47e-6
+* meas tran d7 find v(xsar.result7) at=47e-6
+
+meas tran vpmax max xsar.vp
+meas tran vpmin min xsar.vp
+meas tran vpend find v(xsar.vp) at=39e-6
+
+meas tran vnmax max xsar.vn
+meas tran vnmin min xsar.vn
+meas tran vnend find v(xsar.vn) at=39e-6
+
+print d0
+print d1
+print d2
+print d3
+print d4
+print d5
+print d6
+print d7
+
+print vpmax
+print vpmin
+
+print vnmax
+print vnmin
+
+print vpend
+print vnend
 
 .endc
+
+
 **** end user architecture code
 .end

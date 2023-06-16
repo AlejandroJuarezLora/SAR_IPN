@@ -1,0 +1,41 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {type=primitive
+template="name=sar_control_sym model=sar_logic"
+format="@name @model"}
+E {}
+L 4 0 -130 110 -130 {}
+L 4 110 -60 110 0 {}
+L 4 0 0 110 0 {}
+L 4 0 -60 0 0 {}
+L 4 40 -150 40 -130 {}
+L 4 70 -150 70 -130 {}
+L 4 110 -110 140 -110 {}
+L 4 110 -90 140 -90 {}
+L 4 110 -70 140 -70 {}
+L 4 110 -50 140 -50 {}
+L 4 110 -30 140 -30 {}
+L 4 0 -130 0 -70 {}
+L 4 110 -130 110 -70 {}
+L 4 -30 -80 0 -80 {}
+L 4 -30 -40 0 -40 {}
+L 4 -30 -10 0 -10 {}
+L 4 -30 -110 0 -110 {}
+L 4 -0 -70 -0 -60 {}
+L 4 110 -70 110 -60 {}
+L 4 110 -10 140 -10 {}
+C {devices/lab_pin.sym} -30 -110 0 0 {name=p1 sig_type=std_logic lab=clkc}
+C {devices/lab_pin.sym} -30 -80 0 0 {name=p2 sig_type=std_logic lab=ctlp[7:0]}
+C {devices/lab_pin.sym} -30 -40 0 0 {name=p3 sig_type=std_logic lab=ctln[7:0]}
+C {devices/lab_pin.sym} -30 -10 0 0 {name=p4 sig_type=std_logic lab=sample}
+C {devices/lab_pin.sym} 140 -70 0 1 {name=p5 sig_type=std_logic lab=clk}
+C {devices/lab_pin.sym} 140 -50 0 1 {name=p6 sig_type=std_logic lab=result[7:0]}
+C {devices/lab_pin.sym} 140 -30 0 1 {name=p7 sig_type=std_logic lab=valid}
+C {devices/lab_pin.sym} 140 -10 0 1 {name=p8 sig_type=std_logic lab=rstn}
+C {devices/lab_pin.sym} 140 -90 0 1 {name=p9 sig_type=std_logic lab=en}
+C {devices/lab_pin.sym} 140 -110 0 1 {name=p10 sig_type=std_logic lab=cal}
+C {devices/lab_pin.sym} 40 -150 0 0 {name=p11 sig_type=std_logic lab=trim[4:0]}
+C {devices/lab_pin.sym} 70 -150 2 0 {name=p12 sig_type=std_logic lab=trimb[4:0]}

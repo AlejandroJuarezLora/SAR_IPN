@@ -9,7 +9,7 @@ B 2 10 20 810 420 {flags=graph
 y1=0
 y2=1.3
 ypos1=0
-ypos2=2
+ypos2=1.3
 divy=5
 subdivy=1
 unity=1
@@ -30,10 +30,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+digital=1}
 B 2 0 440 800 840 {flags=graph
-y1=0.19
-y2=1.2
+y1=-0.998784
+y2=2.48246
 ypos1=0
 ypos2=2
 divy=5
@@ -53,11 +53,11 @@ logy=0
 color="4 7"
 node="xsar.vp
 xsar.vn"}
-B 2 830 20 1630 420 {flags=graph
+B 2 10 870 810 1270 {flags=graph
 y1=0
 y2=1.3
-ypos1=0
-ypos2=2
+ypos1=-0.0628555
+ypos2=1.09872
 divy=5
 subdivy=1
 unity=1
@@ -72,9 +72,105 @@ unitx=1
 logx=0
 logy=0
 hilight_wave=0
-color="7 11"
+color="7 11 4 8 8 9"
 node="xsar.clkc
-clk"}
+clk
+xsar.comp
+en
+xsar.sample
+rstn"
+digital=1}
+B 2 850 20 1650 420 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=4.8e-05
+divx=5
+subdivx=1
+node="xsar.ctlp_7_
+xsar.ctlp_6_
+xsar.ctlp_5_
+xsar.ctlp_4_
+xsar.ctlp_3_
+xsar.ctlp_2_
+xsar.ctlp_1_
+xsar.ctlp_0_"
+color="4 4 4 4 4 4 4 4"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=1}
+B 2 850 460 1650 860 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=4.8e-05
+divx=5
+subdivx=1
+node="xsar.ctln_7_
+xsar.ctln_6_
+xsar.ctln_5_
+xsar.ctln_4_
+xsar.ctln_3_
+xsar.ctln_2_
+xsar.ctln_1_
+xsar.ctln_0_"
+color="4 4 4 4 4 4 4 4"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=1}
+B 2 1700 20 2500 420 {flags=graph
+y1=-0.562543
+y2=2.72204
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=4.8e-05
+divx=5
+subdivx=1
+node="vinp
+vinn"
+color="9 9"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 840 880 1640 1280 {flags=graph
+y1=-0.239942
+y2=1.4826
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=4.8e-05
+divx=5
+subdivx=1
+node=xsar.comp
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 P 4 5 0 -660 1370 -660 1370 0 0 0 0 -660 {}
 P 4 2 500 -660 500 0 {}
 P 4 2 -0 -250 500 -250 {}
@@ -155,10 +251,10 @@ value="
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=1
+.param vin=0.5
 .param vcm=0.7
-.param vsigp=1.2
-.param vsign=0.2
+.param vsigp=0.001
+.param vsign=1.4
 
 .tran 100e-9 48e-6
 .save all
@@ -225,7 +321,7 @@ C {devices/vsource.sym} 1130 -160 0 0 {name=Vclk value="PULSE(0 1 1e-9 1e-9 1e-9
 C {devices/lab_wire.sym} 1160 -220 0 0 {name=l31 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 1130 -90 0 0 {name=l32 lab=GND}
 C {devices/lab_wire.sym} 840 -360 3 0 {name=l33 sig_type=std_logic lab=clk}
-C {devices/vsource.sym} 1090 -440 0 0 {name=Ven value="PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)"}
+C {devices/vsource.sym} 1090 -440 0 0 {name=Ven value=1.4}
 C {devices/lab_wire.sym} 1120 -500 0 0 {name=l35 sig_type=std_logic lab=en}
 C {devices/gnd.sym} 1090 -370 0 0 {name=l36 lab=GND}
 C {devices/lab_wire.sym} 870 -360 3 0 {name=l37 sig_type=std_logic lab=en}
@@ -280,7 +376,7 @@ C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
 C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
 C {sar/sar/sar.sym} 890 -270 0 0 {name=xsar}
-C {devices/vsource.sym} 580 -160 0 0 {name=V7 value=1.4}
+C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}

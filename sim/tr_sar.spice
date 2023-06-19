@@ -28,13 +28,13 @@ V5 vinp GND vsigp
 .save i(v5)
 Vclk clk GND PULSE(0 1 1e-9 1e-9 1e-9 2e-6 4e-6)
 .save i(vclk)
-Ven en GND PULSE(0 1 0.5e-6 0.1e-6 0.1e-6 10e-6 10e-3)
+Ven en GND 1.4
 .save i(ven)
 V3 cal GND 0
 .save i(v3)
 xsar vdd vdd vss result_7_ result_6_ result_5_ result_4_ result_3_ result_2_ result_1_ result_0_
 + vinn vss clk vinp en valid cal rstn sar
-V7 rstn GND 1.4
+V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
 .save i(v7)
 **.ends
 
@@ -609,10 +609,10 @@ C1 cp cn 2f m=1
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=1
+.param vin=0.5
 .param vcm=0.7
-.param vsigp=1.2
-.param vsign=0.2
+.param vsigp=0.001
+.param vsign=1.4
 
 .tran 100e-9 48e-6
 .save all

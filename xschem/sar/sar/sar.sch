@@ -104,7 +104,7 @@ format="tcleval(@value )"
 value="
 .include $::DESIGN_PATH/sar/control/cmos_cells_digital.sp
 .include $::DESIGN_PATH/sar/control/sar_logic.sp
-*.include $::DESIGN_PATH/sar/control/sar_logic_sky.v
+*.include $::DESIGN_PATH/sar/control/sar_logic_sky.sp
 "
 spice_ignore=false
 }

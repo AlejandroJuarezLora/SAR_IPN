@@ -32,8 +32,8 @@ logx=0
 logy=0
 digital=1}
 B 2 0 440 800 840 {flags=graph
-y1=-0.998784
-y2=2.48246
+y1=0.0491338
+y2=1.418
 ypos1=0
 ypos2=2
 divy=5
@@ -109,8 +109,8 @@ digital=1}
 B 2 850 460 1650 860 {flags=graph
 y1=0
 y2=2
-ypos1=0
-ypos2=2
+ypos1=0.2
+ypos2=2.2
 divy=5
 subdivy=1
 unity=1
@@ -251,10 +251,10 @@ value="
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=0.5
+.param vin=1
 .param vcm=0.7
-.param vsigp=0.001
-.param vsign=1.4
+.param vsigp=\{vcm + vin/2\\\}
+.param vsign=\{vcm - vin/2\\\}
 
 .tran 100e-9 48e-6
 .save all

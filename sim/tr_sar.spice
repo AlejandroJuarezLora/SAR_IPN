@@ -1,21 +1,21 @@
 ** sch_path: /home/alex/Desktop/sar/xschem/tb/sar/tr_sar.sch
 
-.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_4.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/decap/sky130_fd_sc_hd__decap_8.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/decap/sky130_fd_sc_hd__decap_3.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/buf/sky130_fd_sc_hd__buf_1.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_1.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_2.spice
-*.include /home/alex/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/cells/tap/sky130_fd_sc_hd__tap_2.spice
+.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_4.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/decap/sky130_fd_sc_hd__decap_8.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/decap/sky130_fd_sc_hd__decap_3.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/buf/sky130_fd_sc_hd__buf_1.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_1.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_2.spice
+*.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/tap/sky130_fd_sc_hd__tap_2.spice
 
 
 .param mc_mm_switch=0
 .param mc_pr_switch=0
-.include /home/alex/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
-.include /home/alex/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
-.include /home/alex/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
-.include /home/alex/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt.spice
+.include /home/alex/pdk/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/alex/pdk/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/alex/pdk/sky130B/libs.tech/ngspice/corners/tt/specialized_cells.spice
 
 **.subckt tr_sar
 V1 vss GND 0
@@ -60,7 +60,7 @@ xlat avdd comp net1 avss outn outp latch
 
 .include /home/alex/Desktop/sar/xschem/sar/control/cmos_cells_digital.sp
 .include /home/alex/Desktop/sar/xschem/sar/control/sar_logic.sp
-*.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic_sky.v
+*.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic_sky.sp
 
 **** end user architecture code
 xdn vn sample avdd avss vinn ctln_7_ ctln_6_ ctln_5_ ctln_4_ ctln_3_ ctln_2_ ctln_1_ ctln_0_ avss
@@ -495,10 +495,10 @@ xc7_0_ top n7 unitcap
 x2 vss vss vdd vdd sky130_fd_sc_hd__decap_8
 x4 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
 x1 VGND VNB VPB VPWR sky130_fd_sc_hd__decap_3
-XM1 in en_buf out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM1 in en out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=10 m=10
-XM2 in en out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 in en_buf out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=10 m=10
 .ends
@@ -609,10 +609,10 @@ C1 cp cn 2f m=1
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=0.5
+.param vin=1
 .param vcm=0.7
-.param vsigp=0.001
-.param vsign=1.4
+.param vsigp={vcm + vin/2}
+.param vsign={vcm - vin/2}
 
 .tran 100e-9 48e-6
 .save all

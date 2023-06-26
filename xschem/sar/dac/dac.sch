@@ -28,7 +28,7 @@ N 1470 -410 1470 -380 { lab=ctl[3]}
 N 1690 -410 1690 -380 { lab=ctl[2]}
 N 1910 -410 1910 -380 { lab=ctl[1]}
 N 2130 -410 2130 -380 { lab=ctl[0]}
-N 2350 -410 2350 -380 { lab=ctl[0]}
+N 2350 -410 2350 -380 { lab=dum}
 C {devices/ipin.sym} 110 -650 0 0 {name=p2 lab=vin}
 C {devices/ipin.sym} 260 -505 0 0 {name=p5 lab=sample}
 C {devices/lab_wire.sym} 210 -710 0 0 {name=l24 sig_type=std_logic lab=sample}

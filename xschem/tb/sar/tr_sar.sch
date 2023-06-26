@@ -32,8 +32,8 @@ logx=0
 logy=0
 digital=1}
 B 2 0 440 800 840 {flags=graph
-y1=0.0491338
-y2=1.418
+y1=-0.0058
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
@@ -251,7 +251,7 @@ value="
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=1
+.param vin=0.1
 .param vcm=0.7
 .param vsigp=\{vcm + vin/2\\\}
 .param vsign=\{vcm - vin/2\\\}

@@ -1,0 +1,507 @@
+timestamp 1465508813
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use trim trim_0 0 1 730 -1 0 3332
+use via23 via23_0 1 0 1198 0 1 -6
+use via2_1 via2_1_0 0 1 3380 -1 0 1458
+use via23 via23_1 1 0 4971 0 1 -6
+use via23 via23_2 1 0 8744 0 1 -6
+use via2_1 via2_1_1 0 1 6724 1 0 1318
+use via23 via23_3 1 0 4972 0 1 3650
+use trim trim_1 0 -1 9374 -1 0 3332
+use comparator_core comparator_core_0 1 0 3650 0 1 539
+port "vp" 20 5202 3970 5302 4020 m4
+port "vn" 19 4802 3970 4902 4020 m4
+port "vss" 17 0 34 80 114 m3
+port "vdd" 16 0 194 80 274 m3
+port "outp" 13 5469 -40 5549 0 m2
+port "outn" 12 4555 -40 4635 0 m2
+port "trimb_4" 7 9424 -40 9484 -10 m2
+port "trim_4" 6 620 -40 680 -10 m2
+port "trimb_1" 8 9544 -40 9604 -10 m2
+port "trim_1" 5 500 -40 560 -10 m2
+port "trimb_0" 9 9664 -40 9724 -10 m2
+port "trim_0" 4 380 -40 440 -10 m2
+port "trimb_2" 10 9784 -40 9844 -10 m2
+port "trim_2" 3 260 -40 320 -10 m2
+port "trimb_3" 11 9904 -40 9964 -10 m2
+port "trim_3" 2 140 -40 200 -10 m2
+port "clk" 14 3512 -40 3572 -10 m1
+node "vp" 0 47.5915 5202 3970 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 300 0 0 0 0
+node "vn" 0 47.5915 4802 3970 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 300 0 0 0 0
+node "vss" 6 2435.49 0 34 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 808320 20368 0 0 0 0 0 0
+node "vdd" 0 9460.39 0 194 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2163200 54080 0 0 0 0 0 0
+node "m2_8795_34#" 1 205.079 8795 34 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35400 1300 0 0 0 0 0 0 0 0
+node "outp" 1 215.57 5469 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49520 1398 0 0 0 0 0 0 0 0
+node "m2_5012_34#" 1 116.729 5012 34 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43600 1250 0 0 0 0 0 0 0 0
+node "outn" 1 200.247 4555 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49520 1398 0 0 0 0 0 0 0 0
+node "m2_1249_34#" 1 205.079 1249 34 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35400 1300 0 0 0 0 0 0 0 0
+node "trimb_4" 3 281.168 9424 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80520 2804 0 0 0 0 0 0 0 0
+node "trim_4" 3 281.168 620 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80520 2804 0 0 0 0 0 0 0 0
+node "trimb_1" 4 249.67 9544 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120840 4148 0 0 0 0 0 0 0 0
+node "trim_1" 4 249.67 500 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120840 4148 0 0 0 0 0 0 0 0
+node "trimb_0" 5 217.408 9664 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146160 4992 0 0 0 0 0 0 0 0
+node "trim_0" 5 217.408 380 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146160 4992 0 0 0 0 0 0 0 0
+node "trimb_2" 6 257.385 9784 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 169920 5784 0 0 0 0 0 0 0 0
+node "trim_2" 6 257.385 260 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 169920 5784 0 0 0 0 0 0 0 0
+node "trimb_3" 7 956.239 9904 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 209820 7114 0 0 0 0 0 0 0 0
+node "trim_3" 7 956.239 140 -40 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 209820 7114 0 0 0 0 0 0 0 0
+node "clk" 4 941 3512 -40 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 126540 4338 0 0 0 0 0 0 0 0 0 0
+node "m1_6195_1365#" 2 262.021 6195 1365 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25714 1210 0 0 0 0 0 0 0 0 0 0
+node "m1_3350_1365#" 2 241.503 3350 1365 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25714 1210 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd" "outn" 77.3473
+cap "trim_4" "m2_1249_34#" 46.8998
+cap "outp" "m2_5012_34#" 62.357
+cap "trimb_4" "vdd" 63.5337
+cap "outp" "clk" 0.841093
+cap "m2_1249_34#" "vdd" 67.9016
+cap "m1_3350_1365#" "vdd" 1.21476
+cap "vss" "outn" 65.972
+cap "vp" "vdd" 4.28238
+cap "vss" "trimb_4" 46.9628
+cap "trimb_0" "vdd" 74.8437
+cap "vss" "m2_1249_34#" 50.8438
+cap "vss" "m1_3350_1365#" 0.182186
+cap "trimb_0" "trimb_2" 966.993
+cap "vdd" "m2_5012_34#" 74.7886
+cap "trimb_0" "vss" 36.7686
+cap "clk" "vdd" 95.5891
+cap "trimb_3" "vdd" 412.647
+cap "trim_2" "vdd" 111.654
+cap "vss" "m2_5012_34#" 53.3148
+cap "clk" "vss" 43.0025
+cap "trimb_2" "trimb_3" 1065.28
+cap "vss" "trimb_3" 41.3112
+cap "vn" "vdd" 4.28238
+cap "trim_2" "trim_3" 1065.28
+cap "vss" "trim_2" 36.7686
+cap "trimb_1" "vdd" 61.2335
+cap "outp" "vdd" 77.3473
+cap "trim_4" "trim_1" 528.056
+cap "trim_0" "trim_2" 966.993
+cap "m2_5012_34#" "outn" 62.357
+cap "clk" "outn" 84.2586
+cap "trim_1" "vdd" 61.2335
+cap "trimb_1" "vss" 36.7686
+cap "outp" "vss" 65.972
+cap "m2_8795_34#" "vdd" 67.9016
+cap "trim_4" "vdd" 63.5337
+cap "clk" "m1_3350_1365#" 18.0641
+cap "vss" "trim_1" 36.7686
+cap "trim_0" "trim_1" 816.457
+cap "m2_8795_34#" "vss" 50.8438
+cap "trim_4" "vss" 46.9628
+cap "outp" "outn" 4.1387
+cap "trimb_2" "vdd" 111.654
+cap "trimb_1" "trimb_4" 528.056
+cap "clk" "m2_5012_34#" 78.511
+cap "trim_3" "vdd" 412.647
+cap "vss" "vdd" 4673.1
+cap "m1_6195_1365#" "vdd" 1.78829
+cap "trim_0" "vdd" 74.8437
+cap "vn" "vp" 11.3527
+cap "trimb_2" "vss" 36.7686
+cap "trimb_0" "trimb_1" 816.457
+cap "vss" "trim_3" 41.3112
+cap "m2_8795_34#" "trimb_4" 46.8998
+cap "m1_6195_1365#" "vss" 0.628653
+cap "trim_0" "vss" 36.7686
+cap "trim_0/n4" "trim_0/trim_sw_0/d_4" 3.83818
+cap "trim_0/trim_sw_0/d_3" "trim_0/trim_sw_0/vss" 1.41261
+cap "trim_0/n4" "trim_0/trim_sw_0/d_1" 1.19287
+cap "trim_0/trim_sw_0/d_2" "trim_0/trim_sw_0/vss" 2.02785
+cap "trim_0/trim_sw_0/d_4" "trim_0/trim_sw_0/d_1" 11.5739
+cap "trim_0/trim_sw_0/d_0" "trim_0/trim_sw_0/d_4" 3.12376
+cap "trim_0/n1" "vdd" 0.432056
+cap "trim_0/trim_sw_0/vss" "trim_0/n4" 0.147049
+cap "trim_0/trim_sw_0/vss" "trim_0/trim_sw_0/d_4" 69.4343
+cap "trim_0/trim_sw_0/vss" "trim_0/trim_sw_0/d_1" 15.4867
+cap "trim_0/trim_sw_0/d_0" "trim_0/trim_sw_0/vss" 3.0615
+cap "trim_0/n4" "vdd" 9.93283
+cap "trim_0/trim_sw_0/d_4" "vdd" 36.8629
+cap "vdd" "trim_0/trim_sw_0/d_1" 0.227093
+cap "trim_0/trim_sw_0/vss" "vdd" 43.0376
+cap "trim_0/trim_sw_0/d_3" "trim_0/trim_sw_0/d_4" 1.42995
+cap "trim_0/trim_sw_0/d_2" "trim_0/trim_sw_0/d_4" 2.03204
+cap "trim_0/drain" "trim_0/trim_sw_0/vss" 0.472309
+cap "trim_0/trim_sw_0/vss" "vdd" 24.2911
+cap "trim_0/n4" "trim_0/trim_sw_0/vss" 2.93167
+cap "trim_0/n1" "vdd" 0.143281
+cap "trim_0/via2_1/m1_0_n30#" "vdd" 2.22162
+cap "vdd" "trim_0/n2" 1.32568
+cap "trim_0/drain" "vdd" 2.41807
+cap "trim_0/drain" "trim_0/n4" 0.891844
+cap "trim_0/n4" "vdd" 15.4469
+cap "vdd" "trim_0/trim_sw_0/vss" 0.591361
+cap "comparator_core_0/clk" "comparator_core_0/outn" -1.55431e-15
+cap "comparator_core_0/clk" "trim_0/trim_sw_0/vss" 0.335401
+cap "trim_0/n4" "trim_0/drain" 3.23337
+cap "vdd" "trim_0/n2" 0.232594
+cap "vdd" "trim_0/via2_1/m1_0_n30#" 0.516736
+cap "vdd" "trim_0/drain" 7.44478
+cap "comparator_core_0/clk" "trim_0/drain" 29.0562
+cap "trim_0/n4" "vdd" 1.06789
+cap "trim_0/n4" "comparator_core_0/clk" 0.204986
+cap "vdd" "comparator_core_0/clk" 2.92529
+cap "trim_0/drain" "trim_0/trim_sw_0/vss" 1.11773
+cap "trim_0/drain" "comparator_core_0/outn" 3.01153
+cap "vdd" "comparator_core_0/outp" 7.15385
+cap "comparator_core_0/outp" "comparator_core_0/diff" -1.11022e-16
+cap "via23_1/m2_1_40#" "via2_1_1/m1_0_n30#" 0.255341
+cap "via23_1/m2_1_40#" "trim_0/trim_array_0/C0_3/m2_135_n63#" 0.0204326
+cap "vdd" "trim_0/drain" 1.62809
+cap "via2_1_1/m1_0_n30#" "vdd" 1.09475
+cap "vdd" "comparator_core_0/Minp_0/a_n33_51#" 1.12678
+cap "via23_1/m2_1_40#" "comparator_core_0/outn" -8.60461
+cap "comparator_core_0/outn" "comparator_core_0/clk" 4.24152
+cap "comparator_core_0/outn" "vdd" 7.15385
+cap "comparator_core_0/outn" "comparator_core_0/diff" -1.11022e-16
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/outp" 2.98419
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_2/m2_135_n63#" 0.0197029
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_1/m2_135_n63#" 0.00510816
+cap "via23_1/m2_1_40#" "comparator_core_0/clk" -7.76043
+cap "comparator_core_0/outn" "trim_0/drain" 2.98419
+cap "via23_1/m2_1_40#" "vdd" 23.9641
+cap "vdd" "comparator_core_0/clk" 12.2754
+cap "trim_0/trim_array_0/C0_2/m2_135_n63#" "via23_1/m2_1_40#" 0.0197029
+cap "vdd" "comparator_core_0/diff" 2.00792
+cap "vdd" "comparator_core_0/Minn_0/a_n33_51#" 1.12678
+cap "via23_1/m2_1_40#" "comparator_core_0/outp" -8.60461
+cap "trim_0/trim_array_0/C0_1/m2_135_n63#" "via23_1/m2_1_40#" 0.00510816
+cap "comparator_core_0/outp" "comparator_core_0/clk" 1.08157
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_3/m2_135_n63#" 0.0204326
+cap "via23_1/m2_1_40#" "trim_0/drain" 0.255341
+cap "trim_1/via2_1/m1_0_n30#" "vdd" 0.173749
+cap "comparator_core_0/clk" "trim_1/n4" 0.204986
+cap "vdd" "trim_1/n4" 0.359072
+cap "via2_1_1/m1_0_n30#" "trim_1/n4" 3.23337
+cap "comparator_core_0/clk" "vdd" 6.33178
+cap "comparator_core_0/clk" "via23_1/m2_1_40#" 1.44225
+cap "comparator_core_0/clk" "via2_1_1/m1_0_n30#" 26.7811
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/outp" 3.01153
+cap "vdd" "via2_1_1/m1_0_n30#" 5.31475
+cap "comparator_core_0/clk" "trim_1/m2_2296_1679#" 0.25209
+cap "via2_1_1/m1_0_n30#" "via23_1/m2_1_40#" 0.597503
+cap "vdd" "trim_1/m2_2296_1679#" 0.198842
+cap "vdd" "trim_1/via2_6/m1_0_n30#" 0.0782083
+cap "via23_2/m2_1_40#" "vdd" 18.3826
+cap "via2_1_1/m1_0_n30#" "trim_1/n4" 0.891844
+cap "vdd" "trim_1/n2" 1.48006
+cap "vdd" "trim_1/n4" 10.6954
+cap "via2_1_1/m1_0_n30#" "vdd" 5.08144
+cap "via23_2/m2_1_40#" "trim_1/n4" 1.96693
+cap "via2_1_1/m1_0_n30#" "via23_2/m2_1_40#" 0.992533
+cap "vdd" "trim_1/via2_1/m1_0_n30#" 2.5646
+cap "trim_1/trim_sw_0/d_2" "trim_1/trim_sw_0/d_4" 2.03204
+cap "trim_1/trim_sw_0/d_3" "via23_2/m2_1_40#" 1.41261
+cap "trim_1/trim_sw_0/d_0" "via23_2/m2_1_40#" 3.0615
+cap "via23_2/m2_1_40#" "trim_1/trim_sw_0/d_1" 15.4867
+cap "trim_1/trim_sw_0/d_4" "via23_2/m2_1_40#" 69.4343
+cap "trim_1/trim_sw_0/d_3" "trim_1/trim_sw_0/d_4" 1.42995
+cap "via23_2/m2_1_40#" "vdd" 42.1396
+cap "trim_1/trim_sw_0/d_0" "trim_1/trim_sw_0/d_4" 3.12376
+cap "trim_1/trim_sw_0/d_4" "trim_1/trim_sw_0/d_1" 11.5739
+cap "trim_1/n4" "via23_2/m2_1_40#" 1.11179
+cap "trim_1/n1" "vdd" 0.575337
+cap "trim_1/trim_sw_0/d_1" "vdd" 0.227093
+cap "trim_1/trim_sw_0/d_4" "vdd" 23.8665
+cap "trim_1/n4" "trim_1/trim_sw_0/d_1" 1.19287
+cap "trim_1/n4" "trim_1/trim_sw_0/d_4" 3.83818
+cap "trim_1/trim_sw_0/d_2" "via23_2/m2_1_40#" 2.02785
+cap "trim_1/n4" "vdd" 11.5425
+cap "vdd" "via23_2/m2_1_40#" 7.19904
+cap "trim_1/n4" "vdd" 3.85066
+cap "trim_1/trim_sw_0/d_4" "vdd" 12.9963
+cap "vdd" "trim_0/trim_sw_0/d_0" 3.65632
+cap "trim_0/n4" "vdd" 1.23823
+cap "trim_0/trim_sw_0/d_3" "trim_0/trim_sw_0/d_0" 0.35481
+cap "trim_0/trim_sw_0/d_0" "trim_0/trim_sw_0/d_2" 1.58683
+cap "vdd" "trim_0/n3" 1.20111
+cap "trim_0/trim_sw_0/d_1" "trim_0/trim_sw_0/d_0" 4.34192
+cap "trim_0/trim_sw_0/d_1" "trim_0/n4" 1.19287
+cap "trim_0/trim_sw_0/d_3" "trim_0/n3" 0.509267
+cap "vdd" "trim_0/trim_sw_0/d_2" 5.83779
+cap "trim_0/trim_sw_0/d_3" "vdd" 1.1972
+cap "trim_0/trim_sw_0/d_3" "trim_0/trim_sw_0/d_2" 2.25867
+cap "trim_0/trim_sw_0/d_1" "vdd" 3.65632
+cap "trim_0/trim_sw_0/d_1" "trim_0/trim_sw_0/d_2" 0.525255
+cap "trim_0/trim_sw_0/d_1" "trim_0/trim_sw_0/d_3" 0.35481
+cap "trim_0/trim_sw_0/d_0" "trim_0/trim_sw_0/vss" 19.5353
+cap "trim_0/trim_sw_0/d_4" "trim_0/trim_sw_0/d_0" 1.27945
+cap "trim_0/trim_sw_0/d_0" "trim_0/n0" 0.322023
+cap "vdd" "trim_0/trim_sw_0/vss" 11.253
+cap "trim_0/n2" "vdd" 2.73402
+cap "trim_0/trim_sw_0/vss" "trim_0/trim_sw_0/d_2" 15.0296
+cap "trim_0/trim_sw_0/d_3" "trim_0/trim_sw_0/vss" 17.9772
+cap "trim_0/n2" "trim_0/trim_sw_0/d_2" 0.673072
+cap "trim_0/trim_sw_0/d_3" "trim_0/n2" 0.562327
+cap "trim_0/n1" "trim_0/trim_sw_0/d_0" 0.322023
+cap "trim_0/trim_sw_0/d_4" "vdd" 6.65897
+cap "vdd" "trim_0/n0" 1.27886
+cap "trim_0/trim_sw_0/d_4" "trim_0/trim_sw_0/d_2" 0.85355
+cap "trim_0/trim_sw_0/d_4" "trim_0/trim_sw_0/d_3" 0.608797
+cap "trim_0/trim_sw_0/d_1" "trim_0/trim_sw_0/vss" 38.4624
+cap "trim_0/trim_sw_0/d_1" "trim_0/trim_sw_0/d_4" 9.72881
+cap "vdd" "trim_0/n1" 1.27886
+cap "trim_0/n4" "trim_0/drain" 19.6446
+cap "trim_0/trim_sw_0/d_3" "trim_0/n3" 0.00297994
+cap "vdd" "trim_0/n3" 0.175381
+cap "trim_0/n2" "trim_0/trim_sw_0/d_2" 0.0724956
+cap "trim_0/trim_sw_0/d_3" "trim_0/n2" 0.0645422
+cap "trim_0/trim_sw_0/d_1" "trim_0/n2" 0.0480652
+cap "vdd" "trim_0/n2" 0.0135018
+cap "trim_0/trim_sw_0/d_0" "trim_0/n2" 0.0396369
+cap "trim_0/n4" "comparator_core_0/via2_1_5/m1_0_n30#" 1.18795
+cap "trim_0/trim_sw_0/vss" "trim_0/drain" -0.0650286
+cap "trim_0/n4" "comparator_core_0/vn" 8.74636
+cap "trim_0/drain" "comparator_core_0/vn" 40.385
+cap "trim_0/n0" "comparator_core_0/vn" 0.0927092
+cap "trim_0/drain" "comparator_core_0/clk" 33.5411
+cap "vdd" "trim_0/drain" -0.0866801
+cap "comparator_core_0/vn" "trim_0/n2" 2.7569
+cap "trim_0/n4" "trim_0/drain" 21.6213
+cap "trim_0/drain" "trim_0/n1" 0.34733
+cap "trim_0/n0" "trim_0/drain" 0.34733
+cap "comparator_core_0/vn" "trim_0/n3" 5.57816
+cap "trim_0/drain" "trim_0/n2" 1.6149
+cap "comparator_core_0/vn" "comparator_core_0/clk" 0.165979
+cap "via23_3/m2_1_40#" "comparator_core_0/vn" 0.35599
+cap "trim_0/drain" "comparator_core_0/outn" 19.0289
+cap "trim_0/drain" "trim_0/n3" 1.04199
+cap "via23_3/m2_1_40#" "comparator_core_0/clk" 0.00676947
+cap "via23_1/m2_1_40#" "vdd" 0.171643
+cap "comparator_core_0/diff" "trim_0/drain" -2.84217e-14
+cap "comparator_core_0/outp" "via2_1_1/m1_0_n30#" 19.0188
+cap "comparator_core_0/outp" "vdd" 0.0429836
+cap "via23_1/m2_1_40#" "trim_0/drain" 0.509047
+cap "comparator_core_0/outn" "trim_1/trim_array_0/C0_6/m2_135_n63#" 0.00167333
+cap "trim_0/drain" "comparator_core_0/vn" 2.16216
+cap "via23_1/m2_1_40#" "comparator_core_0/clk" 0.0520352
+cap "comparator_core_0/clk" "comparator_core_0/vn" 0.0597525
+cap "comparator_core_0/outp" "via23_1/m2_1_40#" 0.0335436
+cap "comparator_core_0/outp" "trim_0/drain" 0.0492168
+cap "comparator_core_0/outp" "comparator_core_0/clk" 0.0335281
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_8/m2_135_n63#" 0.0436247
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_9/m2_135_n63#" 0.0436247
+cap "via23_1/m2_1_40#" "trim_0/trim_array_0/C0_6/m2_135_n63#" 0.0436247
+cap "comparator_core_0/outn" "via2_1_1/m1_0_n30#" 0.0492168
+cap "comparator_core_0/outp" "trim_0/trim_array_0/C0_6/m2_135_n63#" 0.00167333
+cap "comparator_core_0/outn" "vdd" 0.0429836
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_6/m2_135_n63#" 0.0436247
+cap "via23_1/m2_1_40#" "comparator_core_0/outn" 0.0335436
+cap "comparator_core_0/outn" "comparator_core_0/vn" 8.52651e-14
+cap "comparator_core_0/outn" "trim_0/drain" 19.0188
+cap "via23_1/m2_1_40#" "trim_0/trim_array_0/C0_7/m2_135_n63#" 0.00623209
+cap "via23_1/m2_1_40#" "trim_0/trim_array_0/C0_8/m2_135_n63#" 0.0436247
+cap "comparator_core_0/outn" "comparator_core_0/clk" -1.42109e-14
+cap "comparator_core_0/outp" "comparator_core_0/vp" 5.68434e-14
+cap "via23_1/m2_1_40#" "trim_0/trim_array_0/C0_5/m2_135_n63#" 0.0186963
+cap "comparator_core_0/diff" "via2_1_1/m1_0_n30#" -2.84217e-14
+cap "comparator_core_0/outp" "trim_0/trim_array_0/C0_8/m2_135_n63#" 0.00153389
+cap "comparator_core_0/outn" "trim_1/trim_array_0/C0_8/m2_135_n63#" 0.00153389
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_5/m2_135_n63#" 0.0186963
+cap "via23_1/m2_1_40#" "trim_1/trim_array_0/C0_7/m2_135_n63#" 0.00623209
+cap "via23_3/m2_1_40#" "comparator_core_0/vn" 4.18836
+cap "via23_1/m2_1_40#" "trim_0/trim_array_0/C0_9/m2_135_n63#" 0.0436247
+cap "via23_1/m2_1_40#" "via2_1_1/m1_0_n30#" 0.509047
+cap "comparator_core_0/vp" "trim_1/n3" 5.57816
+cap "comparator_core_0/outp" "via2_1_1/m1_0_n30#" 19.0289
+cap "trim_1/n3" "via2_1_1/m1_0_n30#" 1.04199
+cap "comparator_core_0/vp" "trim_1/n4" 8.74636
+cap "comparator_core_0/vp" "via23_3/m2_1_40#" 4.5577
+cap "trim_1/n4" "via2_1_1/m1_0_n30#" 21.6213
+cap "vdd" "via2_1_1/m1_0_n30#" 0.0577867
+cap "trim_1/n1" "via2_1_1/m1_0_n30#" 0.34733
+cap "comparator_core_0/vp" "trim_1/via2_6/m1_0_n30#" 2.7569
+cap "comparator_core_0/clk" "via2_1_1/m1_0_n30#" 31.2661
+cap "comparator_core_0/vp" "trim_1/n0" 0.0927092
+cap "trim_1/via2_6/m1_0_n30#" "via2_1_1/m1_0_n30#" 1.6149
+cap "via23_1/m2_1_40#" "via2_1_1/m1_0_n30#" 0.0474317
+cap "comparator_core_0/vp" "via2_1_1/m1_0_n30#" 42.5471
+cap "trim_1/n0" "via2_1_1/m1_0_n30#" 0.34733
+cap "trim_1/trim_sw_0/d_0" "trim_1/n2" 0.0396369
+cap "via2_1_1/m1_0_n30#" "trim_1/n4" 19.6446
+cap "trim_1/trim_sw_0/d_1" "trim_1/n2" 0.0480652
+cap "comparator_core_0/m1_1438_1282#" "trim_1/n4" 1.18795
+cap "trim_1/n2" "trim_1/trim_sw_0/d_2" 0.068863
+cap "trim_1/n2" "trim_1/trim_sw_0/d_3" 0.0585823
+cap "vdd" "trim_1/n3" 0.16863
+cap "trim_1/trim_sw_0/d_3" "trim_1/trim_sw_0/d_4" 0.608797
+cap "trim_1/trim_sw_0/d_1" "trim_1/trim_sw_0/d_3" 0.35481
+cap "trim_1/n1" "trim_1/trim_sw_0/d_0" 0.322023
+cap "trim_1/trim_sw_0/d_1" "via23_2/m2_1_40#" 38.4624
+cap "trim_1/trim_sw_0/d_3" "trim_1/trim_sw_0/d_0" 0.35481
+cap "trim_1/trim_sw_0/d_3" "trim_1/n2" 0.11208
+cap "via23_2/m2_1_40#" "trim_1/trim_sw_0/d_0" 19.5353
+cap "trim_1/trim_sw_0/d_1" "trim_1/n4" 1.19287
+cap "vdd" "trim_1/trim_sw_0/d_4" 0.922911
+cap "trim_1/trim_sw_0/d_2" "trim_1/trim_sw_0/d_4" 0.85355
+cap "trim_1/trim_sw_0/d_1" "vdd" 0.544591
+cap "trim_1/trim_sw_0/d_1" "trim_1/trim_sw_0/d_2" 0.525255
+cap "trim_1/n0" "trim_1/trim_sw_0/d_0" 0.322023
+cap "vdd" "trim_1/n2" 0.216683
+cap "vdd" "trim_1/trim_sw_0/d_0" 0.544591
+cap "trim_1/trim_sw_0/d_2" "trim_1/trim_sw_0/d_0" 1.58683
+cap "trim_1/trim_sw_0/d_2" "trim_1/n2" 0.676704
+cap "trim_1/trim_sw_0/d_3" "via23_2/m2_1_40#" 9.43453
+cap "trim_1/trim_sw_0/d_1" "trim_1/trim_sw_0/d_4" 9.72881
+cap "trim_1/trim_sw_0/d_3" "vdd" 0.121382
+cap "trim_1/trim_sw_0/d_3" "trim_1/trim_sw_0/d_2" 0.904719
+cap "trim_1/trim_sw_0/d_4" "trim_1/trim_sw_0/d_0" 1.27945
+cap "trim_1/trim_sw_0/d_1" "trim_1/trim_sw_0/d_0" 4.34192
+cap "trim_1/trim_sw_0/d_3" "trim_1/n3" 0.0560399
+cap "via23_2/m2_1_40#" "vdd" 2.01714
+cap "via23_2/m2_1_40#" "trim_1/trim_sw_0/d_2" 15.0296
+cap "trim_1/trim_sw_0/d_2" "vdd" 0.701554
+cap "vdd" "trim_1/n3" 0.108342
+cap "vdd" "trim_1/trim_sw_0/d_3" 1.07581
+cap "vdd" "trim_1/trim_sw_0/d_1" 3.11173
+cap "vdd" "trim_1/n1" 1.27886
+cap "vdd" "trim_1/trim_sw_0/d_0" 3.11173
+cap "trim_1/trim_sw_0/d_2" "trim_1/trim_sw_0/d_3" 1.35395
+cap "trim_1/trim_sw_0/M1_1_12/a_30_n109#" "vdd" 1.09951
+cap "vdd" "via23_2/m2_1_40#" 9.23584
+cap "vdd" "trim_1/n4" 1.23823
+cap "trim_1/n2" "trim_1/trim_sw_0/d_3" 0.456207
+cap "vdd" "trim_1/n0" 1.27886
+cap "vdd" "trim_1/trim_sw_0/d_2" 5.13624
+cap "vdd" "trim_1/trim_sw_0/d_4" 5.73606
+cap "trim_1/n2" "vdd" 2.53084
+cap "trim_1/trim_sw_0/M1_1_12/a_30_n109#" "trim_1/trim_sw_0/d_3" 0.456207
+cap "via23_2/m2_1_40#" "trim_1/trim_sw_0/d_3" 8.54264
+cap "trim_0/n2" "vdd" 1.29921
+cap "vdd" "trim_0/trim_sw_0/d_3" 23.8725
+cap "vdd" "trim_0/n0" 0.162745
+cap "trim_0/trim_sw_0/d_2" "vdd" 2.91853
+cap "trim_0/trim_sw_0/vss" "trim_0/trim_sw_0/d_3" 9.56345
+cap "vdd" "trim_0/trim_sw_0/vss" 26.9427
+cap "trim_0/trim_sw_0/d_0" "vdd" 0.168643
+cap "vdd" "trim_0/n3" 10.2008
+cap "vdd" "trim_0/n2" 2.1066
+cap "trim_0/trim_array_0/C0_6/m2_0_814#" "vdd" 2.16452
+cap "vdd" "trim_0/n3" 12.7543
+cap "trim_0/n0" "vdd" 0.0466084
+cap "trim_0/n4" "comparator_core_0/via2_1_5/m1_0_n30#" 0.114999
+cap "trim_0/n4" "vdd" 2.82586
+cap "comparator_core_0/via2_1_5/m1_0_n30#" "trim_0/trim_sw_0/vss" 0.464868
+cap "vdd" "trim_0/trim_sw_0/vss" 16.5238
+cap "trim_0/n4" "trim_0/trim_array_0/C0_6/m2_0_814#" 1.05436
+cap "trim_0/trim_array_0/C0_6/m2_0_814#" "trim_0/trim_sw_0/vss" 0.11344
+cap "trim_0/trim_sw_0/vss" "comparator_core_0/w_302_2337#" 0.334648
+cap "comparator_core_0/pguard_0/li_n1060_n352#" "trim_0/trim_sw_0/vss" 0.103524
+cap "via23_3/m2_1_40#" "trim_0/n4" 1.00193
+cap "trim_0/trim_array_0/C0_6/m2_0_814#" "comparator_core_0/M1_0/a_n33_55#" 0.437906
+cap "via23_3/m2_1_40#" "trim_0/n3" 0.485842
+cap "trim_0/trim_array_0/C0_6/m2_0_814#" "comparator_core_0/M2_0/a_30_n176#" 6.2253
+cap "via23_3/m2_1_40#" "trim_0/n2" 0.219933
+cap "via23_3/m2_1_40#" "comparator_core_0/vn" 148.032
+cap "trim_0/trim_sw_0/vss" "trim_0/trim_array_0/C0_6/m2_0_814#" 0.399383
+cap "trim_0/trim_array_0/C0_6/m2_0_814#" "comparator_core_0/w_302_2337#" 5.29311
+cap "via23_3/m2_1_40#" "comparator_core_0/M1_0/a_n33_55#" 2.34407
+cap "trim_0/n4" "trim_0/trim_array_0/C0_6/m2_0_814#" 1.38935
+cap "trim_0/trim_sw_0/vss" "comparator_core_0/vn" 3.47917
+cap "via23_3/m2_1_40#" "trim_0/trim_sw_0/vss" 0.921442
+cap "via23_3/m2_1_40#" "comparator_core_0/w_302_2337#" 13.6313
+cap "trim_0/trim_array_0/C0_6/m2_0_814#" "comparator_core_0/vn" 11.7274
+cap "trim_0/n4" "comparator_core_0/vn" 2.6922
+cap "via23_3/m2_1_40#" "trim_0/trim_array_0/C0_6/m2_0_814#" 16.703
+cap "comparator_core_0/M2_0/a_30_n176#" "trim_0/trim_array_0/C0_6/m2_0_814#" 6.2253
+cap "via23_3/m2_1_40#" "comparator_core_0/vn" 62.7446
+cap "comparator_core_0/vn" "comparator_core_0/vp" -11.3527
+cap "via23_3/m2_1_40#" "comparator_core_0/w_302_2337#" 70.9861
+cap "via23_3/m2_1_40#" "comparator_core_0/vp" 32.1144
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/Ml1_0/a_n33_51#" 6.2253
+cap "comparator_core_0/M2_0/a_30_n176#" "comparator_core_0/M1_0/a_n33_55#" 7.10543e-15
+cap "comparator_core_0/M2_0/a_30_n176#" "comparator_core_0/vn" -3.55271e-15
+cap "via23_3/m2_1_40#" "comparator_core_0/M1_0/a_n33_55#" 8.91948
+cap "comparator_core_0/M2_0/a_30_n176#" "comparator_core_0/w_302_2337#" -5.68434e-14
+cap "comparator_core_0/M2_0/a_30_n176#" "via23_3/m2_1_40#" 20.1427
+cap "via23_3/m2_1_40#" "comparator_core_0/Ml1_0/a_n33_51#" 16.7829
+cap "via2_1_1/m1_0_n30#" "via23_3/m2_1_40#" 14.3952
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/M3_0/a_n33_55#" 0.43164
+cap "via23_3/m2_1_40#" "comparator_core_0/M3_0/a_n33_55#" 11.2993
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/Ml1_0/a_n33_51#" 6.2253
+cap "via23_3/m2_1_40#" "comparator_core_0/Ml1_0/a_n33_51#" 2.94813
+cap "comparator_core_0/vp" "trim_1/m2_19_526#" 3.47917
+cap "comparator_core_0/vp" "trim_1/n4" 2.6922
+cap "trim_1/via2_6/m1_0_n30#" "via23_3/m2_1_40#" 0.0739513
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/vp" 11.7274
+cap "comparator_core_0/vp" "via23_3/m2_1_40#" 178.957
+cap "via23_3/m2_1_40#" "trim_1/n3" 0.163362
+cap "via2_1_1/m1_0_n30#" "comparator_core_0/w_302_2337#" 5.17241
+cap "comparator_core_0/w_302_2337#" "via23_3/m2_1_40#" 26.5618
+cap "via2_1_1/m1_0_n30#" "trim_1/n4" 1.38935
+cap "via2_1_1/m1_0_n30#" "trim_1/m2_19_526#" 0.399383
+cap "trim_1/n4" "via23_3/m2_1_40#" 0.336893
+cap "via23_3/m2_1_40#" "trim_1/m2_19_526#" 0.554503
+cap "comparator_core_0/M3_0/a_30_n176#" "trim_1/trim_sw_0/vss" 0.102494
+cap "trim_1/n4" "vdd" 3.49089
+cap "vdd" "trim_1/trim_sw_0/vss" 12.6515
+cap "comparator_core_0/m1_1438_1282#" "trim_1/n4" 0.114999
+cap "via2_1_1/m1_0_n30#" "trim_1/n4" 1.05436
+cap "trim_1/n2" "vdd" 1.42859
+cap "comparator_core_0/m1_1438_1282#" "trim_1/trim_sw_0/vss" 0.464868
+cap "via2_1_1/m1_0_n30#" "trim_1/trim_sw_0/vss" 0.11344
+cap "via2_1_1/m1_0_n30#" "vdd" 4.54864
+cap "comparator_core_0/w_302_2337#" "trim_1/trim_sw_0/vss" 0.295235
+cap "trim_1/n3" "vdd" 7.49275
+cap "vdd" "trim_1/n3" 13.0745
+cap "vdd" "trim_1/trim_sw_0/d_0" 0.168643
+cap "vdd" "trim_1/trim_sw_0/d_3" 15.1871
+cap "vdd" "trim_1/n0" 0.209353
+cap "vdd" "trim_1/trim_sw_0/vss" 25.8922
+cap "trim_1/trim_sw_0/d_3" "trim_1/trim_sw_0/vss" 5.5143
+cap "vdd" "trim_1/trim_sw_0/d_2" 2.91853
+cap "vdd" "trim_1/n2" 2.12321
+cap "trim_1/trim_sw_0/M1_1_12/a_30_n109#" "vdd" 2.71035
+cap "trim_1/trim_sw_0/d_2" "vdd" -2.77556e-17
+cap "trim_1/trim_sw_0/d_3" "vdd" 8.68537
+cap "trim_1/trim_sw_0/vss" "trim_1/trim_sw_0/d_3" 4.04915
+cap "trim_1/trim_sw_0/vss" "vdd" 5.28222
+merge "trim_1/trim_sw_0/vss" "via23_2/m2_1_40#" -994.142 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29600 -1680 -38400 -1440 0 0 0 0 0 0
+merge "via23_2/m2_1_40#" "m2_8795_34#"
+merge "m2_8795_34#" "comparator_core_0/vss"
+merge "comparator_core_0/vss" "via23_1/m2_1_40#"
+merge "via23_1/m2_1_40#" "m2_5012_34#"
+merge "m2_5012_34#" "via23_0/m2_1_40#"
+merge "via23_0/m2_1_40#" "vss"
+merge "vss" "trim_0/trim_sw_0/vss"
+merge "trim_0/trim_sw_0/vss" "m2_1249_34#"
+merge "via23_3/VSUBS" "via23_2/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "via23_2/VSUBS" "trim_1/VSUBS"
+merge "trim_1/VSUBS" "via2_1_1/VSUBS"
+merge "via2_1_1/VSUBS" "via23_1/VSUBS"
+merge "via23_1/VSUBS" "comparator_core_0/VSUBS"
+merge "comparator_core_0/VSUBS" "via2_1_0/VSUBS"
+merge "via2_1_0/VSUBS" "via23_0/VSUBS"
+merge "via23_0/VSUBS" "trim_0/VSUBS"
+merge "trim_0/VSUBS" "VSUBS"
+merge "comparator_core_0/clk" "clk" -381.376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3600 -240 0 0 0 0 0 0 0 0 0 0
+merge "comparator_core_0/vn" "vn" -125.739 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000 -300 0 0 0 0
+merge "comparator_core_0/vdd" "via23_3/m2_1_40#" -4431.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12800 -480 -745920 -18808 0 0 0 0 0 0
+merge "via23_3/m2_1_40#" "vdd"
+merge "comparator_core_0/outn" "outn" -113.458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0
+merge "comparator_core_0/vp" "vp" -125.617 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000 -300 0 0 0 0
+merge "comparator_core_0/outp" "outp" -113.458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0
+merge "trim_0/trim_sw_0/d_0" "trim_0" -53.2622 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_0/trim_sw_0/d_1" "trim_1" -96.7142 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_0/trim_sw_0/d_2" "trim_2" -44.0285 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_0/trim_sw_0/d_3" "trim_3" -63.0603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_0/trim_sw_0/d_4" "trim_4" -143.399 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4680 -276 0 0 0 0 0 0 0 0
+merge "trim_1/trim_array_0/C0_6/m2_0_814#" "comparator_core_0/ip" -362.965 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4876 -396 -1200 -260 0 0 0 0 0 0 0 0
+merge "comparator_core_0/ip" "trim_1/drain"
+merge "trim_1/drain" "via2_1_1/m1_0_n30#"
+merge "via2_1_1/m1_0_n30#" "m1_6195_1365#"
+merge "trim_1/trim_sw_0/d_0" "trimb_0" -53.2622 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_1/trim_sw_0/d_1" "trimb_1" -96.7142 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_1/trim_sw_0/d_2" "trimb_2" -44.0285 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_1/trim_sw_0/d_3" "trimb_3" -63.0603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "trim_1/trim_sw_0/d_4" "trimb_4" -143.399 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4680 -276 0 0 0 0 0 0 0 0
+merge "comparator_core_0/in" "trim_0/trim_array_0/C0_6/m2_0_814#" -368.289 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4876 -396 -1200 -260 0 0 0 0 0 0 0 0
+merge "trim_0/trim_array_0/C0_6/m2_0_814#" "via2_1_0/m1_0_n30#"
+merge "via2_1_0/m1_0_n30#" "trim_0/drain"
+merge "trim_0/drain" "m1_3350_1365#"

@@ -1,4 +1,4 @@
-** sch_path: /home/alex/Desktop/sar/xschem/tb/sar/tr_sar.sch
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/tb/sar/tr_sar.sch
 
 .include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 *.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_4.spice
@@ -39,8 +39,8 @@ V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
 **.ends
 
 * expanding   symbol:  sar/sar/sar.sym # of pins=12
-** sym_path: /home/alex/Desktop/sar/xschem/sar/sar/sar.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/sar/sar.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sar/sar.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sar/sar.sch
 .subckt sar avdd dvdd dvss result_7_ result_6_ result_5_ result_4_ result_3_ result_2_ result_1_
 + result_0_ vinn avss clk vinp en valid cal rstn
 *.iopin avss
@@ -58,9 +58,9 @@ V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
 xlat avdd comp net1 avss outn outp latch
 **** begin user architecture code
 
-.include /home/alex/Desktop/sar/xschem/sar/control/cmos_cells_digital.sp
-.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic.sp
-*.include /home/alex/Desktop/sar/xschem/sar/control/sar_logic_sky.sp
+.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic.sp
+*.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic_sky.sp
 
 **** end user architecture code
 xdn vn sample avdd avss vinn ctln_7_ ctln_6_ ctln_5_ ctln_4_ ctln_3_ ctln_2_ ctln_1_ ctln_0_ avss
@@ -94,8 +94,8 @@ Ada2 [dtrim4 dtrim3 dtrim2 dtrim1 dtrim0 dtrimb4 dtrimb3 dtrimb2 dtrimb1 dtrimb0
 
 
 * expanding   symbol:  sar/latch/latch.sym # of pins=6
-** sym_path: /home/alex/Desktop/sar/xschem/sar/latch/latch.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/latch/latch.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/latch/latch.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/latch/latch.sch
 .subckt latch vdd Q Qn vss R S
 *.ipin S
 *.ipin R
@@ -117,8 +117,8 @@ XM1 Qn net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  sar/dac/dac.sym # of pins=7
-** sym_path: /home/alex/Desktop/sar/xschem/sar/dac/dac.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/dac/dac.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/dac.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/dac.sch
 .subckt dac out sample vdd vss vin ctl_7_ ctl_6_ ctl_5_ ctl_4_ ctl_3_ ctl_2_ ctl_1_ ctl_0_ dum
 *.ipin vin
 *.ipin sample
@@ -142,8 +142,8 @@ xswt out sample vdd vin vss sw_top
 
 
 * expanding   symbol:  sar/comparator/comparator.sym # of pins=9
-** sym_path: /home/alex/Desktop/sar/xschem/sar/comparator/comparator.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/comparator/comparator.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/comparator.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/comparator.sch
 .subckt comparator vss vdd clk outp vp outn vn trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trimb_4_
 + trimb_3_ trimb_2_ trimb_1_ trimb_0_
 *.ipin vn
@@ -194,8 +194,8 @@ XMdiff diff clk vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  logic/inv_lvt.sym # of pins=4
-** sym_path: /home/alex/Desktop/sar/xschem/tb/sar/logic/inv_lvt.sym
-** sch_path: /home/alex/Desktop/sar/xschem/tb/sar/logic/inv_lvt.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/logic/inv_lvt.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/logic/inv_lvt.sch
 .subckt inv_lvt vdd in out vss
 *.iopin vdd
 *.iopin vss
@@ -211,8 +211,8 @@ XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) 
 
 
 * expanding   symbol:  sar/dac/carray.sym # of pins=10
-** sym_path: /home/alex/Desktop/sar/xschem/sar/dac/carray.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/dac/carray.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/carray.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/carray.sch
 .subckt carray top n6 n0 n5 n4 n2 ndum n3 n1 n7
 *.iopin top
 *.iopin n7
@@ -480,12 +480,96 @@ xc7_3_ top n7 unitcap
 xc7_2_ top n7 unitcap
 xc7_1_ top n7 unitcap
 xc7_0_ top n7 unitcap
+xdummy_83_ top dum_bot_83_ unitcap
+xdummy_82_ top dum_bot_82_ unitcap
+xdummy_81_ top dum_bot_81_ unitcap
+xdummy_80_ top dum_bot_80_ unitcap
+xdummy_79_ top dum_bot_79_ unitcap
+xdummy_78_ top dum_bot_78_ unitcap
+xdummy_77_ top dum_bot_77_ unitcap
+xdummy_76_ top dum_bot_76_ unitcap
+xdummy_75_ top dum_bot_75_ unitcap
+xdummy_74_ top dum_bot_74_ unitcap
+xdummy_73_ top dum_bot_73_ unitcap
+xdummy_72_ top dum_bot_72_ unitcap
+xdummy_71_ top dum_bot_71_ unitcap
+xdummy_70_ top dum_bot_70_ unitcap
+xdummy_69_ top dum_bot_69_ unitcap
+xdummy_68_ top dum_bot_68_ unitcap
+xdummy_67_ top dum_bot_67_ unitcap
+xdummy_66_ top dum_bot_66_ unitcap
+xdummy_65_ top dum_bot_65_ unitcap
+xdummy_64_ top dum_bot_64_ unitcap
+xdummy_63_ top dum_bot_63_ unitcap
+xdummy_62_ top dum_bot_62_ unitcap
+xdummy_61_ top dum_bot_61_ unitcap
+xdummy_60_ top dum_bot_60_ unitcap
+xdummy_59_ top dum_bot_59_ unitcap
+xdummy_58_ top dum_bot_58_ unitcap
+xdummy_57_ top dum_bot_57_ unitcap
+xdummy_56_ top dum_bot_56_ unitcap
+xdummy_55_ top dum_bot_55_ unitcap
+xdummy_54_ top dum_bot_54_ unitcap
+xdummy_53_ top dum_bot_53_ unitcap
+xdummy_52_ top dum_bot_52_ unitcap
+xdummy_51_ top dum_bot_51_ unitcap
+xdummy_50_ top dum_bot_50_ unitcap
+xdummy_49_ top dum_bot_49_ unitcap
+xdummy_48_ top dum_bot_48_ unitcap
+xdummy_47_ top dum_bot_47_ unitcap
+xdummy_46_ top dum_bot_46_ unitcap
+xdummy_45_ top dum_bot_45_ unitcap
+xdummy_44_ top dum_bot_44_ unitcap
+xdummy_43_ top dum_bot_43_ unitcap
+xdummy_42_ top dum_bot_42_ unitcap
+xdummy_41_ top dum_bot_41_ unitcap
+xdummy_40_ top dum_bot_40_ unitcap
+xdummy_39_ top dum_bot_39_ unitcap
+xdummy_38_ top dum_bot_38_ unitcap
+xdummy_37_ top dum_bot_37_ unitcap
+xdummy_36_ top dum_bot_36_ unitcap
+xdummy_35_ top dum_bot_35_ unitcap
+xdummy_34_ top dum_bot_34_ unitcap
+xdummy_33_ top dum_bot_33_ unitcap
+xdummy_32_ top dum_bot_32_ unitcap
+xdummy_31_ top dum_bot_31_ unitcap
+xdummy_30_ top dum_bot_30_ unitcap
+xdummy_29_ top dum_bot_29_ unitcap
+xdummy_28_ top dum_bot_28_ unitcap
+xdummy_27_ top dum_bot_27_ unitcap
+xdummy_26_ top dum_bot_26_ unitcap
+xdummy_25_ top dum_bot_25_ unitcap
+xdummy_24_ top dum_bot_24_ unitcap
+xdummy_23_ top dum_bot_23_ unitcap
+xdummy_22_ top dum_bot_22_ unitcap
+xdummy_21_ top dum_bot_21_ unitcap
+xdummy_20_ top dum_bot_20_ unitcap
+xdummy_19_ top dum_bot_19_ unitcap
+xdummy_18_ top dum_bot_18_ unitcap
+xdummy_17_ top dum_bot_17_ unitcap
+xdummy_16_ top dum_bot_16_ unitcap
+xdummy_15_ top dum_bot_15_ unitcap
+xdummy_14_ top dum_bot_14_ unitcap
+xdummy_13_ top dum_bot_13_ unitcap
+xdummy_12_ top dum_bot_12_ unitcap
+xdummy_11_ top dum_bot_11_ unitcap
+xdummy_10_ top dum_bot_10_ unitcap
+xdummy_9_ top dum_bot_9_ unitcap
+xdummy_8_ top dum_bot_8_ unitcap
+xdummy_7_ top dum_bot_7_ unitcap
+xdummy_6_ top dum_bot_6_ unitcap
+xdummy_5_ top dum_bot_5_ unitcap
+xdummy_4_ top dum_bot_4_ unitcap
+xdummy_3_ top dum_bot_3_ unitcap
+xdummy_2_ top dum_bot_2_ unitcap
+xdummy_1_ top dum_bot_1_ unitcap
+xdummy_0_ top dum_bot_0_ unitcap
 .ends
 
 
 * expanding   symbol:  sar/sw/sw_top.sym # of pins=5
-** sym_path: /home/alex/Desktop/sar/xschem/sar/sw/sw_top.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/sw/sw_top.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sw/sw_top.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sw/sw_top.sch
 .subckt sw_top out en vdd in vss
 *.iopin out
 *.ipin en
@@ -505,8 +589,8 @@ XM2 in en_buf out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  sar/comparator/trim.sym # of pins=3
-** sym_path: /home/alex/Desktop/sar/xschem/sar/comparator/trim.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/comparator/trim.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trim.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trim.sch
 .subckt trim drain d_4_ d_3_ d_2_ d_1_ d_0_ vss
 *.iopin vss
 *.ipin d_4_,d_3_,d_2_,d_1_,d_0_
@@ -579,8 +663,8 @@ XM2 n0 d_0_ vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  sar/unitcap/unitcap.sym # of pins=2
-** sym_path: /home/alex/Desktop/sar/xschem/sar/unitcap/unitcap.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/unitcap/unitcap.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/unitcap/unitcap.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/unitcap/unitcap.sch
 .subckt unitcap cp cn
 *.iopin cp
 *.iopin cn
@@ -589,8 +673,8 @@ XC2 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 
 
 * expanding   symbol:  sar/comparator/trimcap.sym # of pins=2
-** sym_path: /home/alex/Desktop/sar/xschem/sar/comparator/trimcap.sym
-** sch_path: /home/alex/Desktop/sar/xschem/sar/comparator/trimcap.sch
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trimcap.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trimcap.sch
 .subckt trimcap cp cn
 *.iopin cp
 *.iopin cn

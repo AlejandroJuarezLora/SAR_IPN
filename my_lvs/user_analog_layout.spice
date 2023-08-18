@@ -1,4 +1,4 @@
-* NGSPICE file created from user_analog_project_wrapper.ext - technology: sky130B
+* NGSPICE file created from user_analog_project_wrapper.ext - technology: sky130A
 
 .subckt M2_1 a_n98_n109# a_n40_n197# a_40_n109# VSUBS
 X0 a_40_n109# a_n40_n197# a_n98_n109# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.4
@@ -15,7 +15,7 @@ X0 a_40_n171# a_n40_n197# a_n98_n171# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.29 
 .subckt inv_lvt M2_inv_0/a_n98_n104# M2_inv_0/w_n236_n324# M1_inv_0/a_n98_n171# m1_170_505#
 + m2_289_257# VSUBS
 XM2_inv_0 m1_170_505# m2_289_257# M2_inv_0/w_n236_n324# M2_inv_0/a_n98_n104# M2_inv
-XM1_inv_0 m2_289_257# m1_170_505# M1_inv_0/a_n98_n171# VSUBS aM1_inv
+XM1_inv_0 m2_289_257# m1_170_505# M1_inv_0/a_n98_n171# VSUBS M1_inv
 .ends
 
 .subckt M1_2 a_n98_n109# a_n40_n197# a_40_n109# VSUBS

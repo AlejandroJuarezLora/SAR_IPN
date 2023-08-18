@@ -1,0 +1,114 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_8 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__inv_2 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__inv_2 (0):  Merged 2 parallel devices.
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__inv_2 and sky130_fd_sc_hd__inv_2 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_3 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+Flattening unmatched subcell sky130_fd_sc_hd__decap_4 in circuit sarlogic (0)(234 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfstp_1 in circuit sarlogic (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_6 in circuit sarlogic (0)(49 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a32o_1 in circuit sarlogic (0)(11 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1 in circuit sarlogic (0)(31 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_2 in circuit sarlogic (0)(52 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__or2_2 in circuit sarlogic (0)(11 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__or2_1 in circuit sarlogic (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a21oi_1 in circuit sarlogic (0)(12 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__mux2_1 in circuit sarlogic (0)(7 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__decap_12 in circuit sarlogic (0)(9 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__o21ba_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_8 in circuit sarlogic (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_4 in circuit sarlogic (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit sarlogic (0)(9 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a31o_1 in circuit sarlogic (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_2 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__or3_2 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o21a_1 in circuit sarlogic (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit sarlogic (0)(16 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a2bb2oi_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_1 in circuit sarlogic (0)(7 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a22o_1 in circuit sarlogic (0)(6 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_16 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o21ai_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o221ai_4 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__mux2_2 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o211a_1 in circuit sarlogic (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__o22a_1 in circuit sarlogic (0)(6 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__o32a_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__or3_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o221a_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__and3_2 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o2111a_1 in circuit sarlogic (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a221oi_2 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit sarlogic (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and3_1 in circuit sarlogic (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__o22ai_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__or3_4 in circuit sarlogic (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__a2bb2o_1 in circuit sarlogic (0)(3 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_2 in circuit sarlogic (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__and2_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__or4b_4 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__a31oi_2 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__o221ai_1 in circuit sarlogic (0)(1 instance)
+Flattening unmatched subcell NOT in circuit sar_logic (1)(85 instances)
+Flattening unmatched subcell NOR in circuit sar_logic (1)(84 instances)
+Flattening unmatched subcell NAND in circuit sar_logic (1)(126 instances)
+Flattening unmatched subcell DFFSR in circuit sar_logic (1)(39 instances)
+
+Cell sar_logic (1) disconnected node: clk
+Cell sar_logic (1) disconnected node: rstn
+Cell sar_logic (1) disconnected node: en
+Cell sar_logic (1) disconnected node: comp
+Cell sar_logic (1) disconnected node: cal
+Cell sar_logic (1) disconnected node: valid
+Cell sar_logic (1) disconnected node: result.0
+Cell sar_logic (1) disconnected node: result.1
+Cell sar_logic (1) disconnected node: result.2
+Cell sar_logic (1) disconnected node: result.3
+Cell sar_logic (1) disconnected node: result.4
+Cell sar_logic (1) disconnected node: result.5
+Cell sar_logic (1) disconnected node: result.6
+Cell sar_logic (1) disconnected node: result.7
+Cell sar_logic (1) disconnected node: sample
+Cell sar_logic (1) disconnected node: ctlp.0
+Cell sar_logic (1) disconnected node: ctlp.1
+Cell sar_logic (1) disconnected node: ctlp.2
+Cell sar_logic (1) disconnected node: ctlp.3
+Cell sar_logic (1) disconnected node: ctlp.4
+Cell sar_logic (1) disconnected node: ctlp.5
+Cell sar_logic (1) disconnected node: ctlp.6
+Cell sar_logic (1) disconnected node: ctlp.7
+Cell sar_logic (1) disconnected node: ctln.0
+Cell sar_logic (1) disconnected node: ctln.1
+Cell sar_logic (1) disconnected node: ctln.2
+Cell sar_logic (1) disconnected node: ctln.3
+Cell sar_logic (1) disconnected node: ctln.4
+Cell sar_logic (1) disconnected node: ctln.5
+Cell sar_logic (1) disconnected node: ctln.6
+Cell sar_logic (1) disconnected node: ctln.7
+Cell sar_logic (1) disconnected node: trim.0
+Cell sar_logic (1) disconnected node: trim.1
+Cell sar_logic (1) disconnected node: trim.2
+Cell sar_logic (1) disconnected node: trim.3
+Cell sar_logic (1) disconnected node: trim.4
+Cell sar_logic (1) disconnected node: trimb.0
+Cell sar_logic (1) disconnected node: trimb.1
+Cell sar_logic (1) disconnected node: trimb.2
+Cell sar_logic (1) disconnected node: trimb.3
+Cell sar_logic (1) disconnected node: trimb.4
+Cell sar_logic (1) disconnected node: clkc
+Class sarlogic (0):  Merged 984 parallel devices.
+Equate elements:  no current cell.
+Device classes sarlogic and sar_logic are equivalent.
+
+Final result: Top level cell failed pin matching.

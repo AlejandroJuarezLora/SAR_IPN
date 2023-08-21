@@ -1,0 +1,48 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell C7 in circuit carray (0)(128 instances)
+Flattening unmatched subcell DUMMY in circuit carray (0)(84 instances)
+Flattening unmatched subcell C6 in circuit carray (0)(64 instances)
+Flattening unmatched subcell CDUM in circuit carray (0)(1 instance)
+Flattening unmatched subcell C4 in circuit carray (0)(16 instances)
+Flattening unmatched subcell C2 in circuit carray (0)(4 instances)
+Flattening unmatched subcell C5 in circuit carray (0)(32 instances)
+Flattening unmatched subcell C3 in circuit carray (0)(8 instances)
+Flattening unmatched subcell C1 in circuit carray (0)(2 instances)
+Flattening unmatched subcell C0_1 in circuit carray (0)(1 instance)
+Flattening unmatched subcell unitcap in circuit carray (1)(340 instances)
+
+Class carray (0):  Merged 330 parallel devices.
+Class carray (1):  Merged 330 parallel devices.
+Subcircuit summary:
+Circuit 1: carray                          |Circuit 2: carray                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (340->10)       |sky130_fd_pr__cap_mim_m3_1 (340->10)       
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: carray                          |Circuit 2: carray                          
+-------------------------------------------|-------------------------------------------
+top                                        |top                                        
+n1                                         |n1                                         
+n3                                         |n3                                         
+n5                                         |n5                                         
+n2                                         |n2                                         
+n4                                         |n4                                         
+n0                                         |n0                                         
+ndum                                       |ndum                                       
+n6                                         |n6                                         
+n7                                         |n7                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes carray and carray are equivalent.
+
+Final result: Circuits match uniquely.
+.

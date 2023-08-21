@@ -1,0 +1,162 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__inv_4 is a black box; will not flatten Circuit 1
+Class inv_4 (0):  Merged 6 parallel devices.
+Equate elements:  no current cell.
+Device classes inv_4 and sky130_fd_sc_hd__inv_4 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_8 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_3 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+Flattening unmatched subcell decap_8 in circuit sw_top (0)(1 instance)
+Flattening unmatched subcell M1_3 in circuit sw_top (0)(1 instance)
+Flattening unmatched subcell M2_2 in circuit sw_top (0)(1 instance)
+Flattening unmatched subcell decap_3 in circuit sw_top (0)(1 instance)
+
+Class sw_top (0):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (12->2)            |sky130_fd_pr__nfet_01v8 (10->1) **Mismatch 
+sky130_fd_pr__pfet_01v8_hvt (2->1)         |(no matching element)                      
+sky130_fd_pr__pfet_01v8 (10->1)            |sky130_fd_pr__pfet_01v8 (10->1)            
+inv_4 (2)                                  |sky130_fd_sc_hd__inv_4 (1) **Mismatch**    
+(no matching element)                      |sky130_fd_sc_hd__decap_8 (1)               
+(no matching element)                      |sky130_fd_sc_hd__decap_3 (1)               
+Number of devices: 6 **Mismatch**          |Number of devices: 5 **Mismatch**          
+Number of nets: 8 **Mismatch**             |Number of nets: 10 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+
+---------------------------------------------------------------------------------------
+Net: vss                                   |Net: VNB                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_sc_hd__decap_3/2 = 1           
+  sky130_fd_pr__nfet_01v8/4 = 2            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  inv_4/a_75_55# = 2                       |                                           
+  inv_4/VSUBS = 2                          |                                           
+                                           |                                           
+Net: vdd                                   |Net: en_buf                                
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_4/6 = 1             
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/4 = 1            |                                           
+  inv_4/a_75_305# = 2                      |                                           
+                                           |                                           
+Net: m2_990_200#                           |Net: VGND                                  
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__decap_3/1 = 1           
+  inv_4/a_157_55# = 1                      |                                           
+                                           |                                           
+Net: en                                    |Net: en                                    
+  inv_4/a_59_207# = 1                      |  sky130_fd_sc_hd__inv_4/1 = 1             
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+(no matching net)                          |Net: VPB                                   
+                                           |  sky130_fd_sc_hd__decap_3/3 = 1           
+                                           |                                           
+(no matching net)                          |Net: VPWR                                  
+                                           |  sky130_fd_sc_hd__decap_3/4 = 1           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: vdd                                   
+                                           |  sky130_fd_sc_hd__decap_8/3 = 1           
+                                           |  sky130_fd_sc_hd__decap_8/4 = 1           
+                                           |  sky130_fd_sc_hd__inv_4/4 = 1             
+                                           |  sky130_fd_sc_hd__inv_4/5 = 1             
+                                           |  sky130_fd_pr__pfet_01v8/4 = 1            
+                                           |                                           
+(no matching net)                          |Net: vss                                   
+                                           |  sky130_fd_sc_hd__decap_8/1 = 1           
+                                           |  sky130_fd_sc_hd__decap_8/2 = 1           
+                                           |  sky130_fd_sc_hd__inv_4/2 = 1             
+                                           |  sky130_fd_sc_hd__inv_4/3 = 1             
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: m2_1158_361#                          |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  inv_4/a_59_207# = 1                      |                                           
+  inv_4/a_157_55# = 1                      |                                           
+                                           |                                           
+Net: inv_4_1/w_0_269#                      |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/4 = 1        |                                           
+  inv_4/w_0_269# = 2                       |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+
+---------------------------------------------------------------------------------------
+Instance: decap_8_0/sky130_fd_pr__pfet_01v |Instance: sky130_fd_pr__nfet_01v8:M1       
+  (1,3) = (6,6)                            |  (1,3) = (2,2)                            
+  2 = 9                                    |  2 = 2                                    
+  4 = 3                                    |  4 = 5                                    
+                                           |                                           
+Instance: inv_4_0                          |Instance: sky130_fd_sc_hd__inv_4:4         
+  w_0_269# = 3                             |  1 = 2                                    
+  a_59_207# = 3                            |  2 = 5                                    
+  a_75_55# = 9                             |  3 = 5                                    
+  a_75_305# = 6                            |  4 = 5                                    
+  a_157_55# = 2                            |  5 = 5                                    
+  VSUBS = 9                                |  6 = 2                                    
+                                           |                                           
+Instance: inv_4_1                          |Instance: sky130_fd_sc_hd__decap_8:2       
+  w_0_269# = 3                             |  1 = 5                                    
+  a_59_207# = 1                            |  2 = 5                                    
+  a_75_55# = 9                             |  3 = 5                                    
+  a_75_305# = 6                            |  4 = 5                                    
+  a_157_55# = 3                            |                                           
+  VSUBS = 9                                |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_sc_hd__decap_3:1       
+                                           |  1 = 1                                    
+                                           |  2 = 1                                    
+                                           |  3 = 1                                    
+                                           |  4 = 1                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: M2_2_0/sky130_fd_pr__nfet_01v8:0 |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 2                                    |                                           
+  4 = 9                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: decap_8_0/sky130_fd_pr__nfet_01v |(no matching instance)                     
+  (1,3) = (9,9)                            |                                           
+  2 = 6                                    |                                           
+  4 = 9                                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: M1_3_0/sky130_fd_pr__pfet_01v8:0 |Instance: sky130_fd_pr__pfet_01v8:M2       
+  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
+  2 = 3                                    |  2 = 2                                    
+  4 = 6                                    |  4 = 5                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+-------------------------------------------|-------------------------------------------
+vss                                        |en **Mismatch**                            
+vdd                                        |(no matching pin)                          
+m2_990_200#                                |(no matching pin)                          
+en                                         |(no matching pin)                          
+Cell pin lists are equivalent.
+Device classes sw_top and sw_top are equivalent.
+
+Final result: Netlists do not match.

@@ -17,14 +17,14 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node="xsar.res7
-xsar.res6
-xsar.res5
-xsar.res4
-xsar.res3
-xsar.res2
-xsar.res1
-xsar.res0"
+node="xsar_post.res7
+xsar_post.res6
+xsar_post.res5
+xsar_post.res4
+xsar_post.res3
+xsar_post.res2
+xsar_post.res1
+xsar_post.res0"
 color="4 5 6 7 8 9 10 11"
 dataset=-1
 unitx=1
@@ -51,8 +51,8 @@ logx=0
 logy=0
 
 color="4 7"
-node="xsar.vp
-xsar.vn"}
+node="xsar_post.vp
+xsar_post.vn"}
 B 2 10 870 810 1270 {flags=graph
 y1=0
 y2=1.3
@@ -73,11 +73,11 @@ logx=0
 logy=0
 hilight_wave=0
 color="7 11 4 8 8 9"
-node="xsar.clkc
+node="xsar_post.clkc
 clk
-xsar.comp
+xsar_post.comp
 en
-xsar.sample
+xsar_post.sample
 rstn"
 digital=1}
 B 2 850 20 1650 420 {flags=graph
@@ -92,14 +92,14 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node="xsar.ctlp_7_
-xsar.ctlp_6_
-xsar.ctlp_5_
-xsar.ctlp_4_
-xsar.ctlp_3_
-xsar.ctlp_2_
-xsar.ctlp_1_
-xsar.ctlp_0_"
+node="xsar_post.ctlp_7_
+xsar_post.ctlp_6_
+xsar_post.ctlp_5_
+xsar_post.ctlp_4_
+xsar_post.ctlp_3_
+xsar_post.ctlp_2_
+xsar_post.ctlp_1_
+xsar_post.ctlp_0_"
 color="4 4 4 4 4 4 4 4"
 dataset=-1
 unitx=1
@@ -118,14 +118,14 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node="xsar.ctln_7_
-xsar.ctln_6_
-xsar.ctln_5_
-xsar.ctln_4_
-xsar.ctln_3_
-xsar.ctln_2_
-xsar.ctln_1_
-xsar.ctln_0_"
+node="xsar_post.ctln_7_
+xsar_post.ctln_6_
+xsar_post.ctln_5_
+xsar_post.ctln_4_
+xsar_post.ctln_3_
+xsar_post.ctln_2_
+xsar_post.ctln_1_
+xsar_post.ctln_0_"
 color="4 4 4 4 4 4 4 4"
 dataset=-1
 unitx=1
@@ -153,8 +153,8 @@ logx=0
 logy=0
 }
 B 2 840 880 1640 1280 {flags=graph
-y1=-0.239942
-y2=1.4826
+y1=-0.246934
+y2=1.82012
 ypos1=0
 ypos2=2
 divy=5
@@ -164,7 +164,7 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node=xsar.comp
+node=xsar_post.comp
 color=4
 dataset=-1
 unitx=1
@@ -257,7 +257,7 @@ value="
 .control
 
 run
-write tr_sar.raw
+write tr_sar_post.raw
 meas tran d0 find v(xsar_post.res0) at=47e-6
 meas tran d1 find v(xsar_post.res1) at=47e-6
 meas tran d2 find v(xsar_post.res2) at=47e-6

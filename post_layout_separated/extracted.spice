@@ -1,4 +1,4 @@
-* SPICE3 file created from user_analog_project_wrapper.ext - technology: sky130B
+* SPICE3 file created from SAR.ext - technology: sky130B
 
 .subckt M2_1 a_n98_n109# a_n40_n197# a_40_n109# VSUBS
 X0 a_40_n109# a_n40_n197# a_n98_n109# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.4
@@ -490,168 +490,163 @@ XC6_63 n6 top VSUBS C6
 XC6_52 n6 top VSUBS C6
 XC6_30 n6 top VSUBS C6
 XC6_41 n6 top VSUBS C6
-C0 m2_2100_1156# n7 2.39f
-C1 top n3 2.35f
-C2 ndum n0 13.4f
-C3 m2_8600_1156# n7 3.52f
-C4 n2 m3_20400_1156# 3.43f
-C5 m2_16400_1156# m3_16500_1156# 2.11f
-C6 m3_38600_1156# m3_38800_1156# 3.35f
-C7 m3_3700_1156# n7 4.08f
-C8 m2_36300_1156# m3_36200_1156# 2.11f
-C9 m3_29500_1156# m3_29700_1156# 3.35f
-C10 m2_28500_1156# n7 2.42f
-C11 top n4 4.11f
-C12 m3_13900_1156# n7 2.16f
-C13 m3_19100_1156# m3_19300_1156# 3.35f
-C14 n6 n7 20.9f
-C15 m2_4700_1156# m3_4800_1156# 2.11f
-C16 m2_32400_1156# n5 2.39f
-C17 m3_10000_1156# m3_10200_1156# 3.35f
-C18 m3_6300_1156# n6 4.08f
-C19 m3_900_1156# m3_1100_1156# 3.35f
-C20 m2_31100_1156# n6 2.39f
-C21 m3_5000_1156# n7 4.08f
-C22 m3_34700_1156# n7 4.08f
-C23 m2_29800_1156# n7 3.52f
-C24 top n5 8.2f
-C25 m3_37300_1156# n6 4.09f
-C26 m3_39900_1156# m3_40100_1156# 3.35f
-C27 m2_37600_1156# m3_37500_1156# 2.11f
-C28 m3_36000_1156# n7 4.08f
-C29 m3_30800_1156# m3_31000_1156# 3.35f
-C30 m2_28500_1156# m3_28400_1156# 2.11f
-C31 m3_10200_1156# n5 4.08f
-C32 m3_11300_1156# m3_11500_1156# 3.35f
-C33 m2_2100_1156# m3_2200_1156# 2.11f
-C34 top n6 16.4f
-C35 m3_2200_1156# m3_2400_1156# 3.35f
-C36 m3_7600_1156# n7 4.08f
-C37 n7 n1 10.3f
-C38 m2_7300_1156# n6 2.39f
-C39 m3_24300_1156# n4 4.08f
-C40 m2_6000_1156# n7 2.39f
-C41 m2_9900_1156# m3_10000_1156# 2.11f
-C42 m3_41200_1156# m3_41400_1156# 3.35f
-C43 m3_8900_1156# n7 4.08f
-C44 m2_38900_1156# m3_38800_1156# 2.11f
-C45 m3_38600_1156# n7 4.08f
-C46 top n7 32.8f
-C47 m3_32100_1156# m3_32300_1156# 3.35f
-C48 m2_33700_1156# n7 2.39f
-C49 m2_27200_1156# n5 2.39f
-C50 m2_29800_1156# m3_29700_1156# 2.11f
-C51 m2_25900_1156# n6 2.39f
-C52 m2_20300_1156# n4 2.39f
-C53 m3_12600_1156# m3_12800_1156# 3.35f
-C54 m3_11500_1156# n6 4.08f
-C55 m3_29700_1156# n7 2.16f
-C56 m2_3400_1156# m3_3500_1156# 2.11f
-C57 m3_41200_1156# n6 4.08f
-C58 n2 n3 19.4f
-C59 m3_3500_1156# m3_3700_1156# 3.35f
-C60 m3_39900_1156# n7 4.08f
-C61 m2_17700_1156# n6 2.39f
-C62 m2_35000_1156# n7 3.52f
-C63 n0 n1 13.4f
-C64 m2_11200_1156# m3_11300_1156# 2.11f
-C65 m2_25900_1156# m3_25800_1156# 2.11f
-C66 m3_42500_1156# m3_42700_1156# 3.35f
-C67 m2_40200_1156# m3_40100_1156# 2.11f
-C68 m3_33400_1156# m3_33600_1156# 3.35f
-C69 m2_31100_1156# m3_31000_1156# 2.11f
-C70 m3_15400_1156# n5 4.08f
-C71 m3_24300_1156# m3_24500_1156# 3.35f
-C72 m3_13900_1156# m3_14100_1156# 3.35f
-C73 n3 n4 10.8f
-C74 m3_4800_1156# m3_5000_1156# 3.35f
-C75 m3_12800_1156# n7 4.08f
-C76 m2_800_1156# m3_900_1156# 2.11f
-C77 m3_42500_1156# n7 4.08f
-C78 m2_37600_1156# n7 2.39f
-C79 m2_19000_1156# n7 2.42f
-C80 m2_23300_1156# n4 2.39f
-C81 m3_4800_1156# n7 2.16f
-C82 m2_12500_1156# m3_12600_1156# 2.11f
-C83 m3_28200_1156# n5 4.09f
-C84 m2_27200_1156# m3_27100_1156# 2.11f
-C85 m2_40200_1156# n6 2.39f
-C86 m3_14100_1156# n7 4.08f
-C87 m2_41500_1156# m3_41400_1156# 2.11f
-C88 m2_8600_1156# m3_8700_1156# 2.11f
-C89 m3_26900_1156# n6 4.08f
-C90 n2 m3_23200_1156# 3.4f
-C91 m2_9900_1156# n7 2.39f
-C92 m3_19300_1156# n4 4.08f
-C93 m2_17700_1156# m3_17800_1156# 2.11f
-C94 m3_34700_1156# m3_34900_1156# 3.35f
-C95 m2_38900_1156# n7 3.52f
-C96 m2_32400_1156# m3_32300_1156# 2.11f
-C97 m3_25600_1156# n7 4.08f
-C98 m3_25600_1156# m3_25800_1156# 3.35f
-C99 m3_15200_1156# m3_15400_1156# 3.35f
-C100 m3_16700_1156# n6 3.14f
-C101 m2_12500_1156# n6 2.39f
-C102 m2_4700_1156# n7 3.52f
-C103 m3_6100_1156# m3_6300_1156# 3.35f
-C104 n4 n5 11.4f
-C105 m2_23300_1156# m3_23200_1156# 2.11f
-C106 m2_13800_1156# m3_13900_1156# 2.11f
-C107 m2_42800_1156# m3_42700_1156# 2.11f
-C108 m2_19000_1156# m3_19100_1156# 2.11f
-C109 m3_36000_1156# m3_36200_1156# 3.35f
-C110 m2_41500_1156# n7 2.39f
-C111 m2_33700_1156# m3_33600_1156# 2.11f
-C112 m2_6000_1156# m3_6100_1156# 2.11f
-C113 m3_26900_1156# m3_27100_1156# 3.35f
-C114 m2_16400_1156# n5 2.39f
-C115 m3_8700_1156# n7 2.16f
-C116 m3_16500_1156# m3_16700_1156# 3.35f
-C117 m3_7400_1156# m3_7600_1156# 3.35f
-C118 m3_18000_1156# n7 3.1f
-C119 m2_13800_1156# n7 3.52f
-C120 n2 n1 2.02f
-C121 m3_29500_1156# n7 3.1f
-C122 m2_24600_1156# m3_24500_1156# 2.11f
-C123 m2_15100_1156# m3_15200_1156# 2.11f
-C124 m3_38800_1156# n7 2.16f
-C125 m3_33400_1156# n5 4.08f
-C126 m3_2400_1156# n6 4.08f
-C127 n5 n6 16.1f
-C128 n3 n1 3.36f
-C129 m3_32100_1156# n6 4.08f
-C130 m2_15100_1156# n7 2.39f
-C131 m2_20300_1156# m3_20400_1156# 2.11f
-C132 ndum n1 3.54f
-C133 m3_37300_1156# m3_37500_1156# 3.35f
-C134 m3_1100_1156# n7 4.08f
-C135 m2_35000_1156# m3_34900_1156# 2.11f
-C136 m2_7300_1156# m3_7400_1156# 2.11f
-C137 m3_30800_1156# n7 3.14f
-C138 m3_28200_1156# m3_28400_1156# 3.35f
-C139 m2_24600_1156# n7 2.39f
-C140 m3_17800_1156# m3_18000_1156# 3.35f
-C141 m2_3400_1156# n6 2.39f
-C142 m3_8700_1156# m3_8900_1156# 3.35f
+C0 m3_29500_1156# n7 3.1f
+C1 m2_24600_1156# m3_24500_1156# 2.11f
+C2 m2_15100_1156# m3_15200_1156# 2.11f
+C3 m3_38800_1156# n7 2.16f
+C4 m3_33400_1156# n5 4.08f
+C5 n2 m3_23200_1156# 3.4f
+C6 m3_2400_1156# n6 4.08f
+C7 n5 n6 16.1f
+C8 n3 n1 3.36f
+C9 m3_32100_1156# n6 4.08f
+C10 m2_15100_1156# n7 2.39f
+C11 ndum n1 3.54f
+C12 m2_20300_1156# m3_20400_1156# 2.11f
+C13 m3_37300_1156# m3_37500_1156# 3.35f
+C14 m3_1100_1156# n7 4.08f
+C15 m2_35000_1156# m3_34900_1156# 2.11f
+C16 m2_7300_1156# m3_7400_1156# 2.11f
+C17 m3_30800_1156# n7 3.14f
+C18 m3_28200_1156# m3_28400_1156# 3.35f
+C19 m2_24600_1156# n7 2.39f
+C20 m3_17800_1156# m3_18000_1156# 3.35f
+C21 m2_3400_1156# n6 2.39f
+C22 m3_8700_1156# m3_8900_1156# 3.35f
+C23 m2_2100_1156# n7 2.39f
+C24 m2_8600_1156# n7 3.52f
+C25 m2_16400_1156# m3_16500_1156# 2.11f
+C26 m3_38600_1156# m3_38800_1156# 3.35f
+C27 m3_3700_1156# n7 4.08f
+C28 m2_36300_1156# m3_36200_1156# 2.11f
+C29 m3_29500_1156# m3_29700_1156# 3.35f
+C30 m2_28500_1156# n7 2.42f
+C31 m3_13900_1156# n7 2.16f
+C32 n6 n7 20.9f
+C33 m3_19100_1156# m3_19300_1156# 3.35f
+C34 m2_4700_1156# m3_4800_1156# 2.11f
+C35 m2_32400_1156# n5 2.39f
+C36 m3_10000_1156# m3_10200_1156# 3.35f
+C37 m3_6300_1156# n6 4.08f
+C38 n2 n1 2.02f
+C39 m3_900_1156# m3_1100_1156# 3.35f
+C40 m2_31100_1156# n6 2.39f
+C41 m3_5000_1156# n7 4.08f
+C42 m3_34700_1156# n7 4.08f
+C43 m2_29800_1156# n7 3.52f
+C44 top n3 2.35f
+C45 m3_37300_1156# n6 4.09f
+C46 m3_39900_1156# m3_40100_1156# 3.35f
+C47 m2_37600_1156# m3_37500_1156# 2.11f
+C48 m3_36000_1156# n7 4.08f
+C49 m3_30800_1156# m3_31000_1156# 3.35f
+C50 m2_28500_1156# m3_28400_1156# 2.11f
+C51 m3_10200_1156# n5 4.08f
+C52 m3_11300_1156# m3_11500_1156# 3.35f
+C53 m2_2100_1156# m3_2200_1156# 2.11f
+C54 top n4 4.11f
+C55 m3_2200_1156# m3_2400_1156# 3.35f
+C56 n0 n1 13.4f
+C57 m3_7600_1156# n7 4.08f
+C58 n7 n1 10.3f
+C59 m2_7300_1156# n6 2.39f
+C60 n2 m3_20400_1156# 3.43f
+C61 m3_24300_1156# n4 4.08f
+C62 m2_6000_1156# n7 2.39f
+C63 m2_9900_1156# m3_10000_1156# 2.11f
+C64 m3_41200_1156# m3_41400_1156# 3.35f
+C65 m3_8900_1156# n7 4.08f
+C66 m2_38900_1156# m3_38800_1156# 2.11f
+C67 top n5 8.2f
+C68 m3_38600_1156# n7 4.08f
+C69 m3_32100_1156# m3_32300_1156# 3.35f
+C70 m2_33700_1156# n7 2.39f
+C71 m2_27200_1156# n5 2.39f
+C72 m2_29800_1156# m3_29700_1156# 2.11f
+C73 m2_25900_1156# n6 2.39f
+C74 m2_20300_1156# n4 2.39f
+C75 m3_12600_1156# m3_12800_1156# 3.35f
+C76 m3_11500_1156# n6 4.08f
+C77 m3_29700_1156# n7 2.16f
+C78 m2_3400_1156# m3_3500_1156# 2.11f
+C79 m3_41200_1156# n6 4.08f
+C80 m3_3500_1156# m3_3700_1156# 3.35f
+C81 m3_39900_1156# n7 4.08f
+C82 m2_17700_1156# n6 2.39f
+C83 m2_35000_1156# n7 3.52f
+C84 top n6 16.4f
+C85 m2_11200_1156# m3_11300_1156# 2.11f
+C86 m2_25900_1156# m3_25800_1156# 2.11f
+C87 m3_42500_1156# m3_42700_1156# 3.35f
+C88 m2_40200_1156# m3_40100_1156# 2.11f
+C89 m3_33400_1156# m3_33600_1156# 3.35f
+C90 m2_31100_1156# m3_31000_1156# 2.11f
+C91 m3_15400_1156# n5 4.08f
+C92 m3_24300_1156# m3_24500_1156# 3.35f
+C93 m3_13900_1156# m3_14100_1156# 3.35f
+C94 top n7 32.8f
+C95 n3 n4 10.8f
+C96 m3_4800_1156# m3_5000_1156# 3.35f
+C97 m3_12800_1156# n7 4.08f
+C98 m2_800_1156# m3_900_1156# 2.11f
+C99 m3_42500_1156# n7 4.08f
+C100 m2_37600_1156# n7 2.39f
+C101 m2_19000_1156# n7 2.42f
+C102 m2_23300_1156# n4 2.39f
+C103 m3_4800_1156# n7 2.16f
+C104 m2_12500_1156# m3_12600_1156# 2.11f
+C105 m3_28200_1156# n5 4.09f
+C106 m2_27200_1156# m3_27100_1156# 2.11f
+C107 m2_40200_1156# n6 2.39f
+C108 m3_14100_1156# n7 4.08f
+C109 m2_41500_1156# m3_41400_1156# 2.11f
+C110 m2_8600_1156# m3_8700_1156# 2.11f
+C111 m3_26900_1156# n6 4.08f
+C112 m2_9900_1156# n7 2.39f
+C113 m3_19300_1156# n4 4.08f
+C114 m2_17700_1156# m3_17800_1156# 2.11f
+C115 m3_34700_1156# m3_34900_1156# 3.35f
+C116 m2_38900_1156# n7 3.52f
+C117 m2_32400_1156# m3_32300_1156# 2.11f
+C118 m3_25600_1156# n7 4.08f
+C119 m3_25600_1156# m3_25800_1156# 3.35f
+C120 n2 n3 19.4f
+C121 m3_15200_1156# m3_15400_1156# 3.35f
+C122 m3_16700_1156# n6 3.14f
+C123 m2_12500_1156# n6 2.39f
+C124 m2_4700_1156# n7 3.52f
+C125 m3_6100_1156# m3_6300_1156# 3.35f
+C126 n4 n5 11.4f
+C127 m2_23300_1156# m3_23200_1156# 2.11f
+C128 m2_13800_1156# m3_13900_1156# 2.11f
+C129 m2_42800_1156# m3_42700_1156# 2.11f
+C130 m2_19000_1156# m3_19100_1156# 2.11f
+C131 m3_36000_1156# m3_36200_1156# 3.35f
+C132 m2_41500_1156# n7 2.39f
+C133 m2_33700_1156# m3_33600_1156# 2.11f
+C134 m2_6000_1156# m3_6100_1156# 2.11f
+C135 m3_26900_1156# m3_27100_1156# 3.35f
+C136 m2_16400_1156# n5 2.39f
+C137 m3_8700_1156# n7 2.16f
+C138 m3_16500_1156# m3_16700_1156# 3.35f
+C139 ndum n0 13.4f
+C140 m3_7400_1156# m3_7600_1156# 3.35f
+C141 m3_18000_1156# n7 3.1f
+C142 m2_13800_1156# n7 3.52f
 C143 n1 VSUBS 3.76f
 C144 n7 VSUBS 65.9f
 C145 n6 VSUBS 31.9f
 C146 n5 VSUBS 16.9f
 C147 n4 VSUBS 8.19f
 C148 n3 VSUBS 5.86f
-*C149 m2_42800_1156# VSUBS 2.03f **FLOATING
-*C150 m2_800_1156# VSUBS 2.03f **FLOATING
-C149 m2_42800_1156# VSUBS 2.03f 
-C150 m2_800_1156# VSUBS 2.03f 
-C151 n0 VSUBS 2.8f
-C152 n2 VSUBS 7.31f
-C153 top VSUBS 30.9f
-C154 ndum VSUBS 6.68f
+C149 n0 VSUBS 2.8f
+C150 n2 VSUBS 7.31f
+C151 top VSUBS 30.9f
+C152 ndum VSUBS 6.68f
 .ends
 
 .subckt DAC enb en_buf ctl1 ctl0 dum ctl3 ctl4 ctl5 ctl6 ctl7 ctl2 sample out vin
 + vdd vss
-
 Xinv2_0 vdd vdd ctl7 carray_0/n7 vss vss inv2
 Xinv2_1 vdd vdd ctl6 carray_0/n6 vss vss inv2
 Xinv2_2 vdd vdd dum carray_0/ndum vss vss inv2
@@ -667,8 +662,8 @@ Xcarray_0 carray_0/n5 carray_0/n7 carray_0/n6 carray_0/n2 carray_0/n3 carray_0/n
 Xsw_top_1 out sample enb en_buf vdd vdd vin vss sw_top
 Xsw_top_2 out sample enb en_buf vdd vdd vin vss sw_top
 Xsw_top_3 out sample sw_top_3/m2_1158_361# sw_top_3/m2_990_200# vdd vdd vin vss sw_top
-C0 sample carray_0/n7 4.96f
-C1 sample carray_0/ndum 11.1f
+C0 carray_0/ndum sample 11.1f
+C1 sample carray_0/n7 4.96f
 C2 en_buf vss 3.48f
 C3 enb vss 3.16f
 C4 carray_0/n1 vss 4.01f
@@ -677,17 +672,13 @@ C6 carray_0/n6 vss 32.2f
 C7 carray_0/n5 vss 17.2f
 C8 carray_0/n4 vss 8.48f
 C9 carray_0/n3 vss 6.16f
-*C10 carray_0/m2_42800_1156# vss 2.03f **FLOATING
-*C11 carray_0/m2_800_1156# vss 2.03f **FLOATING
-C10 carray_0/m2_42800_1156# vss 2.03f
-C11 carray_0/m2_800_1156# vss 2.03f
-C12 carray_0/n0 vss 3.04f
-C13 carray_0/n2 vss 8.06f
-C14 out vss 34.5f
-C15 carray_0/ndum vss 6.61f
-C16 sample vss 24.6f
-C17 vin vss 6.35f
-C18 vdd vss 34.9f
+C10 carray_0/n0 vss 3.04f
+C11 carray_0/n2 vss 8.06f
+C12 out vss 34.5f
+C13 carray_0/ndum vss 6.61f
+C14 sample vss 24.6f
+C15 vin vss 6.35f
+C16 vdd vss 34.9f
 .ends
 
 .subckt decap_3$1 a_65_55# a_65_331# w_0_269# VSUBS
@@ -723,9 +714,8 @@ XM1_1_13 vss m1_136_409# d_3 vss M1_1
 + trim_sw_0/d_0 VSUBS drain
 Xtrim_sw_0 trim_sw_0/d_0 trim_sw_0/d_1 trim_sw_0/d_2 trim_sw_0/d_3 trim_sw_0/d_4 n1
 + n4 n3 n2 n0 VSUBS trim_sw
-C0 n4 drain 6.84f
+C0 drain n4 6.84f
 C1 n3 drain 3.41f
-C2 drain 0 -4.84f
 .ends
 
 .subckt Mdiff a_n33_51# a_30_n171# a_n88_n171# VSUBS
@@ -798,17 +788,16 @@ Xtrim_1 trim_1/n3 trim_1/n4 trim_1/n2 trim_1/n1 trim_1/n0 trimb_4 trimb_3 trimb_
 + trimb_1 trimb_0 vss trim_1/drain trim
 Xcomparator_core_0 vdd outp outn clk trim_1/drain trim_0/drain comparator_core_0/diff
 + vp vn vss comparator_core
-C0 trim_1/drain trim_1/n4 6.86f
-C1 trim_1/n3 trim_1/drain 3.41f
-C2 trim_0/drain trim_0/n3 3.41f
-C3 vdd vss 5.14f
-C4 trim_0/drain trim_0/n4 6.86f
+C0 trim_0/n4 trim_0/drain 6.86f
+C1 trim_0/n3 trim_0/drain 3.41f
+C2 trim_1/n4 trim_1/drain 6.86f
+C3 vss vdd 5.14f
+C4 trim_1/drain trim_1/n3 3.41f
 C5 clk 0 3.16f
 C6 vdd 0 6.8f
-C7 comparator_core_0/w_302_2337# 0 4.58f
-C8 trim_1/drain 0 -3.83f
-C9 trim_0/drain 0 -3.86f
-C10 vss 0 5.55f
+C7 trim_1/drain 0 -3.83f
+C8 trim_0/drain 0 -3.86f
+C9 vss 0 5.55f
 .ends
 
 .subckt sky130_fd_sc_hd__decap_4 VGND VPWR VPB VNB
@@ -2190,71 +2179,71 @@ X9 a_109_7# B1 a_213_83# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.165 
 * Xoutput6 VGND VPWR VPWR VGND _269_/Y ctln[0] sky130_fd_sc_hd__clkbuf_2
 * Xoutput41 VGND VPWR VPWR VGND _298_/X valid sky130_fd_sc_hd__clkbuf_2
 * Xoutput30 VGND VPWR VPWR VGND _286_/Y sample sky130_fd_sc_hd__clkbuf_2
-* C0 VPWR _160_/X 3.15f
-* C1 VPWR _346_/SET_B 3.09f
-* C2 _286_/B VPWR 2.62f
-* C3 input4/X VPWR 4.35f
-* C4 VGND _228_/A 2.58f
-* C5 _297_/Y VPWR 2.78f
-* C6 VPWR _318_/Q 2.23f
-* C7 VPWR _215_/A 3.9f
-* C8 VGND _328_/Q 2.92f
-* C9 VPWR _320_/Q 6.34f
-* C10 VPWR _225_/X 2.56f
-* C11 VPWR _172_/A 5.53f
-* C12 VGND _346_/SET_B 2.21f
-* C13 VPWR _248_/B 3.09f
-* C14 VGND _147_/A 5.24f
-* C15 VGND repeater43/X 4.39f
-* C16 VPWR _331_/CLK 6.98f
-* C17 VPWR clkbuf_2_1_0_clk/A 4.38f
-* C18 VGND _294_/A 2.48f
-* C19 _283_/Y _343_/CLK 4.37f
-* C20 VPWR _217_/X 3.16f
-* C21 VGND _172_/A 2.19f
-* C22 VPWR _342_/Q 2.2f
-* C23 VGND _306_/S 2.66f
-* C24 VGND _283_/A 4.74f
-* C25 VPWR _298_/A 2.67f
-* C26 VPWR _339_/Q 2.75f
-* C27 VPWR _304_/S 2.38f
-* C28 VPWR _258_/S 2.57f
+* C0 _228_/A VGND 2.58f
+* C1 _275_/A VPWR 2.59f
+* C2 _254_/B VGND 4.3f
+* C3 _340_/CLK VPWR 4.42f
+* C4 _304_/S VPWR 2.38f
+* C5 _225_/X VPWR 2.56f
+* C6 _297_/Y VPWR 2.78f
+* C7 _242_/A VPWR 3.23f
+* C8 _172_/A VPWR 5.53f
+* C9 _162_/X VPWR 6.11f
+* C10 _346_/SET_B VGND 2.21f
+* C11 _147_/A VGND 5.24f
+* C12 cal VPWR 5.29f
+* C13 clkbuf_0_clk/X VPWR 2.08f
+* C14 _286_/B VPWR 2.62f
+* C15 _340_/CLK VGND 2.88f
+* C16 _196_/A VPWR 2.56f
+* C17 input1/X VPWR 3.15f
+* C18 _286_/B _306_/S 2.93f
+* C19 _172_/A VGND 2.19f
+* C20 _207_/C VGND 2.92f
+* C21 _339_/Q VPWR 2.75f
+* C22 _315_/D VGND 3.44f
+* C23 _297_/B VPWR 4.89f
+* C24 _342_/Q VPWR 2.2f
+* C25 _216_/A _215_/A 2.34f
+* C26 input4/X VPWR 4.35f
+* C27 _196_/A VGND 3.63f
+* C28 _267_/A VPWR 2.13f
 * C29 VGND _286_/Y 3.89f
-* C30 VGND _331_/CLK 2.13f
-* C31 VGND _212_/X 2.41f
-* C32 VPWR _343_/CLK 3.75f
-* C33 VGND _315_/D 3.44f
-* C34 VPWR _242_/A 3.23f
-* C35 VPWR _297_/B 4.89f
-* C36 VPWR _162_/X 6.11f
-* C37 VPWR _267_/A 2.13f
-* C38 VPWR clkbuf_0_clk/X 2.08f
-* C39 VPWR cal 5.29f
-* C40 VPWR _275_/A 2.59f
-* C41 VPWR _192_/B 2.02f
-* C42 VGND _258_/S 2.01f
-* C43 VPWR input1/X 3.15f
-* C44 VPWR _340_/CLK 4.42f
-* C45 VPWR clk 2.94f
-* C46 VGND _254_/B 4.3f
-* C47 _286_/B _306_/S 2.93f
-* C48 VGND _267_/A 2.36f
+* C30 _328_/Q VGND 2.92f
+* C31 _320_/Q VPWR 6.34f
+* C32 _325_/Q VGND 2.79f
+* C33 _192_/B VPWR 2.02f
+* C34 _227_/A VGND 4f
+* C35 _319_/Q VPWR 4.68f
+* C36 _273_/A VPWR 5.3f
+* C37 _267_/A VGND 2.36f
+* C38 _248_/B VPWR 3.09f
+* C39 _160_/X VPWR 3.15f
+* C40 _258_/S VPWR 2.57f
+* C41 _283_/Y _343_/CLK 4.37f
+* C42 _248_/A VPWR 3.92f
+* C43 _331_/CLK VPWR 6.98f
+* C44 _217_/X VPWR 3.16f
+* C45 _192_/B VGND 2.51f
+* C46 _298_/A VPWR 2.67f
+* C47 _215_/A VPWR 3.9f
+* C48 _318_/Q VPWR 2.23f
 * C49 VPWR VGND 4.77f
-* C50 _147_/Y VGND 3.03f
-* C51 VPWR _248_/A 3.92f
-* C52 VGND _192_/B 2.51f
-* C53 _196_/A VPWR 2.56f
-* C54 VGND _340_/CLK 2.88f
-* C55 _216_/A _215_/A 2.34f
-* C56 _324_/Q VPWR 2.35f
-* C57 VPWR _319_/Q 4.68f
-* C58 _273_/A VPWR 5.3f
-* C59 VGND _227_/A 4f
-* C60 VGND _325_/Q 2.79f
-* C61 input4/X _343_/CLK 3.47f
-* C62 _196_/A VGND 3.63f
+* C50 input4/X _343_/CLK 3.47f
+* C51 _147_/Y VGND 3.03f
+* C52 _212_/X VGND 2.41f
+* C53 _306_/S VGND 2.66f
+* C54 _283_/A VGND 4.74f
+* C55 _294_/A VGND 2.48f
+* C56 _258_/S VGND 2.01f
+* C57 _324_/Q VPWR 2.35f
+* C58 _331_/CLK VGND 2.13f
+* C59 _343_/CLK VPWR 3.75f
+* C60 repeater43/X VGND 4.39f
+* C61 clkbuf_2_1_0_clk/A VPWR 4.38f
+* C62 clk VPWR 2.94f
 * C63 _271_/A VPWR 2.43f
-* C64 VGND _207_/C 2.92f
+* C64 _346_/SET_B VPWR 3.09f
 * C65 VGND 0 0.119p
 * C66 VPWR 0 0.438p
 * C67 _331_/CLK 0 2.04f
@@ -2266,308 +2255,63 @@ X9 a_109_7# B1 a_213_83# VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.165 
 * .subckt SAR comp ctln1 ctln0 ctlp1 ctlp0 ctln7 ctln6 ctln5 ctln4 ctln3 ctln2 trim4
 * + trim1 trim0 trim2 trim3 trimb3 trimb2 trimb0 trimb1 trimb4 ctlp2 ctlp3 ctlp4 ctlp5
 * + ctlp6 ctlp7 clkc result7 result6 result5 result4 rstn result3 result2 result1 result0
-* + valid cal en clk dvdd avdd vinp vinn dvss
-* Xlatch_0 avdd latch_0/Qn latch_0/S latch_0/R comp dvss latch
+* + valid cal en clk dvdd avdd avss vinp vinn
+* Xlatch_0 avdd latch_0/Qn latch_0/S latch_0/R comp avss latch
 * XDAC_0 DAC_0/enb DAC_0/en_buf ctlp1 ctlp0 avdd ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp2
-* + sample DAC_0/out vinp avdd dvss DAC
-* XDAC_1 DAC_1/enb DAC_1/en_buf ctln1 ctln0 dvss ctln3 ctln4 ctln5 ctln6 ctln7 ctln2
-* + sample DAC_1/out vinn avdd dvss DAC
-* Xdecap_3$1_0 dvss avdd avdd dvss decap_3$1
+* + sample DAC_0/out vinp avdd avss DAC
+* XDAC_1 DAC_1/enb DAC_1/en_buf ctln1 ctln0 avss ctln3 ctln4 ctln5 ctln6 ctln7 ctln2
+* + sample DAC_1/out vinn avdd avss DAC
+* Xdecap_3$1_0 avss avdd avdd avss decap_3$1
 * Xcomparator_0 trim3 trim2 trim0 trim1 trim4 trimb4 trimb1 trimb0 trimb2 trimb3 latch_0/R
-* + latch_0/S clkc avdd DAC_0/out DAC_1/out dvss comparator
+* + latch_0/S clkc avdd DAC_0/out DAC_1/out avss comparator
 * Xsarlogic_0 ctln0 ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctlp0 ctlp1 ctlp2 ctlp3
 * + ctlp4 ctlp5 ctlp6 ctlp7 cal clk clkc comp en result0 result1 result2 result3 result4
 * + result5 result6 result7 rstn sample trim0 trim1 trim2 trim3 trim4 trimb0 trimb1
-* + trimb2 trimb3 trimb4 valid dvdd dvss sarlogic
-* C0 comparator_0/trim_0/n4 comparator_0/trim_0/drain 6.81f
-* C1 ctln1 ctln7 2.93f
-* C2 ctln1 ctln0 3.33f
-* C3 avdd sample 10.3f
-* C4 ctlp5 ctlp6 2.14f
-* C5 DAC_1/out DAC_0/out 10f
-* C6 ctln6 ctln5 2.14f
-* C7 rstn clk 2.88f
-* C8 comparator_0/trim_1/drain comparator_0/trim_1/n4 6.81f
-* C9 result6 result7 2.94f
-* C10 ctlp1 ctlp7 2.93f
-* C11 result6 result5 2.55f
-* C12 ctln6 ctln7 2.54f
-* C13 ctlp1 ctlp0 3.33f
-* C14 comparator_0/trim_0/n3 comparator_0/trim_0/drain 3.4f
-* C15 cal en 2.16f
-* C16 comparator_0/trim_1/drain comparator_0/trim_1/n3 3.4f
-* C17 ctlp7 ctlp6 2.54f
-* C18 result4 result5 2.24f
-* C19 en clk 2.56f
-* C20 dvdd dvss 5.14p
-* C21 sarlogic_0/_331_/CLK dvss 2.04f
-* C22 sarlogic_0/_343_/CLK dvss 2.2f
-* C23 sarlogic_0/_346_/SET_B dvss 5.25f
-* C24 rstn dvss 2.1f
-* C25 result7 dvss 2.59f
-* C26 clk dvss 2.1f
-* C27 sarlogic_0/repeater43/X dvss 5.28f
-* C28 clkc dvss 4.66f
-* C29 latch_0/R dvss 2.39f
-* C30 comparator_0/comparator_core_0/w_302_2337# dvss 4.58f
-* C31 latch_0/S dvss 2.56f
-* C32 comparator_0/trim_1/drain dvss -2.13f
-* C33 trimb3 dvss 3.2f
-* C34 comparator_0/trim_1/n4 dvss 2.07f
-* C35 trimb4 dvss 2.92f
-* C36 comparator_0/trim_0/drain dvss -2.16f
-* C37 trim3 dvss 3f
-* C38 comparator_0/trim_0/n4 dvss 2.07f
-* C39 trim4 dvss 2.98f
-* C40 DAC_1/en_buf dvss 3.46f
-* C41 DAC_1/enb dvss 3.13f
-* C42 DAC_1/carray_0/n1 dvss 4f
-* C43 DAC_1/carray_0/n7 dvss 65.6f
-* C44 DAC_1/carray_0/n6 dvss 32.2f
-* C45 DAC_1/carray_0/n5 dvss 17.2f
-* C46 DAC_1/carray_0/n4 dvss 8.47f
-* C47 DAC_1/carray_0/n3 dvss 6.15f
-* C48 DAC_1/carray_0/m2_42800_1156# dvss 2.03f **FLOATING
-* C49 DAC_1/carray_0/m2_800_1156# dvss 2.03f **FLOATING
-* C50 DAC_1/carray_0/n0 dvss 3.03f
-* C51 DAC_1/carray_0/n2 dvss 8.05f
-* C52 DAC_1/out dvss 35.4f
-* C53 DAC_1/carray_0/ndum dvss 6.61f
-* C54 sample dvss 59.3f
-* C55 vinn dvss 6.27f
-* C56 avdd dvss 12.2p
-* C57 ctln0 dvss 2.1f
-* C58 ctlp7 dvss 2.05f
-* C59 DAC_0/en_buf dvss 3.46f
-* C60 DAC_0/enb dvss 3.13f
-* C61 DAC_0/carray_0/n1 dvss 4f
-* C62 DAC_0/carray_0/n7 dvss 65.6f
-* C63 DAC_0/carray_0/n6 dvss 32.2f
-* C64 DAC_0/carray_0/n5 dvss 17.2f
-* C65 DAC_0/carray_0/n4 dvss 8.47f
-* C66 DAC_0/carray_0/n3 dvss 6.15f
-* C67 DAC_0/carray_0/m2_42800_1156# dvss 2.03f **FLOATING
-* C68 DAC_0/carray_0/m2_800_1156# dvss 2.03f **FLOATING
-* C69 DAC_0/carray_0/n0 dvss 3.03f
-* C70 DAC_0/carray_0/n2 dvss 8.05f
-* C71 DAC_0/out dvss 35.4f
-* C72 DAC_0/carray_0/ndum dvss 6.61f
-* C73 vinp dvss 6.27f
-* C74 ctlp1 dvss 2.19f
-* C75 ctlp0 dvss 3.16f
-* .ends
-
-* .subckt user_analog_project_wrapper wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0] wbs_adr_i[10]
-* + wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15] wbs_adr_i[16]
-* + wbs_adr_i[17] wbs_adr_i[1] wbs_adr_i[2] wbs_adr_i[3] wbs_adr_i[4] wbs_adr_i[5] wbs_adr_i[6]
-* + wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9] wbs_cyc_i wbs_dat_i[0] wbs_dat_i[10] wbs_dat_i[11]
-* + wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14] wbs_dat_i[15] wbs_dat_i[16] wbs_dat_i[1]
-* + wbs_dat_i[2] wbs_dat_i[3] wbs_dat_i[4] wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_i[8]
-* + wbs_dat_i[9] wbs_dat_o[0] wbs_dat_o[10] wbs_dat_o[11] wbs_dat_o[12] wbs_dat_o[13]
-* + wbs_dat_o[14] wbs_dat_o[15] wbs_dat_o[16] wbs_dat_o[1] wbs_dat_o[2] wbs_dat_o[3]
-* + wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0]
-* + wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i wbs_dat_i[17] wbs_dat_i[18]
-* + wbs_dat_i[19] wbs_adr_i[18] wbs_dat_i[20] wbs_dat_i[21] wbs_dat_i[22] wbs_dat_i[23]
-* + wbs_dat_i[24] wbs_dat_i[25] wbs_dat_i[26] wbs_dat_i[27] wbs_dat_i[28] wbs_dat_i[29]
-* + wbs_adr_i[19] wbs_dat_i[30] wbs_dat_i[31] la_oenb[0] wbs_adr_i[20] wbs_adr_i[21]
-* + wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26] wbs_adr_i[27]
-* + wbs_adr_i[28] wbs_adr_i[29] la_oenb[1] wbs_adr_i[30] wbs_adr_i[31] la_oenb[2] wbs_dat_o[17]
-* + wbs_dat_o[18] wbs_dat_o[19] la_oenb[3] wbs_dat_o[20] wbs_dat_o[21] wbs_dat_o[22]
-* + wbs_dat_o[23] wbs_dat_o[24] wbs_dat_o[25] wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28]
-* + wbs_dat_o[29] la_oenb[4] wbs_dat_o[30] wbs_dat_o[31] la_oenb[5] la_data_in[0] la_data_in[1]
-* + la_data_in[2] la_data_in[3] la_data_in[4] la_data_in[5] la_data_out[0] la_data_out[1]
-* + la_data_out[2] la_data_out[3] la_data_out[4] la_data_out[5] la_data_in[23] la_data_in[24]
-* + la_data_in[25] la_oenb[6] la_oenb[7] la_oenb[8] la_oenb[9] la_data_in[26] la_data_in[11]
-* + la_data_in[12] la_data_in[13] la_data_in[14] la_data_in[6] la_data_in[7] la_data_in[8]
-* + la_data_in[9] la_data_in[15] la_data_out[10] la_data_out[11] la_data_out[12] la_data_out[13]
-* + la_data_out[14] la_data_out[15] la_data_out[16] la_data_out[17] la_data_out[18]
-* + la_data_out[19] la_data_in[16] la_data_out[20] la_data_out[21] la_data_out[22] la_data_out[23]
-* + la_data_out[24] la_data_out[25] la_data_in[17] la_data_in[18] la_data_in[19] la_data_in[10]
-* + la_data_out[6] la_data_out[7] la_data_out[8] la_data_out[9] la_data_in[20] la_oenb[10]
-* + la_oenb[11] la_oenb[12] la_oenb[13] la_oenb[14] la_oenb[15] la_oenb[16] la_oenb[17]
-* + la_oenb[18] la_oenb[19] la_data_in[21] la_oenb[20] la_oenb[21] la_oenb[22] la_oenb[23]
-* + la_oenb[24] la_oenb[25] la_data_in[22] la_data_in[39] la_oenb[45] la_data_in[40]
-* + la_data_out[26] la_data_out[27] la_data_out[28] la_data_out[29] la_data_in[41] la_data_out[30]
-* + la_data_out[31] la_data_out[32] la_data_out[33] la_data_out[34] la_data_out[35]
-* + la_data_out[36] la_data_out[37] la_data_out[38] la_data_out[39] la_data_in[42] la_data_out[40]
-* + la_data_out[41] la_data_out[42] la_data_out[43] la_data_out[44] la_data_out[45]
-* + la_data_out[46] la_data_in[43] la_data_in[44] la_data_in[45] la_data_in[46] la_oenb[46]
-* + la_oenb[38] la_oenb[39] la_oenb[37] la_oenb[40] la_oenb[41] la_oenb[42] la_oenb[43]
-* + la_data_in[27] la_data_in[28] la_data_in[29] la_oenb[44] la_data_in[30] la_data_in[31]
-* + la_data_in[32] la_data_in[33] la_data_in[34] la_data_in[35] la_data_in[36] la_data_in[37]
-* + la_oenb[26] la_oenb[27] la_oenb[28] la_oenb[29] la_data_in[38] la_oenb[30] la_oenb[31]
-* + la_oenb[32] la_oenb[33] la_oenb[34] la_oenb[35] la_oenb[36] la_oenb[47] la_oenb[48]
-* + la_oenb[49] la_oenb[50] la_oenb[51] la_oenb[52] la_oenb[53] la_oenb[54] la_oenb[55]
-* + la_oenb[56] la_oenb[57] la_oenb[58] la_oenb[59] la_oenb[60] la_oenb[61] la_oenb[62]
-* + la_oenb[63] la_oenb[64] la_oenb[65] la_oenb[66] la_data_in[47] la_data_in[48] la_data_in[49]
-* + la_data_in[50] la_data_in[51] la_data_in[52] la_data_in[53] la_data_in[54] la_data_in[55]
-* + la_data_in[56] la_data_in[57] la_data_in[58] la_data_in[59] la_data_in[60] la_data_in[61]
-* + la_data_in[62] la_data_in[63] la_data_out[47] la_data_out[48] la_data_out[49] la_data_in[64]
-* + la_data_out[50] la_data_out[51] la_data_out[52] la_data_out[53] la_data_out[54]
-* + la_data_out[55] la_data_out[56] la_data_out[57] la_data_out[58] la_data_out[59]
-* + la_data_in[65] la_data_out[60] la_data_out[61] la_data_out[62] la_data_out[63] la_data_out[64]
-* + la_data_out[65] la_data_out[66] la_data_out[67] la_data_in[66] la_data_in[67] la_data_in[72]
-* + la_data_in[73] la_data_in[74] la_data_in[75] la_data_in[76] la_data_in[77] la_data_in[78]
-* + la_data_in[79] la_data_in[80] la_data_in[81] la_data_in[82] la_data_in[83] la_data_in[84]
-* + la_data_in[85] la_data_in[86] la_data_in[87] la_data_in[69] la_oenb[67] la_oenb[68]
-* + la_oenb[69] la_oenb[70] la_oenb[71] la_oenb[72] la_oenb[73] la_oenb[74] la_oenb[75]
-* + la_oenb[76] la_oenb[77] la_oenb[78] la_oenb[79] la_oenb[80] la_oenb[81] la_oenb[82]
-* + la_oenb[83] la_oenb[84] la_oenb[85] la_oenb[86] la_oenb[87] la_data_out[68] la_data_out[69]
-* + la_data_in[70] la_data_out[70] la_data_out[71] la_data_out[72] la_data_out[73] la_data_out[74]
-* + la_data_out[75] la_data_out[76] la_data_out[77] la_data_out[78] la_data_out[79]
-* + la_data_in[71] la_data_out[80] la_data_out[81] la_data_out[82] la_data_out[83] la_data_out[84]
-* + la_data_out[85] la_data_out[86] la_data_out[87] la_data_in[68] la_oenb[88] la_oenb[89]
-* + la_oenb[90] la_oenb[91] la_oenb[92] la_oenb[93] la_oenb[94] la_oenb[95] la_oenb[96]
-* + la_oenb[97] la_oenb[98] la_oenb[99] la_data_in[101] la_data_in[102] la_data_in[103]
-* + la_data_in[104] la_data_in[105] la_data_in[106] la_data_in[107] la_data_in[108]
-* + la_data_in[100] la_data_in[90] la_data_in[91] la_data_in[92] la_data_in[93] la_data_in[94]
-* + la_data_in[95] la_data_in[96] la_data_in[97] la_data_in[98] la_data_in[99] la_data_out[100]
-* + la_data_out[101] la_data_out[102] la_data_out[103] la_data_out[104] la_data_out[105]
-* + la_data_out[93] la_data_out[106] la_data_out[94] la_data_out[107] la_data_out[95]
-* + la_data_out[96] la_data_out[108] la_data_out[97] la_data_out[98] la_data_out[99]
-* + la_data_out[92] la_oenb[100] la_oenb[101] la_oenb[102] la_oenb[103] la_oenb[104]
-* + la_oenb[105] la_oenb[106] la_oenb[107] la_data_in[88] la_data_in[89] la_data_out[88]
-* + la_data_out[89] la_data_out[90] la_data_out[91] la_data_in[119] la_data_out[120]
-* + la_data_out[121] la_data_out[122] la_data_in[116] la_data_in[117] la_data_out[123]
-* + la_data_in[112] la_data_out[124] la_data_out[125] la_data_out[126] la_data_out[127]
-* + la_data_in[118] la_oenb[109] la_data_in[120] la_oenb[110] la_data_in[121] la_oenb[111]
-* + la_oenb[112] la_oenb[113] la_oenb[114] la_oenb[115] la_oenb[116] la_oenb[117] la_oenb[118]
-* + la_oenb[119] la_data_in[122] la_data_in[123] la_oenb[120] la_oenb[121] la_oenb[122]
-* + la_oenb[123] la_oenb[124] la_oenb[125] la_oenb[126] la_oenb[127] la_data_in[124]
-* + la_data_in[125] la_data_in[126] la_data_in[127] la_data_out[110] user_clock2 user_irq[0]
-* + la_data_in[113] user_irq[1] la_data_in[114] user_irq[2] la_data_out[111] la_data_out[112]
-* + la_data_out[109] la_data_in[109] la_data_out[113] la_data_in[110] la_data_out[114]
-* + la_oenb[108] la_data_out[115] la_data_out[116] la_data_in[111] la_data_out[117]
-* + la_data_in[115] la_data_out[118] la_data_out[119] gpio_analog[2] gpio_analog[3]
-* + gpio_analog[4] gpio_analog[5] gpio_analog[6] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4]
-* + gpio_noesd[5] gpio_noesd[6] io_analog[0] io_analog[1] io_analog[2] io_analog[3]
-* + io_analog[4] io_clamp_high[0] io_clamp_low[0] io_in[10] io_in[11] io_in[12] io_in[13]
-* + io_in[9] io_in_3v3[10] io_in_3v3[11] io_in_3v3[12] io_in_3v3[13] io_in_3v3[9] io_oeb[10]
-* + io_oeb[11] io_oeb[12] io_oeb[13] io_oeb[9] io_out[10] io_out[11] io_out[12] io_out[13]
-* + io_out[9] vccd1 vdda1 io_in[16] io_in[17] gpio_analog[9] gpio_noesd[10] io_analog[5]
-* + io_analog[6] io_analog[7] io_in_3v3[14] io_in_3v3[15] io_in_3v3[16] io_in_3v3[17]
-* + io_analog[8] io_analog[9] gpio_noesd[7] io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17]
-* + gpio_noesd[8] io_clamp_high[1] io_clamp_high[2] gpio_noesd[9] io_clamp_low[1] io_out[14]
-* + io_out[15] io_out[16] io_out[17] io_clamp_low[2] gpio_analog[10] io_analog[10] vccd2
-* + gpio_analog[7] gpio_analog[8] io_in[14] io_in[15] vssa2 io_in_3v3[24] io_in_3v3[25]
-* + io_in_3v3[26] gpio_analog[16] gpio_analog[17] gpio_analog[11] gpio_analog[12] gpio_noesd[11]
-* + io_in[18] io_in[19] io_in[20] io_in[21] io_oeb[18] io_oeb[19] io_oeb[20] io_oeb[21]
-* + io_oeb[22] io_oeb[23] io_oeb[24] io_oeb[25] io_oeb[26] io_in[22] io_in[23] io_in[24]
-* + io_in[25] io_in[26] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15]
-* + io_out[18] io_out[19] io_out[20] io_out[21] io_out[22] io_out[23] io_out[24] io_out[25]
-* + io_out[26] gpio_noesd[16] gpio_noesd[17] gpio_analog[13] gpio_analog[14] gpio_analog[15]
-* + io_in_3v3[18] io_in_3v3[19] vdda2 io_in_3v3[20] io_in_3v3[21] io_in_3v3[22] io_in_3v3[23]
-* + vssd2 io_in_3v3[6] io_in_3v3[7] io_in_3v3[8] io_in[1] io_oeb[0] gpio_noesd[0] io_in[2]
-* + io_in[3] io_in[4] io_in[5] io_out[1] io_in[6] io_in_3v3[1] io_in[7] io_in[8] gpio_analog[0]
-* + io_oeb[1] io_in_3v3[0] io_out[2] io_out[3] io_out[4] io_out[5] io_out[6] io_out[7]
-* + io_out[8] gpio_analog[1] gpio_noesd[1] io_in[0] io_in_3v3[2] io_in_3v3[3] io_in_3v3[4]
-* + io_oeb[2] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7] io_oeb[8] vssd1 io_in_3v3[5]
-* + io_out[0]
-* XSAR_0 SAR_0/comp SAR_0/ctln1 SAR_0/ctln0 SAR_0/ctlp1 SAR_0/ctlp0 SAR_0/ctln7 SAR_0/ctln6
-* + SAR_0/ctln5 SAR_0/ctln4 SAR_0/ctln3 SAR_0/ctln2 SAR_0/trim4 SAR_0/trim1 SAR_0/trim0
-* + SAR_0/trim2 SAR_0/trim3 SAR_0/trimb3 SAR_0/trimb2 SAR_0/trimb0 SAR_0/trimb1 SAR_0/trimb4
-* + SAR_0/ctlp2 SAR_0/ctlp3 SAR_0/ctlp4 SAR_0/ctlp5 SAR_0/ctlp6 SAR_0/ctlp7 SAR_0/clkc
-* + la_data_out[29] la_data_out[30] la_data_out[31] la_data_out[32] io_in[23] la_data_out[33]
-* + la_data_out[34] la_data_out[35] la_data_out[36] io_out[17] io_in[18] io_in[19] io_in[20]
-* + vccd2 vdda1 io_analog[5] io_analog[4] vssd2 SAR
-* C0 SAR_0/comparator_0/trim_1/n3 SAR_0/comparator_0/trim_1/drain 3.4f
-* C1 SAR_0/comparator_0/trim_0/n4 SAR_0/comparator_0/trim_0/drain 6.81f
-* C2 io_in[19] io_in[20] 0.108p
-* C3 SAR_0/comparator_0/trim_0/n3 SAR_0/comparator_0/trim_0/drain 3.4f
-* C4 la_data_out[35] la_data_out[36] 85.4f
-* C5 io_in[18] io_out[17] 0.137p
-* C6 la_data_out[33] la_data_out[32] 86.1f
-* C7 la_data_out[35] la_data_out[34] 85.6f
-* C8 la_data_out[32] la_data_out[31] 86.3f
-* C9 io_in[20] io_in[23] 0.105p
-* C10 io_in[19] io_in[18] 0.123p
-* C11 la_data_out[30] la_data_out[31] 86f
-* C12 la_data_out[33] la_data_out[34] 86f
-* C13 SAR_0/comparator_0/trim_1/n4 SAR_0/comparator_0/trim_1/drain 6.81f
-* C14 io_analog[5] vdda1 2.26f
-* C15 io_analog[4] vdda1 2.26f
-* C16 la_data_out[30] la_data_out[29] 86.1f
-* C17 io_analog[6] vssd2 21.8f
-* C18 vssd1 vssd2 12f
-* C19 vdda2 vssd2 12f
-* C20 vssa2 vssd2 12f
-* C21 vccd1 vssd2 12f
-* C22 io_analog[0] vssd2 6.28f
-* C23 io_analog[10] vssd2 6.28f
-* C24 io_analog[1] vssd2 6.28f
-* C25 io_analog[2] vssd2 6.28f
-* C26 io_analog[3] vssd2 6.28f
-* C27 io_clamp_high[0] vssd2 2.55f
-* C28 io_clamp_low[0] vssd2 2.55f
-* C29 io_clamp_high[1] vssd2 2.55f
-* C30 io_clamp_low[1] vssd2 2.55f
-* C31 io_clamp_high[2] vssd2 2.55f
-* C32 io_clamp_low[2] vssd2 2.55f
-* C33 io_analog[7] vssd2 6.28f
-* C34 io_analog[8] vssd2 6.28f
-* C35 io_analog[9] vssd2 6.28f
-* C36 io_out[17] vssd2 93.6f
-* C37 vccd2 vssd2 5.54p
-* C38 SAR_0/sarlogic_0/_331_/CLK vssd2 2.04f
-* C39 SAR_0/sarlogic_0/_343_/CLK vssd2 2.18f
-* C40 SAR_0/sarlogic_0/_346_/SET_B vssd2 5.25f
-* C41 io_in[23] vssd2 0.137p
-* C42 io_in[19] vssd2 26.4f
-* C43 io_in[18] vssd2 28.7f
-* C44 la_data_out[29] vssd2 55.6f
-* C45 la_data_out[30] vssd2 15.7f
-* C46 io_in[20] vssd2 19.7f
-* C47 la_data_out[31] vssd2 14.4f
-* C48 la_data_out[32] vssd2 13.3f
-* C49 la_data_out[33] vssd2 13.1f
-* C50 SAR_0/sarlogic_0/repeater43/X vssd2 5.28f
-* C51 la_data_out[34] vssd2 14.1f
-* C52 la_data_out[35] vssd2 14.9f
-* C53 la_data_out[36] vssd2 52.9f
-* C54 SAR_0/clkc vssd2 4.58f
-* C55 SAR_0/latch_0/R vssd2 2.03f
-* C56 SAR_0/comparator_0/comparator_core_0/w_302_2337# vssd2 4.58f
-* C57 SAR_0/latch_0/S vssd2 2.19f
-* C58 SAR_0/comparator_0/trim_1/drain vssd2 -2.13f
-* C59 SAR_0/trimb3 vssd2 3.17f
-* C60 SAR_0/comparator_0/trim_1/n4 vssd2 2.07f
-* C61 SAR_0/trimb4 vssd2 2.89f
-* C62 SAR_0/comparator_0/trim_0/drain vssd2 -2.16f
-* C63 SAR_0/trim3 vssd2 2.98f
-* C64 SAR_0/comparator_0/trim_0/n4 vssd2 2.07f
-* C65 SAR_0/trim4 vssd2 2.95f
-* C66 SAR_0/DAC_1/en_buf vssd2 3.46f
-* C67 SAR_0/DAC_1/enb vssd2 3.13f
-* C68 SAR_0/DAC_1/carray_0/n1 vssd2 4f
-* C69 SAR_0/DAC_1/carray_0/n7 vssd2 65.5f
-* C70 SAR_0/DAC_1/carray_0/n6 vssd2 32.2f
-* C71 SAR_0/DAC_1/carray_0/n5 vssd2 17.2f
-* C72 SAR_0/DAC_1/carray_0/n4 vssd2 8.47f
-* C73 SAR_0/DAC_1/carray_0/n3 vssd2 6.15f
-* C74 SAR_0/DAC_1/carray_0/m2_42800_1156# vssd2 2.03f **FLOATING
-* C75 SAR_0/DAC_1/carray_0/m2_800_1156# vssd2 2.03f **FLOATING
-* C76 SAR_0/DAC_1/carray_0/n0 vssd2 3.03f
-* C77 SAR_0/DAC_1/carray_0/n2 vssd2 8.05f
-* C78 SAR_0/DAC_1/out vssd2 35.4f
-* C79 SAR_0/DAC_1/carray_0/ndum vssd2 6.6f
-* C80 SAR_0/sample vssd2 51.1f
-* C81 io_analog[4] vssd2 0.227p
-* C82 vdda1 vssd2 12.4p
-* C83 SAR_0/DAC_0/en_buf vssd2 3.46f
-* C84 SAR_0/DAC_0/enb vssd2 3.13f
-* C85 SAR_0/DAC_0/carray_0/n1 vssd2 4f
-* C86 SAR_0/DAC_0/carray_0/n7 vssd2 65.5f
-* C87 SAR_0/DAC_0/carray_0/n6 vssd2 32.2f
-* C88 SAR_0/DAC_0/carray_0/n5 vssd2 17.2f
-* C89 SAR_0/DAC_0/carray_0/n4 vssd2 8.47f
-* C90 SAR_0/DAC_0/carray_0/n3 vssd2 6.15f
-* C91 SAR_0/DAC_0/carray_0/m2_42800_1156# vssd2 2.03f **FLOATING
-* C92 SAR_0/DAC_0/carray_0/m2_800_1156# vssd2 2.03f **FLOATING
-* C93 SAR_0/DAC_0/carray_0/n0 vssd2 3.03f
-* C94 SAR_0/DAC_0/carray_0/n2 vssd2 8.05f
-* C95 SAR_0/DAC_0/out vssd2 35.4f
-* C96 SAR_0/DAC_0/carray_0/ndum vssd2 6.6f
-* C97 io_analog[5] vssd2 0.261p
-* C98 SAR_0/ctlp0 vssd2 2.51f
+* + trimb2 trimb3 trimb4 valid dvdd avss sarlogic
+* C0 comparator_0/trim_0/drain comparator_0/trim_0/n3 3.4f
+* C1 clk en 2.56f
+* C2 ctlp7 ctlp6 2.54f
+* C3 ctln5 ctln6 2.14f
+* C4 ctln1 ctln0 3.33f
+* C5 cal en 2.16f
+* C6 comparator_0/trim_0/drain comparator_0/trim_0/n4 6.81f
+* C7 ctln7 ctln6 2.54f
+* C8 ctln7 ctln1 2.93f
+* C9 ctlp7 ctlp1 2.93f
+* C10 clk rstn 2.88f
+* C11 DAC_0/out DAC_1/out 10f
+* C12 sample avdd 10.3f
+* C13 comparator_0/trim_1/drain comparator_0/trim_1/n3 3.4f
+* C14 comparator_0/trim_1/n4 comparator_0/trim_1/drain 6.81f
+* C15 result5 result6 2.55f
+* C16 result4 result5 2.24f
+* C17 ctlp1 ctlp0 3.33f
+* C18 ctlp5 ctlp6 2.14f
+* C19 result6 result7 2.94f
+* C20 dvdd avss 5.14p
+* C21 rstn avss 2.1f
+* C22 result7 avss 2.59f
+* C23 clk avss 2.1f
+* C24 clkc avss 4.66f
+* C25 latch_0/R avss 2.39f
+* C26 latch_0/S avss 2.56f
+* C27 trimb3 avss 3.2f
+* C28 trimb4 avss 2.92f
+* C29 trim3 avss 3f
+* C30 trim4 avss 2.98f
+* C31 DAC_1/en_buf avss 3.46f
+* C32 DAC_1/enb avss 3.13f
+* C33 DAC_1/out avss 35.4f
+* C34 sample avss 59.3f
+* C35 vinn avss 6.27f
+* C36 avdd avss 12.2p
+* C37 ctln0 avss 2.1f
+* C38 ctlp7 avss 2.05f
+* C39 DAC_0/en_buf avss 3.46f
+* C40 DAC_0/enb avss 3.13f
+* C41 DAC_0/out avss 35.4f
+* C42 vinp avss 6.27f
+* C43 ctlp1 avss 2.19f
+* C44 ctlp0 avss 3.16f
 * .ends
 

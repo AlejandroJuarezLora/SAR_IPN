@@ -1,4 +1,4 @@
-timestamp 1465508813
+timestamp 1693522012
 version 8.3
 tech sky130B
 style ngspice()
@@ -15,8 +15,8 @@ node "VPWR" 1982 867.393 29 487 m1 0 0 0 0 0 0 0 0 0 0 18096 904 0 0 0 0 0 0 0 0
 node "VGND" 998 761.362 29 -57 m1 0 0 0 0 0 0 0 0 11440 648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101716 1384 0 0 123708 1688 52992 1296 0 0 0 0 0 0 0 0 0 0
 node "VPB" 1859 604.764 29 487 nw 0 0 0 0 201588 1898 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 29 -57 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VPB" "VPWR" 85.7588
-cap "VPB" "VGND" 161.065
 cap "VGND" "VPWR" 903.312
+cap "VPWR" "VPB" 85.7588
+cap "VGND" "VPB" 161.065
 device msubckt sky130_fd_pr__nfet_01v8 79 7 80 8 l=394 w=110 "VNB" "VPWR" 788 0 "VGND" 220 5720,324 "VGND" 0 0
 device msubckt sky130_fd_pr__pfet_01v8_hvt 79 283 80 284 l=394 w=174 "VPB" "VGND" 788 0 "VPWR" 348 9048,452 "VPWR" 0 0

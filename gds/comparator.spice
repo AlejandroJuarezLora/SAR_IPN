@@ -1,22 +1,116 @@
 * SPICE3 file created from comparator.ext - technology: sky130B
 
+.subckt M1_1 a_30_n109# a_n88_n109# a_n33_n197# VSUBS
+X0 a_30_n109# a_n33_n197# a_n88_n109# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt trim_sw d_0 d_1 d_2 d_3 d_4 m1_1462_409# m1_1771_409# m1_136_409# m1_799_409#
++ m1_1226_409# vss
+XM1_1_14 vss m1_799_409# d_2 vss M1_1
+XM1_1_15 m1_799_409# vss d_2 vss M1_1
+XM1_1_0 vss m1_1226_409# d_0 vss M1_1
+XM1_1_1 vss m1_1771_409# d_4 vss M1_1
+XM1_1_2 m1_1771_409# vss d_4 vss M1_1
+XM1_1_3 vss m1_1771_409# d_4 vss M1_1
+XM1_1_4 m1_1771_409# vss d_4 vss M1_1
+XM1_1_5 m1_1771_409# vss d_4 vss M1_1
+XM1_1_6 vss m1_1771_409# d_4 vss M1_1
+XM1_1_7 vss m1_1771_409# d_4 vss M1_1
+XM1_1_8 m1_1771_409# vss d_4 vss M1_1
+XM1_1_9 m1_1462_409# vss d_1 vss M1_1
+XM1_1_10 m1_136_409# vss d_3 vss M1_1
+XM1_1_11 vss m1_136_409# d_3 vss M1_1
+XM1_1_12 m1_136_409# vss d_3 vss M1_1
+XM1_1_13 vss m1_136_409# d_3 vss M1_1
+.ends
+
+.subckt trim n3 n4 n2 n1 n0 trim_sw_0/d_4 trim_sw_0/d_3 trim_sw_0/d_2 trim_sw_0/d_1
++ trim_sw_0/d_0 VSUBS drain
+Xtrim_sw_0 trim_sw_0/d_0 trim_sw_0/d_1 trim_sw_0/d_2 trim_sw_0/d_3 trim_sw_0/d_4 n1
++ n4 n3 n2 n0 VSUBS trim_sw
+C0 n4 drain 6.84f
+C1 n3 drain 3.41f
+.ends
+
+.subckt Mdiff a_n33_51# a_30_n171# a_n88_n171# VSUBS
+X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt M3 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
+X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt Ml1 a_n33_51# a_30_n171# a_n88_n171# VSUBS
+X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt Minp a_n33_51# a_30_n171# a_n88_n171# VSUBS
+X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt M1 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
+X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt Minn a_n33_51# a_30_n171# a_n88_n171# VSUBS
+X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt Ml4 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
+X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt M4 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
+X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt Ml2 a_n33_51# a_30_n171# a_n88_n171# VSUBS
+X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt M2 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
+X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt Ml3 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
+X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt comparator_core vdd outp outn clk ip in diff vp vn vss
+XMdiff_0 clk vss diff vss Mdiff
+XMdiff_1 clk diff vss vss Mdiff
+XM3_0 outp clk w_302_2337# vdd vss M3
+XMl1_0 outp outn in vss Ml1
+XMinp_0 vp ip diff vss Minp
+XM1_0 in clk w_302_2337# vdd vss M1
+XMinn_0 vn diff in vss Minn
+XMl4_0 vdd outn w_302_2337# outp vss Ml4
+XM4_0 vdd clk w_302_2337# ip vss M4
+XMl2_0 outn ip outp vss Ml2
+XM2_0 vdd clk w_302_2337# outn vss M2
+XMl3_0 outn outp w_302_2337# vdd vss Ml3
+C0 clk vss 3.13f
+C1 vdd vss 2.09f
+C2 w_302_2337# vss 4.58f
+.ends
+
 .subckt comparator trim_3 trim_2 trim_0 trim_1 trim_4 trimb_4 trimb_1 trimb_0 trimb_2
 + trimb_3 outn outp clk vdd vss vn vp
-C0 trim_0/n4 vss 2.09f
+Xtrim_0 trim_0/n3 trim_0/n4 trim_0/n2 trim_0/n1 trim_0/n0 trim_4 trim_3 trim_2 trim_1
++ trim_0 vss trim_0/drain trim
+Xtrim_1 trim_1/n3 trim_1/n4 trim_1/n2 trim_1/n1 trim_1/n0 trimb_4 trimb_3 trimb_2
++ trimb_1 trimb_0 vss trim_1/drain trim
+Xcomparator_core_0 vdd outp outn clk trim_1/drain trim_0/drain comparator_core_0/diff
++ vp vn vss comparator_core
+C0 trim_1/n4 trim_1/drain 6.86f
 C1 trim_1/n3 trim_1/drain 3.41f
 C2 trim_0/drain trim_0/n3 3.41f
-C3 vdd vss 5.16f
-C4 vss trim_1/n4 2.09f
-C5 trim_1/drain trim_1/n4 6.89f
-C6 trim_0/drain trim_0/n4 6.89f
-Xtrim_0 trim_0/drain trim_0/n3 trim_0/n4 trim_0/n2 trim_0/n1 trim_0/n0 trim
-Xtrim_1 trim_1/drain trim_1/n3 trim_1/n4 trim_1/n2 trim_1/n1 trim_1/n0 trim
-Xcomparator_core_0 vdd vss outp outn clk trim_1/drain trim_0/drain comparator_core_0/diff
-+ vp vn comparator_core
-C7 clk 0 3.16f
-C8 vdd 0 6.8f
-C9 comparator_core_0/w_302_2337# 0 4.58f **FLOATING
-C10 trim_1/drain 0 2.15f
-C11 trim_0/drain 0 2.12f
-C12 vss 0 5.55f
+C3 vss vdd 5.14f
+C4 trim_0/n4 trim_0/drain 6.86f
+C5 clk 0 3.16f
+C6 vdd 0 6.8f
+C7 trim_1/drain 0 -3.83f
+C8 trim_0/drain 0 -3.86f
+C9 vss 0 5.55f
 .ends
+

@@ -1,0 +1,22 @@
+* SPICE3 file created from comparator.ext - technology: sky130B
+
+.subckt comparator trim_3 trim_2 trim_0 trim_1 trim_4 trimb_4 trimb_1 trimb_0 trimb_2
++ trimb_3 outn outp clk vdd vss vn vp
+C0 trim_0/n4 vss 2.09f
+C1 trim_1/n3 trim_1/drain 3.41f
+C2 trim_0/drain trim_0/n3 3.41f
+C3 vdd vss 5.16f
+C4 vss trim_1/n4 2.09f
+C5 trim_1/drain trim_1/n4 6.89f
+C6 trim_0/drain trim_0/n4 6.89f
+Xtrim_0 trim_0/drain trim_0/n3 trim_0/n4 trim_0/n2 trim_0/n1 trim_0/n0 trim
+Xtrim_1 trim_1/drain trim_1/n3 trim_1/n4 trim_1/n2 trim_1/n1 trim_1/n0 trim
+Xcomparator_core_0 vdd vss outp outn clk trim_1/drain trim_0/drain comparator_core_0/diff
++ vp vn comparator_core
+C7 clk 0 3.16f
+C8 vdd 0 6.8f
+C9 comparator_core_0/w_302_2337# 0 4.58f **FLOATING
+C10 trim_1/drain 0 2.15f
+C11 trim_0/drain 0 2.12f
+C12 vss 0 5.55f
+.ends

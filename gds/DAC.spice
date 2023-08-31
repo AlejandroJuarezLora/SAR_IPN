@@ -1,0 +1,219 @@
+* SPICE3 file created from DAC.ext - technology: sky130B
+
+.subckt DAC enb en_buf ctl1 ctl0 dum ctl3 ctl4 ctl5 ctl6 ctl7 ctl2 vdd vss sample
++ out vin
+X0 vss ctl7 carray_0/n7 vss sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X1 carray_0/n7 ctl7 vss vss sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X2 vdd ctl7 carray_0/n7 vdd sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X3 carray_0/n7 ctl7 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X4 vss ctl6 carray_0/n6 vss sky130_fd_pr__nfet_01v8 ad=9.44 pd=103 as=0.176 ps=1.84 w=0.65 l=0.15
+X5 carray_0/n6 ctl6 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X6 vdd ctl6 carray_0/n6 vdd sky130_fd_pr__pfet_01v8_hvt ad=14.6 pd=142 as=0.27 ps=2.54 w=1 l=0.15
+X7 carray_0/n6 ctl6 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X8 vss dum carray_0/ndum vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X9 carray_0/ndum dum vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X10 vdd dum carray_0/ndum vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X11 carray_0/ndum dum vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X12 vss ctl0 carray_0/n0 vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X13 carray_0/n0 ctl0 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X14 vdd ctl0 carray_0/n0 vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X15 carray_0/n0 ctl0 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X16 vss ctl1 carray_0/n1 vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X17 carray_0/n1 ctl1 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X18 vdd ctl1 carray_0/n1 vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X19 carray_0/n1 ctl1 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X20 vss ctl5 carray_0/n5 vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X21 carray_0/n5 ctl5 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X22 vdd ctl5 carray_0/n5 vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X23 carray_0/n5 ctl5 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X24 vss ctl4 carray_0/n4 vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X25 carray_0/n4 ctl4 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X26 vdd ctl4 carray_0/n4 vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X27 carray_0/n4 ctl4 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X28 vss ctl2 carray_0/n2 vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X29 carray_0/n2 ctl2 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X30 vdd ctl2 carray_0/n2 vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X31 carray_0/n2 ctl2 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X32 vss ctl3 carray_0/n3 vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.176 ps=1.84 w=0.65 l=0.15
+X33 carray_0/n3 ctl3 vss vss sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=0.65 l=0.15
+X34 vdd ctl3 carray_0/n3 vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0.27 ps=2.54 w=1 l=0.15
+X35 carray_0/n3 ctl3 vdd vdd sky130_fd_pr__pfet_01v8_hvt ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+C0 carray_0/m2_7300_1156# carray_0/m3_7400_1156# 2.11f
+C1 carray_0/n7 carray_0/m3_30800_1156# 3.14f
+C2 carray_0/m3_19100_1156# carray_0/m3_19300_1156# 3.35f
+C3 carray_0/m3_6100_1156# carray_0/m3_6300_1156# 3.35f
+C4 carray_0/n7 carray_0/m2_37600_1156# 2.39f
+C5 out vin 21.5f
+C6 carray_0/n7 carray_0/m2_33700_1156# 2.39f
+C7 carray_0/m3_4800_1156# carray_0/m2_4700_1156# 2.11f
+C8 carray_0/n6 carray_0/m3_11500_1156# 4.08f
+C9 carray_0/m3_33400_1156# carray_0/m3_33600_1156# 3.35f
+C10 carray_0/n4 carray_0/m3_19300_1156# 4.08f
+C11 carray_0/n5 carray_0/m2_32400_1156# 2.39f
+C12 carray_0/n7 out 97.2f
+C13 carray_0/m2_6000_1156# carray_0/m3_6100_1156# 2.11f
+C14 carray_0/n5 carray_0/m3_15400_1156# 4.08f
+C15 carray_0/n2 carray_0/m3_23200_1156# 3.4f
+C16 carray_0/m3_3500_1156# carray_0/m2_3400_1156# 2.11f
+C17 carray_0/m3_3500_1156# carray_0/m3_3700_1156# 3.35f
+C18 carray_0/m3_10000_1156# carray_0/m2_9900_1156# 2.11f
+C19 carray_0/n2 carray_0/n3 20.7f
+C20 carray_0/n7 sample 4.96f
+C21 carray_0/n4 carray_0/m2_23300_1156# 2.39f
+C22 carray_0/m3_42500_1156# carray_0/m3_42700_1156# 3.35f
+C23 carray_0/m2_2100_1156# carray_0/m3_2200_1156# 2.11f
+C24 carray_0/m2_13800_1156# carray_0/m3_13900_1156# 2.11f
+C25 carray_0/m2_32400_1156# carray_0/m3_32300_1156# 2.11f
+C26 carray_0/n7 carray_0/m3_38600_1156# 4.08f
+C27 vdd enb 4.26f
+C28 carray_0/n7 carray_0/m3_36000_1156# 4.08f
+C29 carray_0/n4 out 12.2f
+C30 carray_0/m3_12600_1156# carray_0/m3_12800_1156# 3.35f
+C31 carray_0/n7 carray_0/m2_24600_1156# 2.39f
+C32 carray_0/m3_40100_1156# carray_0/m2_40200_1156# 2.11f
+C33 carray_0/n7 carray_0/m3_12800_1156# 4.08f
+C34 carray_0/n6 carray_0/m3_6300_1156# 4.08f
+C35 carray_0/m3_39900_1156# carray_0/m3_40100_1156# 3.35f
+C36 carray_0/m3_37500_1156# carray_0/m2_37600_1156# 2.11f
+C37 carray_0/n7 carray_0/m2_38900_1156# 3.52f
+C38 carray_0/m3_17800_1156# carray_0/m3_18000_1156# 3.35f
+C39 carray_0/m3_36200_1156# carray_0/m2_36300_1156# 2.11f
+C40 carray_0/m3_30800_1156# carray_0/m3_31000_1156# 3.35f
+C41 carray_0/m3_900_1156# carray_0/m3_1100_1156# 3.35f
+C42 carray_0/n7 carray_0/m3_25600_1156# 4.08f
+C43 carray_0/n5 carray_0/m2_27200_1156# 2.39f
+C44 carray_0/n6 carray_0/m2_3400_1156# 2.39f
+C45 carray_0/n5 out 24.3f
+C46 carray_0/n6 carray_0/m2_25900_1156# 2.39f
+C47 carray_0/m2_42800_1156# carray_0/m3_42700_1156# 2.11f
+C48 carray_0/m2_11200_1156# carray_0/m3_11300_1156# 2.11f
+C49 carray_0/n7 carray_0/m3_8700_1156# 2.16f
+C50 carray_0/n2 out 3.35f
+C51 carray_0/n4 carray_0/m3_24300_1156# 4.08f
+C52 carray_0/m3_2200_1156# carray_0/m3_2400_1156# 3.35f
+C53 carray_0/m3_10000_1156# carray_0/m3_10200_1156# 3.35f
+C54 carray_0/n6 carray_0/m2_7300_1156# 2.39f
+C55 carray_0/n7 carray_0/m2_9900_1156# 2.39f
+C56 carray_0/n7 carray_0/m3_29700_1156# 2.16f
+C57 carray_0/m2_28500_1156# carray_0/m3_28400_1156# 2.11f
+C58 carray_0/m3_25800_1156# carray_0/m2_25900_1156# 2.11f
+C59 carray_0/n6 out 48.6f
+C60 carray_0/n5 carray_0/m3_33400_1156# 4.08f
+C61 carray_0/n7 carray_0/n1 11.4f
+C62 carray_0/m3_900_1156# carray_0/m2_800_1156# 2.11f
+C63 carray_0/n6 carray_0/m3_2400_1156# 4.08f
+C64 carray_0/n6 carray_0/m3_32100_1156# 4.08f
+C65 carray_0/n7 carray_0/m3_8900_1156# 4.08f
+C66 carray_0/n7 carray_0/m3_14100_1156# 4.08f
+C67 carray_0/m3_31000_1156# carray_0/m2_31100_1156# 2.11f
+C68 carray_0/m3_32100_1156# carray_0/m3_32300_1156# 3.35f
+C69 carray_0/m3_8900_1156# carray_0/m3_8700_1156# 3.35f
+C70 carray_0/n7 carray_0/m2_8600_1156# 3.52f
+C71 carray_0/ndum sample 11.1f
+C72 carray_0/m2_8600_1156# carray_0/m3_8700_1156# 2.11f
+C73 carray_0/n7 carray_0/m2_35000_1156# 3.52f
+C74 carray_0/m3_16500_1156# carray_0/m3_16700_1156# 3.35f
+C75 carray_0/n1 carray_0/n0 14.5f
+C76 carray_0/m3_28200_1156# carray_0/m3_28400_1156# 3.35f
+C77 carray_0/m3_37300_1156# carray_0/m3_37500_1156# 3.35f
+C78 carray_0/n6 carray_0/m2_31100_1156# 2.39f
+C79 carray_0/n7 carray_0/m3_39900_1156# 4.08f
+C80 carray_0/m2_12500_1156# carray_0/m3_12600_1156# 2.11f
+C81 carray_0/n7 carray_0/m3_4800_1156# 2.16f
+C82 carray_0/n7 carray_0/m2_28500_1156# 2.42f
+C83 carray_0/n6 carray_0/m2_17700_1156# 2.39f
+C84 carray_0/m2_35000_1156# carray_0/m3_34900_1156# 2.11f
+C85 carray_0/n7 carray_0/m3_18000_1156# 3.1f
+C86 carray_0/m2_23300_1156# carray_0/m3_23200_1156# 2.11f
+C87 carray_0/n6 carray_0/m3_37300_1156# 4.09f
+C88 carray_0/m3_41200_1156# carray_0/m3_41400_1156# 3.35f
+C89 carray_0/m3_38600_1156# carray_0/m3_38800_1156# 3.35f
+C90 carray_0/n7 carray_0/m2_13800_1156# 3.52f
+C91 carray_0/m3_36000_1156# carray_0/m3_36200_1156# 3.35f
+C92 out carray_0/n3 6.38f
+C93 carray_0/n7 carray_0/n6 22.1f
+C94 carray_0/m3_11300_1156# carray_0/m3_11500_1156# 3.35f
+C95 carray_0/m3_27100_1156# carray_0/m2_27200_1156# 2.11f
+C96 carray_0/m2_24600_1156# carray_0/m3_24500_1156# 2.11f
+C97 sw_top_0/m2_1158_361# vdd 2.15f
+C98 carray_0/m3_24300_1156# carray_0/m3_24500_1156# 3.35f
+C99 carray_0/m3_26900_1156# carray_0/n6 4.08f
+C100 carray_0/n4 carray_0/n5 12.7f
+C101 carray_0/m2_38900_1156# carray_0/m3_38800_1156# 2.11f
+C102 carray_0/m3_25800_1156# carray_0/m3_25600_1156# 3.35f
+C103 carray_0/n7 carray_0/m2_41500_1156# 2.39f
+C104 carray_0/n1 carray_0/n2 2.02f
+C105 carray_0/m2_41500_1156# carray_0/m3_41400_1156# 2.11f
+C106 carray_0/n6 carray_0/m3_16700_1156# 3.14f
+C107 sw_top_3/m2_1158_361# vdd 2.15f
+C108 carray_0/n7 carray_0/m2_29800_1156# 3.52f
+C109 carray_0/n7 carray_0/m3_29500_1156# 3.1f
+C110 carray_0/n0 carray_0/ndum 14.5f
+C111 carray_0/n7 carray_0/m3_38800_1156# 2.16f
+C112 carray_0/n1 carray_0/ndum 3.54f
+C113 carray_0/n2 carray_0/m3_20400_1156# 3.43f
+C114 vdd vin 3.41f
+C115 carray_0/n7 carray_0/m3_5000_1156# 4.08f
+C116 carray_0/m3_7400_1156# carray_0/m3_7600_1156# 3.35f
+C117 carray_0/m3_29700_1156# carray_0/m3_29500_1156# 3.35f
+C118 carray_0/m3_29700_1156# carray_0/m2_29800_1156# 2.11f
+C119 carray_0/n7 carray_0/m2_15100_1156# 2.39f
+C120 carray_0/m3_16500_1156# carray_0/m2_16400_1156# 2.11f
+C121 carray_0/n7 carray_0/m3_7600_1156# 4.08f
+C122 carray_0/n6 carray_0/m2_40200_1156# 2.39f
+C123 carray_0/m3_15200_1156# carray_0/m2_15100_1156# 2.11f
+C124 carray_0/n5 carray_0/m3_10200_1156# 4.08f
+C125 carray_0/n7 carray_0/m3_34700_1156# 4.08f
+C126 carray_0/n7 carray_0/m2_4700_1156# 3.52f
+C127 carray_0/n4 carray_0/m2_20300_1156# 2.39f
+C128 carray_0/n5 carray_0/n6 17.4f
+C129 carray_0/n5 carray_0/m3_28200_1156# 4.09f
+C130 carray_0/n6 carray_0/m2_12500_1156# 2.39f
+C131 carray_0/m2_20300_1156# carray_0/m3_20400_1156# 2.11f
+C132 carray_0/n7 carray_0/m3_13900_1156# 2.16f
+C133 carray_0/n7 carray_0/m2_19000_1156# 2.42f
+C134 carray_0/n6 carray_0/m3_41200_1156# 4.08f
+C135 carray_0/m3_34700_1156# carray_0/m3_34900_1156# 3.35f
+C136 carray_0/n7 carray_0/m2_2100_1156# 2.39f
+C137 carray_0/n5 carray_0/m2_16400_1156# 2.39f
+C138 carray_0/m2_33700_1156# carray_0/m3_33600_1156# 2.11f
+C139 carray_0/m3_26900_1156# carray_0/m3_27100_1156# 3.35f
+C140 carray_0/n7 carray_0/m3_1100_1156# 4.08f
+C141 carray_0/m3_15200_1156# carray_0/m3_15400_1156# 3.35f
+C142 carray_0/m3_17800_1156# carray_0/m2_17700_1156# 2.11f
+C143 carray_0/n1 carray_0/n3 3.36f
+C144 carray_0/m3_4800_1156# carray_0/m3_5000_1156# 3.35f
+C145 carray_0/n7 carray_0/m3_42500_1156# 4.08f
+C146 carray_0/m3_19100_1156# carray_0/m2_19000_1156# 2.11f
+C147 carray_0/n7 carray_0/m3_3700_1156# 4.08f
+C148 carray_0/n7 carray_0/m2_6000_1156# 2.39f
+C149 carray_0/n4 carray_0/n3 12.1f
+C150 carray_0/m3_13900_1156# carray_0/m3_14100_1156# 3.35f
+Xsw_top_0 out sample vdd vss vin sw_top
+Xcarray_0 carray_0/n5 carray_0/n7 carray_0/n6 carray_0/n2 carray_0/n3 carray_0/n4
++ carray_0/n1 carray_0/n0 carray_0/ndum out carray
+Xsw_top_1 out sample vdd vss vin sw_top
+Xsw_top_2 out sample vdd vss vin sw_top
+Xsw_top_3 out sample vdd vss vin sw_top
+C151 sw_top_3/m2_990_200# vss 2.32f **FLOATING
+C152 sw_top_3/m2_1158_361# vss 2.14f
+C153 en_buf vss 4.49f
+C154 enb vss 4.07f
+C155 carray_0/n1 vss 4.16f
+C156 carray_0/n7 vss 65.7f
+C157 carray_0/n6 vss 32.3f
+C158 carray_0/n5 vss 17.4f
+C159 carray_0/n4 vss 8.63f
+C160 carray_0/n3 vss 6.31f
+C161 carray_0/m2_42800_1156# vss 2.03f
+C162 carray_0/m2_800_1156# vss 2.03f
+C163 carray_0/n0 vss 3.19f
+C164 carray_0/n2 vss 8.22f
+C165 out vss 34.9f
+C166 carray_0/ndum vss 6.77f
+C167 sample vss 25.4f
+C168 sw_top_0/m2_990_200# vss 2.32f **FLOATING
+C169 vin vss 7.45f
+C170 sw_top_0/m2_1158_361# vss 2.14f
+C171 vdd vss 46.1f
+.ends

@@ -21,7 +21,7 @@ N 260 -290 320 -290 {lab=out}
 N 480 -40 510 -40 {lab=en}
 N 590 -40 640 -40 {lab=en_buf}
 N 200 -440 200 -400 {lab=en_buf}
-N 200 -170 200 -120 {lab=#net1}
+N 200 -170 200 -120 {lab=en}
 C {devices/iopin.sym} 320 -290 0 0 {name=p1 lab=out}
 C {devices/ipin.sym} 350 -40 0 0 {name=p2 lab=en}
 C {devices/iopin.sym} 20 -20 0 0 {name=p3 lab=vss}
@@ -35,7 +35,7 @@ C {sky130_stdcells/decap_8.sym} 160 -20 0 0 {name=x2 VGND=vss VNB=vss VPB=vdd VP
 C \{sky130_stdcells/sky130_stdcells/inv_4.sym}
 C {devices/lab_wire.sym} 510 -40 0 0 {name=l1 sig_type=std_logic lab=en}
 C {sky130_stdcells/inv_4.sym} 550 -40 0 0 {name=x4 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ 
-C \{devices/lab_wire.sym}
+C \{devices/lab_wire.sym\}}
 C {devices/lab_wire.sym} 200 -130 2 0 {name=l3 sig_type=std_logic lab=en}
 C {sky130_stdcells/decap_3.sym} 160 -50 0 0 {}
 C {sky130_fd_pr/nfet_01v8.sym} 200 -190 3 0 {name=M1

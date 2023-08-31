@@ -1,0 +1,15 @@
+* SPICE3 file created from latch.ext - technology: sky130B
+
+.subckt latch vdd vss Qn S R Q
+X0 Q m1_1673_493# vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.4
+X1 m1_1673_493# R vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.4
+X2 m1_1673_493# R vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.4
+X3 m1_458_623# S vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=1.16 ps=10.3 w=1 l=0.4
+X4 m1_458_623# S vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=1.74 ps=15.5 w=1 l=0.4
+X5 Q Qn vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.4
+X6 Q Qn vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.4
+X7 Qn Q vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.4
+X8 Qn Q vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.4
+X9 vss m1_458_623# Qn vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.4
+C0 vdd vss 7.02f
+.ends

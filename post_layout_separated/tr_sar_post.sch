@@ -1,4 +1,4 @@
-v {xschem version=3.4.2 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -227,8 +227,10 @@ name=STDCELLS
 only_toplevel=false
 format="tcleval( @value )"
 value="
-*.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
-.include /foss/designs/SAR_IPN/post_layout/user_analog_project_wrapper.spice
+.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
+.include /home/alex/Desktop/SAR_IPN/post_layout_separated/extracted.spice
+.include /home/alex/Desktop/SAR_IPN/post_layout_separated/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/SAR_IPN/post_layout_separated/sar/control/sar_logic.sp
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -256,14 +258,14 @@ value="
 
 run
 write tr_sar.raw
-meas tran d0 find v(xsar.res0) at=47e-6
-meas tran d1 find v(xsar.res1) at=47e-6
-meas tran d2 find v(xsar.res2) at=47e-6
-meas tran d3 find v(xsar.res3) at=47e-6
-meas tran d4 find v(xsar.res4) at=47e-6
-meas tran d5 find v(xsar.res5) at=47e-6
-meas tran d6 find v(xsar.res6) at=47e-6
-meas tran d7 find v(xsar.res7) at=47e-6
+meas tran d0 find v(xsar_post.res0) at=47e-6
+meas tran d1 find v(xsar_post.res1) at=47e-6
+meas tran d2 find v(xsar_post.res2) at=47e-6
+meas tran d3 find v(xsar_post.res3) at=47e-6
+meas tran d4 find v(xsar_post.res4) at=47e-6
+meas tran d5 find v(xsar_post.res5) at=47e-6
+meas tran d6 find v(xsar_post.res6) at=47e-6
+meas tran d7 find v(xsar_post.res7) at=47e-6
 
 * meas tran d0 find v(xsar.result0) at=47e-6
 * meas tran d1 find v(xsar.result1) at=47e-6
@@ -369,7 +371,7 @@ C {devices/gnd.sym} 1010 -90 0 0 {name=l43 lab=GND}
 C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
 C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
-C {/foss/designs/SAR_IPN/post_layout_separated/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
+C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
 C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
@@ -386,4 +388,5 @@ spice_ignore=true
 place=header}
 C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
 place=header
-spice_ignore=false}
+spice_ignore=false
+}

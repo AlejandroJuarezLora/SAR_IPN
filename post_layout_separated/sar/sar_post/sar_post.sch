@@ -1,4 +1,4 @@
-v {xschem version=3.4.2 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -19,20 +19,17 @@ N 980 -370 1010 -370 { lab=avss}
 N 1010 -390 1010 -370 { lab=avss}
 N 980 -510 1010 -510 { lab=avdd}
 N 1010 -510 1010 -490 { lab=avdd}
-N 150 -600 180 -600 { lab=vinp}
-N 120 -550 180 -550 { lab=ctlp[7:0]}
-N 150 -280 180 -280 { lab=vinn}
-N 120 -230 180 -230 { lab=ctln[7:0]}
+N 150 -610 180 -610 { lab=vinp}
+N 150 -290 180 -290 { lab=vinn}
 N 610 -410 620 -410 { lab=vn}
-N 330 -480 330 -450 { lab=avss}
-N 330 -160 330 -130 { lab=avss}
+N 330 -120 330 -90 { lab=avss}
 N 330 -710 330 -680 { lab=avdd}
 N 1110 -460 1160 -460 { lab=comp}
 N 780 -370 780 -340 { lab=avss}
 N 860 -420 920 -420 { lab=outn}
 N 860 -460 920 -460 { lab=outp}
-N 150 -210 180 -210 { lab=avss}
-N 150 -530 180 -530 { lab=avdd}
+N 150 -180 180 -180 { lab=avss}
+N 150 -500 180 -500 { lab=avdd}
 N 810 -550 810 -490 { lab=trim[4:0]}
 N 810 -550 870 -550 { lab=trim[4:0]}
 N 830 -520 830 -480 { lab=trimb[4:0]}
@@ -63,17 +60,53 @@ N 610 -600 610 -470 { lab=vp}
 N 330 -400 330 -360 { lab=avdd}
 N 820 -210 900 -210 { lab=clkc}
 N 1220 -70 1340 -70 { lab=rstn}
-N 1040 -390 1040 -375 {}
-N 1070 -390 1070 -375 {}
+N 130 -480 180 -480 {
+lab=n_sample}
+N 160 -160 180 -160 {
+lab=n_sample}
+N 150 -160 160 -160 {
+lab=n_sample}
+N 0 -380 30 -380 {
+lab=sample}
+N 110 -480 130 -480 {
+lab=n_sample}
+N 110 -480 110 -380 {
+lab=n_sample}
+N 110 -380 110 -220 {
+lab=n_sample}
+N 110 -160 150 -160 {
+lab=n_sample}
+N 110 -220 110 -160 {
+lab=n_sample}
+N 10 -380 10 -180 {
+lab=sample}
+N 120 -590 180 -590 { lab=ctlp[0]}
+N 120 -580 180 -580 { lab=ctlp[1]}
+N 120 -570 180 -570 { lab=ctlp[2]}
+N 120 -560 180 -560 { lab=ctlp[3]}
+N 120 -550 180 -550 { lab=ctlp[4]}
+N 20 -490 180 -490 {
+lab=sample}
+N 10 -490 10 -380 {
+lab=sample}
+N 10 -490 20 -490 {
+lab=sample}
+N 120 -540 180 -540 { lab=ctlp[5]}
+N 120 -530 180 -530 { lab=ctlp[6]}
+N 120 -520 180 -520 { lab=ctlp[7]}
+N 10 -180 10 -170 {
+lab=sample}
+N 10 -170 180 -170 {
+lab=sample}
 C {devices/lab_wire.sym} 730 -410 0 0 {name=l58 sig_type=std_logic lab=vn}
 C {devices/lab_wire.sym} 180 -310 0 0 {name=l80 sig_type=std_logic lab=sample}
-C {devices/lab_wire.sym} 180 -230 0 0 {name=l44 sig_type=std_logic lab=ctln[7:0]}
+C {devices/lab_wire.sym} 180 -230 0 0 {name=l44 sig_type=std_logic lab=ctln[4]}
 C {devices/lab_wire.sym} 900 -210 0 1 {name=l1 sig_type=std_logic lab=clkc}
 C {devices/lab_wire.sym} 920 -460 0 0 {name=l39 sig_type=std_logic lab=outp}
 C {devices/lab_wire.sym} 920 -420 0 0 {name=l41 sig_type=std_logic lab=outn}
 C {devices/lab_wire.sym} 730 -470 0 0 {name=l62 sig_type=std_logic lab=vp}
 C {devices/lab_wire.sym} 780 -510 3 1 {name=l66 sig_type=std_logic lab=avdd}
-C {/foss/designs/SAR_IPN/post_layout_separated/sar/latch/latch.sym} 1010 -440 0 0 {name=xlat}
+C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/latch/latch.sym} 1010 -440 0 0 {name=xlat}
 C {devices/noconn.sym} 1125 -420 2 0 {name=l87}
 C {devices/lab_wire.sym} 1010 -370 0 0 {name=l5 sig_type=std_logic lab=avss
 }
@@ -90,27 +123,26 @@ C {devices/ipin.sym} -210 -350 0 1 {name=p3 lab=clk}
 C {devices/ipin.sym} -100 -350 0 1 {name=p11 lab=en}
 C {devices/lab_wire.sym} 1110 -460 0 1 {name=l9 sig_type=std_logic lab=comp}
 C {devices/noconn.sym} 1220 -210 0 0 {name=l12}
-C {devices/lab_wire.sym} 180 -550 0 0 {name=l11 sig_type=std_logic lab=ctlp[7:0]}
-C {devices/lab_wire.sym} 180 -600 0 0 {name=l19 sig_type=std_logic lab=vinp}
-C {devices/lab_wire.sym} 180 -280 0 0 {name=l29 sig_type=std_logic lab=vinn}
+C {devices/lab_wire.sym} 180 -610 0 0 {name=l19 sig_type=std_logic lab=vinp}
+C {devices/lab_wire.sym} 180 -290 0 0 {name=l29 sig_type=std_logic lab=vinn}
 C {devices/lab_wire.sym} 330 -360 1 0 {name=l24 sig_type=std_logic lab=avdd}
-C {devices/lab_wire.sym} 330 -480 3 0 {name=l15 sig_type=std_logic lab=avss}
-C {devices/lab_wire.sym} 330 -160 3 0 {name=l25 sig_type=std_logic lab=avss}
+C {devices/lab_wire.sym} 330 -440 3 0 {name=l15 sig_type=std_logic lab=avss}
+C {devices/lab_wire.sym} 330 -90 3 0 {name=l25 sig_type=std_logic lab=avss}
 C {devices/lab_wire.sym} 330 -680 1 0 {name=l14 sig_type=std_logic lab=avdd}
 C {devices/opin.sym} -210 -230 2 1 {name=p14 lab=valid}
 C {devices/ipin.sym} -210 -310 0 1 {name=p15 lab=cal}
 C {devices/lab_wire.sym} 780 -370 3 0 {name=l2 sig_type=std_logic lab=avss}
-C {devices/code.sym} -220 -160 0 0 {name=INCLUDES only_toplevel=false 
+C {devices/code.sym} -220 -20 0 0 {name=INCLUDES only_toplevel=false 
 format="tcleval(@value )"
 value="
-.include /foss/designs/SAR_IPN/post_layout_separated/sar/control/cmos_cells_digital.sp
-.include /foss/designs/SAR_IPN/post_layout_separated/sar/control/sar_logic.sp
+.include /home/alex/Desktop/SAR_IPN/post_layout_separated/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/SAR_IPN/post_layout_separated/sar/control/sar_logic.sp
 "
-spice_ignore=false
+spice_ignore=true
 }
-C {devices/lab_wire.sym} 180 -210 0 0 {name=l23 sig_type=std_logic lab=avss
+C {devices/lab_wire.sym} 180 -180 0 0 {name=l23 sig_type=std_logic lab=avss
 }
-C {devices/lab_wire.sym} 180 -530 0 0 {name=l31 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 180 -500 0 0 {name=l31 sig_type=std_logic lab=avdd
 }
 C {devices/lab_wire.sym} 830 -520 0 1 {name=l3 sig_type=std_logic lab=trimb[4:0]
 }
@@ -151,11 +183,9 @@ C {devices/lab_wire.sym} 1300 -190 0 0 {name=l43 sig_type=std_logic lab=cal
 }
 C {devices/noconn.sym} 1220 -190 0 0 {name=l45
 }
-C {/foss/designs/SAR_IPN/post_layout_separated/sar/dac/dac.sym} 330 -270 0 0 {name=xdn
+C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/dac/DAC.sym} 330 -270 0 0 {name=xdn
 }
-C {/foss/designs/SAR_IPN/post_layout_separated/sar/dac/dac.sym} 330 -590 0 0 {name=xdp
-}
-C {/foss/designs/SAR_IPN/post_layout_separated/sar/comparator/comparator.sym} 810 -280 0 0 {name=xcom
+C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/comparator/comparator.sym} 810 -280 0 0 {name=xcom
 }
 C {devices/lab_wire.sym} 1300 -70 0 0 {name=l27 sig_type=std_logic lab=rstn
 }
@@ -163,16 +193,33 @@ C {devices/noconn.sym} 1220 -70 0 0 {name=l28
 }
 C {devices/ipin.sym} -100 -320 0 1 {name=p2 lab=rstn
 }
-C {devices/code.sym} -70 -180 0 0 {name=buses only_toplevel=false value="
-Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5 dctln6 dctln7 dtrim0 dtrim1 dtrim2 dtrim3 dtrim4 dtrimb0 dtrimb1 dtrimb2 dtrimb3 dtrimb4 dclkc sar_logic
-
+C {devices/code.sym} -50 -30 0 0 {name=buses only_toplevel=false value="
 .model adc_buff adc_bridge(in_low = 0.2 in_high=0.8)
 .model dac_buff dac_bridge(out_high = 1.2)
 
 Aad [clk rstn en comp cal] [dclk drstn den dcomp dcal] adc_buff
 Ada [dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5 dctln6 dctln7 dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dclkc] [ctlp_0_ ctlp_1_ ctlp_2_ ctlp_3_ ctlp_4_ ctlp_5_ ctlp_6_ ctlp_7_ ctln_0_ ctln_1_ ctln_2_ ctln_3_ ctln_4_ ctln_5_ ctln_6_ ctln_7_ res0 res1 res2 res3 res4 res5 res6 res7 sample clkc] dac_buff
 Ada2 [dtrim4 dtrim3 dtrim2 dtrim1 dtrim0 dtrimb4 dtrimb3 dtrimb2 dtrimb1 dtrimb0] [trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trimb_4_ trimb_3_ trimb_2_ trimb_1_ trimb_0_ ] dac_buff
+Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 dres7 dsamp dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln2 dctln3 dctln4 dctln5 dctln6 dctln7 dtrim0 dtrim1 dtrim2 dtrim3 dtrim4 dtrimb0 dtrimb1 dtrimb2 dtrimb3 dtrimb4 dclkc sar_logic
+"
 
-"}
-C {devices/noconn.sym} 1070 -375 3 0 {name=l16}
-C {devices/noconn.sym} 1040 -375 3 0 {name=l17}
+place=bottom}
+C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/dac/DAC.sym} 330 -590 0 0 {name=xdp}
+C {sky130_stdcells/inv_4.sym} 70 -380 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_wire.sym} 0 -380 0 0 {name=l26 sig_type=std_logic lab=sample}
+C {devices/lab_wire.sym} 110 -290 0 0 {name=l48 sig_type=std_logic lab=n_sample}
+C {devices/lab_wire.sym} 120 -590 0 0 {name=l18 sig_type=std_logic lab=ctlp[0]}
+C {devices/lab_wire.sym} 120 -580 0 0 {name=l46 sig_type=std_logic lab=ctlp[1]}
+C {devices/lab_wire.sym} 120 -570 0 0 {name=l11 sig_type=std_logic lab=ctlp[2]}
+C {devices/lab_wire.sym} 120 -560 0 0 {name=l47 sig_type=std_logic lab=ctlp[3]}
+C {devices/lab_wire.sym} 120 -550 0 0 {name=l49 sig_type=std_logic lab=ctlp[4]}
+C {devices/lab_wire.sym} 120 -540 0 0 {name=l50 sig_type=std_logic lab=ctlp[5]}
+C {devices/lab_wire.sym} 120 -530 0 0 {name=l51 sig_type=std_logic lab=ctlp[6]}
+C {devices/lab_wire.sym} 120 -520 0 0 {name=l52 sig_type=std_logic lab=ctlp[7]}
+C {devices/lab_wire.sym} 180 -270 0 0 {name=l53 sig_type=std_logic lab=ctln[0]}
+C {devices/lab_wire.sym} 180 -260 0 0 {name=l54 sig_type=std_logic lab=ctln[1]}
+C {devices/lab_wire.sym} 180 -250 0 0 {name=l55 sig_type=std_logic lab=ctln[2]}
+C {devices/lab_wire.sym} 180 -240 0 0 {name=l56 sig_type=std_logic lab=ctln[3]}
+C {devices/lab_wire.sym} 180 -220 0 0 {name=l57 sig_type=std_logic lab=ctln[5]}
+C {devices/lab_wire.sym} 180 -210 0 0 {name=l59 sig_type=std_logic lab=ctln[6]}
+C {devices/lab_wire.sym} 180 -200 0 0 {name=l60 sig_type=std_logic lab=ctln[7]}

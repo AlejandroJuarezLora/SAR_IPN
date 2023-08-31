@@ -1,4 +1,4 @@
-v {xschem version=3.4.2 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {type=primitive
@@ -17,13 +17,11 @@ L 4 -70 -35 -70 35 {}
 L 4 80 -35 80 35 {}
 L 4 -70 -35 80 -35 {}
 B 5 -2.5 -52.5 2.5 -47.5 {name=vdd dir=inout }
-B 5 97.5 -22.5 102.5 -17.5 {name=Q dir=out }
 B 5 97.5 17.5 102.5 22.5 {name=Qn dir=out }
-B 5 -2.5 47.5 2.5 52.5 {name=vss dir=inout }
-B 5 -92.5 17.5 -87.5 22.5 {name=R dir=in }
 B 5 -92.5 -22.5 -87.5 -17.5 {name=S dir=in }
-B 5 27.5 47.5 32.5 52.5 {name=m1_458_623# dir=inout }
-B 5 57.5 47.5 62.5 52.5 {name=m1_1673_493# dir=inout }
+B 5 -92.5 17.5 -87.5 22.5 {name=R dir=in }
+B 5 97.5 -22.5 102.5 -17.5 {name=Q dir=out }
+B 5 -2.5 47.5 2.5 52.5 {name=vss dir=inout }
 P 4 2 0 35 -0 50 {}
 P 4 2 0 -50 -0 -35 {}
 T {@symname} -15.5 -6 0 0 0.3 0.3 {}

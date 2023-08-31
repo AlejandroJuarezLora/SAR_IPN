@@ -58,9 +58,9 @@ V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
 xlat avdd comp net1 avss outn outp latch
 **** begin user architecture code
 
-.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/cmos_cells_digital.sp
-.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic.sp
-*.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic_sky.sp
+*.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/cmos_cells_digital.sp
+*.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic.sp
+.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic_sky.sp
 
 **** end user architecture code
 xdn vn sample avdd avss vinn ctln_7_ ctln_6_ ctln_5_ ctln_4_ ctln_3_ ctln_2_ ctln_1_ ctln_0_ avss

@@ -276,13 +276,13 @@ meas tran d7 find v(xsar_post.res7) at=47e-6
 * meas tran d6 find v(xsar.result6) at=47e-6
 * meas tran d7 find v(xsar.result7) at=47e-6
 
-meas tran vpmax max xsar.vp
-meas tran vpmin min xsar.vp
-meas tran vpend find v(xsar.vp) at=39e-6
+meas tran vpmax max xsar_post.vp
+meas tran vpmin min xsar_post.vp
+meas tran vpend find v(xsar_post.vp) at=39e-6
 
-meas tran vnmax max xsar.vn
-meas tran vnmin min xsar.vn
-meas tran vnend find v(xsar.vn) at=39e-6
+meas tran vnmax max xsar_post.vn
+meas tran vnmin min xsar_post.vn
+meas tran vnend find v(xsar_post.vn) at=39e-6
 
 print d0
 print d1

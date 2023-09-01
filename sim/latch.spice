@@ -1,0 +1,37 @@
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/latch/latch.sch
+**.subckt latch S R vss vdd Q Qn
+*.ipin S
+*.ipin R
+*.iopin vss
+*.iopin vdd
+*.opin Q
+*.opin Qn
+x1 vdd Qn Q vss inv_lvt
+x2 vdd Q Qn vss inv_lvt
+x3 vdd R net2 vss inv_lvt
+x4 vdd S net1 vss inv_lvt
+XM4 Q net2 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Qn net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+
+* expanding   symbol:  logic/inv_lvt.sym # of pins=4
+** sym_path: /home/alex/Desktop/SAR_IPN/xschem/logic/inv_lvt.sym
+** sch_path: /home/alex/Desktop/SAR_IPN/xschem/logic/inv_lvt.sch
+.subckt inv_lvt vdd in out vss
+*.iopin vdd
+*.iopin vss
+*.ipin in
+*.opin out
+XM3 out in vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

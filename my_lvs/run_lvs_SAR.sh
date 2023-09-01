@@ -19,4 +19,4 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "user_analog_layout.spice SAR" "user_analog_schematic.spice sar" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl SAR.out
+netgen -batch lvs "layout_extracted.spice SAR" "xschematic_extracted.spice sar" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl SAR.out

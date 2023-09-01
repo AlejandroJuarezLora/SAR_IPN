@@ -1,155 +1,321 @@
 
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__decap_8 is a black box; will not flatten Circuit 1
+Warning: Equate pins:  cell decap_8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: decap_8                         |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+proxy1                                     |1                                          
+proxy2                                     |2                                          
+proxy3                                     |3                                          
+proxy4                                     |4                                          
+(no matching pin)                          |proxya_65_55#                              
+(no matching pin)                          |proxya_65_331#                             
+(no matching pin)                          |proxyw_0_269#                              
+(no matching pin)                          |proxyVSUBS                                 
+a_65_55#                                   |(no matching pin)                          
+a_65_331#                                  |(no matching pin)                          
+w_0_269#                                   |(no matching pin)                          
+VSUBS                                      |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
 
 Circuit 2 cell sky130_fd_sc_hd__inv_4 is a black box; will not flatten Circuit 1
 Class inv_4 (0):  Merged 6 parallel devices.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell inv_4 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__inv_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: inv_4                           |Circuit 2: sky130_fd_sc_hd__inv_4          
+-------------------------------------------|-------------------------------------------
+proxy1                                     |1                                          
+proxy2                                     |2                                          
+proxy3                                     |3                                          
+proxy4                                     |4                                          
+proxy5                                     |5                                          
+proxy6                                     |6                                          
+(no matching pin)                          |proxyw_0_269#                              
+(no matching pin)                          |proxya_59_207#                             
+(no matching pin)                          |proxya_75_55#                              
+(no matching pin)                          |proxya_75_305#                             
+(no matching pin)                          |proxya_157_55#                             
+(no matching pin)                          |proxyVSUBS                                 
+w_0_269#                                   |(no matching pin)                          
+a_59_207#                                  |(no matching pin)                          
+a_75_55#                                   |(no matching pin)                          
+a_75_305#                                  |(no matching pin)                          
+a_157_55#                                  |(no matching pin)                          
+VSUBS                                      |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes inv_4 and sky130_fd_sc_hd__inv_4 are equivalent.
 
-Circuit 2 cell sky130_fd_sc_hd__decap_8 is a black box; will not flatten Circuit 1
-Equate elements:  no current cell.
-Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
-
 Circuit 2 cell sky130_fd_sc_hd__decap_3 is a black box; will not flatten Circuit 1
-Equate elements:  no current cell.
-Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
-Flattening unmatched subcell decap_8 in circuit sw_top (0)(1 instance)
+Warning: Equate pins:  cell decap_3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: decap_3                         |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+proxy1                                     |1                                          
+proxy2                                     |2                                          
+proxy3                                     |3                                          
+proxy4                                     |4                                          
+(no matching pin)                          |proxya_65_55#                              
+(no matching pin)                          |proxya_65_331#                             
+(no matching pin)                          |proxyw_0_269#                              
+(no matching pin)                          |proxyVSUBS                                 
+a_65_55#                                   |(no matching pin)                          
+a_65_331#                                  |(no matching pin)                          
+w_0_269#                                   |(no matching pin)                          
+VSUBS                                      |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
 Flattening unmatched subcell M1_3 in circuit sw_top (0)(1 instance)
 Flattening unmatched subcell M2_2 in circuit sw_top (0)(1 instance)
-Flattening unmatched subcell decap_3 in circuit sw_top (0)(1 instance)
 
-Class sw_top (0):  Merged 20 parallel devices.
+Class sw_top (0):  Merged 18 parallel devices.
 Subcircuit summary:
 Circuit 1: sw_top                          |Circuit 2: sw_top                          
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (12->2)            |sky130_fd_pr__nfet_01v8 (10->1) **Mismatch 
-sky130_fd_pr__pfet_01v8_hvt (2->1)         |(no matching element)                      
+decap_8 (1)                                |sky130_fd_sc_hd__decap_8 (1)               
 sky130_fd_pr__pfet_01v8 (10->1)            |sky130_fd_pr__pfet_01v8 (10->1)            
+sky130_fd_pr__nfet_01v8 (10->1)            |sky130_fd_pr__nfet_01v8 (10->1)            
 inv_4 (2)                                  |sky130_fd_sc_hd__inv_4 (1) **Mismatch**    
-(no matching element)                      |sky130_fd_sc_hd__decap_8 (1)               
-(no matching element)                      |sky130_fd_sc_hd__decap_3 (1)               
+decap_3 (1)                                |sky130_fd_sc_hd__decap_3 (1)               
 Number of devices: 6 **Mismatch**          |Number of devices: 5 **Mismatch**          
-Number of nets: 8 **Mismatch**             |Number of nets: 10 **Mismatch**            
+Number of nets: 48 **Mismatch**            |Number of nets: 38 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: sw_top                          |Circuit 2: sw_top                          
 
 ---------------------------------------------------------------------------------------
-Net: vss                                   |Net: VNB                                   
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_sc_hd__decap_3/2 = 1           
-  sky130_fd_pr__nfet_01v8/4 = 2            |                                           
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
-  inv_4/a_75_55# = 2                       |                                           
-  inv_4/VSUBS = 2                          |                                           
+Net: vss                                   |Net: vss                                   
+  decap_8/a_65_55# = 1                     |  sky130_fd_sc_hd__decap_8/1 = 1           
+  decap_8/VSUBS = 1                        |  sky130_fd_sc_hd__decap_8/2 = 1           
+  inv_4/VSUBS = 2                          |  sky130_fd_sc_hd__inv_4/2 = 1             
+  inv_4/a_75_55# = 2                       |  sky130_fd_sc_hd__inv_4/3 = 1             
+  sky130_fd_pr__nfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/4 = 1            
+  decap_3/a_65_55# = 1                     |                                           
+  decap_3/VSUBS = 1                        |                                           
                                            |                                           
-Net: vdd                                   |Net: en_buf                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_4/6 = 1             
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/4 = 1            |                                           
-  inv_4/a_75_305# = 2                      |                                           
-                                           |                                           
-Net: m2_990_200#                           |Net: VGND                                  
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__decap_3/1 = 1           
-  inv_4/a_157_55# = 1                      |                                           
-                                           |                                           
-Net: en                                    |Net: en                                    
-  inv_4/a_59_207# = 1                      |  sky130_fd_sc_hd__inv_4/1 = 1             
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: VPB                                   
-                                           |  sky130_fd_sc_hd__decap_3/3 = 1           
-                                           |                                           
-(no matching net)                          |Net: VPWR                                  
-                                           |  sky130_fd_sc_hd__decap_3/4 = 1           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: vdd                                   
-                                           |  sky130_fd_sc_hd__decap_8/3 = 1           
+Net: vdd                                   |Net: vdd                                   
+  decap_8/a_65_331# = 1                    |  sky130_fd_sc_hd__decap_8/3 = 1           
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/4 = 1            
+  inv_4/a_75_305# = 2                      |  sky130_fd_sc_hd__inv_4/4 = 1             
+  decap_3/a_65_331# = 1                    |  sky130_fd_sc_hd__inv_4/5 = 1             
                                            |  sky130_fd_sc_hd__decap_8/4 = 1           
-                                           |  sky130_fd_sc_hd__inv_4/4 = 1             
-                                           |  sky130_fd_sc_hd__inv_4/5 = 1             
-                                           |  sky130_fd_pr__pfet_01v8/4 = 1            
                                            |                                           
-(no matching net)                          |Net: vss                                   
-                                           |  sky130_fd_sc_hd__decap_8/1 = 1           
-                                           |  sky130_fd_sc_hd__decap_8/2 = 1           
-                                           |  sky130_fd_sc_hd__inv_4/2 = 1             
-                                           |  sky130_fd_sc_hd__inv_4/3 = 1             
-                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: m2_1158_361#                          |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+Net: inv_4_1/w_0_269#                      |Net: en                                    
+  decap_8/w_0_269# = 1                     |  sky130_fd_sc_hd__inv_4/1 = 1             
+  inv_4/w_0_269# = 2                       |  sky130_fd_pr__nfet_01v8/2 = 1            
+  decap_3/w_0_269# = 1                     |                                           
+                                           |                                           
+Net: m2_990_200#                           |Net: en_buf                                
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_4/6 = 1             
+  inv_4/a_157_55# = 1                      |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: m2_1158_361#                          |Net: dummy_11                              
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_4/proxyw_0_269# = 1 
   inv_4/a_59_207# = 1                      |                                           
   inv_4/a_157_55# = 1                      |                                           
                                            |                                           
-Net: inv_4_1/w_0_269#                      |(no matching net)                          
-  sky130_fd_pr__pfet_01v8_hvt/4 = 1        |                                           
-  inv_4/w_0_269# = 2                       |                                           
+Net: dummy_25                              |Net: dummy_25                              
+  decap_8/proxy1 = 1                       |  sky130_fd_sc_hd__decap_8/proxya_65_55# = 
+                                           |                                           
+Net: dummy_26                              |Net: dummy_26                              
+  decap_8/proxy2 = 1                       |  sky130_fd_sc_hd__decap_8/proxya_65_331#  
+                                           |                                           
+Net: dummy_27                              |Net: dummy_27                              
+  decap_8/proxy3 = 1                       |  sky130_fd_sc_hd__decap_8/proxyw_0_269# = 
+                                           |                                           
+Net: dummy_28                              |Net: dummy_28                              
+  decap_8/proxy4 = 1                       |  sky130_fd_sc_hd__decap_8/proxyVSUBS = 1  
+                                           |                                           
+Net: dummy_33                              |Net: dummy_33                              
+  inv_4/proxyproxyw_0_269# = 1             |  sky130_fd_sc_hd__inv_4/proxya_157_55# =  
+                                           |                                           
+Net: dummy_39                              |Net: dummy_12                              
+  inv_4/proxyproxyw_0_269# = 1             |  sky130_fd_sc_hd__inv_4/proxya_59_207# =  
+                                           |                                           
+Net: dummy_34                              |Net: dummy_34                              
+  inv_4/proxyproxya_59_207# = 1            |  sky130_fd_sc_hd__inv_4/proxyVSUBS = 1    
+                                           |                                           
+Net: dummy_40                              |Net: dummy_14                              
+  inv_4/proxyproxya_59_207# = 1            |  sky130_fd_sc_hd__inv_4/proxya_75_305# =  
+                                           |                                           
+Net: dummy_35                              |Net: dummy_35                              
+  inv_4/proxyproxya_75_55# = 1             |  sky130_fd_sc_hd__decap_3/proxya_65_55# = 
+                                           |                                           
+Net: dummy_41                              |Net: dummy_29                              
+  inv_4/proxyproxya_75_55# = 1             |  sky130_fd_sc_hd__inv_4/proxyw_0_269# = 1 
+                                           |                                           
+Net: dummy_36                              |Net: dummy_36                              
+  inv_4/proxyproxya_75_305# = 1            |  sky130_fd_sc_hd__decap_3/proxya_65_331#  
+                                           |                                           
+Net: dummy_42                              |Net: dummy_32                              
+  inv_4/proxyproxya_75_305# = 1            |  sky130_fd_sc_hd__inv_4/proxya_75_305# =  
+                                           |                                           
+Net: dummy_37                              |Net: dummy_37                              
+  inv_4/proxyproxya_157_55# = 1            |  sky130_fd_sc_hd__decap_3/proxyw_0_269# = 
+                                           |                                           
+Net: dummy_43                              |Net: dummy_13                              
+  inv_4/proxyproxya_157_55# = 1            |  sky130_fd_sc_hd__inv_4/proxya_75_55# = 1 
+                                           |                                           
+Net: dummy_38                              |Net: dummy_38                              
+  inv_4/proxyproxyVSUBS = 1                |  sky130_fd_sc_hd__decap_3/proxyVSUBS = 1  
+                                           |                                           
+Net: dummy_44                              |Net: dummy_31                              
+  inv_4/proxyproxyVSUBS = 1                |  sky130_fd_sc_hd__inv_4/proxya_75_55# = 1 
+                                           |                                           
+(no matching net)                          |Net: dummy_16                              
+                                           |  sky130_fd_sc_hd__inv_4/proxyVSUBS = 1    
+                                           |                                           
+(no matching net)                          |Net: dummy_15                              
+                                           |  sky130_fd_sc_hd__inv_4/proxya_157_55# =  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_20                              |(no matching net)                          
+  inv_4/proxy6 = 1                         |                                           
+                                           |                                           
+Net: dummy_14                              |(no matching net)                          
+  inv_4/proxy6 = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_19                              |(no matching net)                          
+  inv_4/proxy5 = 1                         |                                           
+                                           |                                           
+Net: dummy_13                              |(no matching net)                          
+  inv_4/proxy5 = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_18                              |(no matching net)                          
+  inv_4/proxy4 = 1                         |                                           
+                                           |                                           
+Net: dummy_12                              |(no matching net)                          
+  inv_4/proxy4 = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_17                              |(no matching net)                          
+  inv_4/proxy3 = 1                         |                                           
+                                           |                                           
+Net: dummy_11                              |(no matching net)                          
+  inv_4/proxy3 = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_16                              |(no matching net)                          
+  inv_4/proxy2 = 1                         |                                           
+                                           |                                           
+Net: dummy_10                              |(no matching net)                          
+  inv_4/proxy2 = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_15                              |(no matching net)                          
+  inv_4/proxy1 = 1                         |                                           
+                                           |                                           
+Net: dummy_9                               |(no matching net)                          
+  inv_4/proxy1 = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: en                                    |Net: dummy_30                              
+  inv_4/a_59_207# = 1                      |  sky130_fd_sc_hd__inv_4/proxya_59_207# =  
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: sw_top                          |Circuit 2: sw_top                          
 
 ---------------------------------------------------------------------------------------
-Instance: decap_8_0/sky130_fd_pr__pfet_01v |Instance: sky130_fd_pr__nfet_01v8:M1       
-  (1,3) = (6,6)                            |  (1,3) = (2,2)                            
-  2 = 9                                    |  2 = 2                                    
-  4 = 3                                    |  4 = 5                                    
-                                           |                                           
 Instance: inv_4_0                          |Instance: sky130_fd_sc_hd__inv_4:4         
-  w_0_269# = 3                             |  1 = 2                                    
-  a_59_207# = 3                            |  2 = 5                                    
-  a_75_55# = 9                             |  3 = 5                                    
-  a_75_305# = 6                            |  4 = 5                                    
-  a_157_55# = 2                            |  5 = 5                                    
-  VSUBS = 9                                |  6 = 2                                    
+  w_0_269# = 4                             |  proxyw_0_269# = 1                        
+  a_59_207# = 3                            |  proxya_59_207# = 1                       
+  a_75_55# = 9                             |  proxya_75_55# = 1                        
+  a_75_305# = 5                            |  proxya_75_305# = 1                       
+  a_157_55# = 2                            |  proxya_157_55# = 1                       
+  VSUBS = 9                                |  proxyVSUBS = 1                           
+  proxy1 = 1                               |  1 = 2                                    
+  proxy2 = 1                               |  2 = 5                                    
+  proxy3 = 1                               |  3 = 5                                    
+  proxy4 = 1                               |  4 = 5                                    
+  proxy5 = 1                               |  5 = 5                                    
+  proxy6 = 1                               |  6 = 2                                    
+  proxyproxyw_0_269# = 1                   |  proxyw_0_269# = 1                        
+  proxyproxya_59_207# = 1                  |  proxya_59_207# = 1                       
+  proxyproxya_75_55# = 1                   |  proxya_75_55# = 1                        
+  proxyproxya_75_305# = 1                  |  proxya_75_305# = 1                       
+  proxyproxya_157_55# = 1                  |  proxya_157_55# = 1                       
+  proxyproxyVSUBS = 1                      |  proxyVSUBS = 1                           
                                            |                                           
-Instance: inv_4_1                          |Instance: sky130_fd_sc_hd__decap_8:2       
-  w_0_269# = 3                             |  1 = 5                                    
-  a_59_207# = 1                            |  2 = 5                                    
-  a_75_55# = 9                             |  3 = 5                                    
-  a_75_305# = 6                            |  4 = 5                                    
+Instance: inv_4_1                          |(no matching instance)                     
+  w_0_269# = 4                             |                                           
+  a_59_207# = 1                            |                                           
+  a_75_55# = 9                             |                                           
+  a_75_305# = 5                            |                                           
   a_157_55# = 3                            |                                           
   VSUBS = 9                                |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_sc_hd__decap_3:1       
-                                           |  1 = 1                                    
-                                           |  2 = 1                                    
-                                           |  3 = 1                                    
-                                           |  4 = 1                                    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: M2_2_0/sky130_fd_pr__nfet_01v8:0 |(no matching instance)                     
-  (1,3) = (2,2)                            |                                           
-  2 = 2                                    |                                           
-  4 = 9                                    |                                           
-                                           |                                           
-                                           |                                           
-Instance: decap_8_0/sky130_fd_pr__nfet_01v |(no matching instance)                     
-  (1,3) = (9,9)                            |                                           
-  2 = 6                                    |                                           
-  4 = 9                                    |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: M1_3_0/sky130_fd_pr__pfet_01v8:0 |Instance: sky130_fd_pr__pfet_01v8:M2       
-  (1,3) = (2,2)                            |  (1,3) = (2,2)                            
-  2 = 3                                    |  2 = 2                                    
-  4 = 6                                    |  4 = 5                                    
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxy5 = 1                               |                                           
+  proxy6 = 1                               |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxya_59_207# = 1                  |                                           
+  proxyproxya_75_55# = 1                   |                                           
+  proxyproxya_75_305# = 1                  |                                           
+  proxyproxya_157_55# = 1                  |                                           
+  proxyproxyVSUBS = 1                      |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
   Flattening non-matched subcircuits sw_top sw_top
@@ -194,66 +360,63 @@ n7                                         |n7
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes carray and carray are equivalent.
-
-Circuit 2 cell sky130_fd_sc_hd__inv_2 is a black box; will not flatten Circuit 1
-Class sky130_fd_sc_hd__inv_2 (0):  Merged 2 parallel devices.
-Equate elements:  no current cell.
-Device classes sky130_fd_sc_hd__inv_2 and sky130_fd_sc_hd__inv_2 are equivalent.
 Flattening unmatched subcell inv2 in circuit DAC (0)(9 instances)
 
-Class DAC (0):  Merged 24 parallel devices.
+Cell dac (1) disconnected node: ctl_7_,ctl_6_,ctl_5_,ctl_4_,ctl_3_,ctl_2_,ctl_1_,ctl_0_
+Class DAC (0):  Merged 20 parallel devices.
+Cell dac (1) disconnected node: ctl_7_,ctl_6_,ctl_5_,ctl_4_,ctl_3_,ctl_2_,ctl_1_,ctl_0_
 Subcircuit summary:
 Circuit 1: DAC                             |Circuit 2: dac                             
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (66->14)           |sky130_fd_pr__nfet_01v8 (10->1) **Mismatch 
-sky130_fd_pr__pfet_01v8_hvt (26->10)       |(no matching element)                      
-sky130_fd_pr__pfet_01v8 (40->4)            |sky130_fd_pr__pfet_01v8 (10->1) **Mismatch 
+sky130_fd_pr__nfet_01v8 (58->12)           |sky130_fd_pr__nfet_01v8 (10->1) **Mismatch 
+sky130_fd_pr__pfet_01v8_hvt (18->9)        |(no matching element)                      
+decap_8 (4)                                |sky130_fd_sc_hd__decap_8 (1) **Mismatch**  
+sky130_fd_pr__pfet_01v8 (40->3)            |sky130_fd_pr__pfet_01v8 (10->1) **Mismatch 
 inv_4 (8)                                  |sky130_fd_sc_hd__inv_4 (1) **Mismatch**    
+decap_3 (4)                                |sky130_fd_sc_hd__decap_3 (1) **Mismatch**  
 carray (1)                                 |carray (1)                                 
 (no matching element)                      |sky130_fd_sc_hd__inv_2 (9)                 
-(no matching element)                      |sky130_fd_sc_hd__decap_8 (1)               
-(no matching element)                      |sky130_fd_sc_hd__decap_3 (1)               
-Number of devices: 37 **Mismatch**         |Number of devices: 15 **Mismatch**         
-Number of nets: 32 **Mismatch**            |Number of nets: 28 **Mismatch**            
+Number of devices: 41 **Mismatch**         |Number of devices: 15 **Mismatch**         
+Number of nets: 189 **Mismatch**           |Number of nets: 56 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: DAC                             |Circuit 2: dac                             
 
 ---------------------------------------------------------------------------------------
-Net: vdd                                   |Net: n6                                    
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 9    |  carray/n6 = 1                            
-  sky130_fd_pr__pfet_01v8_hvt/4 = 9        |  sky130_fd_sc_hd__inv_2/6 = 1             
+Net: ctl7                                  |Net: n6                                    
+  sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n6 = 1                            
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: ctl7                                  |Net: n0                                    
+Net: ctl6                                  |Net: n0                                    
   sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n0 = 1                            
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: ctl6                                  |Net: n5                                    
-  sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n5 = 1                            
+Net: carray_0/n7                           |Net: n5                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  carray/n5 = 1                            
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_sc_hd__inv_2/6 = 1             
+  carray/n7 = 1                            |                                           
+                                           |                                           
+Net: ctl0                                  |Net: n4                                    
+  sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n4 = 1                            
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: carray_0/n4                           |Net: n4                                    
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  carray/n4 = 1                            
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_sc_hd__inv_2/6 = 1             
-  carray/n4 = 1                            |                                           
-                                           |                                           
-Net: ctl0                                  |Net: n2                                    
+Net: ctl1                                  |Net: n2                                    
   sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n2 = 1                            
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: ctl1                                  |Net: ndum                                  
+Net: ctl5                                  |Net: ndum                                  
   sky130_fd_pr__nfet_01v8/2 = 1            |  carray/ndum = 1                          
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: ctl5                                  |Net: n3                                    
+Net: ctl4                                  |Net: n3                                    
   sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n3 = 1                            
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: ctl4                                  |Net: n1                                    
+Net: ctl2                                  |Net: n1                                    
   sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n1 = 1                            
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
-Net: ctl2                                  |Net: n7                                    
+Net: ctl3                                  |Net: n7                                    
   sky130_fd_pr__nfet_01v8/2 = 1            |  carray/n7 = 1                            
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  sky130_fd_sc_hd__inv_2/6 = 1             
                                            |                                           
@@ -262,112 +425,402 @@ Net: sample                                |Net: sample
                                            |  sky130_fd_pr__nfet_01v8/2 = 1            
                                            |                                           
 Net: vin                                   |Net: vin                                   
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
                                            |                                           
-Net: en_buf_uq0                            |Net: sw_top:swt/en_buf                     
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_4/6 = 1             
-  inv_4/a_157_55# = 1                      |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |                                           
-Net: out                                   |Net: out                                   
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  carray/top = 1                           |  carray/top = 1                           
-                                           |                                           
-Net: sw_top_3/m2_990_200#                  |Net: ctl_6_                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_2/1 = 1             
-  inv_4/a_157_55# = 1                      |                                           
-                                           |                                           
-Net: carray_0/n7                           |Net: ctl_5_                                
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
-  carray/n7 = 1                            |                                           
-                                           |                                           
-Net: carray_0/n6                           |Net: ctl_4_                                
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
-  carray/n6 = 1                            |                                           
-                                           |                                           
-Net: carray_0/ndum                         |Net: ctl_3_                                
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+Net: carray_0/ndum                         |Net: sw_top:swt/en_buf                     
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_4/6 = 1             
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8/2 = 1            
   carray/ndum = 1                          |                                           
                                            |                                           
-Net: carray_0/n0                           |Net: ctl_2_                                
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
-  carray/n0 = 1                            |                                           
+Net: out                                   |Net: out                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  carray/top = 1                           |  carray/top = 1                           
                                            |                                           
-Net: carray_0/n1                           |Net: ctl_1_                                
+Net: carray_0/n1                           |Net: ctl_6_                                
   sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
   sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
   carray/n1 = 1                            |                                           
                                            |                                           
-Net: carray_0/n5                           |Net: ctl_0_                                
+Net: carray_0/n5                           |Net: ctl_5_                                
   sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
   sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
   carray/n5 = 1                            |                                           
+                                           |                                           
+Net: carray_0/n4                           |Net: ctl_4_                                
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  carray/n4 = 1                            |                                           
+                                           |                                           
+Net: carray_0/n2                           |Net: ctl_3_                                
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  carray/n2 = 1                            |                                           
+                                           |                                           
+Net: carray_0/n3                           |Net: ctl_2_                                
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  carray/n3 = 1                            |                                           
+                                           |                                           
+Net: en_buf                                |Net: ctl_1_                                
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_2/1 = 1             
+  inv_4/a_157_55# = 2                      |                                           
+                                           |                                           
+Net: carray_0/n0                           |Net: ctl_0_                                
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  carray/n0 = 1                            |                                           
                                            |                                           
 Net: dum                                   |Net: dum                                   
   sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_sc_hd__inv_2/1 = 1             
   sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
                                            |                                           
-Net: carray_0/n2                           |Net: ctl_7_                                
+Net: carray_0/n6                           |Net: ctl_7_                                
   sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__inv_2/1 = 1             
   sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
-  carray/n2 = 1                            |                                           
+  carray/n6 = 1                            |                                           
                                            |                                           
-Net: carray_0/n3                           |Net: sw_top:swt/VGND                       
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_sc_hd__decap_3/1 = 1           
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
-  carray/n3 = 1                            |                                           
+Net: enb                                   |Net: sw_top:swt/VGND                       
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_sc_hd__decap_3/1 = 1           
+  inv_4/a_59_207# = 2                      |                                           
+  inv_4/a_157_55# = 2                      |                                           
                                            |                                           
-Net: sw_top_0/m2_1158_361#                 |Net: sw_top:swt/VNB                        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_sc_hd__decap_3/2 = 1           
-  inv_4/a_59_207# = 1                      |                                           
-  inv_4/a_157_55# = 1                      |                                           
+Net: /sw_top_1/dummy_9                     |Net: sw_top:swt/VNB                        
+  inv_4/proxy1 = 1                         |  sky130_fd_sc_hd__decap_3/2 = 1           
                                            |                                           
-Net: enb_uq0                               |Net: sw_top:swt/VPB                        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_sc_hd__decap_3/3 = 1           
-  inv_4/a_59_207# = 1                      |                                           
-  inv_4/a_157_55# = 1                      |                                           
+Net: /sw_top_1/dummy_15                    |Net: sw_top:swt/VPB                        
+  inv_4/proxy1 = 1                         |  sky130_fd_sc_hd__decap_3/3 = 1           
                                            |                                           
-Net: enb                                   |Net: sw_top:swt/VPWR                       
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_sc_hd__decap_3/4 = 1           
-  inv_4/a_59_207# = 1                      |                                           
-  inv_4/a_157_55# = 1                      |                                           
+Net: /sw_top_2/dummy_9                     |Net: sw_top:swt/VPWR                       
+  inv_4/proxy1 = 1                         |  sky130_fd_sc_hd__decap_3/4 = 1           
                                            |                                           
-Net: sw_top_3/m2_1158_361#                 |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  inv_4/a_59_207# = 1                      |                                           
-  inv_4/a_157_55# = 1                      |                                           
+Net: /sw_top_2/dummy_15                    |Net: sw_top:swt/dummy_11                   
+  inv_4/proxy1 = 1                         |  sky130_fd_sc_hd__inv_4/proxyw_0_269# = 1 
                                            |                                           
-Net: vss                                   |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 11       |                                           
-  sky130_fd_pr__nfet_01v8/4 = 14           |                                           
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
-  inv_4/a_75_55# = 8                       |                                           
-  inv_4/VSUBS = 8                          |                                           
+Net: /sw_top_1/dummy_10                    |Net: sw_top:swt/dummy_12                   
+  inv_4/proxy2 = 1                         |  sky130_fd_sc_hd__inv_4/proxya_59_207# =  
                                            |                                           
-Net: en_buf                                |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  inv_4/a_157_55# = 1                      |                                           
+Net: /sw_top_1/dummy_16                    |Net: sw_top:swt/dummy_13                   
+  inv_4/proxy2 = 1                         |  sky130_fd_sc_hd__inv_4/proxya_75_55# = 1 
                                            |                                           
-Net: ctl3                                  |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+Net: /sw_top_2/dummy_10                    |Net: sw_top:swt/dummy_14                   
+  inv_4/proxy2 = 1                         |  sky130_fd_sc_hd__inv_4/proxya_75_305# =  
                                            |                                           
-Net: vdd_uq0                               |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
-  sky130_fd_pr__pfet_01v8_hvt/4 = 1        |                                           
-  sky130_fd_pr__pfet_01v8/4 = 4            |                                           
-  inv_4/w_0_269# = 8                       |                                           
-  inv_4/a_75_305# = 8                      |                                           
+Net: /sw_top_2/dummy_16                    |Net: sw_top:swt/dummy_15                   
+  inv_4/proxy2 = 1                         |  sky130_fd_sc_hd__inv_4/proxya_157_55# =  
                                            |                                           
-Net: sw_top_0/m2_990_200#                  |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  inv_4/a_157_55# = 1                      |                                           
+Net: /sw_top_1/dummy_11                    |Net: sw_top:swt/dummy_16                   
+  inv_4/proxy3 = 1                         |  sky130_fd_sc_hd__inv_4/proxyVSUBS = 1    
+                                           |                                           
+Net: /sw_top_1/dummy_17                    |Net: sw_top:swt/dummy_17                   
+  inv_4/proxy3 = 1                         |  sky130_fd_sc_hd__decap_3/proxya_65_55# = 
+                                           |                                           
+Net: /sw_top_2/dummy_11                    |Net: sw_top:swt/dummy_18                   
+  inv_4/proxy3 = 1                         |  sky130_fd_sc_hd__decap_3/proxya_65_331#  
+                                           |                                           
+Net: /sw_top_2/dummy_17                    |Net: sw_top:swt/dummy_19                   
+  inv_4/proxy3 = 1                         |  sky130_fd_sc_hd__decap_3/proxyw_0_269# = 
+                                           |                                           
+Net: /sw_top_1/dummy_12                    |Net: sw_top:swt/dummy_20                   
+  inv_4/proxy4 = 1                         |  sky130_fd_sc_hd__decap_3/proxyVSUBS = 1  
+                                           |                                           
+Net: /sw_top_1/dummy_18                    |Net: sw_top:swt/dummy_21                   
+  inv_4/proxy4 = 1                         |  sky130_fd_sc_hd__decap_8/proxya_65_55# = 
+                                           |                                           
+Net: /sw_top_2/dummy_12                    |Net: sw_top:swt/dummy_22                   
+  inv_4/proxy4 = 1                         |  sky130_fd_sc_hd__decap_8/proxya_65_331#  
+                                           |                                           
+Net: /sw_top_2/dummy_18                    |Net: sw_top:swt/dummy_23                   
+  inv_4/proxy4 = 1                         |  sky130_fd_sc_hd__decap_8/proxyw_0_269# = 
+                                           |                                           
+Net: /sw_top_1/dummy_13                    |Net: sw_top:swt/dummy_24                   
+  inv_4/proxy5 = 1                         |  sky130_fd_sc_hd__decap_8/proxyVSUBS = 1  
+                                           |                                           
+Net: /sw_top_1/dummy_19                    |Net: sw_top:swt/dummy_25                   
+  inv_4/proxy5 = 1                         |  sky130_fd_sc_hd__decap_8/proxya_65_55# = 
+                                           |                                           
+Net: /sw_top_2/dummy_13                    |Net: sw_top:swt/dummy_26                   
+  inv_4/proxy5 = 1                         |  sky130_fd_sc_hd__decap_8/proxya_65_331#  
+                                           |                                           
+Net: /sw_top_2/dummy_19                    |Net: sw_top:swt/dummy_27                   
+  inv_4/proxy5 = 1                         |  sky130_fd_sc_hd__decap_8/proxyw_0_269# = 
+                                           |                                           
+Net: /sw_top_1/dummy_14                    |Net: sw_top:swt/dummy_28                   
+  inv_4/proxy6 = 1                         |  sky130_fd_sc_hd__decap_8/proxyVSUBS = 1  
+                                           |                                           
+Net: /sw_top_1/dummy_20                    |Net: sw_top:swt/dummy_29                   
+  inv_4/proxy6 = 1                         |  sky130_fd_sc_hd__inv_4/proxyw_0_269# = 1 
+                                           |                                           
+Net: /sw_top_2/dummy_14                    |Net: sw_top:swt/dummy_30                   
+  inv_4/proxy6 = 1                         |  sky130_fd_sc_hd__inv_4/proxya_59_207# =  
+                                           |                                           
+Net: /sw_top_2/dummy_20                    |Net: sw_top:swt/dummy_31                   
+  inv_4/proxy6 = 1                         |  sky130_fd_sc_hd__inv_4/proxya_75_55# = 1 
+                                           |                                           
+Net: /sw_top_0/dummy_21                    |Net: sw_top:swt/dummy_32                   
+  decap_3/proxy1 = 1                       |  sky130_fd_sc_hd__inv_4/proxya_75_305# =  
+                                           |                                           
+Net: /sw_top_1/dummy_21                    |Net: sw_top:swt/dummy_33                   
+  decap_3/proxy1 = 1                       |  sky130_fd_sc_hd__inv_4/proxya_157_55# =  
+                                           |                                           
+Net: /sw_top_2/dummy_21                    |Net: sw_top:swt/dummy_34                   
+  decap_3/proxy1 = 1                       |  sky130_fd_sc_hd__inv_4/proxyVSUBS = 1    
+                                           |                                           
+Net: /sw_top_3/dummy_21                    |Net: sw_top:swt/dummy_35                   
+  decap_3/proxy1 = 1                       |  sky130_fd_sc_hd__decap_3/proxya_65_55# = 
+                                           |                                           
+Net: /sw_top_0/dummy_22                    |Net: sw_top:swt/dummy_36                   
+  decap_3/proxy2 = 1                       |  sky130_fd_sc_hd__decap_3/proxya_65_331#  
+                                           |                                           
+Net: /sw_top_1/dummy_22                    |Net: sw_top:swt/dummy_37                   
+  decap_3/proxy2 = 1                       |  sky130_fd_sc_hd__decap_3/proxyw_0_269# = 
+                                           |                                           
+Net: /sw_top_2/dummy_22                    |Net: sw_top:swt/dummy_38                   
+  decap_3/proxy2 = 1                       |  sky130_fd_sc_hd__decap_3/proxyVSUBS = 1  
+                                           |                                           
+Net: /sw_top_3/dummy_22                    |(no matching net)                          
+  decap_3/proxy2 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_23                    |(no matching net)                          
+  decap_3/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_23                    |(no matching net)                          
+  decap_3/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_23                    |(no matching net)                          
+  decap_3/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_23                    |(no matching net)                          
+  decap_3/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_24                    |(no matching net)                          
+  decap_3/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_24                    |(no matching net)                          
+  decap_3/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_24                    |(no matching net)                          
+  decap_3/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_24                    |(no matching net)                          
+  decap_3/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_25                    |(no matching net)                          
+  decap_8/proxy1 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_25                    |(no matching net)                          
+  decap_8/proxy1 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_25                    |(no matching net)                          
+  decap_8/proxy1 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_25                    |(no matching net)                          
+  decap_8/proxy1 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_26                    |(no matching net)                          
+  decap_8/proxy2 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_26                    |(no matching net)                          
+  decap_8/proxy2 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_26                    |(no matching net)                          
+  decap_8/proxy2 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_26                    |(no matching net)                          
+  decap_8/proxy2 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_27                    |(no matching net)                          
+  decap_8/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_27                    |(no matching net)                          
+  decap_8/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_27                    |(no matching net)                          
+  decap_8/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_27                    |(no matching net)                          
+  decap_8/proxy3 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_28                    |(no matching net)                          
+  decap_8/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_28                    |(no matching net)                          
+  decap_8/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_28                    |(no matching net)                          
+  decap_8/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_28                    |(no matching net)                          
+  decap_8/proxy4 = 1                       |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_29                    |(no matching net)                          
+  decap_8/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_29                    |(no matching net)                          
+  decap_8/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_29                    |(no matching net)                          
+  decap_8/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_29                    |(no matching net)                          
+  decap_8/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_30                    |(no matching net)                          
+  decap_8/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_30                    |(no matching net)                          
+  decap_8/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_30                    |(no matching net)                          
+  decap_8/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_30                    |(no matching net)                          
+  decap_8/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_31                    |(no matching net)                          
+  decap_8/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_31                    |(no matching net)                          
+  decap_8/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_31                    |(no matching net)                          
+  decap_8/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_31                    |(no matching net)                          
+  decap_8/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_32                    |(no matching net)                          
+  decap_8/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_32                    |(no matching net)                          
+  decap_8/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_32                    |(no matching net)                          
+  decap_8/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_32                    |(no matching net)                          
+  decap_8/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_33                    |(no matching net)                          
+  inv_4/proxyproxyw_0_269# = 1             |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_39                    |(no matching net)                          
+  inv_4/proxyproxyw_0_269# = 1             |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_33                    |(no matching net)                          
+  inv_4/proxyproxyw_0_269# = 1             |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_39                    |(no matching net)                          
+  inv_4/proxyproxyw_0_269# = 1             |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_34                    |(no matching net)                          
+  inv_4/proxyproxya_59_207# = 1            |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_40                    |(no matching net)                          
+  inv_4/proxyproxya_59_207# = 1            |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_34                    |(no matching net)                          
+  inv_4/proxyproxya_59_207# = 1            |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_40                    |(no matching net)                          
+  inv_4/proxyproxya_59_207# = 1            |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_35                    |(no matching net)                          
+  inv_4/proxyproxya_75_55# = 1             |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_41                    |(no matching net)                          
+  inv_4/proxyproxya_75_55# = 1             |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_35                    |(no matching net)                          
+  inv_4/proxyproxya_75_55# = 1             |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_41                    |(no matching net)                          
+  inv_4/proxyproxya_75_55# = 1             |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_36                    |(no matching net)                          
+  inv_4/proxyproxya_75_305# = 1            |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_42                    |(no matching net)                          
+  inv_4/proxyproxya_75_305# = 1            |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_36                    |(no matching net)                          
+  inv_4/proxyproxya_75_305# = 1            |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_42                    |(no matching net)                          
+  inv_4/proxyproxya_75_305# = 1            |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_37                    |(no matching net)                          
+  inv_4/proxyproxya_157_55# = 1            |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_43                    |(no matching net)                          
+  inv_4/proxyproxya_157_55# = 1            |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_37                    |(no matching net)                          
+  inv_4/proxyproxya_157_55# = 1            |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_43                    |(no matching net)                          
+  inv_4/proxyproxya_157_55# = 1            |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_38                    |(no matching net)                          
+  inv_4/proxyproxyVSUBS = 1                |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_44                    |(no matching net)                          
+  inv_4/proxyproxyVSUBS = 1                |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_38                    |(no matching net)                          
+  inv_4/proxyproxyVSUBS = 1                |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_44                    |(no matching net)                          
+  inv_4/proxyproxyVSUBS = 1                |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_45                    |(no matching net)                          
+  decap_3/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_45                    |(no matching net)                          
+  decap_3/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_45                    |(no matching net)                          
+  decap_3/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_45                    |(no matching net)                          
+  decap_3/proxyproxya_65_55# = 1           |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_46                    |(no matching net)                          
+  decap_3/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_46                    |(no matching net)                          
+  decap_3/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_46                    |(no matching net)                          
+  decap_3/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_46                    |(no matching net)                          
+  decap_3/proxyproxya_65_331# = 1          |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_47                    |(no matching net)                          
+  decap_3/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_47                    |(no matching net)                          
+  decap_3/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_47                    |(no matching net)                          
+  decap_3/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_47                    |(no matching net)                          
+  decap_3/proxyproxyw_0_269# = 1           |                                           
+                                           |                                           
+Net: /sw_top_0/dummy_48                    |(no matching net)                          
+  decap_3/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_1/dummy_48                    |(no matching net)                          
+  decap_3/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_2/dummy_48                    |(no matching net)                          
+  decap_3/proxyproxyVSUBS = 1              |                                           
+                                           |                                           
+Net: /sw_top_3/dummy_48                    |(no matching net)                          
+  decap_3/proxyproxyVSUBS = 1              |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -389,266 +842,396 @@ Net: sw_top_0/m2_990_200#                  |(no matching net)
                                            |  sky130_fd_sc_hd__inv_4/3 = 1             
                                            |  sky130_fd_pr__nfet_01v8/4 = 1            
 ---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vss                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 9        |                                           
+  sky130_fd_pr__nfet_01v8/4 = 12           |                                           
+  decap_8/a_65_55# = 4                     |                                           
+  decap_8/VSUBS = 4                        |                                           
+  inv_4/a_75_55# = 8                       |                                           
+  inv_4/VSUBS = 8                          |                                           
+  decap_3/a_65_55# = 4                     |                                           
+  decap_3/VSUBS = 4                        |                                           
+                                           |                                           
+Net: vdd                                   |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 9    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/4 = 9        |                                           
+  decap_8/a_65_331# = 4                    |                                           
+  decap_8/w_0_269# = 4                     |                                           
+  sky130_fd_pr__pfet_01v8/4 = 3            |                                           
+  inv_4/w_0_269# = 8                       |                                           
+  inv_4/a_75_305# = 8                      |                                           
+  decap_3/a_65_331# = 4                    |                                           
+  decap_3/w_0_269# = 4                     |                                           
+---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: DAC                             |Circuit 2: dac                             
 
 ---------------------------------------------------------------------------------------
 Instance: inv2_0/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_pr__nfet_01 
-  (1,3) = (42,3)                           |  (1,3) = (3,2)                            
+  (1,3) = (53,3)                           |  (1,3) = (3,2)                            
   2 = 2                                    |  2 = 2                                    
-  4 = 42                                   |  4 = 23                                   
+  4 = 53                                   |  4 = 23                                   
                                            |                                           
-Instance: inv2_1/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_pr__pfet_01 
-  (1,3) = (42,3)                           |  (1,3) = (3,2)                            
+Instance: inv2_1/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_sc_hd__deca 
+  (1,3) = (53,3)                           |  proxya_65_55# = 1                        
+  2 = 2                                    |  proxya_65_331# = 1                       
+  4 = 53                                   |  proxyw_0_269# = 1                        
+                                           |  proxyVSUBS = 1                           
+                                           |  1 = 23                                   
+                                           |  2 = 23                                   
+                                           |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  proxya_65_55# = 1                        
+                                           |  proxya_65_331# = 1                       
+                                           |  proxyw_0_269# = 1                        
+                                           |  proxyVSUBS = 1                           
+                                           |                                           
+Instance: inv2_2/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_pr__pfet_01 
+  (1,3) = (53,3)                           |  (1,3) = (3,2)                            
   2 = 2                                    |  2 = 2                                    
-  4 = 42                                   |  4 = 23                                   
+  4 = 53                                   |  4 = 23                                   
                                            |                                           
-Instance: inv2_2/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_sc_hd__inv_ 
-  (1,3) = (42,3)                           |  1 = 2                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
+Instance: inv2_3/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_sc_hd__inv_ 
+  (1,3) = (53,3)                           |  proxyw_0_269# = 1                        
+  2 = 2                                    |  proxya_59_207# = 1                       
+  4 = 53                                   |  proxya_75_55# = 1                        
+                                           |  proxya_75_305# = 1                       
+                                           |  proxya_157_55# = 1                       
+                                           |  proxyVSUBS = 1                           
+                                           |  1 = 2                                    
+                                           |  2 = 23                                   
+                                           |  3 = 23                                   
                                            |  4 = 23                                   
                                            |  5 = 23                                   
                                            |  6 = 2                                    
+                                           |  proxyw_0_269# = 1                        
+                                           |  proxya_59_207# = 1                       
+                                           |  proxya_75_55# = 1                        
+                                           |  proxya_75_305# = 1                       
+                                           |  proxya_157_55# = 1                       
+                                           |  proxyVSUBS = 1                           
                                            |                                           
-Instance: inv2_3/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i6        
-  (1,3) = (42,3)                           |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: inv2_4/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i5        
-  (1,3) = (42,3)                           |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: inv2_5/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i4        
-  (1,3) = (42,3)                           |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: inv2_6/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i3        
-  (1,3) = (42,3)                           |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: inv2_7/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i2        
-  (1,3) = (42,3)                           |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: inv2_8/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i1        
-  (1,3) = (42,3)                           |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: sw_top_0//decap_8_0/sky130_fd_pr |Instance: sky130_fd_sc_hd__inv_2:i0        
-  (1,3) = (42,42)                          |  1 = 1                                    
-  2 = 24                                   |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: sw_top_0//M2_2_0/sky130_fd_pr__n |Instance: sky130_fd_sc_hd__inv_2:idum      
-  (1,3) = (9,8)                            |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: sw_top_1//M2_2_0/sky130_fd_pr__n |Instance: sky130_fd_sc_hd__inv_2:i7        
-  (1,3) = (9,8)                            |  1 = 1                                    
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |  5 = 23                                   
-                                           |  6 = 2                                    
-                                           |                                           
-Instance: sw_top_2//M2_2_0/sky130_fd_pr__n |Instance: sw_top:swt/sky130_fd_sc_hd__deca 
-  (1,3) = (9,8)                            |  1 = 23                                   
-  2 = 2                                    |  2 = 23                                   
-  4 = 42                                   |  3 = 23                                   
-                                           |  4 = 23                                   
-                                           |                                           
-Instance: sw_top_3//M2_2_0/sky130_fd_pr__n |Instance: sw_top:swt/sky130_fd_sc_hd__deca 
-  (1,3) = (9,8)                            |  1 = 1                                    
-  2 = 2                                    |  2 = 1                                    
-  4 = 42                                   |  3 = 1                                    
+Instance: inv2_4/sky130_fd_pr__nfet_01v8:0 |Instance: sw_top:swt/sky130_fd_sc_hd__deca 
+  (1,3) = (53,3)                           |  proxya_65_55# = 1                        
+  2 = 2                                    |  proxya_65_331# = 1                       
+  4 = 53                                   |  proxyw_0_269# = 1                        
+                                           |  proxyVSUBS = 1                           
+                                           |  1 = 1                                    
+                                           |  2 = 1                                    
+                                           |  3 = 1                                    
                                            |  4 = 1                                    
+                                           |  proxya_65_55# = 1                        
+                                           |  proxya_65_331# = 1                       
+                                           |  proxyw_0_269# = 1                        
+                                           |  proxyVSUBS = 1                           
                                            |                                           
-Instance: inv2_0/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
-  2 = 2                                    |                                           
-  4 = 18                                   |                                           
+Instance: inv2_5/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i6        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
+Instance: inv2_6/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i5        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
-Instance: inv2_1/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
-  2 = 2                                    |                                           
-  4 = 18                                   |                                           
+Instance: inv2_7/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i4        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
+Instance: inv2_8/sky130_fd_pr__nfet_01v8:0 |Instance: sky130_fd_sc_hd__inv_2:i3        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
-Instance: inv2_2/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
-  2 = 2                                    |                                           
-  4 = 18                                   |                                           
+Instance: sw_top_1//M2_2_0/sky130_fd_pr__n |Instance: sky130_fd_sc_hd__inv_2:i2        
+  (1,3) = (7,6)                            |  1 = 1                                    
+  2 = 3                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
+Instance: inv2_0/sky130_fd_pr__pfet_01v8_h |Instance: sky130_fd_sc_hd__inv_2:i1        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
-Instance: inv2_3/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
-  2 = 2                                    |                                           
-  4 = 18                                   |                                           
+Instance: inv2_1/sky130_fd_pr__pfet_01v8_h |Instance: sky130_fd_sc_hd__inv_2:i0        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
+Instance: inv2_2/sky130_fd_pr__pfet_01v8_h |Instance: sky130_fd_sc_hd__inv_2:idum      
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
+                                           |                                           
+Instance: inv2_3/sky130_fd_pr__pfet_01v8_h |Instance: sky130_fd_sc_hd__inv_2:i7        
+  (1,3) = (53,3)                           |  1 = 1                                    
+  2 = 2                                    |  2 = 23                                   
+  4 = 53                                   |  3 = 23                                   
+                                           |  4 = 23                                   
+                                           |  5 = 23                                   
+                                           |  6 = 2                                    
                                            |                                           
 Instance: inv2_4/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
+  (1,3) = (53,3)                           |                                           
   2 = 2                                    |                                           
-  4 = 18                                   |                                           
+  4 = 53                                   |                                           
                                            |                                           
                                            |                                           
 Instance: inv2_5/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
+  (1,3) = (53,3)                           |                                           
   2 = 2                                    |                                           
-  4 = 18                                   |                                           
+  4 = 53                                   |                                           
                                            |                                           
                                            |                                           
 Instance: inv2_6/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
+  (1,3) = (53,3)                           |                                           
   2 = 2                                    |                                           
-  4 = 18                                   |                                           
+  4 = 53                                   |                                           
                                            |                                           
                                            |                                           
 Instance: inv2_7/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
+  (1,3) = (53,3)                           |                                           
   2 = 2                                    |                                           
-  4 = 18                                   |                                           
+  4 = 53                                   |                                           
                                            |                                           
                                            |                                           
 Instance: inv2_8/sky130_fd_pr__pfet_01v8_h |(no matching instance)                     
-  (1,3) = (18,3)                           |                                           
+  (1,3) = (53,3)                           |                                           
   2 = 2                                    |                                           
-  4 = 18                                   |                                           
+  4 = 53                                   |                                           
                                            |                                           
                                            |                                           
-Instance: sw_top_0//decap_8_0/sky130_fd_pr |(no matching instance)                     
-  (1,3) = (24,24)                          |                                           
-  2 = 42                                   |                                           
-  4 = 24                                   |                                           
+Instance: sw_top_0//decap_8_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
+Instance: sw_top_1//decap_8_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
-Instance: sw_top_0//M1_3_0/sky130_fd_pr__p |(no matching instance)                     
-  (1,3) = (9,8)                            |                                           
-  2 = 3                                    |                                           
-  4 = 24                                   |                                           
+Instance: sw_top_2//decap_8_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
+Instance: sw_top_3//decap_8_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
 Instance: sw_top_1//M1_3_0/sky130_fd_pr__p |(no matching instance)                     
-  (1,3) = (9,8)                            |                                           
-  2 = 3                                    |                                           
-  4 = 24                                   |                                           
+  (1,3) = (7,6)                            |                                           
+  2 = 5                                    |                                           
+  4 = 53                                   |                                           
                                            |                                           
-                                           |                                           
-Instance: sw_top_2//M1_3_0/sky130_fd_pr__p |(no matching instance)                     
-  (1,3) = (9,8)                            |                                           
-  2 = 3                                    |                                           
-  4 = 24                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sw_top_3//M1_3_0/sky130_fd_pr__p |(no matching instance)                     
-  (1,3) = (9,8)                            |                                           
-  2 = 3                                    |                                           
-  4 = 24                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sw_top_0//inv_4_0                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
-  a_59_207# = 3                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 2                            |                                           
-  VSUBS = 42                               |                                           
-                                           |                                           
-Instance: sw_top_0//inv_4_1                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
-  a_59_207# = 4                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 3                            |                                           
-  VSUBS = 42                               |                                           
                                            |                                           
 Instance: sw_top_1//inv_4_0                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
-  a_59_207# = 3                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 2                            |                                           
-  VSUBS = 42                               |                                           
+  w_0_269# = 53                            |                                           
+  a_59_207# = 5                            |                                           
+  a_75_55# = 53                            |                                           
+  a_75_305# = 53                           |                                           
+  a_157_55# = 3                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxy5 = 1                               |                                           
+  proxy6 = 1                               |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxya_59_207# = 1                  |                                           
+  proxyproxya_75_55# = 1                   |                                           
+  proxyproxya_75_305# = 1                  |                                           
+  proxyproxya_157_55# = 1                  |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
 Instance: sw_top_1//inv_4_1                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
+  w_0_269# = 53                            |                                           
   a_59_207# = 4                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 3                            |                                           
-  VSUBS = 42                               |                                           
+  a_75_55# = 53                            |                                           
+  a_75_305# = 53                           |                                           
+  a_157_55# = 5                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxy5 = 1                               |                                           
+  proxy6 = 1                               |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxya_59_207# = 1                  |                                           
+  proxyproxya_75_55# = 1                   |                                           
+  proxyproxya_75_305# = 1                  |                                           
+  proxyproxya_157_55# = 1                  |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
 Instance: sw_top_2//inv_4_0                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
-  a_59_207# = 3                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 2                            |                                           
-  VSUBS = 42                               |                                           
+  w_0_269# = 53                            |                                           
+  a_59_207# = 5                            |                                           
+  a_75_55# = 53                            |                                           
+  a_75_305# = 53                           |                                           
+  a_157_55# = 3                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxy5 = 1                               |                                           
+  proxy6 = 1                               |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxya_59_207# = 1                  |                                           
+  proxyproxya_75_55# = 1                   |                                           
+  proxyproxya_75_305# = 1                  |                                           
+  proxyproxya_157_55# = 1                  |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
 Instance: sw_top_2//inv_4_1                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
+  w_0_269# = 53                            |                                           
   a_59_207# = 4                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 3                            |                                           
-  VSUBS = 42                               |                                           
+  a_75_55# = 53                            |                                           
+  a_75_305# = 53                           |                                           
+  a_157_55# = 5                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxy5 = 1                               |                                           
+  proxy6 = 1                               |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxya_59_207# = 1                  |                                           
+  proxyproxya_75_55# = 1                   |                                           
+  proxyproxya_75_305# = 1                  |                                           
+  proxyproxya_157_55# = 1                  |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
-Instance: sw_top_3//inv_4_0                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
-  a_59_207# = 3                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 2                            |                                           
-  VSUBS = 42                               |                                           
+Instance: sw_top_0//decap_3_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
                                            |                                           
-Instance: sw_top_3//inv_4_1                |(no matching instance)                     
-  w_0_269# = 24                            |                                           
-  a_59_207# = 4                            |                                           
-  a_75_55# = 42                            |                                           
-  a_75_305# = 24                           |                                           
-  a_157_55# = 3                            |                                           
-  VSUBS = 42                               |                                           
+Instance: sw_top_1//decap_3_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
+                                           |                                           
+Instance: sw_top_2//decap_3_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
+                                           |                                           
+Instance: sw_top_3//decap_3_0              |(no matching instance)                     
+  a_65_55# = 53                            |                                           
+  a_65_331# = 53                           |                                           
+  w_0_269# = 53                            |                                           
+  VSUBS = 53                               |                                           
+  proxy1 = 1                               |                                           
+  proxy2 = 1                               |                                           
+  proxy3 = 1                               |                                           
+  proxy4 = 1                               |                                           
+  proxyproxya_65_55# = 1                   |                                           
+  proxyproxya_65_331# = 1                  |                                           
+  proxyproxyw_0_269# = 1                   |                                           
+  proxyproxyVSUBS = 1                      |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 
 Subcircuit pins:
 Circuit 1: DAC                             |Circuit 2: dac                             
 -------------------------------------------|-------------------------------------------
-vdd                                        |(no matching pin)                          
 ctl7                                       |(no matching pin)                          
 ctl6                                       |(no matching pin)                          
 dum                                        |(no matching pin)                          
@@ -657,10 +1240,11 @@ ctl1                                       |(no matching pin)
 ctl5                                       |(no matching pin)                          
 ctl4                                       |(no matching pin)                          
 ctl2                                       |(no matching pin)                          
-ctl3                                       |sample **Mismatch**                        
-en_buf_uq0                                 |(no matching pin)                          
-en_buf                                     |out **Mismatch**                           
-enb_uq0                                    |(no matching pin)                          
+ctl3                                       |(no matching pin)                          
+en_buf                                     |(no matching pin)                          
+out                                        |(no matching pin)                          
+sample                                     |dum **Mismatch**                           
+vin                                        |(no matching pin)                          
 enb                                        |(no matching pin)                          
 Cell pin lists are equivalent.
 Device classes DAC and dac are equivalent.

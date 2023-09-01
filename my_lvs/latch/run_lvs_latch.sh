@@ -19,4 +19,4 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../user_analog_layout.spice latch" "../user_analog_schematic.spice latch" /home/alex/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl latch.out
+netgen -batch lvs "latch_lay.spice latch" "latch_sch.spice latch" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl latch.out

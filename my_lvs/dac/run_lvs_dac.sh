@@ -19,4 +19,4 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../user_analog_layout.spice DAC" "../user_analog_schematic.spice dac" /home/alex/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl dac.out
+netgen -batch lvs "dac_lay.spice DAC" "dac_sch.spice dac" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl dac.out

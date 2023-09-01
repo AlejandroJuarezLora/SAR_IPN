@@ -56,44 +56,24 @@ N 610 -600 610 -470 { lab=vp}
 N 330 -400 330 -360 { lab=avdd}
 N 820 -210 900 -210 { lab=clkc}
 N 1220 -70 1340 -70 { lab=rstn}
-N 130 -480 180 -480 {
-lab=n_sample}
-N 160 -160 180 -160 {
-lab=n_sample}
-N 150 -160 160 -160 {
-lab=n_sample}
 N 0 -380 30 -380 {
-lab=sample}
-N 110 -480 130 -480 {
-lab=n_sample}
-N 110 -480 110 -380 {
-lab=n_sample}
-N 110 -380 110 -220 {
-lab=n_sample}
-N 110 -160 150 -160 {
-lab=n_sample}
-N 110 -220 110 -160 {
-lab=n_sample}
-N 10 -380 10 -180 {
 lab=sample}
 N 120 -590 180 -590 { lab=ctlp[0]}
 N 120 -580 180 -580 { lab=ctlp[1]}
 N 120 -570 180 -570 { lab=ctlp[2]}
 N 120 -560 180 -560 { lab=ctlp[3]}
 N 120 -550 180 -550 { lab=ctlp[4]}
-N 20 -490 180 -490 {
-lab=sample}
-N 10 -490 10 -380 {
-lab=sample}
-N 10 -490 20 -490 {
-lab=sample}
 N 120 -540 180 -540 { lab=ctlp[5]}
 N 120 -530 180 -530 { lab=ctlp[6]}
 N 120 -520 180 -520 { lab=ctlp[7]}
-N 10 -180 10 -170 {
+N 110 -380 130 -380 {
+lab=n_sample}
+N 140 -480 180 -480 {
 lab=sample}
-N 10 -170 180 -170 {
-lab=sample}
+N 110 -490 180 -490 {
+lab=n_sample}
+N 110 -170 180 -170 {}
+N 150 -160 180 -160 {}
 C {devices/lab_wire.sym} 730 -410 0 0 {name=l58 sig_type=std_logic lab=vn}
 C {devices/lab_wire.sym} 180 -310 0 0 {name=l80 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 180 -230 0 0 {name=l44 sig_type=std_logic lab=ctln[4]}
@@ -203,7 +183,7 @@ place=bottom}
 C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/dac/DAC.sym} 330 -590 0 0 {name=xdp}
 C {sky130_stdcells/inv_4.sym} 70 -380 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 0 -380 0 0 {name=l26 sig_type=std_logic lab=sample}
-C {devices/lab_wire.sym} 110 -290 0 0 {name=l48 sig_type=std_logic lab=n_sample}
+C {devices/lab_wire.sym} 130 -380 2 0 {name=l48 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 120 -590 0 0 {name=l18 sig_type=std_logic lab=ctlp[0]}
 C {devices/lab_wire.sym} 120 -580 0 0 {name=l46 sig_type=std_logic lab=ctlp[1]}
 C {devices/lab_wire.sym} 120 -570 0 0 {name=l11 sig_type=std_logic lab=ctlp[2]}
@@ -231,3 +211,7 @@ C {devices/lab_wire.sym} 840 -510 0 1 {name=l67 sig_type=std_logic lab=trimb[1]
 }
 C {devices/lab_wire.sym} 840 -520 0 1 {name=l68 sig_type=std_logic lab=trimb[0]
 }
+C {devices/lab_wire.sym} 110 -490 3 0 {name=l69 sig_type=std_logic lab=n_sample}
+C {devices/lab_wire.sym} 140 -480 3 0 {name=l70 sig_type=std_logic lab=sample}
+C {devices/lab_wire.sym} 110 -170 3 0 {name=l71 sig_type=std_logic lab=n_sample}
+C {devices/lab_wire.sym} 150 -160 3 0 {name=l72 sig_type=std_logic lab=sample}

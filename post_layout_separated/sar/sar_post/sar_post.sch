@@ -30,11 +30,7 @@ N 860 -420 920 -420 { lab=outn}
 N 860 -460 920 -460 { lab=outp}
 N 150 -180 180 -180 { lab=avss}
 N 150 -500 180 -500 { lab=avdd}
-N 810 -550 810 -490 { lab=trim[4:0]}
-N 810 -550 870 -550 { lab=trim[4:0]}
-N 830 -520 830 -480 { lab=trimb[4:0]}
 N 900 -210 940 -210 { lab=clkc}
-N 830 -520 900 -520 { lab=trimb[4:0]}
 N 1160 -460 1270 -460 { lab=comp}
 N 810 -390 810 -210 { lab=clkc}
 N 810 -210 820 -210 { lab=clkc}
@@ -144,9 +140,9 @@ C {devices/lab_wire.sym} 180 -180 0 0 {name=l23 sig_type=std_logic lab=avss
 }
 C {devices/lab_wire.sym} 180 -500 0 0 {name=l31 sig_type=std_logic lab=avdd
 }
-C {devices/lab_wire.sym} 830 -520 0 1 {name=l3 sig_type=std_logic lab=trimb[4:0]
+C {devices/lab_wire.sym} 840 -480 0 1 {name=l3 sig_type=std_logic lab=trimb[4]
 }
-C {devices/lab_wire.sym} 810 -550 0 1 {name=l13 sig_type=std_logic lab=trim[4:0]}
+C {devices/lab_wire.sym} 840 -540 0 1 {name=l13 sig_type=std_logic lab=trim[4]}
 C {devices/lab_wire.sym} 180 -630 0 0 {name=l4 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 900 -70 0 0 {name=l7 sig_type=std_logic lab=sample}
 C {devices/noconn.sym} 810 -70 0 0 {name=l8}
@@ -223,3 +219,15 @@ C {devices/lab_wire.sym} 180 -240 0 0 {name=l56 sig_type=std_logic lab=ctln[3]}
 C {devices/lab_wire.sym} 180 -220 0 0 {name=l57 sig_type=std_logic lab=ctln[5]}
 C {devices/lab_wire.sym} 180 -210 0 0 {name=l59 sig_type=std_logic lab=ctln[6]}
 C {devices/lab_wire.sym} 180 -200 0 0 {name=l60 sig_type=std_logic lab=ctln[7]}
+C {devices/lab_wire.sym} 840 -550 0 1 {name=l16 sig_type=std_logic lab=trim[3]}
+C {devices/lab_wire.sym} 840 -560 0 1 {name=l17 sig_type=std_logic lab=trim[2]}
+C {devices/lab_wire.sym} 840 -570 0 1 {name=l61 sig_type=std_logic lab=trim[1]}
+C {devices/lab_wire.sym} 840 -580 0 1 {name=l63 sig_type=std_logic lab=trim[0]}
+C {devices/lab_wire.sym} 840 -490 0 1 {name=l64 sig_type=std_logic lab=trimb[3]
+}
+C {devices/lab_wire.sym} 840 -500 0 1 {name=l65 sig_type=std_logic lab=trimb[2]
+}
+C {devices/lab_wire.sym} 840 -510 0 1 {name=l67 sig_type=std_logic lab=trimb[1]
+}
+C {devices/lab_wire.sym} 840 -520 0 1 {name=l68 sig_type=std_logic lab=trimb[0]
+}

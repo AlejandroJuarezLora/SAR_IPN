@@ -132,26 +132,6 @@ unitx=1
 logx=0
 logy=0
 digital=1}
-B 2 1700 20 2500 420 {flags=graph
-y1=-0.562543
-y2=2.72204
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=4.8e-05
-divx=5
-subdivx=1
-node="vinp
-vinn"
-color="9 9"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
 B 2 840 880 1640 1280 {flags=graph
 y1=-0.246934
 y2=1.82012

@@ -43,13 +43,13 @@ x clk vdd trim_1/drain comparator_core_0/w_302_2337# s=11600,516 d=11600,516 l=6
 x outn outp trim_1/drain vss s=11600,516 d=11600,516 l=60 w=200 x=5257 y=1590 sky130_fd_pr__nfet_01v8
 x clk vdd outn comparator_core_0/w_302_2337# s=11600,516 d=11600,516 l=60 w=200 x=4294 y=3339 sky130_fd_pr__pfet_01v8
 x outp outn vdd comparator_core_0/w_302_2337# s=11600,516 d=11600,516 l=60 w=200 x=4965 y=3339 sky130_fd_pr__pfet_01v8
+C trim_0/drain trim_0/n4 6.9
+C vss vdd 5.2
 C trim_0/drain trim_0/n3 3.4
-C trim_1/drain trim_1/n4 6.9
-C trim_1/drain trim_1/n3 3.4
-C trim_0/n4 trim_0/drain 6.9
-C vdd vss 5.2
+C trim_1/n3 trim_1/drain 3.4
 C vss trim_1/n4 2.1
 C trim_0/n4 vss 2.1
+C trim_1/n4 trim_1/drain 6.9
 C clk0 3.2
 R clk 2442
 = clk comparator_core_0/clk

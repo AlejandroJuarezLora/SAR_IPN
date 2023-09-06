@@ -35,8 +35,8 @@ x ctl3 carray_0/n3 vss vss s=3510,184 d=6760,364 l=30 w=130 x=-2255 y=2459 sky13
 x ctl3 vss carray_0/n3 vss s=6760,364 d=3510,184 l=30 w=130 x=-2255 y=2543 sky130_fd_pr__nfet_01v8
 x ctl3 carray_0/n3 vdd vdd s=5400,254 d=10400,504 l=30 w=200 x=-2005 y=2459 sky130_fd_pr__pfet_01v8_hvt
 x ctl3 vdd carray_0/n3 vdd s=10400,504 d=5400,254 l=30 w=200 x=-2005 y=2543 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=578 w=110 x=46507 y=1781 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=578 w=174 x=46231 y=1781 sky130_fd_pr__pfet_01v8_hvt
+x vdd vss vss vss d=5720,324 l=578 w=110 x=46507 y=1781 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=578 w=174 x=46231 y=1781 sky130_fd_pr__pfet_01v8_hvt
 x sw_top_0/m2_1158_361# out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=2242 sky130_fd_pr__pfet_01v8
 x sw_top_0/m2_1158_361# vin out vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=2596 sky130_fd_pr__pfet_01v8
 x sw_top_0/m2_1158_361# out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=2949 sky130_fd_pr__pfet_01v8
@@ -73,350 +73,350 @@ x sample vss sw_top_0/m2_1158_361# vss s=3510,184 d=3510,184 l=30 w=130 x=46507 
 x sample sw_top_0/m2_1158_361# vdd vdd s=5400,254 d=5400,254 l=30 w=200 x=46257 y=2611 sky130_fd_pr__pfet_01v8_hvt
 x sample sw_top_0/m2_1158_361# vss vss s=3510,184 d=6760,364 l=30 w=130 x=46507 y=2779 sky130_fd_pr__nfet_01v8
 x sample vdd sw_top_0/m2_1158_361# vdd s=10400,504 d=5400,254 l=30 w=200 x=46257 y=2527 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=118 w=110 x=46507 y=3437 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=118 w=174 x=46231 y=3437 sky130_fd_pr__pfet_01v8_hvt
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_712/m2_1_40# s=11600,516 l=400 w=400 x=42130 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_709/m2_1_40# s=11600,516 l=400 w=400 x=38230 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_642/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_641/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_439/m2_1_40# s=11600,516 l=400 w=400 x=33030 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_448/m2_1_40# s=11600,516 l=400 w=400 x=27830 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_676/m2_1_40# s=11600,516 l=400 w=400 x=34330 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_675/m2_1_40# s=11600,516 l=400 w=400 x=33030 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_588/m2_1_40# s=11600,516 l=400 w=400 x=23930 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_429/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/ndum s=11600,516 l=400 w=400 x=22630 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_677/m2_1_40# s=11600,516 l=400 w=400 x=35630 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_589/m2_1_40# s=11600,516 l=400 w=400 x=25230 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_326/m2_1_40# s=11600,516 l=400 w=400 x=10930 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_414/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_3/m2_1_40# s=11600,516 l=400 w=400 x=17430 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_678/m2_1_40# s=11600,516 l=400 w=400 x=36930 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_590/m2_1_40# s=11600,516 l=400 w=400 x=26530 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_251/m2_1_40# s=11600,516 l=400 w=400 x=9630 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_381/m2_1_40# s=11600,516 l=400 w=400 x=38230 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_89/m2_1_40# s=11600,516 l=400 w=400 x=10930 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_9/m2_1_40# s=11600,516 l=400 w=400 x=18730 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_199/m2_1_40# s=11600,516 l=400 w=400 x=530 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_584/m2_1_40# s=11600,516 l=400 w=400 x=22630 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_245/m2_1_40# s=11600,516 l=400 w=400 x=5730 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_704/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_366/m2_1_40# s=11600,516 l=400 w=400 x=42130 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_449/m2_1_40# s=11600,516 l=400 w=400 x=29130 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_1/m2_1_40# s=11600,516 l=400 w=400 x=20030 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_702/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_600/m2_1_40# s=11600,516 l=400 w=400 x=30430 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_331/m2_1_40# s=11600,516 l=400 w=400 x=12230 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_198/m2_1_40# s=11600,516 l=400 w=400 x=530 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_367/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_446/m2_1_40# s=11600,516 l=400 w=400 x=31730 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_90/m2_1_40# s=11600,516 l=400 w=400 x=9630 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_2/m2_1_40# s=11600,516 l=400 w=400 x=21330 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n2 s=11600,516 l=400 w=400 x=21330 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_601/m2_1_40# s=11600,516 l=400 w=400 x=31730 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_332/m2_1_40# s=11600,516 l=400 w=400 x=13530 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_220/m2_1_40# s=11600,516 l=400 w=400 x=530 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_705/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_368/m2_1_40# s=11600,516 l=400 w=400 x=39530 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_447/m2_1_40# s=11600,516 l=400 w=400 x=30430 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_96/m2_1_40# s=11600,516 l=400 w=400 x=530 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_20/m2_1_40# s=11600,516 l=400 w=400 x=12230 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n2 s=11600,516 l=400 w=400 x=21330 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_710/m2_1_40# s=11600,516 l=400 w=400 x=39530 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_599/m2_1_40# s=11600,516 l=400 w=400 x=29130 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_333/m2_1_40# s=11600,516 l=400 w=400 x=14830 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_213/m2_1_40# s=11600,516 l=400 w=400 x=530 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_369/m2_1_40# s=11600,516 l=400 w=400 x=40830 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_458/m2_1_40# s=11600,516 l=400 w=400 x=26530 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_103/m2_1_40# s=11600,516 l=400 w=400 x=1830 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=12230 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_21/m2_1_40# s=11600,516 l=400 w=400 x=13530 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n2 s=11600,516 l=400 w=400 x=22630 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_711/m2_1_40# s=11600,516 l=400 w=400 x=40830 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_598/m2_1_40# s=11600,516 l=400 w=400 x=27830 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_347/m2_1_40# s=11600,516 l=400 w=400 x=20030 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_229/m2_1_40# s=11600,516 l=400 w=400 x=1830 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_378/m2_1_40# s=11600,516 l=400 w=400 x=34330 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_455/m2_1_40# s=11600,516 l=400 w=400 x=22630 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_91/m2_1_40# s=11600,516 l=400 w=400 x=3130 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=3130 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_22/m2_1_40# s=11600,516 l=400 w=400 x=14830 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=7030 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n2 s=11600,516 l=400 w=400 x=22630 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_354/m2_1_40# s=11600,516 l=400 w=400 x=21330 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_228/m2_1_40# s=11600,516 l=400 w=400 x=530 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_94/m2_1_40# s=11600,516 l=400 w=400 x=4430 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_635/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_379/m2_1_40# s=11600,516 l=400 w=400 x=35630 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_459/m2_1_40# s=11600,516 l=400 w=400 x=23930 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_23/m2_1_40# s=11600,516 l=400 w=400 x=16130 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=42130 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=20030 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_345/m2_1_40# s=11600,516 l=400 w=400 x=17430 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_230/m2_1_40# s=11600,516 l=400 w=400 x=3130 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_380/m2_1_40# s=11600,516 l=400 w=400 x=36930 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_460/m2_1_40# s=11600,516 l=400 w=400 x=25230 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_117/m2_1_40# s=11600,516 l=400 w=400 x=530 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_87/m2_1_40# s=11600,516 l=400 w=400 x=7030 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_346/m2_1_40# s=11600,516 l=400 w=400 x=18730 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_218/m2_1_40# s=11600,516 l=400 w=400 x=4430 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_111/m2_1_40# s=11600,516 l=400 w=400 x=530 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_419/m2_1_40# s=11600,516 l=400 w=400 x=43430 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_88/m2_1_40# s=11600,516 l=400 w=400 x=8330 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_334/m2_1_40# s=11600,516 l=400 w=400 x=16130 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_249/m2_1_40# s=11600,516 l=400 w=400 x=7030 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_128/m2_1_40# s=11600,516 l=400 w=400 x=530 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=30430 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_250/m2_1_40# s=11600,516 l=400 w=400 x=8330 y=9271 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_95/m2_1_40# s=11600,516 l=400 w=400 x=5730 y=1711 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=29130 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=38230 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=35630 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/via23_4_200/m2_1_40# s=11600,516 l=400 w=400 x=530 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=25230 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=34330 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n4 s=11600,516 l=400 w=400 x=23930 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=5730 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=1830 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=8330 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=14830 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=9630 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=13530 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=21330 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=21330 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=18730 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=21330 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=4430 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=21330 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n1 s=11600,516 l=400 w=400 x=21330 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=16130 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=22630 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n1 s=11600,516 l=400 w=400 x=22630 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=22630 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=10930 y=6751 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=22630 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n3 s=11600,516 l=400 w=400 x=22630 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n0 s=11600,516 l=400 w=400 x=21330 y=5911 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=5071 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=33030 y=2551 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=4231 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=36930 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n5 s=11600,516 l=400 w=400 x=27830 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=26530 y=3391 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n7 s=11600,516 l=400 w=400 x=39530 y=7591 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=40830 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=17430 y=8431 sky130_fd_pr__cap_mim_m3_1
-x out carray_0/n6 s=11600,516 l=400 w=400 x=31730 y=4231 sky130_fd_pr__cap_mim_m3_1
-x vdd vss vss vss s=5720,324 l=578 w=110 x=46507 y=3897 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=578 w=174 x=46231 y=3897 sky130_fd_pr__pfet_01v8_hvt
+x vdd vss vss vss d=5720,324 l=118 w=110 x=46507 y=3437 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=118 w=174 x=46231 y=3437 sky130_fd_pr__pfet_01v8_hvt
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_712/m2_1_40# s=480000,2800 l=400 w=400 x=42130 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_709/m2_1_40# s=480000,2800 l=400 w=400 x=38230 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_642/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_641/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_439/m2_1_40# s=480000,2800 l=400 w=400 x=33030 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_448/m2_1_40# s=480000,2800 l=400 w=400 x=27830 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_676/m2_1_40# s=480000,2800 l=400 w=400 x=34330 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_675/m2_1_40# s=480000,2800 l=400 w=400 x=33030 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_588/m2_1_40# s=480000,2800 l=400 w=400 x=23930 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_429/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/ndum s=480000,2800 l=400 w=400 x=22630 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_677/m2_1_40# s=480000,2800 l=400 w=400 x=35630 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_589/m2_1_40# s=480000,2800 l=400 w=400 x=25230 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_326/m2_1_40# s=480000,2800 l=400 w=400 x=10930 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_414/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_3/m2_1_40# s=480000,2800 l=400 w=400 x=17430 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_678/m2_1_40# s=480000,2800 l=400 w=400 x=36930 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_590/m2_1_40# s=480000,2800 l=400 w=400 x=26530 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_251/m2_1_40# s=480000,2800 l=400 w=400 x=9630 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_381/m2_1_40# s=480000,2800 l=400 w=400 x=38230 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_89/m2_1_40# s=480000,2800 l=400 w=400 x=10930 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_9/m2_1_40# s=480000,2800 l=400 w=400 x=18730 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_199/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_584/m2_1_40# s=480000,2800 l=400 w=400 x=22630 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_245/m2_1_40# s=480000,2800 l=400 w=400 x=5730 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_704/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_366/m2_1_40# s=480000,2800 l=400 w=400 x=42130 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_449/m2_1_40# s=480000,2800 l=400 w=400 x=29130 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_1/m2_1_40# s=480000,2800 l=400 w=400 x=20030 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_702/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_600/m2_1_40# s=480000,2800 l=400 w=400 x=30430 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_331/m2_1_40# s=480000,2800 l=400 w=400 x=12230 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_198/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_367/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_446/m2_1_40# s=480000,2800 l=400 w=400 x=31730 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_90/m2_1_40# s=480000,2800 l=400 w=400 x=9630 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_2/m2_1_40# s=480000,2800 l=400 w=400 x=21330 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n2 s=480000,2800 l=400 w=400 x=21330 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_601/m2_1_40# s=480000,2800 l=400 w=400 x=31730 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_332/m2_1_40# s=480000,2800 l=400 w=400 x=13530 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_220/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_705/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_368/m2_1_40# s=480000,2800 l=400 w=400 x=39530 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_447/m2_1_40# s=480000,2800 l=400 w=400 x=30430 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_96/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_20/m2_1_40# s=480000,2800 l=400 w=400 x=12230 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n2 s=480000,2800 l=400 w=400 x=21330 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_710/m2_1_40# s=480000,2800 l=400 w=400 x=39530 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_599/m2_1_40# s=480000,2800 l=400 w=400 x=29130 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_333/m2_1_40# s=480000,2800 l=400 w=400 x=14830 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_213/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_369/m2_1_40# s=480000,2800 l=400 w=400 x=40830 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_458/m2_1_40# s=480000,2800 l=400 w=400 x=26530 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_103/m2_1_40# s=480000,2800 l=400 w=400 x=1830 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=12230 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_21/m2_1_40# s=480000,2800 l=400 w=400 x=13530 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n2 s=480000,2800 l=400 w=400 x=22630 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_711/m2_1_40# s=480000,2800 l=400 w=400 x=40830 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_598/m2_1_40# s=480000,2800 l=400 w=400 x=27830 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_347/m2_1_40# s=480000,2800 l=400 w=400 x=20030 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_229/m2_1_40# s=480000,2800 l=400 w=400 x=1830 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_378/m2_1_40# s=480000,2800 l=400 w=400 x=34330 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_455/m2_1_40# s=480000,2800 l=400 w=400 x=22630 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_91/m2_1_40# s=480000,2800 l=400 w=400 x=3130 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=3130 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_22/m2_1_40# s=480000,2800 l=400 w=400 x=14830 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=7030 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n2 s=480000,2800 l=400 w=400 x=22630 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_354/m2_1_40# s=480000,2800 l=400 w=400 x=21330 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_228/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_94/m2_1_40# s=480000,2800 l=400 w=400 x=4430 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_635/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_379/m2_1_40# s=480000,2800 l=400 w=400 x=35630 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_459/m2_1_40# s=480000,2800 l=400 w=400 x=23930 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_23/m2_1_40# s=480000,2800 l=400 w=400 x=16130 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=42130 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=20030 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_345/m2_1_40# s=480000,2800 l=400 w=400 x=17430 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_230/m2_1_40# s=480000,2800 l=400 w=400 x=3130 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_380/m2_1_40# s=480000,2800 l=400 w=400 x=36930 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_460/m2_1_40# s=480000,2800 l=400 w=400 x=25230 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_117/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_87/m2_1_40# s=480000,2800 l=400 w=400 x=7030 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_346/m2_1_40# s=480000,2800 l=400 w=400 x=18730 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_218/m2_1_40# s=480000,2800 l=400 w=400 x=4430 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_111/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_419/m2_1_40# s=480000,2800 l=400 w=400 x=43430 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_88/m2_1_40# s=480000,2800 l=400 w=400 x=8330 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_334/m2_1_40# s=480000,2800 l=400 w=400 x=16130 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_249/m2_1_40# s=480000,2800 l=400 w=400 x=7030 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_128/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=30430 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_250/m2_1_40# s=480000,2800 l=400 w=400 x=8330 y=9271 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_95/m2_1_40# s=480000,2800 l=400 w=400 x=5730 y=1711 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=29130 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=38230 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=35630 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/via23_4_200/m2_1_40# s=480000,2800 l=400 w=400 x=530 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=25230 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=34330 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n4 s=480000,2800 l=400 w=400 x=23930 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=5730 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=1830 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=8330 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=14830 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=9630 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=13530 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=21330 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=21330 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=18730 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=21330 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=4430 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=21330 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n1 s=480000,2800 l=400 w=400 x=21330 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=16130 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=22630 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n1 s=480000,2800 l=400 w=400 x=22630 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=22630 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=10930 y=6751 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=22630 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n3 s=480000,2800 l=400 w=400 x=22630 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n0 s=480000,2800 l=400 w=400 x=21330 y=5911 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=5071 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=33030 y=2551 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=4231 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=36930 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n5 s=480000,2800 l=400 w=400 x=27830 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=26530 y=3391 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n7 s=480000,2800 l=400 w=400 x=39530 y=7591 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=40830 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=17430 y=8431 sky130_fd_pr__cap_mim_m3_1
+x out carray_0/n6 s=480000,2800 l=400 w=400 x=31730 y=4231 sky130_fd_pr__cap_mim_m3_1
+x vdd vss vss vss d=5720,324 l=578 w=110 x=46507 y=3897 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=578 w=174 x=46231 y=3897 sky130_fd_pr__pfet_01v8_hvt
 x enb out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=4358 sky130_fd_pr__pfet_01v8
 x enb vin out vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=4712 sky130_fd_pr__pfet_01v8
 x enb out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=5065 sky130_fd_pr__pfet_01v8
@@ -453,10 +453,10 @@ x sample vss enb vss s=3510,184 d=3510,184 l=30 w=130 x=46507 y=4811 sky130_fd_p
 x sample enb vdd vdd s=5400,254 d=5400,254 l=30 w=200 x=46257 y=4727 sky130_fd_pr__pfet_01v8_hvt
 x sample enb vss vss s=3510,184 d=6760,364 l=30 w=130 x=46507 y=4895 sky130_fd_pr__nfet_01v8
 x sample vdd enb vdd s=10400,504 d=5400,254 l=30 w=200 x=46257 y=4643 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=118 w=110 x=46507 y=5553 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=118 w=174 x=46231 y=5553 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=578 w=110 x=46507 y=8129 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=578 w=174 x=46231 y=8129 sky130_fd_pr__pfet_01v8_hvt
+x vdd vss vss vss d=5720,324 l=118 w=110 x=46507 y=5553 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=118 w=174 x=46231 y=5553 sky130_fd_pr__pfet_01v8_hvt
+x vdd vss vss vss d=5720,324 l=578 w=110 x=46507 y=8129 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=578 w=174 x=46231 y=8129 sky130_fd_pr__pfet_01v8_hvt
 x enb out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=8590 sky130_fd_pr__pfet_01v8
 x enb vin out vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=8944 sky130_fd_pr__pfet_01v8
 x enb out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=9297 sky130_fd_pr__pfet_01v8
@@ -493,10 +493,10 @@ x sample vss enb vss s=3510,184 d=3510,184 l=30 w=130 x=46507 y=9043 sky130_fd_p
 x sample enb vdd vdd s=5400,254 d=5400,254 l=30 w=200 x=46257 y=8959 sky130_fd_pr__pfet_01v8_hvt
 x sample enb vss vss s=3510,184 d=6760,364 l=30 w=130 x=46507 y=9127 sky130_fd_pr__nfet_01v8
 x sample vdd enb vdd s=10400,504 d=5400,254 l=30 w=200 x=46257 y=8875 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=118 w=110 x=46507 y=9785 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=118 w=174 x=46231 y=9785 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=578 w=110 x=46507 y=6013 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=578 w=174 x=46231 y=6013 sky130_fd_pr__pfet_01v8_hvt
+x vdd vss vss vss d=5720,324 l=118 w=110 x=46507 y=9785 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=118 w=174 x=46231 y=9785 sky130_fd_pr__pfet_01v8_hvt
+x vdd vss vss vss d=5720,324 l=578 w=110 x=46507 y=6013 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=578 w=174 x=46231 y=6013 sky130_fd_pr__pfet_01v8_hvt
 x sw_top_3/m2_1158_361# out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=6474 sky130_fd_pr__pfet_01v8
 x sw_top_3/m2_1158_361# vin out vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=6828 sky130_fd_pr__pfet_01v8
 x sw_top_3/m2_1158_361# out vin vdd s=5800,258 d=5800,258 l=60 w=200 x=44916 y=7181 sky130_fd_pr__pfet_01v8
@@ -533,159 +533,159 @@ x sample vss sw_top_3/m2_1158_361# vss s=3510,184 d=3510,184 l=30 w=130 x=46507 
 x sample sw_top_3/m2_1158_361# vdd vdd s=5400,254 d=5400,254 l=30 w=200 x=46257 y=6843 sky130_fd_pr__pfet_01v8_hvt
 x sample sw_top_3/m2_1158_361# vss vss s=3510,184 d=6760,364 l=30 w=130 x=46507 y=7011 sky130_fd_pr__nfet_01v8
 x sample vdd sw_top_3/m2_1158_361# vdd s=10400,504 d=5400,254 l=30 w=200 x=46257 y=6759 sky130_fd_pr__pfet_01v8_hvt
-x vdd vss vss vss s=5720,324 l=118 w=110 x=46507 y=7669 sky130_fd_pr__nfet_01v8
-x vss vdd vdd vdd s=9048,452 l=118 w=174 x=46231 y=7669 sky130_fd_pr__pfet_01v8_hvt
-C sample carray_0/n7 5.0
-C carray_0/m3_25600_1156# carray_0/m3_25800_1156# 3.4
-C carray_0/n3 carray_0/n4 12.1
-C carray_0/m3_5000_1156# carray_0/n7 4.1
-C vdd enb 4.3
-C carray_0/m3_34700_1156# carray_0/n7 4.1
-C carray_0/m3_10000_1156# carray_0/m2_9900_1156# 2.1
-C carray_0/m2_29800_1156# carray_0/m3_29700_1156# 2.1
-C carray_0/m3_33400_1156# carray_0/m3_33600_1156# 3.4
-C carray_0/m3_19300_1156# carray_0/m3_19100_1156# 3.4
-C carray_0/m3_42500_1156# carray_0/m3_42700_1156# 3.4
-C carray_0/m2_23300_1156# carray_0/m3_23200_1156# 2.1
-C carray_0/m3_12800_1156# carray_0/n7 4.1
-C carray_0/n7 carray_0/m2_15100_1156# 2.4
-C out carray_0/n5 24.3
-C carray_0/n5 carray_0/m3_15400_1156# 4.1
-C carray_0/m3_36000_1156# carray_0/n7 4.1
-C carray_0/n7 carray_0/m3_42500_1156# 4.1
-C carray_0/m3_30800_1156# carray_0/m3_31000_1156# 3.4
-C carray_0/m3_32100_1156# carray_0/n6 4.1
-C carray_0/m3_40100_1156# carray_0/m2_40200_1156# 2.1
-C carray_0/n4 carray_0/m3_24300_1156# 4.1
-C carray_0/n2 carray_0/m3_20400_1156# 3.4
-C carray_0/m3_17800_1156# carray_0/m3_18000_1156# 3.4
-C carray_0/m2_12500_1156# carray_0/m3_12600_1156# 2.1
-C carray_0/m3_30800_1156# carray_0/n7 3.1
-C vdd sw_top_3/m2_1158_361# 2.1
-C carray_0/n7 carray_0/m2_41500_1156# 2.4
-C carray_0/m3_20400_1156# carray_0/m2_20300_1156# 2.1
-C carray_0/m2_28500_1156# carray_0/m3_28400_1156# 2.1
-C carray_0/n1 carray_0/n7 11.4
-C carray_0/n7 carray_0/m3_18000_1156# 3.1
-C carray_0/m3_28200_1156# carray_0/m3_28400_1156# 3.4
-C carray_0/m2_12500_1156# carray_0/n6 2.4
-C out carray_0/n6 48.6
-C carray_0/n5 carray_0/m2_16400_1156# 2.4
-C carray_0/n7 carray_0/m2_19000_1156# 2.4
-C carray_0/m2_6000_1156# carray_0/m3_6100_1156# 2.1
-C carray_0/m2_19000_1156# carray_0/m3_19100_1156# 2.1
-C carray_0/m3_19300_1156# carray_0/n4 4.1
-C carray_0/m3_39900_1156# carray_0/m3_40100_1156# 3.4
-C carray_0/n6 carray_0/m3_16700_1156# 3.1
-C carray_0/n6 carray_0/m2_40200_1156# 2.4
-C carray_0/m3_24500_1156# carray_0/m3_24300_1156# 3.4
-C out carray_0/n7 97.2
-C carray_0/n1 carray_0/n3 3.4
-C carray_0/m2_11200_1156# carray_0/m3_11300_1156# 2.1
-C carray_0/n7 carray_0/m3_8700_1156# 2.2
-C carray_0/n7 carray_0/m2_38900_1156# 3.5
-C carray_0/m3_34900_1156# carray_0/m2_35000_1156# 2.1
-C carray_0/n5 carray_0/m2_32400_1156# 2.4
-C carray_0/n7 carray_0/m3_29700_1156# 2.2
+x vdd vss vss vss d=5720,324 l=118 w=110 x=46507 y=7669 sky130_fd_pr__nfet_01v8
+x vss vdd vdd vdd d=9048,452 l=118 w=174 x=46231 y=7669 sky130_fd_pr__pfet_01v8_hvt
 C carray_0/n6 carray_0/m2_31100_1156# 2.4
-C carray_0/m2_36300_1156# carray_0/m3_36200_1156# 2.1
-C carray_0/m2_3400_1156# carray_0/m3_3500_1156# 2.1
-C carray_0/m3_15200_1156# carray_0/m2_15100_1156# 2.1
-C carray_0/n2 carray_0/n3 20.7
-C carray_0/m2_13800_1156# carray_0/n7 3.5
-C carray_0/n7 carray_0/m2_33700_1156# 2.4
-C carray_0/m2_2100_1156# carray_0/m3_2200_1156# 2.1
-C sample carray_0/ndum 11.1
-C out carray_0/n3 6.4
-C carray_0/m3_29500_1156# carray_0/m3_29700_1156# 3.4
-C carray_0/m3_10000_1156# carray_0/m3_10200_1156# 3.4
-C carray_0/m3_31000_1156# carray_0/m2_31100_1156# 2.1
-C carray_0/m2_37600_1156# carray_0/m3_37500_1156# 2.1
-C carray_0/n7 carray_0/m3_14100_1156# 4.1
-C carray_0/m2_35000_1156# carray_0/n7 3.5
-C carray_0/m3_8700_1156# carray_0/m3_8900_1156# 3.4
-C carray_0/n5 carray_0/n6 17.4
-C carray_0/m3_33400_1156# carray_0/n5 4.1
-C carray_0/m3_38600_1156# carray_0/n7 4.1
-C carray_0/m2_6000_1156# carray_0/n7 2.4
-C carray_0/m2_8600_1156# carray_0/m3_8700_1156# 2.1
-C carray_0/m2_29800_1156# carray_0/n7 3.5
-C carray_0/m3_42700_1156# carray_0/m2_42800_1156# 2.1
-C carray_0/m3_2200_1156# carray_0/m3_2400_1156# 3.4
-C carray_0/n5 carray_0/m3_28200_1156# 4.1
-C carray_0/m3_7400_1156# carray_0/m2_7300_1156# 2.1
-C carray_0/m2_800_1156# carray_0/m3_900_1156# 2.1
-C carray_0/n7 carray_0/m2_9900_1156# 2.4
-C carray_0/n4 carray_0/m2_20300_1156# 2.4
-C carray_0/n6 carray_0/m3_26900_1156# 4.1
-C carray_0/m3_16500_1156# carray_0/m3_16700_1156# 3.4
-C out carray_0/n4 12.2
-C carray_0/m3_4800_1156# carray_0/n7 2.2
-C carray_0/m2_37600_1156# carray_0/n7 2.4
-C carray_0/m3_25800_1156# carray_0/m2_25900_1156# 2.1
-C carray_0/m2_16400_1156# carray_0/m3_16500_1156# 2.1
-C carray_0/m2_27200_1156# carray_0/m3_27100_1156# 2.1
-C carray_0/m3_39900_1156# carray_0/n7 4.1
-C carray_0/n6 carray_0/m2_7300_1156# 2.4
-C carray_0/m2_13800_1156# carray_0/m3_13900_1156# 2.1
-C carray_0/m3_15400_1156# carray_0/m3_15200_1156# 3.4
-C carray_0/n7 carray_0/m2_24600_1156# 2.4
-C carray_0/m2_3400_1156# carray_0/n6 2.4
-C carray_0/n7 carray_0/m3_1100_1156# 4.1
-C carray_0/n1 carray_0/ndum 3.5
-C carray_0/m3_38800_1156# carray_0/m2_38900_1156# 2.1
-C carray_0/m3_25600_1156# carray_0/n7 4.1
-C carray_0/m2_23300_1156# carray_0/n4 2.4
-C carray_0/m3_32300_1156# carray_0/m3_32100_1156# 3.4
-C carray_0/m3_13900_1156# carray_0/m3_14100_1156# 3.4
-C out vin 21.5
-C carray_0/m3_4800_1156# carray_0/m2_4700_1156# 2.1
-C carray_0/n6 carray_0/n7 22.1
-C carray_0/m3_7400_1156# carray_0/m3_7600_1156# 3.4
-C carray_0/m2_28500_1156# carray_0/n7 2.4
-C carray_0/m3_10200_1156# carray_0/n5 4.1
-C carray_0/m3_3700_1156# carray_0/m3_3500_1156# 3.4
-C carray_0/m3_11500_1156# carray_0/m3_11300_1156# 3.4
-C carray_0/m3_38600_1156# carray_0/m3_38800_1156# 3.4
-C carray_0/n5 carray_0/n4 12.7
-C carray_0/n2 carray_0/n1 2.0
-C carray_0/n6 carray_0/m3_2400_1156# 4.1
-C carray_0/n7 carray_0/m3_7600_1156# 4.1
-C carray_0/m2_2100_1156# carray_0/n7 2.4
-C carray_0/n7 carray_0/m3_29500_1156# 3.1
-C carray_0/m2_4700_1156# carray_0/n7 3.5
-C carray_0/m3_6100_1156# carray_0/m3_6300_1156# 3.4
-C carray_0/m3_33600_1156# carray_0/m2_33700_1156# 2.1
-C carray_0/m3_41200_1156# carray_0/m3_41400_1156# 3.4
-C carray_0/n6 carray_0/m2_17700_1156# 2.4
-C carray_0/n7 carray_0/m3_8900_1156# 4.1
-C carray_0/m3_4800_1156# carray_0/m3_5000_1156# 3.4
+C carray_0/m3_16500_1156# carray_0/m2_16400_1156# 2.1
+C carray_0/m3_20400_1156# carray_0/m2_20300_1156# 2.1
 C carray_0/ndum carray_0/n0 14.5
-C carray_0/n2 out 3.3
-C carray_0/n7 carray_0/m2_8600_1156# 3.5
-C vdd vin 3.4
-C carray_0/m2_17700_1156# carray_0/m3_17800_1156# 2.1
-C carray_0/m3_32300_1156# carray_0/m2_32400_1156# 2.1
-C carray_0/n7 carray_0/m3_13900_1156# 2.2
-C carray_0/m3_24500_1156# carray_0/m2_24600_1156# 2.1
-C carray_0/m3_900_1156# carray_0/m3_1100_1156# 3.4
-C carray_0/n6 carray_0/m3_41200_1156# 4.1
-C carray_0/m2_27200_1156# carray_0/n5 2.4
-C carray_0/n1 carray_0/n0 14.5
-C carray_0/m3_11500_1156# carray_0/n6 4.1
+C carray_0/n7 carray_0/m3_38600_1156# 4.1
+C carray_0/m2_3400_1156# carray_0/m3_3500_1156# 2.1
+C carray_0/n7 carray_0/m3_42500_1156# 4.1
+C carray_0/n5 out 24.3
+C carray_0/m3_33600_1156# carray_0/m3_33400_1156# 3.4
+C carray_0/m2_9900_1156# carray_0/n7 2.4
+C carray_0/n4 carray_0/m2_23300_1156# 2.4
+C carray_0/m2_35000_1156# carray_0/n7 3.5
+C carray_0/m3_16700_1156# carray_0/m3_16500_1156# 3.4
+C carray_0/m2_33700_1156# carray_0/n7 2.4
+C carray_0/m3_29700_1156# carray_0/n7 2.2
+C carray_0/m3_17800_1156# carray_0/m2_17700_1156# 2.1
+C carray_0/n6 out 48.6
+C carray_0/n6 carray_0/m2_12500_1156# 2.4
+C carray_0/n2 carray_0/m3_20400_1156# 3.4
+C carray_0/n7 carray_0/m2_37600_1156# 2.4
+C carray_0/m3_3500_1156# carray_0/m3_3700_1156# 3.4
+C carray_0/n7 out 97.2
+C carray_0/m2_28500_1156# carray_0/n7 2.4
 C carray_0/m3_34700_1156# carray_0/m3_34900_1156# 3.4
-C carray_0/n6 carray_0/m3_6300_1156# 4.1
+C carray_0/m3_11300_1156# carray_0/m3_11500_1156# 3.4
+C carray_0/m2_28500_1156# carray_0/m3_28400_1156# 2.1
+C carray_0/n5 carray_0/m3_28200_1156# 4.1
+C carray_0/m3_23200_1156# carray_0/m2_23300_1156# 2.1
 C carray_0/n2 carray_0/m3_23200_1156# 3.4
-C carray_0/m3_12600_1156# carray_0/m3_12800_1156# 3.4
+C carray_0/n7 carray_0/m3_1100_1156# 4.1
+C carray_0/m2_29800_1156# carray_0/n7 3.5
+C carray_0/m3_2200_1156# carray_0/m3_2400_1156# 3.4
+C carray_0/n1 carray_0/n0 14.5
+C carray_0/n5 carray_0/m2_16400_1156# 2.4
+C carray_0/n4 carray_0/n3 12.1
+C carray_0/n6 carray_0/m3_2400_1156# 4.1
 C carray_0/m3_36000_1156# carray_0/m3_36200_1156# 3.4
-C carray_0/m3_3700_1156# carray_0/n7 4.1
-C carray_0/m3_38800_1156# carray_0/n7 2.2
-C vdd sw_top_0/m2_1158_361# 2.1
-C carray_0/m3_41400_1156# carray_0/m2_41500_1156# 2.1
-C carray_0/n6 carray_0/m3_37300_1156# 4.1
+C carray_0/m2_25900_1156# carray_0/m3_25800_1156# 2.1
+C carray_0/n7 carray_0/m3_4800_1156# 2.2
+C carray_0/m2_4700_1156# carray_0/m3_4800_1156# 2.1
+C carray_0/m2_32400_1156# carray_0/m3_32300_1156# 2.1
+C carray_0/m3_15200_1156# carray_0/m2_15100_1156# 2.1
+C carray_0/m2_38900_1156# carray_0/m3_38800_1156# 2.1
+C carray_0/m3_5000_1156# carray_0/m3_4800_1156# 3.4
+C carray_0/m3_31000_1156# carray_0/m2_31100_1156# 2.1
+C carray_0/m3_24300_1156# carray_0/m3_24500_1156# 3.4
+C carray_0/n7 carray_0/m2_24600_1156# 2.4
+C carray_0/n2 carray_0/n1 2.0
+C carray_0/m2_800_1156# carray_0/m3_900_1156# 2.1
+C carray_0/m3_28200_1156# carray_0/m3_28400_1156# 3.4
+C carray_0/m3_25600_1156# carray_0/m3_25800_1156# 3.4
+C carray_0/m3_39900_1156# carray_0/m3_40100_1156# 3.4
+C carray_0/m2_8600_1156# carray_0/m3_8700_1156# 2.1
+C carray_0/m3_19100_1156# carray_0/m2_19000_1156# 2.1
+C carray_0/n7 carray_0/m3_29500_1156# 3.1
+C carray_0/m2_27200_1156# carray_0/m3_27100_1156# 2.1
+C carray_0/m2_42800_1156# carray_0/m3_42700_1156# 2.1
+C carray_0/m3_15200_1156# carray_0/m3_15400_1156# 3.4
+C carray_0/n7 carray_0/m3_12800_1156# 4.1
+C carray_0/m3_16700_1156# carray_0/n6 3.1
 C carray_0/m3_26900_1156# carray_0/m3_27100_1156# 3.4
-C carray_0/n6 carray_0/m2_25900_1156# 2.4
+C carray_0/m3_40100_1156# carray_0/m2_40200_1156# 2.1
+C enb vdd 4.3
+C carray_0/ndum sample 11.1
+C carray_0/m3_33600_1156# carray_0/m2_33700_1156# 2.1
+C carray_0/m3_6100_1156# carray_0/m2_6000_1156# 2.1
+C carray_0/n7 carray_0/m3_8700_1156# 2.2
+C carray_0/n4 carray_0/n5 12.7
 C carray_0/m3_37300_1156# carray_0/m3_37500_1156# 3.4
+C carray_0/m2_2100_1156# carray_0/m3_2200_1156# 2.1
+C carray_0/n7 carray_0/m3_14100_1156# 4.1
+C carray_0/m3_29700_1156# carray_0/m2_29800_1156# 2.1
+C carray_0/m3_34900_1156# carray_0/m2_35000_1156# 2.1
+C carray_0/n5 carray_0/m3_33400_1156# 4.1
+C carray_0/m3_11300_1156# carray_0/m2_11200_1156# 2.1
+C carray_0/m3_7400_1156# carray_0/m3_7600_1156# 3.4
+C carray_0/m3_6100_1156# carray_0/m3_6300_1156# 3.4
+C carray_0/m2_7300_1156# carray_0/m3_7400_1156# 2.1
+C carray_0/m3_18000_1156# carray_0/n7 3.1
+C carray_0/n7 carray_0/m3_38800_1156# 2.2
+C carray_0/m3_36200_1156# carray_0/m2_36300_1156# 2.1
+C carray_0/m3_8900_1156# carray_0/m3_8700_1156# 3.4
+C carray_0/n6 carray_0/m3_32100_1156# 4.1
+C carray_0/m2_2100_1156# carray_0/n7 2.4
+C sw_top_0/m2_1158_361# vdd 2.1
+C carray_0/m3_41200_1156# carray_0/m3_41400_1156# 3.4
+C carray_0/m3_10000_1156# carray_0/m3_10200_1156# 3.4
+C carray_0/n3 carray_0/n1 3.4
+C carray_0/n2 out 3.3
+C carray_0/n6 carray_0/m2_3400_1156# 2.4
+C carray_0/m3_24300_1156# carray_0/n4 4.1
+C carray_0/n7 sample 5.0
+C carray_0/m2_38900_1156# carray_0/n7 3.5
+C carray_0/m3_41400_1156# carray_0/m2_41500_1156# 2.1
+C out vin 21.5
+C carray_0/m3_12600_1156# carray_0/m2_12500_1156# 2.1
+C carray_0/m3_30800_1156# carray_0/n7 3.1
+C carray_0/m3_900_1156# carray_0/m3_1100_1156# 3.4
+C carray_0/m2_19000_1156# carray_0/n7 2.4
+C carray_0/m3_13900_1156# carray_0/m3_14100_1156# 3.4
+C carray_0/m3_10000_1156# carray_0/m2_9900_1156# 2.1
+C carray_0/n5 carray_0/n6 17.4
+C carray_0/m3_29700_1156# carray_0/m3_29500_1156# 3.4
+C carray_0/m2_13800_1156# carray_0/n7 3.5
+C carray_0/n5 carray_0/m2_27200_1156# 2.4
+C carray_0/m3_38600_1156# carray_0/m3_38800_1156# 3.4
+C carray_0/m3_17800_1156# carray_0/m3_18000_1156# 3.4
+C carray_0/m3_42500_1156# carray_0/m3_42700_1156# 3.4
+C carray_0/n6 carray_0/m2_25900_1156# 2.4
+C carray_0/m3_34700_1156# carray_0/n7 4.1
+C vin vdd 3.4
+C carray_0/m2_8600_1156# carray_0/n7 3.5
+C carray_0/n7 carray_0/m3_3700_1156# 4.1
+C carray_0/m3_11500_1156# carray_0/n6 4.1
+C carray_0/n1 carray_0/ndum 3.5
+C carray_0/m3_37500_1156# carray_0/m2_37600_1156# 2.1
+C carray_0/m3_15400_1156# carray_0/n5 4.1
+C carray_0/m2_15100_1156# carray_0/n7 2.4
+C carray_0/m3_36000_1156# carray_0/n7 4.1
+C carray_0/n6 carray_0/n7 22.1
+C carray_0/n3 out 6.4
+C carray_0/n6 carray_0/m3_37300_1156# 4.1
+C carray_0/n7 carray_0/m2_4700_1156# 3.5
+C carray_0/n6 carray_0/m3_26900_1156# 4.1
+C carray_0/m3_10200_1156# carray_0/n5 4.1
+C carray_0/m3_39900_1156# carray_0/n7 4.1
+C carray_0/m2_13800_1156# carray_0/m3_13900_1156# 2.1
+C carray_0/n6 carray_0/m2_40200_1156# 2.4
+C carray_0/m3_32100_1156# carray_0/m3_32300_1156# 3.4
+C carray_0/m3_24500_1156# carray_0/m2_24600_1156# 2.1
+C carray_0/m3_5000_1156# carray_0/n7 4.1
+C carray_0/m2_6000_1156# carray_0/n7 2.4
+C carray_0/n6 carray_0/m3_41200_1156# 4.1
+C carray_0/n6 carray_0/m2_17700_1156# 2.4
+C carray_0/m3_19100_1156# carray_0/m3_19300_1156# 3.4
+C sw_top_3/m2_1158_361# vdd 2.1
+C carray_0/m3_25600_1156# carray_0/n7 4.1
+C carray_0/m3_8900_1156# carray_0/n7 4.1
+C carray_0/n5 carray_0/m2_32400_1156# 2.4
+C carray_0/m3_19300_1156# carray_0/n4 4.1
+C carray_0/n7 carray_0/n1 11.4
+C carray_0/m3_12600_1156# carray_0/m3_12800_1156# 3.4
+C carray_0/n6 carray_0/m3_6300_1156# 4.1
+C carray_0/n6 carray_0/m2_7300_1156# 2.4
+C carray_0/n4 out 12.2
+C carray_0/n4 carray_0/m2_20300_1156# 2.4
+C carray_0/n2 carray_0/n3 20.7
+C carray_0/n7 carray_0/m3_7600_1156# 4.1
+C carray_0/m3_30800_1156# carray_0/m3_31000_1156# 3.4
+C carray_0/n7 carray_0/m2_41500_1156# 2.4
+C carray_0/n7 carray_0/m3_13900_1156# 2.2
 R ctl7 1505
 = ctl7 inv2_0/a_59_207#
 = ctl7 via1_4_17/li_12_n34#

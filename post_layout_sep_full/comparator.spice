@@ -2,7 +2,7 @@
 
 .subckt M1_1 a_30_n109# a_n88_n109# a_n33_n197# VSUBS
 X0 a_30_n109# a_n33_n197# a_n88_n109# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
-C0 a_30_n109# a_n88_n109# 0.121f
+C0 a_n88_n109# a_30_n109# 0.121f
 C1 a_30_n109# a_n33_n197# 0.0116f
 C2 a_n88_n109# a_n33_n197# 0.0116f
 C3 a_30_n109# VSUBS 0.121f
@@ -28,34 +28,34 @@ XM1_1_10 m1_136_409# vss d_3 vss M1_1
 XM1_1_11 vss m1_136_409# d_3 vss M1_1
 XM1_1_12 m1_136_409# vss d_3 vss M1_1
 XM1_1_13 vss m1_136_409# d_3 vss M1_1
-C0 d_3 m1_799_409# 1.67e-19
-C1 m1_1226_409# m1_1462_409# 0.0249f
-C2 d_0 m1_799_409# 1.67e-19
-C3 m1_1226_409# d_0 0.0315f
-C4 vss m1_136_409# 0.662f
-C5 m1_136_409# m1_799_409# 0.153f
-C6 m1_136_409# d_3 0.067f
-C7 d_4 m1_1771_409# 0.165f
-C8 vss m1_1771_409# 0.926f
-C9 vss d_2 0.146f
-C10 m1_1462_409# m1_1771_409# 0.0191f
-C11 d_2 m1_799_409# 0.0168f
-C12 m1_1226_409# d_2 1.67e-19
-C13 d_3 d_2 0.0446f
-C14 d_4 d_1 0.0454f
-C15 d_4 vss 0.446f
-C16 vss d_1 0.0796f
-C17 d_0 d_2 0.0764f
-C18 vss m1_799_409# 0.297f
+C0 d_0 d_1 0.113f
+C1 vss m1_799_409# 0.297f
+C2 m1_1226_409# d_2 1.67e-19
+C3 vss m1_136_409# 0.662f
+C4 d_4 vss 0.446f
+C5 vss d_3 0.262f
+C6 d_1 vss 0.0796f
+C7 d_4 m1_1462_409# 1.67e-19
+C8 m1_1226_409# m1_799_409# 0.153f
+C9 d_0 vss 0.0759f
+C10 d_4 m1_1771_409# 0.165f
+C11 d_1 m1_1462_409# 0.0315f
+C12 m1_799_409# d_2 0.0168f
+C13 d_2 m1_136_409# 1.67e-19
+C14 m1_1226_409# d_0 0.0315f
+C15 d_3 d_2 0.0446f
+C16 m1_799_409# m1_136_409# 0.153f
+C17 vss m1_1462_409# 0.259f
+C18 d_0 d_2 0.0764f
 C19 m1_1226_409# vss 0.133f
-C20 m1_136_409# d_2 1.67e-19
-C21 d_4 m1_1462_409# 1.67e-19
-C22 vss d_3 0.262f
-C23 m1_1462_409# d_1 0.0315f
-C24 vss m1_1462_409# 0.259f
-C25 d_1 d_0 0.113f
-C26 vss d_0 0.0759f
-C27 m1_1226_409# m1_799_409# 0.153f
+C20 vss m1_1771_409# 0.926f
+C21 d_3 m1_799_409# 1.67e-19
+C22 d_3 m1_136_409# 0.067f
+C23 d_4 d_1 0.0454f
+C24 d_0 m1_799_409# 1.67e-19
+C25 m1_1226_409# m1_1462_409# 0.0249f
+C26 vss d_2 0.146f
+C27 m1_1771_409# m1_1462_409# 0.0191f
 C28 d_2 0 0.362f
 C29 m1_136_409# 0 0.38f
 C30 vss 0 1f
@@ -70,70 +70,69 @@ C38 m1_799_409# 0 0.219f
 .ends
 
 .subckt trim n1 n0 trim_sw_0/d_4 trim_sw_0/d_3 trim_sw_0/d_2 trim_sw_0/d_1 trim_sw_0/d_0
-+ n2 n4 VSUBS drain n3
++ n4 n2 VSUBS drain n3
 Xtrim_sw_0 trim_sw_0/d_0 trim_sw_0/d_1 trim_sw_0/d_2 trim_sw_0/d_3 trim_sw_0/d_4 n1
 + n4 n2 n0 n3 VSUBS trim_sw
 C0 n3 trim_sw_0/d_2 9.86e-20
-C1 n3 VSUBS 0.112f
-C2 trim_sw_0/d_1 n2 0.00217f
-C3 n4 drain 6.84f
-C4 n1 drain 0.851f
-C5 n3 drain 3.41f
-C6 n2 n0 0.0935f
-C7 trim_sw_0/d_0 n0 0.0074f
-C8 n4 trim_sw_0/d_1 2.85e-20
-C9 n1 trim_sw_0/d_1 0.0074f
-C10 n4 trim_sw_0/d_3 6.08e-20
-C11 n3 trim_sw_0/d_1 4.93e-20
-C12 n4 n0 0.138f
-C13 n1 n0 0.482f
-C14 n3 trim_sw_0/d_3 2.03e-19
-C15 drain trim_sw_0/d_2 2.61e-20
-C16 n3 n0 0.077f
-C17 drain VSUBS 1.76f
-C18 n2 trim_sw_0/d_4 0.00497f
-C19 n2 trim_sw_0/d_0 0.00217f
-C20 trim_sw_0/d_3 VSUBS 6.59e-20
-C21 n4 trim_sw_0/d_4 5.87e-19
-C22 VSUBS n0 0.0281f
-C23 trim_sw_0/d_3 drain 1.1e-19
-C24 n3 trim_sw_0/d_4 4.9e-19
-C25 n4 n2 0.551f
-C26 n1 n2 0.0775f
-C27 drain n0 0.851f
-C28 n3 n2 0.517f
-C29 n4 trim_sw_0/d_0 2.85e-20
-C30 n3 trim_sw_0/d_0 4.93e-20
-C31 n4 n1 0.145f
-C32 n3 n4 1.35f
-C33 n3 n1 0.0769f
-C34 VSUBS trim_sw_0/d_4 1.43e-19
-C35 n2 trim_sw_0/d_2 6e-19
-C36 n2 VSUBS 0.0679f
-C37 drain trim_sw_0/d_4 2.61e-20
-C38 n2 drain 1.7f
-C39 n4 trim_sw_0/d_2 1.61e-19
-C40 n4 VSUBS 0.192f
-C41 n1 VSUBS 0.0284f
+C1 trim_sw_0/d_0 n0 0.0074f
+C2 drain n0 0.851f
+C3 n3 n1 0.0769f
+C4 n2 n3 0.517f
+C5 trim_sw_0/d_4 n4 5.87e-19
+C6 trim_sw_0/d_0 n4 2.85e-20
+C7 n3 n0 0.077f
+C8 n4 drain 6.84f
+C9 trim_sw_0/d_4 VSUBS 1.43e-19
+C10 VSUBS drain 1.76f
+C11 n4 trim_sw_0/d_3 6.08e-20
+C12 n2 trim_sw_0/d_2 6e-19
+C13 n4 n3 1.35f
+C14 VSUBS trim_sw_0/d_3 6.59e-20
+C15 n2 n1 0.0775f
+C16 VSUBS n3 0.112f
+C17 n3 trim_sw_0/d_1 4.93e-20
+C18 n1 n0 0.482f
+C19 n2 n0 0.0935f
+C20 n4 trim_sw_0/d_2 1.61e-19
+C21 n4 n1 0.145f
+C22 trim_sw_0/d_4 drain 2.61e-20
+C23 n4 n2 0.551f
+C24 VSUBS n1 0.0284f
+C25 trim_sw_0/d_1 n1 0.0074f
+C26 VSUBS n2 0.0679f
+C27 n4 n0 0.138f
+C28 n2 trim_sw_0/d_1 0.00217f
+C29 trim_sw_0/d_4 n3 4.9e-19
+C30 drain trim_sw_0/d_3 1.1e-19
+C31 trim_sw_0/d_0 n3 4.93e-20
+C32 VSUBS n0 0.0281f
+C33 n3 drain 3.41f
+C34 n3 trim_sw_0/d_3 2.03e-19
+C35 n4 VSUBS 0.192f
+C36 n4 trim_sw_0/d_1 2.85e-20
+C37 drain trim_sw_0/d_2 2.61e-20
+C38 trim_sw_0/d_4 n2 0.00497f
+C39 trim_sw_0/d_0 n2 0.00217f
+C40 drain n1 0.851f
+C41 n2 drain 1.7f
 C42 n1 0 0.237f
 C43 n0 0 0.224f
-C44 drain 0 -4.84f
-C45 trim_sw_0/d_2 0 0.362f
-C46 n3 0 1.39f
-C47 VSUBS 0 1.65f
-C48 trim_sw_0/d_3 0 0.702f
-C49 trim_sw_0/d_1 0 0.239f
-C50 n4 0 1.98f
-C51 trim_sw_0/d_4 0 1.29f
-C52 trim_sw_0/d_0 0 0.227f
-C53 n2 0 0.746f
+C44 trim_sw_0/d_2 0 0.362f
+C45 n3 0 1.39f
+C46 VSUBS 0 1.65f
+C47 trim_sw_0/d_3 0 0.702f
+C48 trim_sw_0/d_1 0 0.239f
+C49 n4 0 1.98f
+C50 trim_sw_0/d_4 0 1.29f
+C51 trim_sw_0/d_0 0 0.227f
+C52 n2 0 0.746f
 .ends
 
 .subckt Mdiff a_n33_51# a_30_n171# a_n88_n171# VSUBS
 X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
-C0 a_30_n171# a_n33_51# 0.0116f
-C1 a_30_n171# a_n88_n171# 0.121f
-C2 a_n88_n171# a_n33_51# 0.0116f
+C0 a_n33_51# a_30_n171# 0.0116f
+C1 a_n88_n171# a_30_n171# 0.121f
+C2 a_n33_51# a_n88_n171# 0.0116f
 C3 a_30_n171# VSUBS 0.121f
 C4 a_n88_n171# VSUBS 0.121f
 C5 a_n33_51# VSUBS 0.227f
@@ -142,11 +141,11 @@ C5 a_n33_51# VSUBS 0.227f
 .subckt M3 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
 X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 C0 a_n33_55# a_30_n176# 0.0116f
-C1 a_n88_n176# w_n124_n238# 0.00827f
-C2 a_n88_n176# a_n33_55# 0.0116f
-C3 a_n33_55# w_n124_n238# 0.0663f
-C4 a_n88_n176# a_30_n176# 0.121f
-C5 a_30_n176# w_n124_n238# 0.00827f
+C1 w_n124_n238# a_n88_n176# 0.00827f
+C2 a_30_n176# a_n88_n176# 0.121f
+C3 a_n33_55# a_n88_n176# 0.0116f
+C4 w_n124_n238# a_30_n176# 0.00827f
+C5 w_n124_n238# a_n33_55# 0.0663f
 C6 a_30_n176# VSUBS 0.113f
 C7 a_n88_n176# VSUBS 0.113f
 C8 a_n33_55# VSUBS 0.167f
@@ -155,9 +154,9 @@ C9 w_n124_n238# VSUBS 0.269f
 
 .subckt Ml1 a_n33_51# a_30_n171# a_n88_n171# VSUBS
 X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
-C0 a_30_n171# a_n33_51# 0.0116f
-C1 a_30_n171# a_n88_n171# 0.121f
-C2 a_n88_n171# a_n33_51# 0.0116f
+C0 a_n33_51# a_30_n171# 0.0116f
+C1 a_n88_n171# a_30_n171# 0.121f
+C2 a_n33_51# a_n88_n171# 0.0116f
 C3 a_30_n171# VSUBS 0.121f
 C4 a_n88_n171# VSUBS 0.121f
 C5 a_n33_51# VSUBS 0.227f
@@ -165,9 +164,9 @@ C5 a_n33_51# VSUBS 0.227f
 
 .subckt Minp a_n33_51# a_30_n171# a_n88_n171# VSUBS
 X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
-C0 a_30_n171# a_n33_51# 0.0116f
-C1 a_30_n171# a_n88_n171# 0.121f
-C2 a_n88_n171# a_n33_51# 0.0116f
+C0 a_n33_51# a_30_n171# 0.0116f
+C1 a_n88_n171# a_30_n171# 0.121f
+C2 a_n33_51# a_n88_n171# 0.0116f
 C3 a_30_n171# VSUBS 0.121f
 C4 a_n88_n171# VSUBS 0.121f
 C5 a_n33_51# VSUBS 0.227f
@@ -176,11 +175,11 @@ C5 a_n33_51# VSUBS 0.227f
 .subckt M1 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
 X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 C0 a_n33_55# a_30_n176# 0.0116f
-C1 a_n88_n176# w_n124_n238# 0.00827f
-C2 a_n88_n176# a_n33_55# 0.0116f
-C3 a_n33_55# w_n124_n238# 0.0663f
-C4 a_n88_n176# a_30_n176# 0.121f
-C5 a_30_n176# w_n124_n238# 0.00827f
+C1 w_n124_n238# a_n88_n176# 0.00827f
+C2 a_30_n176# a_n88_n176# 0.121f
+C3 a_n33_55# a_n88_n176# 0.0116f
+C4 w_n124_n238# a_30_n176# 0.00827f
+C5 w_n124_n238# a_n33_55# 0.0663f
 C6 a_30_n176# VSUBS 0.113f
 C7 a_n88_n176# VSUBS 0.113f
 C8 a_n33_55# VSUBS 0.167f
@@ -189,9 +188,9 @@ C9 w_n124_n238# VSUBS 0.269f
 
 .subckt Minn a_n33_51# a_30_n171# a_n88_n171# VSUBS
 X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
-C0 a_30_n171# a_n33_51# 0.0116f
-C1 a_30_n171# a_n88_n171# 0.121f
-C2 a_n88_n171# a_n33_51# 0.0116f
+C0 a_n33_51# a_30_n171# 0.0116f
+C1 a_n88_n171# a_30_n171# 0.121f
+C2 a_n33_51# a_n88_n171# 0.0116f
 C3 a_30_n171# VSUBS 0.121f
 C4 a_n88_n171# VSUBS 0.121f
 C5 a_n33_51# VSUBS 0.227f
@@ -200,11 +199,11 @@ C5 a_n33_51# VSUBS 0.227f
 .subckt Ml4 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
 X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 C0 a_n33_55# a_30_n176# 0.0116f
-C1 a_n88_n176# w_n124_n238# 0.00827f
-C2 a_n88_n176# a_n33_55# 0.0116f
-C3 a_n33_55# w_n124_n238# 0.0663f
-C4 a_n88_n176# a_30_n176# 0.121f
-C5 a_30_n176# w_n124_n238# 0.00827f
+C1 w_n124_n238# a_n88_n176# 0.00827f
+C2 a_30_n176# a_n88_n176# 0.121f
+C3 a_n33_55# a_n88_n176# 0.0116f
+C4 w_n124_n238# a_30_n176# 0.00827f
+C5 w_n124_n238# a_n33_55# 0.0663f
 C6 a_30_n176# VSUBS 0.113f
 C7 a_n88_n176# VSUBS 0.113f
 C8 a_n33_55# VSUBS 0.167f
@@ -214,11 +213,11 @@ C9 w_n124_n238# VSUBS 0.269f
 .subckt M4 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
 X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 C0 a_n33_55# a_30_n176# 0.0116f
-C1 a_n88_n176# w_n124_n238# 0.00827f
-C2 a_n88_n176# a_n33_55# 0.0116f
-C3 a_n33_55# w_n124_n238# 0.0663f
-C4 a_n88_n176# a_30_n176# 0.121f
-C5 a_30_n176# w_n124_n238# 0.00827f
+C1 w_n124_n238# a_n88_n176# 0.00827f
+C2 a_30_n176# a_n88_n176# 0.121f
+C3 a_n33_55# a_n88_n176# 0.0116f
+C4 w_n124_n238# a_30_n176# 0.00827f
+C5 w_n124_n238# a_n33_55# 0.0663f
 C6 a_30_n176# VSUBS 0.113f
 C7 a_n88_n176# VSUBS 0.113f
 C8 a_n33_55# VSUBS 0.167f
@@ -227,9 +226,9 @@ C9 w_n124_n238# VSUBS 0.269f
 
 .subckt Ml2 a_n33_51# a_30_n171# a_n88_n171# VSUBS
 X0 a_30_n171# a_n33_51# a_n88_n171# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
-C0 a_30_n171# a_n33_51# 0.0116f
-C1 a_30_n171# a_n88_n171# 0.121f
-C2 a_n88_n171# a_n33_51# 0.0116f
+C0 a_n33_51# a_30_n171# 0.0116f
+C1 a_n88_n171# a_30_n171# 0.121f
+C2 a_n33_51# a_n88_n171# 0.0116f
 C3 a_30_n171# VSUBS 0.121f
 C4 a_n88_n171# VSUBS 0.121f
 C5 a_n33_51# VSUBS 0.227f
@@ -238,11 +237,11 @@ C5 a_n33_51# VSUBS 0.227f
 .subckt M2 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
 X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 C0 a_n33_55# a_30_n176# 0.0116f
-C1 a_n88_n176# w_n124_n238# 0.00827f
-C2 a_n88_n176# a_n33_55# 0.0116f
-C3 a_n33_55# w_n124_n238# 0.0663f
-C4 a_n88_n176# a_30_n176# 0.121f
-C5 a_30_n176# w_n124_n238# 0.00827f
+C1 w_n124_n238# a_n88_n176# 0.00827f
+C2 a_30_n176# a_n88_n176# 0.121f
+C3 a_n33_55# a_n88_n176# 0.0116f
+C4 w_n124_n238# a_30_n176# 0.00827f
+C5 w_n124_n238# a_n33_55# 0.0663f
 C6 a_30_n176# VSUBS 0.113f
 C7 a_n88_n176# VSUBS 0.113f
 C8 a_n33_55# VSUBS 0.167f
@@ -252,11 +251,11 @@ C9 w_n124_n238# VSUBS 0.269f
 .subckt Ml3 a_n88_n176# a_n33_55# w_n124_n238# a_30_n176# VSUBS
 X0 a_30_n176# a_n33_55# a_n88_n176# w_n124_n238# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 C0 a_n33_55# a_30_n176# 0.0116f
-C1 a_n88_n176# w_n124_n238# 0.00827f
-C2 a_n88_n176# a_n33_55# 0.0116f
-C3 a_n33_55# w_n124_n238# 0.0663f
-C4 a_n88_n176# a_30_n176# 0.121f
-C5 a_30_n176# w_n124_n238# 0.00827f
+C1 w_n124_n238# a_n88_n176# 0.00827f
+C2 a_30_n176# a_n88_n176# 0.121f
+C3 a_n33_55# a_n88_n176# 0.0116f
+C4 w_n124_n238# a_30_n176# 0.00827f
+C5 w_n124_n238# a_n33_55# 0.0663f
 C6 a_30_n176# VSUBS 0.113f
 C7 a_n88_n176# VSUBS 0.113f
 C8 a_n33_55# VSUBS 0.167f
@@ -276,46 +275,46 @@ XM4_0 vdd clk w_302_2337# ip vss M4
 XMl2_0 outn ip outp vss Ml2
 XM2_0 vdd clk w_302_2337# outn vss M2
 XMl3_0 outn outp w_302_2337# vdd vss Ml3
-C0 vdd vn 0.0761f
-C1 in vdd 0.111f
-C2 vdd vp 0.0755f
-C3 outp diff 0.00669f
-C4 outp outn 1.02f
-C5 ip diff 0.0808f
-C6 outp vn 0.223f
-C7 ip outn 0.0133f
-C8 outp in 0.0133f
-C9 outp vp 0.236f
-C10 outn w_302_2337# 0.304f
-C11 diff clk 0.0314f
-C12 outn clk 0.215f
-C13 w_302_2337# vn 0.0775f
-C14 ip vp 0.0723f
-C15 clk vn 0.0937f
-C16 outp vdd 0.204f
-C17 w_302_2337# in 0.0589f
-C18 w_302_2337# vp 0.0765f
-C19 ip vdd 0.11f
+C0 outp w_302_2337# 0.291f
+C1 outn vn 0.167f
+C2 vp vn 0.202f
+C3 ip clk 0.436f
+C4 in vdd 0.111f
+C5 outp outn 1.02f
+C6 clk vn 0.0937f
+C7 diff in 0.0808f
+C8 outp vp 0.236f
+C9 w_302_2337# in 0.0589f
+C10 w_302_2337# vdd 1.17f
+C11 outp ip 0.0618f
+C12 outp clk 0.21f
+C13 outp vn 0.223f
+C14 in outn 0.0617f
+C15 outn vdd 0.211f
+C16 vp vdd 0.0755f
+C17 diff outn 0.00221f
+C18 diff vp 0.00126f
+C19 w_302_2337# outn 0.304f
 C20 in clk 0.436f
-C21 clk vp 0.0951f
-C22 w_302_2337# vdd 1.17f
+C21 vp w_302_2337# 0.0765f
+C22 ip vdd 0.11f
 C23 clk vdd 0.276f
-C24 outn diff 0.00221f
-C25 outp ip 0.0618f
-C26 diff vn 0.00126f
-C27 outn vn 0.167f
-C28 outp w_302_2337# 0.291f
-C29 outp clk 0.21f
-C30 in diff 0.0808f
-C31 diff vp 0.00126f
-C32 outn in 0.0617f
-C33 ip w_302_2337# 0.0584f
-C34 outn vp 0.178f
-C35 ip clk 0.436f
-C36 in vn 0.0722f
-C37 vp vn 0.202f
-C38 outn vdd 0.211f
-C39 w_302_2337# clk 0.222f
+C24 ip diff 0.0808f
+C25 in vn 0.0722f
+C26 diff clk 0.0314f
+C27 vn vdd 0.0761f
+C28 ip w_302_2337# 0.0584f
+C29 diff vn 0.00126f
+C30 w_302_2337# clk 0.222f
+C31 vp outn 0.178f
+C32 w_302_2337# vn 0.0775f
+C33 outp in 0.0133f
+C34 outp vdd 0.204f
+C35 outp diff 0.00669f
+C36 ip outn 0.0133f
+C37 clk outn 0.215f
+C38 ip vp 0.0723f
+C39 vp clk 0.0951f
 C40 clk vss 3.13f
 C41 vdd vss 2.09f
 C42 outn vss 1.77f
@@ -330,56 +329,56 @@ C49 diff vss 0.226f
 
 .subckt comparator trim_3 trim_2 trim_0 trim_1 trim_4 trimb_4 trimb_1 trimb_0 trimb_2
 + trimb_3 outn outp clk vdd vss vn vp
-Xtrim_0 trim_0/n1 trim_0/n0 trim_4 trim_3 trim_2 trim_1 trim_0 trim_0/n2 trim_0/n4
+Xtrim_0 trim_0/n1 trim_0/n0 trim_4 trim_3 trim_2 trim_1 trim_0 trim_0/n4 trim_0/n2
 + vss trim_0/drain trim_0/n3 trim
-Xtrim_1 trim_1/n1 trim_1/n0 trimb_4 trimb_3 trimb_2 trimb_1 trimb_0 trim_1/n2 trim_1/n4
+Xtrim_1 trim_1/n1 trim_1/n0 trimb_4 trimb_3 trimb_2 trimb_1 trimb_0 trim_1/n4 trim_1/n2
 + vss trim_1/drain trim_1/n3 trim
 Xcomparator_core_0 outn clk trim_1/drain trim_0/drain comparator_core_0/diff outp
 + comparator_core_0/w_302_2337# vdd vn vp vss comparator_core
-X0 trim_0/n4 trim_4.t7 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X1 trim_0/n3 trim_3.t2 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X2 vss trimb_3.t3 trim_1/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X3 trim_1/n3 trimb_3.t2 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X4 trim_0/n4 trim_4.t4 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X5 trim_1/n4 trimb_4.t4 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X6 trim_0/n4 trim_4.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X7 vss trim_3.t1 trim_0/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X8 trim_1/n4 trimb_4.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X9 vss trimb_3.t1 trim_1/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X10 trim_0/n2 trim_2.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X11 trim_1/drain vp.t0 comparator_core_0/diff vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X12 comparator_core_0/diff vn.t0 trim_0/drain vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X13 vss trim_4.t6 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X14 trim_1/n2 trimb_2.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X15 vss trimb_4.t6 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X16 vss trimb_4.t5 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X17 comparator_core_0/diff clk.t1 vss vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X18 trim_1/drain clk.t4 vdd comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X19 vss trim_4.t5 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X20 outp outn.t0 vdd comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X21 vdd outp.t1 outn comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X22 outn clk.t5 vdd comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X23 trim_0/n3 trim_3.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X24 outn outp.t0 trim_0/drain vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X25 trim_1/n3 trimb_3.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X26 trim_0/n1 trim_1.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X27 vss trim_2.t0 trim_0/n2 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X28 trim_1/n1 trimb_1.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X29 trim_1/drain outn.t1 outp vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X30 trim_0/n4 trim_4.t3 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X31 vss trimb_2.t0 trim_1/n2 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X32 trim_1/n4 trimb_4.t3 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X33 vdd clk.t2 outp comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X34 vss trim_4.t2 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X35 vss trimb_4.t2 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X36 vdd clk.t3 trim_0/drain comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X37 vss trimb_4.t0 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X38 vss clk.t0 comparator_core_0/diff vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X39 vss trim_4.t0 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X40 trim_1/n4 trimb_4.t7 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X41 vss trim_0.t0 trim_0/n0 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X42 vss trim_3.t3 trim_0/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
-X43 vss trimb_0.t0 trim_1/n0 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X0 trim_0/n4 trim_4.t7 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X1 trim_0/n3 trim_3.t2 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X2 vss trimb_3.t3 trim_1/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X3 trim_1/n3 trimb_3.t2 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X4 trim_0/n4 trim_4.t4 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X5 trim_1/n4 trimb_4.t4 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X6 trim_0/n4 trim_4.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X7 vss trim_3.t1 trim_0/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X8 trim_1/n4 trimb_4.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X9 vss trimb_3.t1 trim_1/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X10 trim_0/n2 trim_2.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X11 trim_1/drain vp.t0 comparator_core_0/diff vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X12 comparator_core_0/diff vn.t0 trim_0/drain vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X13 vss trim_4.t6 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X14 trim_1/n2 trimb_2.t1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X15 vss trimb_4.t6 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X16 vss trimb_4.t5 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X17 comparator_core_0/diff clk.t1 vss vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X18 trim_1/drain clk.t4 vdd comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X19 vss trim_4.t5 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X20 outp outn.t0 vdd comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X21 vdd outp.t1 outn comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X22 outn clk.t5 vdd comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X23 trim_0/n3 trim_3.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X24 outn outp.t0 trim_0/drain vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X25 trim_1/n3 trimb_3.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X26 trim_0/n1 trim_1.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X27 vss trim_2.t0 trim_0/n2 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X28 trim_1/n1 trimb_1.t0 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X29 trim_1/drain outn.t1 outp vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X30 trim_0/n4 trim_4.t3 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X31 vss trimb_2.t0 trim_1/n2 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X32 trim_1/n4 trimb_4.t3 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X33 vdd clk.t2 outp comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X34 vss trim_4.t2 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X35 vss trimb_4.t2 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X36 vdd clk.t3 trim_0/drain comparator_core_0/w_302_2337# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X37 vss trimb_4.t0 trim_1/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X38 vss clk.t0 comparator_core_0/diff vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X39 vss trim_4.t0 trim_0/n4 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X40 trim_1/n4 trimb_4.t7 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X41 vss trim_0.t0 trim_0/n0 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X42 vss trim_3.t3 trim_0/n3 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
+* X43 vss trimb_0.t0 trim_1/n0 vss sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=0 l=0
 R0 trim_2.n0 trim_2.t0 135.6
 R1 trim_2.n0 trim_2.t1 135.6
 R2 trim_2 trim_2 5.838
@@ -1059,153 +1058,153 @@ R675 vn.n5 vn.n4 0.0392964
 R676 vn.n7 vn.n6 0.0146
 R677 vn.n3 vn.n2 0.00434178
 R678 vn.n4 vn.n3 0.0034375
-C0 vn trim_0/n0 9.27e-20
-C1 trim_1/n1 vss 4.27e-20
-C2 outn outp 0.00414f
-C3 trim_2 trim_4 0.00265f
-C4 vdd trim_0 0.0784f
-C5 trim_1/n0 trim_1/n4 0.0442f
-C6 trim_0/n2 trim_3 6.02e-19
-C7 vdd trim_0/n3 0.0253f
-C8 trim_1/drain outn 4.78e-20
-C9 vdd trim_1 0.0649f
-C10 trim_0/drain vn 0.0539f
-C11 trim_0/n4 trim_0/n3 0.354f
-C12 trim_0/n4 trim_1 0.00216f
-C13 vdd trim_3 0.435f
-C14 trimb_4 trimb_1 0.546f
-C15 trim_0 vss 0.0573f
-C16 vdd trimb_3 0.435f
-C17 trim_0/n3 vss 2.61e-20
-C18 trim_0/drain outp 4.78e-20
-C19 vdd vp 0.221f
-C20 vss trim_1 0.0863f
-C21 trim_1/drain trim_1/n2 1.7f
-C22 trim_3 vss 0.0691f
-C23 trimb_3 vss 0.0691f
-C24 trim_1/n1 trim_1/n4 0.0442f
-C25 vp vss 0.00394f
-C26 trim_0/n1 trim_0 2.97e-19
-C27 trimb_3 trimb_2 1.07f
-C28 trimb_0 trim_1/n2 3.92e-20
-C29 comparator_core_0/w_302_2337# outp 5.68e-32
-C30 trim_1/n3 trim_1/drain 3.41f
-C31 trim_4 trim_0 0.0039f
-C32 comparator_core_0/diff trim_1/drain -2.84e-32
-C33 comparator_core_0/w_302_2337# trim_1/drain 0.00474f
-C34 trimb_0 trimb_1 0.82f
-C35 trim_4 trim_1 0.546f
-C36 trim_4 trim_3 0.00191f
-C37 trim_0 trim_0/n0 2.97e-19
-C38 vdd clk 0.104f
-C39 vp trim_1/n4 0.0126f
-C40 vdd trim_0/n2 0.00772f
-C41 trim_1/drain outp 0.0565f
-C42 trim_0/n4 clk 2.01e-19
-C43 trim_0/n4 trim_0/n2 0.177f
-C44 trim_0/drain trim_0/n3 3.41f
-C45 trim_1/n0 trim_1/drain 0.851f
-C46 trimb_4 trimb_0 0.0039f
-C47 vss clk 0.0684f
-C48 trim_0/n2 vss 1.83e-20
-C49 vdd trim_0/n4 0.0293f
-C50 trimb_3 trim_1/n2 6.02e-19
-C51 vp trim_1/n2 0.00276f
-C52 vdd vss 5.14f
-C53 trimb_0 trim_1/n0 2.97e-19
-C54 trimb_3 trimb_1 3.33e-19
-C55 trim_0/n4 vss 0.0914f
-C56 vdd trimb_2 0.12f
-C57 trim_1/n1 trim_1/drain 0.851f
-C58 trimb_3 trim_1/n3 4.9e-19
-C59 trim_1/n1 trim_1/n0 0.0442f
-C60 vp trim_1/n3 0.00558f
-C61 vn trim_0/n3 0.00558f
-C62 trim_1/n4 clk 2.01e-19
-C63 vdd trim_0/n1 0.00179f
-C64 trimb_2 vss 0.0525f
-C65 outn clk 0.0392f
-C66 trim_0/n1 trim_0/n4 0.0442f
-C67 vdd trim_4 0.103f
-C68 trim_1/n1 trimb_0 2.97e-19
-C69 trimb_4 trimb_3 0.00191f
-C70 vdd trim_1/n4 0.0293f
-C71 trim_0/n4 trim_4 0.00329f
-C72 trim_2 trim_0 0.969f
-C73 trim_0/n1 vss 4.27e-20
-C74 vdd outn 0.102f
-C75 trim_2 trim_1 4.8e-19
-C76 vp outp 5.68e-32
-C77 trim_4 vss 0.156f
-C78 trim_0/drain clk 0.0801f
-C79 trim_0/drain trim_0/n2 1.7f
-C80 vdd trim_0/n0 0.00143f
-C81 vp trim_1/drain 0.0539f
-C82 trim_1/n4 vss 0.0914f
-C83 trim_2 trim_3 1.07f
-C84 vp trim_1/n0 9.27e-20
-C85 trim_0/n4 trim_0/n0 0.0442f
-C86 vss outn 0.12f
-C87 trim_0/drain vdd 0.03f
-C88 vdd trim_1/n2 0.00772f
-C89 trimb_3 trimb_0 3.33e-19
-C90 vdd trimb_1 0.0649f
-C91 trim_0/drain trim_0/n4 6.86f
-C92 trim_0/drain vss 1.71f
-C93 vss trim_1/n2 1.83e-20
-C94 vdd trim_1/n3 0.0253f
-C95 vss trimb_1 0.0863f
-C96 vdd comparator_core_0/diff 0.0019f
-C97 vn clk 2.17e-19
-C98 vdd comparator_core_0/w_302_2337# 0.346f
-C99 trim_0/n2 vn 0.00276f
-C100 trimb_2 trim_1/n2 7.08e-19
-C101 trim_0/n1 trim_0/n0 0.0442f
-C102 trim_0 trim_1 0.82f
-C103 trim_1/n4 outn 3.12e-21
-C104 trimb_2 trimb_1 4.8e-19
-C105 outp clk 0.00182f
-C106 trim_1/n3 vss 2.61e-20
-C107 vdd trimb_4 0.103f
-C108 trim_0 trim_3 3.33e-19
-C109 vdd vn 0.221f
-C110 trim_1/drain clk 0.0575f
-C111 trim_0/drain trim_0/n1 0.851f
-C112 trim_0/n3 trim_3 4.9e-19
-C113 comparator_core_0/diff vss -5.68e-32
-C114 comparator_core_0/w_302_2337# vss 6.22e-19
-C115 trim_3 trim_1 3.33e-19
-C116 trim_0/n4 vn 0.0126f
-C117 trim_2 trim_0/n2 7.08e-19
-C118 vdd outp 0.102f
-C119 vdd trim_1/drain 0.0307f
-C120 trim_1/n4 trim_1/n2 0.177f
-C121 trimb_4 vss 0.156f
-C122 vn vss 0.00394f
-C123 trim_0/n4 outp 3.12e-21
-C124 vdd trim_1/n0 0.00143f
-C125 trim_1/n4 trimb_1 0.00216f
-C126 trim_0/drain outn 0.0565f
-C127 trim_2 vdd 0.12f
-C128 trimb_4 trimb_2 0.00265f
-C129 vss outp 0.12f
-C130 trim_0/drain trim_0/n0 0.851f
-C131 vss trim_1/drain 1.71f
-C132 trim_1/n3 trim_1/n4 0.354f
-C133 vdd trimb_0 0.0784f
-C134 trim_2 vss 0.0525f
-C135 comparator_core_0/w_302_2337# outn 5.68e-32
-C136 trim_1/n2 trimb_1 4.74e-20
-C137 trimb_0 vss 0.0573f
-C138 vdd trim_1/n1 0.00179f
-C139 trimb_4 trim_1/n4 0.00329f
-C140 trim_0/n2 trim_0 3.92e-20
-C141 vn outn 2.49e-32
-C142 trimb_0 trimb_2 0.969f
-C143 trim_0/n2 trim_1 4.74e-20
-C144 trim_0/drain comparator_core_0/diff -2.84e-32
-C145 trim_0/drain comparator_core_0/w_302_2337# 0.00484f
-C146 trim_1/n4 trim_1/drain 6.86f
+C0 trim_0/n4 clk 2.01e-19
+C1 comparator_core_0/w_302_2337# vdd 0.346f
+C2 trim_1/drain clk 0.0575f
+C3 trim_1 trim_4 0.546f
+C4 trim_0/n2 vdd 0.00772f
+C5 vp trim_1/n0 9.27e-20
+C6 vp vss 0.00394f
+C7 comparator_core_0/w_302_2337# vss 6.22e-19
+C8 trim_0/n2 vss 1.83e-20
+C9 trim_1 trim_0 0.82f
+C10 vn outn 2.49e-32
+C11 trim_0/n1 trim_0/drain 0.851f
+C12 vn trim_0/drain 0.0539f
+C13 trim_0 trim_4 0.0039f
+C14 trim_1 trim_3 3.33e-19
+C15 trim_1/n3 trim_1/n4 0.354f
+C16 trim_4 trim_3 0.00191f
+C17 trimb_0 trimb_3 3.33e-19
+C18 trim_1/drain vp 0.0539f
+C19 trim_1/drain comparator_core_0/w_302_2337# 0.00474f
+C20 trim_0/n1 vdd 0.00179f
+C21 trim_0/n0 trim_0 2.97e-19
+C22 trim_0/n2 trim_0/n4 0.177f
+C23 vn vdd 0.221f
+C24 trim_2 vdd 0.12f
+C25 trim_0/n1 vss 4.27e-20
+C26 vn vss 0.00394f
+C27 trim_1/n3 vdd 0.0253f
+C28 trim_2 vss 0.0525f
+C29 vn trim_0/n3 0.00558f
+C30 trim_0 trim_3 3.33e-19
+C31 trim_1/n3 vss 2.61e-20
+C32 trim_0/n4 trim_0/n1 0.0442f
+C33 vn trim_0/n4 0.0126f
+C34 trim_1 vdd 0.0649f
+C35 trim_0/n0 trim_0/drain 0.851f
+C36 trim_4 vdd 0.103f
+C37 vn clk 2.17e-19
+C38 trim_1/drain trim_1/n3 3.41f
+C39 trimb_1 trim_1/n2 4.74e-20
+C40 trim_1 vss 0.0863f
+C41 trim_4 vss 0.156f
+C42 trim_0/n0 vdd 0.00143f
+C43 trim_1/n1 trim_1/n4 0.0442f
+C44 trim_1/n2 trim_1/n4 0.177f
+C45 outn outp 0.00414f
+C46 trim_0/drain outp 4.78e-20
+C47 trim_0 vdd 0.0784f
+C48 vdd trim_3 0.435f
+C49 trimb_1 trim_1/n4 0.00216f
+C50 trim_0/n4 trim_1 0.00216f
+C51 trimb_1 trimb_4 0.546f
+C52 trim_0/n4 trim_4 0.00329f
+C53 trim_0 vss 0.0573f
+C54 trim_1/n1 vdd 0.00179f
+C55 trim_1/n3 trimb_3 4.9e-19
+C56 outp vdd 0.102f
+C57 trim_1/n2 vdd 0.00772f
+C58 vss trim_3 0.0691f
+C59 trim_1/n4 trimb_4 0.00329f
+C60 trim_0/n3 trim_3 4.9e-19
+C61 outn trim_1/n4 3.12e-21
+C62 vn trim_0/n2 0.00276f
+C63 trim_0/n2 trim_2 7.08e-19
+C64 trimb_2 trim_1/n2 7.08e-19
+C65 trim_1/n1 trim_1/n0 0.0442f
+C66 trim_0/n0 trim_0/n4 0.0442f
+C67 trim_1/n1 vss 4.27e-20
+C68 outp vss 0.12f
+C69 vp trim_1/n3 0.00558f
+C70 trim_1/n2 vss 1.83e-20
+C71 trimb_1 vdd 0.0649f
+C72 outn trim_0/drain 0.0565f
+C73 trimb_1 trimb_2 4.8e-19
+C74 trim_1/n4 vdd 0.0293f
+C75 trimb_1 vss 0.0863f
+C76 trimb_4 vdd 0.103f
+C77 outn vdd 0.102f
+C78 trim_0/drain vdd 0.03f
+C79 trim_1/n0 trim_1/n4 0.0442f
+C80 trimb_2 trimb_4 0.00265f
+C81 trim_1/n4 vss 0.0914f
+C82 trim_0/n4 outp 3.12e-21
+C83 trim_1/drain trim_1/n1 0.851f
+C84 trim_1/drain outp 0.0565f
+C85 trim_1/drain trim_1/n2 1.7f
+C86 vss trimb_4 0.156f
+C87 outn vss 0.12f
+C88 trim_0/drain vss 1.71f
+C89 trim_0/n3 trim_0/drain 3.41f
+C90 trim_1/n1 trimb_0 2.97e-19
+C91 outp clk 0.00182f
+C92 trim_0/n2 trim_1 4.74e-20
+C93 trimb_0 trim_1/n2 3.92e-20
+C94 trimb_2 vdd 0.12f
+C95 trim_1/n0 vdd 0.00143f
+C96 vss vdd 5.14f
+C97 trim_0/n3 vdd 0.0253f
+C98 trim_1/drain trim_1/n4 6.86f
+C99 comparator_core_0/diff trim_0/drain -2.84e-32
+C100 trimb_1 trimb_0 0.82f
+C101 trimb_2 vss 0.0525f
+C102 trim_1/drain outn 4.78e-20
+C103 trim_0/n4 trim_0/drain 6.86f
+C104 trim_0/n3 vss 2.61e-20
+C105 trim_1/n2 trimb_3 6.02e-19
+C106 clk trim_1/n4 2.01e-19
+C107 comparator_core_0/diff vdd 0.0019f
+C108 trimb_0 trimb_4 0.0039f
+C109 trim_0/n2 trim_0 3.92e-20
+C110 outn clk 0.0392f
+C111 trim_0/drain clk 0.0801f
+C112 trim_0/n4 vdd 0.0293f
+C113 trim_0/n2 trim_3 6.02e-19
+C114 trim_1/drain vdd 0.0307f
+C115 vp outp 5.68e-32
+C116 comparator_core_0/w_302_2337# outp 5.68e-32
+C117 trimb_1 trimb_3 3.33e-19
+C118 vp trim_1/n2 0.00276f
+C119 trim_2 trim_1 4.8e-19
+C120 comparator_core_0/diff vss -5.68e-32
+C121 trim_2 trim_4 0.00265f
+C122 trim_1/drain trim_1/n0 0.851f
+C123 trim_0/n4 vss 0.0914f
+C124 clk vdd 0.104f
+C125 trimb_0 vdd 0.0784f
+C126 trim_1/drain vss 1.71f
+C127 trim_0/n4 trim_0/n3 0.354f
+C128 trimb_3 trimb_4 0.00191f
+C129 trim_0/n0 trim_0/n1 0.0442f
+C130 vn trim_0/n0 9.27e-20
+C131 trimb_2 trimb_0 0.969f
+C132 trimb_0 trim_1/n0 2.97e-19
+C133 trimb_0 vss 0.0573f
+C134 clk vss 0.0684f
+C135 vp trim_1/n4 0.0126f
+C136 trim_0/n1 trim_0 2.97e-19
+C137 trim_1/drain comparator_core_0/diff -2.84e-32
+C138 comparator_core_0/w_302_2337# outn 5.68e-32
+C139 trim_2 trim_0 0.969f
+C140 comparator_core_0/w_302_2337# trim_0/drain 0.00484f
+C141 trimb_3 vdd 0.435f
+C142 trim_2 trim_3 1.07f
+C143 trim_0/n2 trim_0/drain 1.7f
+C144 trimb_2 trimb_3 1.07f
+C145 trimb_3 vss 0.0691f
+C146 vp vdd 0.221f
 C147 vdd.n0 0 0.457f
 C148 vdd.n1 0 0.00216f
 C149 vdd.n2 0 0.0575f

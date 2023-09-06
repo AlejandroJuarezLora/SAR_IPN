@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.res7
@@ -40,7 +40,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 
@@ -62,7 +62,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 
@@ -89,7 +89,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.ctlp_7_
@@ -115,7 +115,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.ctln_7_
@@ -141,7 +141,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node=xsar_post.comp
@@ -160,7 +160,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.sample
@@ -228,11 +228,11 @@ only_toplevel=false
 format="tcleval( @value )"
 value="
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
-.include /home/alex/Desktop/SAR_IPN/post_layout_sep_full/latch.spice
-.include /home/alex/Desktop/SAR_IPN/post_layout_sep_full/comparator.spice
-.include /home/alex/Desktop/SAR_IPN/post_layout_sep_full/DAC.spice
-.include /home/alex/Desktop/SAR_IPN/post_layout_sep_full/sar/control/cmos_cells_digital.sp
-.include /home/alex/Desktop/SAR_IPN/post_layout_sep_full/sar/control/sar_logic.sp
+.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/latch.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/comparator.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/DAC.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/sar/control/sar_logic.sp
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -259,7 +259,7 @@ value="
 .control
 
 run
-write tr_sar_post.raw
+write tr_sar_post_full.raw
 meas tran d0 find v(xsar_post.res0) at=47e-6
 meas tran d1 find v(xsar_post.res1) at=47e-6
 meas tran d2 find v(xsar_post.res2) at=47e-6
@@ -373,7 +373,7 @@ C {devices/gnd.sym} 1010 -90 0 0 {name=l43 lab=GND}
 C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
 C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
-C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
+C {/home/alex/Desktop/EDA/SAR_IPN/post_layout_separated/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
 C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
@@ -391,8 +391,4 @@ place=header}
 C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
 place=header
 spice_ignore=false
-}
-C {devices/launcher.sym} 170 -360 0 0 {name=h5
-descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tr_sar_post.raw tran"
 }

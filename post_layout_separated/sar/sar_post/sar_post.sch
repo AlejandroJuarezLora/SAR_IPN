@@ -183,7 +183,6 @@ Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 
 
 place=bottom}
 C {/home/alex/Desktop/EDA/SAR_IPN/post_layout_separated/sar/dac/DAC.sym} 330 -590 0 0 {name=xdp}
-C {sky130_stdcells/inv_4.sym} 70 -380 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 0 -380 0 0 {name=l26 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 130 -380 2 0 {name=l48 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 120 -590 0 0 {name=l18 sig_type=std_logic lab=ctlp[0]}
@@ -217,3 +216,4 @@ C {devices/lab_wire.sym} 110 -490 3 0 {name=l69 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 140 -480 3 0 {name=l70 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 110 -170 3 0 {name=l71 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 150 -160 3 0 {name=l72 sig_type=std_logic lab=sample}
+C {sky130_stdcells/inv_1.sym} 70 -380 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }

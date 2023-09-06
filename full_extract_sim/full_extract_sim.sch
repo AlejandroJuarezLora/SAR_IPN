@@ -227,12 +227,12 @@ name=STDCELLS
 only_toplevel=false
 format="tcleval( @value )"
 value="
+.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/DAC.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/comparator.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/latch.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/cmos_cells_digital.sp
+.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/sar_logic.sp
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/latch.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/comparator.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/DAC.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/sar/control/cmos_cells_digital.sp
-.include /home/alex/Desktop/EDA/SAR_IPN/post_layout_sep_full/sar/control/sar_logic.sp
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -259,7 +259,7 @@ value="
 .control
 
 run
-write tr_sar_post_full.raw
+write full_extract_sim.raw
 meas tran d0 find v(xsar_post.res0) at=47e-6
 meas tran d1 find v(xsar_post.res1) at=47e-6
 meas tran d2 find v(xsar_post.res2) at=47e-6
@@ -373,7 +373,7 @@ C {devices/gnd.sym} 1010 -90 0 0 {name=l43 lab=GND}
 C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
 C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
-C {/home/alex/Desktop/EDA/SAR_IPN/post_layout_separated/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
+C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
 C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
@@ -388,7 +388,15 @@ value="
 "
 spice_ignore=true
 place=header}
-C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
+C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=ss
 place=header
 spice_ignore=false
+}
+C {devices/launcher.sym} 170 -360 0 0 {name=h5
+descr="load waves (tt)" 
+tclcommand="xschem raw_read $netlist_dir/full_extract_sim_tt.raw tran"
+}
+C {devices/launcher.sym} 180 -300 0 0 {name=h3
+descr="load waves (ss)" 
+tclcommand="xschem raw_read $netlist_dir/full_extract_sim_ss.raw tran"
 }

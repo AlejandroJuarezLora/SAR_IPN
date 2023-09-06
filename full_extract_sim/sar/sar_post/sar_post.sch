@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -72,8 +72,10 @@ N 140 -480 180 -480 {
 lab=sample}
 N 110 -490 180 -490 {
 lab=n_sample}
-N 110 -170 180 -170 {}
-N 150 -160 180 -160 {}
+N 110 -170 180 -170 {
+lab=n_sample}
+N 150 -160 180 -160 {
+lab=sample}
 C {devices/lab_wire.sym} 730 -410 0 0 {name=l58 sig_type=std_logic lab=vn}
 C {devices/lab_wire.sym} 180 -310 0 0 {name=l80 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 180 -230 0 0 {name=l44 sig_type=std_logic lab=ctln[4]}
@@ -82,7 +84,7 @@ C {devices/lab_wire.sym} 920 -460 0 0 {name=l39 sig_type=std_logic lab=outp}
 C {devices/lab_wire.sym} 920 -420 0 0 {name=l41 sig_type=std_logic lab=outn}
 C {devices/lab_wire.sym} 730 -470 0 0 {name=l62 sig_type=std_logic lab=vp}
 C {devices/lab_wire.sym} 780 -510 3 1 {name=l66 sig_type=std_logic lab=avdd}
-C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/latch/latch.sym} 1010 -440 0 0 {name=xlat}
+C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/latch/latch.sym} 1010 -440 0 0 {name=xlat}
 C {devices/noconn.sym} 1125 -420 2 0 {name=l87}
 C {devices/lab_wire.sym} 1010 -370 0 0 {name=l5 sig_type=std_logic lab=avss
 }
@@ -159,9 +161,9 @@ C {devices/lab_wire.sym} 1300 -190 0 0 {name=l43 sig_type=std_logic lab=cal
 }
 C {devices/noconn.sym} 1220 -190 0 0 {name=l45
 }
-C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/dac/DAC.sym} 330 -270 0 0 {name=xdn
+C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/dac/DAC.sym} 330 -270 0 0 {name=xdn
 }
-C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/comparator/comparator.sym} 810 -280 0 0 {name=xcom
+C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/comparator/comparator.sym} 810 -280 0 0 {name=xcom
 }
 C {devices/lab_wire.sym} 1300 -70 0 0 {name=l27 sig_type=std_logic lab=rstn
 }
@@ -180,8 +182,7 @@ Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 
 "
 
 place=bottom}
-C {/home/alex/Desktop/SAR_IPN/post_layout_separated/sar/dac/DAC.sym} 330 -590 0 0 {name=xdp}
-C {sky130_stdcells/inv_4.sym} 70 -380 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/dac/DAC.sym} 330 -590 0 0 {name=xdp}
 C {devices/lab_wire.sym} 0 -380 0 0 {name=l26 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 130 -380 2 0 {name=l48 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 120 -590 0 0 {name=l18 sig_type=std_logic lab=ctlp[0]}
@@ -215,3 +216,4 @@ C {devices/lab_wire.sym} 110 -490 3 0 {name=l69 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 140 -480 3 0 {name=l70 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 110 -170 3 0 {name=l71 sig_type=std_logic lab=n_sample}
 C {devices/lab_wire.sym} 150 -160 3 0 {name=l72 sig_type=std_logic lab=sample}
+C {sky130_stdcells/inv_1.sym} 70 -380 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }

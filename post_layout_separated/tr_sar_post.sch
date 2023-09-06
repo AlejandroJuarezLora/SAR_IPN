@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.res7
@@ -40,7 +40,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 
@@ -62,7 +62,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 
@@ -89,7 +89,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.ctlp_7_
@@ -115,7 +115,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.ctln_7_
@@ -141,7 +141,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node=xsar_post.comp
@@ -160,7 +160,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.5e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.sample
@@ -227,10 +227,10 @@ name=STDCELLS
 only_toplevel=false
 format="tcleval( @value )"
 value="
-.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/post_layout_separated/extracted.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/post_layout_separated/sar/control/cmos_cells_digital.sp
 .include /home/alex/Desktop/EDA/SAR_IPN/post_layout_separated/sar/control/sar_logic.sp
+.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {

@@ -230,9 +230,11 @@ value="
 .include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/DAC.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/comparator.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/latch.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/cmos_cells_digital.sp
-.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/sar_logic.sp
+.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sarlogic.spice
+*.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/cmos_cells_digital.sp
+*.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/sar_logic.sp
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
+.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_ef_sc_hd__decap_12.spice
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -259,7 +261,7 @@ value="
 .control
 
 run
-write full_extract_sim.raw
+write full_extract_sim_digital.raw
 meas tran d0 find v(xsar_post.res0) at=47e-6
 meas tran d1 find v(xsar_post.res1) at=47e-6
 meas tran d2 find v(xsar_post.res2) at=47e-6
@@ -323,80 +325,33 @@ C {devices/vsource.sym} 1090 -440 0 0 {name=Ven value=1.4}
 C {devices/lab_wire.sym} 1120 -500 0 0 {name=l35 sig_type=std_logic lab=en}
 C {devices/gnd.sym} 1090 -370 0 0 {name=l36 lab=GND}
 C {devices/lab_wire.sym} 870 -360 3 0 {name=l37 sig_type=std_logic lab=en}
-C {devices/code.sym} 30 -640 0 0 {
-name=CORNERS 
-only_toplevel=true 
-format="tcleval( @value )"
-spice_ignore=true
-value="* FET CORNERS
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/tt.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ff.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ss.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/sf.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/fs.spice
-
-* TT + R + C
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/tt_rmax_cmax.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/tt_rmin_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/tt_rmax_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/tt_rmin_cmax.spice
-
-* FF + R + C
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ff_rmax_cmax.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ff_rmin_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ff_rmax_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ff_rmin_cmax.spice
-
-
-* SS + R + C
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ss_rmax_cmax.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ss_rmin_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ss_rmax_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/ss_rmin_cmax.spice
-
-* SF + R + C
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/sf_rmax_cmax.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/sf_rmin_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/sf_rmax_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/sf_rmin_cmax.spice
-
-* FS + R + C
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/fs_rmax_cmax.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/fs_rmin_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/fs_rmax_cmin.spice
-*.include \\\\$::SKYWATER_MODELS\\\\/corners/fs_rmin_cmax.spice"}
 C {devices/lab_wire.sym} 940 -420 0 1 {name=l38 sig_type=std_logic lab=valid}
 C {devices/noconn.sym} 990 -420 2 0 {name=l39}
 C {devices/vsource.sym} 1010 -160 0 0 {name=V3 value=0}
 C {devices/lab_wire.sym} 1040 -220 0 0 {name=l40 sig_type=std_logic lab=cal}
 C {devices/gnd.sym} 1010 -90 0 0 {name=l43 lab=GND}
 C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
-C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
+C {devices/launcher.sym} 200 -620 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
 C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
 C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}
-C {devices/launcher.sym} 200 -430 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
-C {devices/code.sym} 150 -650 0 0 {name=TT_MODELS
-only_toplevel=false
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-"
-spice_ignore=true
-place=header}
+C {devices/launcher.sym} 200 -580 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
 C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=ss
 place=header
 spice_ignore=false
 }
-C {devices/launcher.sym} 170 -360 0 0 {name=h5
+C {devices/launcher.sym} 170 -480 0 0 {name=h5
 descr="load waves (tt)" 
 tclcommand="xschem raw_read $netlist_dir/full_extract_sim_tt.raw tran"
 }
-C {devices/launcher.sym} 180 -300 0 0 {name=h3
+C {devices/launcher.sym} 170 -440 0 0 {name=h3
 descr="load waves (ss)" 
 tclcommand="xschem raw_read $netlist_dir/full_extract_sim_ss.raw tran"
+}
+C {devices/launcher.sym} 170 -380 0 0 {name=h4
+descr="load waves (sarlogic sim)" 
+tclcommand="xschem raw_read $netlist_dir/full_extract_sim_digital.raw tran"
 }

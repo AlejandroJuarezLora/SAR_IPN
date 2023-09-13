@@ -1,13 +1,12 @@
-`timescale 1ns/10ps
-module sar_logic(
+module sarlogic(
     input           clk,
     input           rstn,
     input           en,
     input           comp,
     input           cal,
     output          valid,
-    output  [7:0]   result,
-    output  		sample,
+    output  reg  [7:0]  result,
+    output  	sample,
     output  [7:0]   ctlp,
     output  [7:0]   ctln,
     output  [4:0]   trim,
@@ -18,9 +17,9 @@ module sar_logic(
     reg     [2:0]   state;
     reg     [7:0]   mask;
     reg     [4:0]   trim_mask;
-    reg     [7:0]   result;
+    /*reg     [7:0]   result;*/
     reg     [4:0]   trim_val;
-    reg             sample;
+    /*reg             sample;*/
     reg             co_clk;
     reg             en_co_clk;
     reg     [3:0]   cal_count;
@@ -41,9 +40,10 @@ module sar_logic(
         calibrate <= 0;
     end
 
-    always @(clk) begin
+    /*always @(clk) begin
         clkc <= (~clk & en_co_clk);
-    end
+    end*/
+    assign clkc = (~clk & en_co_clk);
 
     always @(posedge clk or negedge rstn) begin
 
@@ -111,7 +111,7 @@ module sar_logic(
                             en_co_clk <=0;
                             calibrate <= 0;
                         end else begin
-                            cal_itt = 0;
+                            cal_itt <= 0;
                             state <= sCal;
                         end 
                         cal_count <= 7;
@@ -141,4 +141,3 @@ module sar_logic(
 	assign ctln   = ~(result | mask);
 
 endmodule
-

@@ -234,7 +234,6 @@ value="
 *.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/cmos_cells_digital.sp
 *.include /home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/control/sar_logic.sp
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_ef_sc_hd__decap_12.spice
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -242,8 +241,8 @@ name=NGSPICE
 only_toplevel=false
 format="tcleval( @value )"
 value="
-.options method trap
-*.options method gear
+*.options method trap
+.options method gear
 .options gmin 1e-15
 .options abstol 1e-15
 .options reltol 0.0001

@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 node="xsar_post.res7
@@ -32,15 +32,15 @@ logx=0
 logy=0
 digital=1}
 B 2 0 440 800 840 {flags=graph
-y1=-0.0058
-y2=1.5
+y1=0.51
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 
@@ -62,7 +62,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 
@@ -89,7 +89,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 node="xsar_post.ctlp_7_
@@ -115,7 +115,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 node="xsar_post.ctln_7_
@@ -141,7 +141,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 node=xsar_post.comp
@@ -152,15 +152,15 @@ logx=0
 logy=0
 }
 B 2 1590 -460 2390 -60 {flags=graph
-y1=-0.903049
-y2=2.03228
+y1=-0.0064
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=4.8e-05
+x2=1.40577e-05
 divx=5
 subdivx=1
 node="xsar_post.sample
@@ -253,12 +253,12 @@ value="
 .param vsigp=\{vcm + vin/2\\\}
 .param vsign=\{vcm - vin/2\\\}
 
-.tran 100e-9 18e-6
+.tran 100e-9 48e-6
 .save all
 .control
 
 run
-write full_extract_sim_digital.raw
+write full_ext_sim.raw
 meas tran d0 find v(xsar_post.res0) at=47e-6
 meas tran d1 find v(xsar_post.res1) at=47e-6
 meas tran d2 find v(xsar_post.res2) at=47e-6
@@ -330,25 +330,17 @@ C {devices/gnd.sym} 1010 -90 0 0 {name=l43 lab=GND}
 C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
 C {devices/launcher.sym} 200 -620 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
-C {/home/alex/Desktop/EDA/SAR_IPN/full_extract_sim/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
+C {/home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
 C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}
 C {devices/launcher.sym} 200 -580 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
-C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=ss
+C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
 place=header
 spice_ignore=false
 }
-C {devices/launcher.sym} 170 -480 0 0 {name=h5
-descr="load waves (tt)" 
-tclcommand="xschem raw_read $netlist_dir/full_extract_sim_tt.raw tran"
-}
-C {devices/launcher.sym} 170 -440 0 0 {name=h3
-descr="load waves (ss)" 
-tclcommand="xschem raw_read $netlist_dir/full_extract_sim_ss.raw tran"
-}
 C {devices/launcher.sym} 170 -380 0 0 {name=h4
-descr="load waves (sarlogic sim)" 
-tclcommand="xschem raw_read $netlist_dir/full_extract_sim_digital.raw tran"
+descr="load waves (postlayoutsim)" 
+tclcommand="xschem raw_read $netlist_dir/full_ext_sim.raw tran"
 }

@@ -14,33 +14,36 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
-node="xsar_post.res7
-xsar_post.res6
-xsar_post.res5
-xsar_post.res4
-xsar_post.res3
-xsar_post.res2
-xsar_post.res1
-xsar_post.res0"
-color="4 5 6 7 8 9 10 11"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+
+color="11 11 11 11 11 11 11 11"
+node="result_7_
+result_6_
+result_5_
+result_4_
+result_3_
+result_2_
+result_1_
+result_0_"}
 B 2 0 440 800 840 {flags=graph
-y1=0.51
-y2=1.1
+y1=0.017
+y2=1.2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 
@@ -62,7 +65,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 
@@ -89,7 +92,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.ctlp_7_
@@ -115,7 +118,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.ctln_7_
@@ -141,7 +144,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node=xsar_post.comp
@@ -152,15 +155,15 @@ logx=0
 logy=0
 }
 B 2 1590 -460 2390 -60 {flags=graph
-y1=-0.0064
-y2=1.5
+y1=-0.791543
+y2=1.80288
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.40577e-05
+x2=4.8e-05
 divx=5
 subdivx=1
 node="xsar_post.sample
@@ -230,8 +233,10 @@ value="
 .include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/comparator/comparator.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/latch/latch.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/dac/DAC.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sarlogic/sar_logic.spice
+*.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sarlogic/sar_logic_light.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sarlogic/sar_logic_full.spice
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
+.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_ef_sc_hd__decap_12.spice
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -239,8 +244,8 @@ name=NGSPICE
 only_toplevel=false
 format="tcleval( @value )"
 value="
-*.options method trap
-.options method gear
+.options method trap
+*.options method gear
 .options gmin 1e-15
 .options abstol 1e-15
 .options reltol 0.0001
@@ -253,29 +258,30 @@ value="
 .param vsigp=\{vcm + vin/2\\\}
 .param vsign=\{vcm - vin/2\\\}
 
-.tran 100e-9 48e-6
+.tran 900e-9 48e-6
 .save all
 .control
 
 run
-write full_ext_sim.raw
-meas tran d0 find v(xsar_post.res0) at=47e-6
-meas tran d1 find v(xsar_post.res1) at=47e-6
-meas tran d2 find v(xsar_post.res2) at=47e-6
-meas tran d3 find v(xsar_post.res3) at=47e-6
-meas tran d4 find v(xsar_post.res4) at=47e-6
-meas tran d5 find v(xsar_post.res5) at=47e-6
-meas tran d6 find v(xsar_post.res6) at=47e-6
-meas tran d7 find v(xsar_post.res7) at=47e-6
+*write full_ext_sim_light.raw
+write full_ext_sim_full.raw
+*meas tran d0 find v(xsar_post.res0) at=47e-6
+*meas tran d1 find v(xsar_post.res1) at=47e-6
+*meas tran d2 find v(xsar_post.res2) at=47e-6
+*meas tran d3 find v(xsar_post.res3) at=47e-6
+*meas tran d4 find v(xsar_post.res4) at=47e-6
+*meas tran d5 find v(xsar_post.res5) at=47e-6
+*meas tran d6 find v(xsar_post.res6) at=47e-6
+*meas tran d7 find v(xsar_post.res7) at=47e-6
 
-* meas tran d0 find v(xsar.result0) at=47e-6
-* meas tran d1 find v(xsar.result1) at=47e-6
-* meas tran d2 find v(xsar.result2) at=47e-6
-* meas tran d3 find v(xsar.result3) at=47e-6
-* meas tran d4 find v(xsar.result4) at=47e-6
-* meas tran d5 find v(xsar.result5) at=47e-6
-* meas tran d6 find v(xsar.result6) at=47e-6
-* meas tran d7 find v(xsar.result7) at=47e-6
+meas tran d0 find v(xsar.result_0_) at=47e-6
+meas tran d1 find v(xsar.result_1_) at=47e-6
+meas tran d2 find v(xsar.result_2_) at=47e-6
+meas tran d3 find v(xsar.result_3_) at=47e-6
+meas tran d4 find v(xsar.result_4_) at=47e-6
+meas tran d5 find v(xsar.result_5_) at=47e-6
+meas tran d6 find v(xsar.result_6_) at=47e-6
+meas tran d7 find v(xsar.result_7_) at=47e-6
 
 meas tran vpmax max xsar_post.vp
 meas tran vpmin min xsar_post.vp
@@ -340,7 +346,11 @@ C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner
 place=header
 spice_ignore=false
 }
-C {devices/launcher.sym} 170 -380 0 0 {name=h4
-descr="load waves (postlayoutsim)" 
-tclcommand="xschem raw_read $netlist_dir/full_ext_sim.raw tran"
+C {devices/launcher.sym} 120 -460 0 0 {name=h4
+descr="load waves (light extraction)" 
+tclcommand="xschem raw_read $netlist_dir/full_ext_sim_light.raw tran"
+}
+C {devices/launcher.sym} 120 -380 0 0 {name=h3
+descr="load waves (full extraction)" 
+tclcommand="xschem raw_read $netlist_dir/full_ext_sim_full.raw tran"
 }

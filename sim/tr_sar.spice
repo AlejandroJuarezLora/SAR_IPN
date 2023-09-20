@@ -1,4 +1,4 @@
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/tb/sar/tr_sar.sch
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/tb/sar/tr_sar.sch
 
 .include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 *.include /home/alex/pdk/sky130B/libs.ref/sky130_fd_sc_hd/spice/cells/inv/sky130_fd_sc_hd__inv_4.spice
@@ -30,8 +30,10 @@ Vclk clk GND PULSE(0 1 1e-9 1e-9 1e-9 2e-6 4e-6)
 .save i(vclk)
 Ven en GND 1.4
 .save i(ven)
+* noconn valid
 V3 cal GND 0
 .save i(v3)
+* noconn result[7:0]
 xsar vdd vdd vss result_7_ result_6_ result_5_ result_4_ result_3_ result_2_ result_1_ result_0_
 + vinn vss clk vinp en valid cal rstn sar
 V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
@@ -39,8 +41,8 @@ V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
 **.ends
 
 * expanding   symbol:  sar/sar/sar.sym # of pins=12
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sar/sar.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sar/sar.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/sar/sar.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/sar/sar.sch
 .subckt sar avdd dvdd dvss result_7_ result_6_ result_5_ result_4_ result_3_ result_2_ result_1_
 + result_0_ vinn avss clk vinp en valid cal rstn
 *.iopin avss
@@ -56,18 +58,33 @@ V7 rstn GND PWL(0 0 4e-6 0 4.001e-6 1.4)
 *.ipin cal
 *.ipin rstn
 xlat avdd comp net1 avss outn outp latch
+* noconn #net1
+* noconn comp
 **** begin user architecture code
 
-.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/cmos_cells_digital.sp
-.include /home/alex/Desktop/SAR_IPN/xschem/sar/control/sar_logic.sp
+*.include /media/psf/Home/EDA/SAR_IPN/xschem/sar/control/cmos_cells_digital.sp
+*.include /media/psf/Home/EDA/SAR_IPN/xschem/sar/control/sar_logic.sp
+.include /media/psf/Home/EDA/SAR_IPN/xschem/sar/sar_logic.sp
 
 **** end user architecture code
+* noconn sample
+* noconn ctln[7:0]
+* noconn ctlp[7:0]
+* noconn trim[4:0]
+* noconn trimb[4:0]
+* noconn result[7:0]
+* noconn valid
+* noconn clkc
+* noconn clk
+* noconn en
+* noconn cal
 xdn vn sample avdd avss vinn ctln_7_ ctln_6_ ctln_5_ ctln_4_ ctln_3_ ctln_2_ ctln_1_ ctln_0_ avss
 + dac
 xdp vp sample avdd avss vinp ctlp_7_ ctlp_6_ ctlp_5_ ctlp_4_ ctlp_3_ ctlp_2_ ctlp_1_ ctlp_0_ avdd
 + dac
 xcom avss avdd clkc outp vp outn vn trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trimb_4_ trimb_3_
 + trimb_2_ trimb_1_ trimb_0_ comparator
+* noconn rstn
 **** begin user architecture code
 
 
@@ -93,8 +110,8 @@ Ada2 [dtrim4 dtrim3 dtrim2 dtrim1 dtrim0 dtrimb4 dtrimb3 dtrimb2 dtrimb1 dtrimb0
 
 
 * expanding   symbol:  sar/latch/latch.sym # of pins=6
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/latch/latch.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/latch/latch.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/latch/latch.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/latch/latch.sch
 .subckt latch vdd Q Qn vss R S
 *.ipin S
 *.ipin R
@@ -116,8 +133,8 @@ XM1 Qn net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  sar/dac/dac.sym # of pins=7
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/dac.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/dac.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/dac/dac.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/dac/dac.sch
 .subckt dac out sample vdd vss vin ctl_7_ ctl_6_ ctl_5_ ctl_4_ ctl_3_ ctl_2_ ctl_1_ ctl_0_ dum
 *.ipin vin
 *.ipin sample
@@ -141,8 +158,8 @@ xswt out sample vdd vin vss sw_top
 
 
 * expanding   symbol:  sar/comparator/comparator.sym # of pins=9
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/comparator.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/comparator.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/comparator.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/comparator.sch
 .subckt comparator vss vdd clk outp vp outn vn trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trimb_4_
 + trimb_3_ trimb_2_ trimb_1_ trimb_0_
 *.ipin vn
@@ -193,8 +210,8 @@ XMdiff diff clk vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  logic/inv_lvt.sym # of pins=4
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/logic/inv_lvt.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/logic/inv_lvt.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/logic/inv_lvt.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/logic/inv_lvt.sch
 .subckt inv_lvt vdd in out vss
 *.iopin vdd
 *.iopin vss
@@ -210,8 +227,8 @@ XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.4 W=1 nf=1 ad='int((nf+1)/2) 
 
 
 * expanding   symbol:  sar/dac/carray.sym # of pins=10
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/carray.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/dac/carray.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/dac/carray.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/dac/carray.sch
 .subckt carray top n6 n0 n5 n4 n2 ndum n3 n1 n7
 *.iopin top
 *.iopin n7
@@ -563,12 +580,13 @@ xdummy_3_ top dum_bot_3_ unitcap
 xdummy_2_ top dum_bot_2_ unitcap
 xdummy_1_ top dum_bot_1_ unitcap
 xdummy_0_ top dum_bot_0_ unitcap
+* noconn dum_bot[83:0]
 .ends
 
 
 * expanding   symbol:  sar/sw/sw_top.sym # of pins=5
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sw/sw_top.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/sw/sw_top.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/sw/sw_top.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/sw/sw_top.sch
 .subckt sw_top out en vdd in vss
 *.iopin out
 *.ipin en
@@ -588,8 +606,8 @@ XM2 in en_buf out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) *
 
 
 * expanding   symbol:  sar/comparator/trim.sym # of pins=3
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trim.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trim.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trim.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trim.sch
 .subckt trim drain d_4_ d_3_ d_2_ d_1_ d_0_ vss
 *.iopin vss
 *.ipin d_4_,d_3_,d_2_,d_1_,d_0_
@@ -662,8 +680,8 @@ XM2 n0 d_0_ vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  sar/unitcap/unitcap.sym # of pins=2
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/unitcap/unitcap.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/unitcap/unitcap.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/unitcap/unitcap.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/unitcap/unitcap.sch
 .subckt unitcap cp cn
 *.iopin cp
 *.iopin cn
@@ -672,8 +690,8 @@ XC2 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 
 
 * expanding   symbol:  sar/comparator/trimcap.sym # of pins=2
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trimcap.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trimcap.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trimcap.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trimcap.sch
 .subckt trimcap cp cn
 *.iopin cp
 *.iopin cn

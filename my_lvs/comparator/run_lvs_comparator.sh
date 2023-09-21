@@ -19,4 +19,5 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "comparator_lay.spice comparator" "comparator_sch.spice comparator" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl comparator.out
+#netgen -batch lvs "comparator_lay.spice comparator" "comparator_sch.spice comparator" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl comparator.out
+netgen -batch lvs "comparator_lay.spice comparator" "../tr_sar.spice comparator" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl comparator.out

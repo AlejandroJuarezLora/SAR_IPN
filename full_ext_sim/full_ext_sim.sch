@@ -258,7 +258,7 @@ value="
 .param vsigp=\{vcm + vin/2\\\}
 .param vsign=\{vcm - vin/2\\\}
 
-.tran 900e-9 48e-6
+.tran 100e-9 48e-6
 .save all
 .control
 

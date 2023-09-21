@@ -19,4 +19,5 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "latch_lay.spice latch" "latch_sch.spice latch" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl latch.out
+#netgen -batch lvs "latch_lay.spice latch" "latch_sch.spice latch" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl latch.out
+netgen -batch lvs "latch_lay.spice latch" "../tr_sar.spice latch" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl latch.out

@@ -1,0 +1,114 @@
+| units: 500000 tech: sky130B format: MIT
+x trimb_3 vss trim_1.n3 vss s=5800,258 d=11600,516 l=60 w=200 x=8965 y=3084 sky130_fd_pr__nfet_01v8_lvt
+x trim_3 trim_0.n3 vss vss s=11600,516 d=5800,258 l=60 w=200 x=939 y=2730 sky130_fd_pr__nfet_01v8_lvt
+x trim_4 trim_0.n4 vss vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=859 sky130_fd_pr__nfet_01v8_lvt
+x trimb_3 trim_1.n3 vss vss s=11600,516 d=5800,258 l=60 w=200 x=8965 y=2730 sky130_fd_pr__nfet_01v8_lvt
+x trim_4 trim_0.n4 vss vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=1095 sky130_fd_pr__nfet_01v8_lvt
+x trimb_4 trim_1.n4 vss vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=1095 sky130_fd_pr__nfet_01v8_lvt
+x trim_3 vss trim_0.n3 vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=2848 sky130_fd_pr__nfet_01v8_lvt
+x trim_4 trim_0.n4 vss vss s=5800,258 d=11600,516 l=60 w=200 x=939 y=1567 sky130_fd_pr__nfet_01v8_lvt
+x trimb_3 vss trim_1.n3 vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=2848 sky130_fd_pr__nfet_01v8_lvt
+x trimb_4 trim_1.n4 vss vss s=5800,258 d=11600,516 l=60 w=200 x=8965 y=1567 sky130_fd_pr__nfet_01v8_lvt
+x trim_2 trim_0.n2 vss vss s=11600,516 d=5800,258 l=60 w=200 x=939 y=2303 sky130_fd_pr__nfet_01v8_lvt
+x vn trim_0.drain comparator_core_0.diff vss s=5800,258 d=5800,258 l=60 w=200 x=4963 y=1589 sky130_fd_pr__nfet_01v8
+x vp comparator_core_0.diff trim_1.drain vss s=5800,258 d=5800,258 l=60 w=200 x=5081 y=1589 sky130_fd_pr__nfet_01v8
+x trimb_2 trim_1.n2 vss vss s=11600,516 d=5800,258 l=60 w=200 x=8965 y=2303 sky130_fd_pr__nfet_01v8_lvt
+x trim_4 vss trim_0.n4 vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=1213 sky130_fd_pr__nfet_01v8_lvt
+x trimb_4 vss trim_1.n4 vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=1213 sky130_fd_pr__nfet_01v8_lvt
+x clk vdd trim_1.drain w_4048_2972# s=5800,258 d=11600,516 l=60 w=200 x=5861 y=3141 sky130_fd_pr__pfet_01v8
+x clk vss comparator_core_0.diff vss s=11600,516 d=5800,258 l=60 w=200 x=4963 y=959 sky130_fd_pr__nfet_01v8
+x trimb_4 vss trim_1.n4 vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=977 sky130_fd_pr__nfet_01v8_lvt
+x outp outn vdd w_4048_2972# s=11600,516 d=5800,258 l=60 w=200 x=4964 y=3141 sky130_fd_pr__pfet_01v8
+x outn vdd outp w_4048_2972# s=5800,258 d=11600,516 l=60 w=200 x=5082 y=3141 sky130_fd_pr__pfet_01v8
+x trim_4 vss trim_0.n4 vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=977 sky130_fd_pr__nfet_01v8_lvt
+x clk vdd outn w_4048_2972# s=5800,258 d=11600,516 l=60 w=200 x=4293 y=3141 sky130_fd_pr__pfet_01v8
+x trim_3 trim_0.n3 vss vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=2966 sky130_fd_pr__nfet_01v8_lvt
+x outp outn trim_0.drain vss s=11600,516 d=5800,258 l=60 w=200 x=4845 y=1589 sky130_fd_pr__nfet_01v8
+x trimb_3 trim_1.n3 vss vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=2966 sky130_fd_pr__nfet_01v8_lvt
+x trim_1 trim_0.n1 vss vss s=11600,516 d=5800,258 l=60 w=200 x=939 y=1876 sky130_fd_pr__nfet_01v8_lvt
+x trim_2 vss trim_0.n2 vss s=5800,258 d=11600,516 l=60 w=200 x=939 y=2421 sky130_fd_pr__nfet_01v8_lvt
+x outn trim_1.drain outp vss s=5800,258 d=11600,516 l=60 w=200 x=5199 y=1589 sky130_fd_pr__nfet_01v8
+x trimb_1 trim_1.n1 vss vss s=11600,516 d=5800,258 l=60 w=200 x=8965 y=1876 sky130_fd_pr__nfet_01v8_lvt
+x trimb_2 vss trim_1.n2 vss s=5800,258 d=11600,516 l=60 w=200 x=8965 y=2421 sky130_fd_pr__nfet_01v8_lvt
+x trim_4 trim_0.n4 vss vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=1331 sky130_fd_pr__nfet_01v8_lvt
+x clk outp vdd w_4048_2972# s=11600,516 d=5800,258 l=60 w=200 x=5743 y=3141 sky130_fd_pr__pfet_01v8
+x trimb_4 trim_1.n4 vss vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=1331 sky130_fd_pr__nfet_01v8_lvt
+x trim_4 vss trim_0.n4 vss s=5800,258 d=5800,258 l=60 w=200 x=939 y=1449 sky130_fd_pr__nfet_01v8_lvt
+x trimb_4 vss trim_1.n4 vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=1449 sky130_fd_pr__nfet_01v8_lvt
+x clk trim_0.drain vdd w_4048_2972# s=11600,516 d=5800,258 l=60 w=200 x=4175 y=3141 sky130_fd_pr__pfet_01v8
+x trimb_4 vss trim_1.n4 vss s=11600,516 d=5800,258 l=60 w=200 x=8965 y=741 sky130_fd_pr__nfet_01v8_lvt
+x clk comparator_core_0.diff vss vss s=5800,258 d=11600,516 l=60 w=200 x=5081 y=959 sky130_fd_pr__nfet_01v8
+x trim_4 vss trim_0.n4 vss s=11600,516 d=5800,258 l=60 w=200 x=939 y=741 sky130_fd_pr__nfet_01v8_lvt
+x trimb_4 trim_1.n4 vss vss s=5800,258 d=5800,258 l=60 w=200 x=8965 y=859 sky130_fd_pr__nfet_01v8_lvt
+x trim_0 vss trim_0.n0 vss s=5800,258 d=11600,516 l=60 w=200 x=939 y=1994 sky130_fd_pr__nfet_01v8_lvt
+x trim_3 vss trim_0.n3 vss s=5800,258 d=11600,516 l=60 w=200 x=939 y=3084 sky130_fd_pr__nfet_01v8_lvt
+x trimb_0 vss trim_1.n0 vss s=5800,258 d=11600,516 l=60 w=200 x=8965 y=1994 sky130_fd_pr__nfet_01v8_lvt
+C trim_0.n3 trim_0.drain 3.4
+C trim_1.n3 trim_1.drain 3.4
+C trim_0.drain trim_0.n4 6.9
+C trim_1.drain trim_1.n4 6.9
+C trimb_40 2.1
+R trimb_4 3233
+= trimb_4 trim_1.trim_sw_0.d_4
+R trimb_1 286
+= trimb_1 trim_1.trim_sw_0.d_1
+R vp 286
+= vp comparator_core_0.vp
+R vn 286
+= vn comparator_core_0.vn
+C trim_40 2.1
+R trim_4 3233
+= trim_4 trim_0.trim_sw_0.d_4
+R trimb_0 287
+= trimb_0 trim_1.trim_sw_0.d_0
+R trimb_2 717
+= trimb_2 trim_1.trim_sw_0.d_2
+R trim_1 286
+= trim_1 trim_0.trim_sw_0.d_1
+R trim_0 287
+= trim_0 trim_0.trim_sw_0.d_0
+R trim_2 717
+= trim_2 trim_0.trim_sw_0.d_2
+R trimb_3 1560
+= trimb_3 trim_1.trim_sw_0.d_3
+C vdd0 15.3
+R vdd 5314
+= vdd comparator_core_0.vdd
+R outn 3307
+= outn comparator_core_0.outn
+R outp 3307
+= outp comparator_core_0.outp
+C clk0 3.9
+R clk 2442
+= clk comparator_core_0.clk
+R trim_3 1560
+= trim_3 trim_0.trim_sw_0.d_3
+R vss 121623
+= vss comparator_core_0.vss
+= vss trim_1.trim_sw_0.vss
+= vss trim_0.trim_sw_0.vss
+C trim_1.n40 3.7
+R trim_1.n4 2955
+R trim_1.n1 500
+R comparator_core_0.diff 1312
+C trim_0.n40 3.7
+R trim_0.n4 2955
+R trim_0.n1 500
+R trim_1.n0 500
+R trim_1.n2 1328
+R trim_0.n0 500
+R trim_0.n2 1328
+C trim_1.n30 2.5
+R trim_1.n3 2141
+C trim_1.drain0 4.2
+R trim_1.drain 1354
+= trim_1.drain comparator_core_0.ip
+C trim_0.drain0 4.1
+R trim_0.drain 1354
+= trim_0.drain comparator_core_0.in
+C trim_0.n30 2.5
+R trim_0.n3 2141
+R a_3988_2912# 18649
+C w_4048_2972#0 3.0
+R w_4048_2972# 3770
+R w_3952_2876# 543014

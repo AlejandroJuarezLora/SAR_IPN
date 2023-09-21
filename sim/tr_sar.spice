@@ -64,7 +64,6 @@ xlat avdd comp net1 avss outn outp latch
 
 *.include /media/psf/Home/EDA/SAR_IPN/xschem/sar/control/cmos_cells_digital.sp
 *.include /media/psf/Home/EDA/SAR_IPN/xschem/sar/control/sar_logic.sp
-.include /media/psf/Home/EDA/SAR_IPN/xschem/sar/sar_logic.sp
 
 **** end user architecture code
 * noconn sample

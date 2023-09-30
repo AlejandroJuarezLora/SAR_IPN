@@ -1,0 +1,51 @@
+magic
+tech sky130B
+timestamp 1695926252
+<< metal1 >>
+rect 67 629 169 637
+rect 67 595 86 629
+rect 151 595 169 629
+rect 67 588 169 595
+rect 70 253 172 262
+rect 70 220 88 253
+rect 155 220 172 253
+rect 70 213 172 220
+<< via1 >>
+rect 86 595 151 629
+rect 88 220 155 253
+<< metal2 >>
+rect 67 629 169 637
+rect 67 595 86 629
+rect 151 595 169 629
+rect 67 588 169 595
+rect 70 253 172 262
+rect 70 220 88 253
+rect 155 220 172 253
+rect 70 213 172 220
+<< via2 >>
+rect 86 595 151 629
+rect 88 220 155 253
+<< metal3 >>
+rect 67 629 169 637
+rect 67 595 86 629
+rect 151 595 169 629
+rect 67 588 169 595
+rect 72 253 173 351
+rect 72 220 88 253
+rect 155 220 173 253
+rect 72 213 173 220
+<< via3 >>
+rect 86 595 151 629
+<< metal4 >>
+rect 67 629 169 636
+rect 67 595 86 629
+rect 151 595 169 629
+rect 67 492 169 595
+use sky130_fd_pr__cap_mim_m3_1_FJFAMD  XC2
+timestamp 1695772557
+transform 1 0 193 0 1 420
+box -193 -120 45 120
+<< labels >>
+rlabel metal1 67 588 169 637 1 cp
+rlabel metal1 70 213 88 262 5 cn
+<< end >>

@@ -1,99 +1,59 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt is a black box; will not flatten Circuit 2
-Equate elements:  no current cell.
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
 
-Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt is a black box; will not flatten Circuit 2
-Equate elements:  no current cell.
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
 Flattening unmatched subcell inv_lvt in circuit latch (1)(4 instances)
 
-Cell latch (0) disconnected node: vdd
-Cell latch (0) disconnected node: vss
-Cell latch (0) disconnected node: Qn
-Cell latch (0) disconnected node: S
-Cell latch (0) disconnected node: R
-Cell latch (0) disconnected node: Q
-Class latch (0):  Merged 2 parallel devices.
-Cell latch (0) disconnected node: vdd
-Cell latch (0) disconnected node: vss
-Cell latch (0) disconnected node: Qn
-Cell latch (0) disconnected node: S
-Cell latch (0) disconnected node: R
-Cell latch (0) disconnected node: Q
 Subcircuit summary:
 Circuit 1: latch                           |Circuit 2: latch                           
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8_lvt (4->3)         |sky130_fd_pr__pfet_01v8_lvt (4) **Mismatch 
-sky130_fd_pr__nfet_01v8_lvt (6->5)         |sky130_fd_pr__nfet_01v8_lvt (6) **Mismatch 
-Number of devices: 8 **Mismatch**          |Number of devices: 10 **Mismatch**         
-Number of nets: 28 **Mismatch**            |Number of nets: 8 **Mismatch**             
+sky130_fd_pr__pfet_01v8_lvt (4)            |sky130_fd_pr__pfet_01v8_lvt (4)            
+sky130_fd_pr__nfet_01v8_lvt (6)            |sky130_fd_pr__nfet_01v8_lvt (6)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: latch                           |Circuit 2: latch                           
-
----------------------------------------------------------------------------------------
-Net: Qn.t3                                 |Net: vdd                                   
-  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__pfet_01v8_lvt/s = 4        
-                                           |  sky130_fd_pr__pfet_01v8_lvt/b = 4        
-                                           |                                           
-Net: vdd.t0                                |Net: vss                                   
-  sky130_fd_pr__pfet_01v8_lvt/4 = 1        |  sky130_fd_pr__nfet_01v8_lvt/s = 6        
-                                           |  sky130_fd_pr__nfet_01v8_lvt/b = 6        
-                                           |                                           
-Net: Qn.t2                                 |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-                                           |                                           
-Net: vss.t9                                |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-                                           |                                           
-Net: vss.t11                               |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-                                           |                                           
-Net: Q.t2                                  |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-                                           |                                           
-Net: Q.t3                                  |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
-                                           |                                           
-Net: vss.t2                                |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/4 = 1        |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: latch                           |Circuit 2: latch                           
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8_lvt:0    |(no matching instance)                     
-  (1,3) = (1,1)                            |                                           
-  2 = 1                                    |                                           
-  4 = 1                                    |                                           
-                                           |                                           
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8_lvt:2    |(no matching instance)                     
-  (1,3) = (1,1)                            |                                           
-  2 = 1                                    |                                           
-  4 = 1                                    |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: latch                           |Circuit 2: latch                           
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |vdd                                        
-(no matching pin)                          |Q                                          
-(no matching pin)                          |Qn                                         
-(no matching pin)                          |vss                                        
-(no matching pin)                          |R                                          
-(no matching pin)                          |S                                          
-vdd                                        |(no matching pin)                          
-vss                                        |(no matching pin)                          
-Qn                                         |(no matching pin)                          
-S                                          |(no matching pin)                          
-R                                          |(no matching pin)                          
-Q                                          |(no matching pin)                          
+S                                          |S                                          
+R                                          |R                                          
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+Qn                                         |Qn                                         
+Q                                          |Q                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for latch and latch altered to match.
+Cell pin lists are equivalent.
 Device classes latch and latch are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

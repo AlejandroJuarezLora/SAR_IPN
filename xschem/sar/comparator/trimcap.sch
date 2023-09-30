@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -12,6 +12,8 @@ N 70 -80 70 -50 { lab=cn}
 N 70 -50 80 -50 { lab=cn}
 C {devices/iopin.sym} 80 -170 0 0 {name=p1 lab=cp}
 C {devices/iopin.sym} 80 -50 0 0 {name=p2 lab=cn}
-C {devices/capa.sym} 70 -110 0 0 {name=C1
+C {devices/capa.sym} 200 -170 0 0 {name=C1
 m=1 value=2f
+spice_ignore=true
 }
+C {sky130_fd_pr/cap_mim_m3_1.sym} 70 -110 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}

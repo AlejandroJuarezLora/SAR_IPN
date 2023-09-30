@@ -154,26 +154,6 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 1590 -460 2390 -60 {flags=graph
-y1=-0.791543
-y2=1.80288
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=4.8e-05
-divx=5
-subdivx=1
-node="xsar_post.sample
-xsar_post.n_sample"
-color="4 7"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
 P 4 5 0 -660 1370 -660 1370 0 0 0 0 -660 {}
 P 4 2 500 -660 500 0 {}
 P 4 2 -0 -250 500 -250 {}

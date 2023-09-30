@@ -1,5 +1,5 @@
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/comparator.sch
-.subckt comparator vn vp clk vdd vss outp outn trim_4_,trim_3_,trim_2_,trim_1_,trim_0_
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/comparator.sch
+**.subckt comparator vn vp clk vdd vss outp outn trim_4_,trim_3_,trim_2_,trim_1_,trim_0_
 *+ trimb_4_,trimb_3_,trimb_2_,trimb_1_,trimb_0_
 *.ipin vn
 *.ipin vp
@@ -45,11 +45,11 @@ XMinp ip vp diff vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * 
 XMdiff diff clk vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=2 m=2
-.ends
+**.ends
 
 * expanding   symbol:  sar/comparator/trim.sym # of pins=3
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trim.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trim.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trim.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trim.sch
 .subckt trim drain d_4_ d_3_ d_2_ d_1_ d_0_ vss
 *.iopin vss
 *.ipin d_4_,d_3_,d_2_,d_1_,d_0_
@@ -122,12 +122,12 @@ XM2 n0 d_0_ vss vss sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  sar/comparator/trimcap.sym # of pins=2
-** sym_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trimcap.sym
-** sch_path: /home/alex/Desktop/SAR_IPN/xschem/sar/comparator/trimcap.sch
+** sym_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trimcap.sym
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/comparator/trimcap.sch
 .subckt trimcap cp cn
 *.iopin cp
 *.iopin cn
-C1 cp cn 2f m=1
+XC2 cp cn sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
 .ends
 
 .end

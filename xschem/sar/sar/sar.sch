@@ -102,8 +102,8 @@ C {devices/lab_wire.sym} 780 -370 3 0 {name=l2 sig_type=std_logic lab=avss}
 C {devices/code.sym} -220 -160 0 0 {name=INCLUDES only_toplevel=false 
 format="tcleval(@value )"
 value="
-*.include $::DESIGN_PATH/sar/control/cmos_cells_digital.sp
-*.include $::DESIGN_PATH/sar/control/sar_logic.sp
+.include $::DESIGN_PATH/sar/control/cmos_cells_digital.sp
+.include $::DESIGN_PATH/sar/control/sar_logic.sp
 "
 spice_ignore=false
 }

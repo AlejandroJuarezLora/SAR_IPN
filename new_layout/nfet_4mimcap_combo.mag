@@ -1,0 +1,20 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696029615
+<< metal1 >>
+rect 627 1271 1969 1301
+rect 627 521 1973 551
+use nfet_2mimcap_combo  nfet_2mimcap_combo_1
+timestamp 1696029511
+transform 1 0 0 0 1 0
+box 0 0 1046 1330
+use trimcap  trimcap_0
+timestamp 1695926252
+transform 1 0 1140 0 1 60
+box 0 426 476 1274
+use trimcap  trimcap_1
+timestamp 1695926252
+transform 1 0 1720 0 1 60
+box 0 426 476 1274
+<< end >>

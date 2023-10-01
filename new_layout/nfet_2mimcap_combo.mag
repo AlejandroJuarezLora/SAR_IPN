@@ -1,16 +1,29 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696029511
+timestamp 1696112066
+<< pwell >>
+rect 654 412 712 472
 << metal1 >>
-rect 301 1271 717 1301
-rect 321 521 727 551
-use nfet_mimcap_combo  nfet_mimcap_combo_0
-timestamp 1696029511
-transform 1 0 604 0 1 494
-box -604 -494 -128 836
+rect 274 1450 837 1480
+rect 288 672 847 702
+rect 514 404 544 672
+rect 654 300 712 360
+rect 488 260 552 280
+use sky130_fd_pr__nfet_01v8_lvt_E33R59  sky130_fd_pr__nfet_01v8_lvt_E33R59_0
+timestamp 1696108744
+transform 0 1 557 -1 0 360
+box -226 -279 226 279
 use trimcap  trimcap_0
-timestamp 1695926252
-transform 1 0 570 0 1 54
-box 0 426 476 1274
+timestamp 1696109480
+transform 1 0 28 0 1 238
+box 0 376 476 1324
+use trimcap  trimcap_1
+timestamp 1696109480
+transform 1 0 606 0 1 232
+box 0 376 476 1324
+<< labels >>
+flabel metal1 274 1450 837 1480 0 FreeSans 480 0 0 0 todrain
+flabel metal1 654 300 712 360 0 FreeSans 480 0 0 0 d_i
+flabel metal1 488 260 552 280 0 FreeSans 480 0 0 0 tovss
 << end >>

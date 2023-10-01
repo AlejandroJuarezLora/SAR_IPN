@@ -1,39 +1,22 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696029511
-<< locali >>
-rect -404 -328 -324 -292
-rect -404 -364 -390 -328
-rect -338 -364 -324 -328
-rect -404 -374 -324 -364
-<< viali >>
-rect -390 -364 -338 -328
+timestamp 1696112840
 << metal1 >>
-rect -380 -70 -330 -10
-rect -404 -328 -324 -318
-rect -404 -364 -390 -328
-rect -338 -364 -324 -328
-rect -226 -358 -176 -104
-rect -404 -492 -324 -364
-rect -244 -372 -160 -358
-rect -244 -430 -232 -372
-rect -172 -430 -160 -372
-rect -244 -442 -160 -430
-<< via1 >>
-rect -232 -430 -172 -372
-<< metal2 >>
-rect -244 -372 -160 -358
-rect -244 -430 -232 -372
-rect -172 -430 -160 -372
-rect -244 -442 -160 -430
-rect -226 -494 -176 -442
+rect -390 920 -266 1036
+rect -348 -52 -318 174
+rect -204 -152 -146 -92
+rect -372 -196 -286 -168
 use sky130_fd_pr__nfet_01v8_lvt_E33R59  sky130_fd_pr__nfet_01v8_lvt_E33R59_0
-timestamp 1695772279
-transform 0 1 -327 1 0 -146
-box -166 -157 88 157
+timestamp 1696108744
+transform 0 1 -299 -1 0 -122
+box -226 -279 226 279
 use trimcap  trimcap_1
-timestamp 1695926252
-transform 1 0 -604 0 1 -438
-box 0 426 476 1274
+timestamp 1696109480
+transform 1 0 -566 0 1 -262
+box 0 376 476 1324
+<< labels >>
+flabel metal1 -390 920 -266 1036 0 FreeSans 480 0 0 0 todrain
+flabel metal1 -204 -152 -146 -92 0 FreeSans 480 0 0 0 d_i
+flabel metal1 -372 -196 -286 -168 0 FreeSans 480 0 0 0 tovss
 << end >>

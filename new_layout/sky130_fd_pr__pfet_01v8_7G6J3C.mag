@@ -1,30 +1,31 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1695925836
+timestamp 1696114596
 << nwell >>
-rect -244 -198 124 164
+rect -226 -284 226 284
 << pmos >>
 rect -30 -136 30 64
 << pdiff >>
-rect -88 52 -30 64
-rect -88 -124 -76 52
-rect -42 -124 -30 52
-rect -88 -136 -30 -124
-rect 30 52 88 64
-rect 30 -124 42 52
-rect 76 -124 88 52
-rect 30 -136 88 -124
+rect -88 34 -30 64
+rect -88 -106 -76 34
+rect -42 -106 -30 34
+rect -88 -136 -30 -106
+rect 30 34 88 64
+rect 30 -106 42 34
+rect 76 -106 88 34
+rect 30 -136 88 -106
 << pdiffc >>
-rect -76 -124 -42 52
-rect 42 -124 76 52
+rect -76 -106 -42 34
+rect 42 -106 76 34
 << nsubdiff >>
-rect -202 25 -145 64
-rect -202 -97 -190 25
-rect -156 -97 -145 25
-rect -202 -136 -145 -97
+rect -190 214 190 248
+rect -190 -214 -156 214
+rect 156 -214 190 214
+rect -190 -248 -75 -214
+rect 75 -248 190 -214
 << nsubdiffcont >>
-rect -190 -97 -156 25
+rect -75 -248 75 -214
 << poly >>
 rect -33 145 33 161
 rect -33 111 -17 145
@@ -37,43 +38,41 @@ rect -17 111 17 145
 << locali >>
 rect -33 111 -17 145
 rect 17 111 33 145
-rect -190 52 -156 68
-rect -190 -140 -156 -124
-rect -76 52 -42 68
-rect -76 -140 -42 -124
-rect 42 52 76 68
-rect 42 -140 76 -124
+rect -76 34 -42 50
+rect -76 -122 -42 -106
+rect 42 34 76 50
+rect 42 -122 76 -106
+rect -91 -248 -75 -214
+rect 75 -248 91 -214
 << viali >>
 rect -17 111 17 145
-rect -190 25 -156 52
-rect -190 -97 -156 25
-rect -190 -124 -156 -97
-rect -76 -124 -42 52
-rect 42 -124 76 52
+rect -76 -106 -42 34
+rect 42 -89 76 17
 << metal1 >>
-rect -30 145 30 158
+rect -30 145 30 156
 rect -30 111 -17 145
 rect 17 111 30 145
-rect -30 98 30 111
-rect -196 52 -150 64
-rect -196 -124 -190 52
-rect -156 -124 -150 52
-rect -196 -136 -150 -124
-rect -82 52 -36 64
-rect -82 -124 -76 52
-rect -42 -124 -36 52
-rect -82 -136 -36 -124
-rect 36 52 82 64
-rect 36 -124 42 52
-rect 76 -124 82 52
-rect 36 -136 82 -124
+rect -30 100 30 111
+rect -82 34 -36 46
+rect -82 -106 -76 34
+rect -42 -106 -36 34
+rect 36 17 82 29
+rect 36 -89 42 17
+rect 76 -89 82 17
+rect 36 -101 82 -89
+rect -82 -118 -36 -106
 << labels >>
-rlabel viali -170 -40 -170 -40 3 B
-rlabel viali 0 130 0 130 3 G
-rlabel viali -60 -40 -60 -40 3 S
-rlabel viali 60 -40 60 -40 3 D
+flabel viali -58 -34 -58 -34 0 FreeSans 480 0 0 0 D
+port 0 nsew
+flabel viali 60 -36 60 -36 0 FreeSans 480 0 0 0 S
+port 1 nsew
+flabel viali 0 128 0 128 0 FreeSans 480 0 0 0 G
+port 2 nsew
+flabel nwell -108 -262 114 -200 0 FreeSans 480 0 0 0 B
+port 3 nsew
 << properties >>
+string FIXED_BBOX -173 -231 173 231
 string gencell sky130_fd_pr__pfet_01v8
 string library sky130
-string parameters w 1 l 0.3 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+string parameters w 1 l 0.3 m 1 nf 1 diffcov 80 polycov 80 guard 1 glc 0 grc 0 gtc 0 gbc 1 tbcov 80 rlcov 80 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 viasrc 60 viadrn 80 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
 << end >>

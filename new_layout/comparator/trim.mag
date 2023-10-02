@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696279213
+timestamp 1696285870
 << psubdiff >>
 rect 842 3849 876 3969
 << locali >>
@@ -113,23 +113,23 @@ rect 4569 3926 4575 3938
 rect 4627 3926 4633 3978
 rect 516 3875 522 3914
 use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_0
-timestamp 1696271506
+timestamp 1696285444
 transform 0 1 2819 -1 0 3832
 box -226 -279 226 279
 use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_1
-timestamp 1696271506
-transform 0 1 4283 -1 0 3828
+timestamp 1696285444
+transform 0 1 4283 -1 0 3826
 box -226 -279 226 279
 use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_2
-timestamp 1696271506
+timestamp 1696285444
 transform 0 1 527 1 0 3618
 box -226 -279 226 279
 use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_3
-timestamp 1696271506
+timestamp 1696285444
 transform 0 1 3715 -1 0 3826
 box -226 -279 226 279
 use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_4
-timestamp 1696271506
+timestamp 1696285444
 transform 0 1 1087 -1 0 3826
 box -226 -279 226 279
 use trimcap  trimcap_0

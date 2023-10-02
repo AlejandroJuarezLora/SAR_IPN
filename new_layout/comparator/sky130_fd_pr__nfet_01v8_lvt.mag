@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696271506
+timestamp 1696285444
 << pwell >>
 rect -226 -279 226 279
 << nmoslvt >>
@@ -70,9 +70,4 @@ flabel metal1 -30 141 30 152 0 FreeSans 160 0 0 0 G
 port 2 nsew
 rlabel locali -91 -243 91 -209 5 B
 port 3 s
-<< properties >>
-string FIXED_BBOX -173 -226 173 226
-string gencell sky130_fd_pr__nfet_01v8_lvt
-string library sky130
-string parameters w 1 l 0.3 m 1 nf 1 diffcov 80 polycov 80 guard 1 glc 0 grc 0 gtc 0 gbc 1 tbcov 80 rlcov 80 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 0 viasrc 70 viadrn 80 viagate 80 viagb 0 viagr 0 viagl 0 viagt 0
 << end >>

@@ -1,0 +1,30 @@
+* SPICE3 file created from trim.ext - technology: sky130B
+
+.subckt trim DRAIN VSS d0 d1 d2 d3 d4
+X0 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X1 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X2 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X3 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X4 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X5 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X6 DRAIN sky130_fd_pr__nfet_01v8_lvt_1/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X7 DRAIN sky130_fd_pr__nfet_01v8_lvt_3/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X8 DRAIN sky130_fd_pr__nfet_01v8_lvt_0/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X9 DRAIN sky130_fd_pr__nfet_01v8_lvt_0/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X10 DRAIN sky130_fd_pr__nfet_01v8_lvt_4/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X11 DRAIN sky130_fd_pr__nfet_01v8_lvt_4/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X12 DRAIN sky130_fd_pr__nfet_01v8_lvt_4/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X13 DRAIN sky130_fd_pr__nfet_01v8_lvt_4/D sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X14 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X15 sky130_fd_pr__nfet_01v8_lvt_2/D DRAIN sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+C0 sky130_fd_pr__nfet_01v8_lvt_4/D DRAIN 2.52f
+C1 DRAIN sky130_fd_pr__nfet_01v8_lvt_2/D 4.97f
+Xsky130_fd_pr__nfet_01v8_lvt_0 sky130_fd_pr__nfet_01v8_lvt_0/D VSS d2 VSS sky130_fd_pr__nfet_01v8_lvt
+Xsky130_fd_pr__nfet_01v8_lvt_1 sky130_fd_pr__nfet_01v8_lvt_1/D VSS d0 VSS sky130_fd_pr__nfet_01v8_lvt
+Xsky130_fd_pr__nfet_01v8_lvt_2 sky130_fd_pr__nfet_01v8_lvt_2/D VSS d4 VSS sky130_fd_pr__nfet_01v8_lvt
+Xsky130_fd_pr__nfet_01v8_lvt_3 sky130_fd_pr__nfet_01v8_lvt_3/D VSS d1 VSS sky130_fd_pr__nfet_01v8_lvt
+Xsky130_fd_pr__nfet_01v8_lvt_4 sky130_fd_pr__nfet_01v8_lvt_4/D VSS d3 VSS sky130_fd_pr__nfet_01v8_lvt
+C2 sky130_fd_pr__nfet_01v8_lvt_2/D VSS 2.68f
+C3 DRAIN VSS 8.5f
+C4 sky130_fd_pr__nfet_01v8_lvt_4/D VSS 2.12f
+.ends

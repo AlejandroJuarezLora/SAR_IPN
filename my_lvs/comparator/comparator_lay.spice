@@ -12,47 +12,33 @@ XXC2 m1_179_405# m1_176_1185# sky130_fd_pr__cap_mim_m3_1_FJFAMD
 X0 S G D B sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 .ends
 
-.subckt nfet_4mimcap_combo tovss d_i todrain VSUBS
-Xtrimcap_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xsky130_fd_pr__nfet_01v8_lvt_E33R59_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D tovss
-+ d_i VSUBS sky130_fd_pr__nfet_01v8_lvt_E33R59
-Xtrimcap_1 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_2 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_3 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-.ends
-
-.subckt nfet_8mimcap_combo todrain tovss d_i VSUBS
-Xtrimcap_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xsky130_fd_pr__nfet_01v8_lvt_E33R59_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D tovss
-+ d_i VSUBS sky130_fd_pr__nfet_01v8_lvt_E33R59
-Xtrimcap_1 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_2 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_3 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_4 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_5 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_6 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xtrimcap_7 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-.ends
-
-.subckt nfet_2mimcap_combo tovss d_i todrain VSUBS
-Xtrimcap_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-Xsky130_fd_pr__nfet_01v8_lvt_E33R59_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D tovss
-+ d_i VSUBS sky130_fd_pr__nfet_01v8_lvt_E33R59
-Xtrimcap_1 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-.ends
-
-.subckt nfet_mimcap_combo tovss d_i todrain VSUBS
-Xsky130_fd_pr__nfet_01v8_lvt_E33R59_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D tovss
-+ d_i VSUBS sky130_fd_pr__nfet_01v8_lvt_E33R59
-Xtrimcap_1 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D todrain trimcap
-.ends
-
-.subckt trim VSS d0 d1 d2 d3 d4 DRAIN
-Xnfet_4mimcap_combo_0 VSS d3 DRAIN VSS nfet_4mimcap_combo
-Xnfet_8mimcap_combo_0 DRAIN VSS d4 VSS nfet_8mimcap_combo
-Xnfet_2mimcap_combo_0 VSS d2 DRAIN VSS nfet_2mimcap_combo
-Xnfet_mimcap_combo_0 VSS d0 DRAIN VSS nfet_mimcap_combo
-Xnfet_mimcap_combo_1 VSS d1 DRAIN VSS nfet_mimcap_combo
+.subckt trim DRAIN VSS d0 d1 d2 d3 d4
+Xtrimcap_12 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_11 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_13 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_14 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_15 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_0 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_1 sky130_fd_pr__nfet_01v8_lvt_E33R59_1/D DRAIN trimcap
+Xtrimcap_2 sky130_fd_pr__nfet_01v8_lvt_E33R59_3/D DRAIN trimcap
+Xsky130_fd_pr__nfet_01v8_lvt_E33R59_0 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D VSS d2
++ VSS sky130_fd_pr__nfet_01v8_lvt_E33R59
+Xsky130_fd_pr__nfet_01v8_lvt_E33R59_1 sky130_fd_pr__nfet_01v8_lvt_E33R59_1/D VSS d0
++ VSS sky130_fd_pr__nfet_01v8_lvt_E33R59
+Xtrimcap_3 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D DRAIN trimcap
+Xtrimcap_4 sky130_fd_pr__nfet_01v8_lvt_E33R59_0/D DRAIN trimcap
+Xsky130_fd_pr__nfet_01v8_lvt_E33R59_2 sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D VSS d4
++ VSS sky130_fd_pr__nfet_01v8_lvt_E33R59
+Xsky130_fd_pr__nfet_01v8_lvt_E33R59_3 sky130_fd_pr__nfet_01v8_lvt_E33R59_3/D VSS d1
++ VSS sky130_fd_pr__nfet_01v8_lvt_E33R59
+Xtrimcap_5 sky130_fd_pr__nfet_01v8_lvt_E33R59_4/D DRAIN trimcap
+Xtrimcap_6 sky130_fd_pr__nfet_01v8_lvt_E33R59_4/D DRAIN trimcap
+Xsky130_fd_pr__nfet_01v8_lvt_E33R59_4 sky130_fd_pr__nfet_01v8_lvt_E33R59_4/D VSS d3
++ VSS sky130_fd_pr__nfet_01v8_lvt_E33R59
+Xtrimcap_7 sky130_fd_pr__nfet_01v8_lvt_E33R59_4/D DRAIN trimcap
+Xtrimcap_8 sky130_fd_pr__nfet_01v8_lvt_E33R59_4/D DRAIN trimcap
+Xtrimcap_9 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
+Xtrimcap_10 DRAIN sky130_fd_pr__nfet_01v8_lvt_E33R59_2/D trimcap
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_96AECY D S G B
@@ -65,8 +51,8 @@ X0 S G D B sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 
 .subckt comparator vdd vss vn vp outn outp clk trim0 trim1 trim2 trim3 trim4 trimb0
 + trimb1 trimb2 trimb3 trimb4
-Xtrim_0 vss trimb0 trimb1 trimb2 trimb3 trimb4 IP trim
-Xtrim_1 vss trim0 trim1 trim2 trim3 trim4 IN trim
+Xtrim_0 IP vss trimb0 trimb1 trimb2 trimb3 trimb4 trim
+Xtrim_1 IN vss trim0 trim1 trim2 trim3 trim4 trim
 Xsky130_fd_pr__nfet_01v8_96AECY_0 IN diff vn vss sky130_fd_pr__nfet_01v8_96AECY
 Xsky130_fd_pr__nfet_01v8_96AECY_1 IP diff vp vss sky130_fd_pr__nfet_01v8_96AECY
 Xsky130_fd_pr__nfet_01v8_96AECY_2 outn IN outp vss sky130_fd_pr__nfet_01v8_96AECY

@@ -1,0 +1,131 @@
+timestamp 1696279433
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_0 0 -1 1878 -1 0 -14
+use sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_2 0 1 1882 -1 0 498
+use sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8_1 0 1 1864 1 0 1076
+use sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8_3 0 -1 1034 1 0 1076
+use sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8_4 0 -1 212 1 0 1080
+use trim trim_1 0 1 -3412 -1 0 715
+use sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_1 0 1 2811 -1 0 -19
+use sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_3 0 -1 2814 -1 0 502
+use sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_4 0 1 2643 -1 0 -624
+use sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_5 0 -1 2077 -1 0 -620
+use sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8_0 0 -1 2820 1 0 1068
+use sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8_2 0 1 3650 1 0 1068
+use sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8_5 0 1 4472 1 0 1072
+use trim trim_0 0 -1 8203 -1 0 697
+port "trimb4" 16 4733 -3985 4767 -3957 m1
+port "trimb3" 15 4671 -3985 4705 -3957 m1
+port "trimb2" 14 4596 -3985 4630 -3957 m1
+port "trimb1" 13 4506 -3985 4540 -3957 m1
+port "trimb0" 12 4364 -3990 4398 -3962 m1
+port "trim0" 7 395 -3974 429 -3946 m1
+port "trim2" 9 162 -3975 196 -3947 m1
+port "trim3" 10 87 -3975 121 -3947 m1
+port "trim4" 11 25 -3975 59 -3947 m1
+port "trim1" 8 251 -3975 285 -3947 m1
+port "vp" 3 2743 -4071 2795 -4019 v
+port "vn" 2 1727 -4069 1779 -4017 v
+port "vdd" 0 2286 1473 2314 1501 m1
+port "outp" 5 3223 1518 3252 1555 m1
+port "outn" 4 1416 1532 1444 1560 m1
+port "clk" 6 -443 1552 -375 1625 m1
+port "vss" 1 2140 -4059 2170 -4029 m1
+node "trimb4" 0 0 4733 -3985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trimb3" 0 0 4671 -3985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trimb2" 0 0 4596 -3985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trimb1" 0 0 4506 -3985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trimb0" 0 0 4364 -3990 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trim0" 0 0 395 -3974 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trim2" 0 0 162 -3975 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trim3" 0 0 87 -3975 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trim4" 0 0 25 -3975 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "trim1" 0 0 251 -3975 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vp" 0 0 2743 -4071 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "diff" 0 0 1896 -250 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vn" 0 0 1727 -4069 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "IP" 0 0 2810 47 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "IN" 0 0 1502 235 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_4423_712#" 0 0 4423 712 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2664_1048#" 0 0 2664 1048 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_244_730#" 0 0 244 730 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 0 2286 1473 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "outp" 0 0 3223 1518 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "outn" 0 0 1416 1532 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 0 0 -443 1552 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vss" 0 0 2140 -4059 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1946_1054#" 0 0 1946 1054 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/DRAIN" "sky130_fd_pr__pfet_01v8_5/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_5/D" "m1_4423_712#"
+merge "m1_4423_712#" "sky130_fd_pr__nfet_01v8_3/S"
+merge "sky130_fd_pr__nfet_01v8_3/S" "sky130_fd_pr__nfet_01v8_1/D"
+merge "sky130_fd_pr__nfet_01v8_1/D" "IP"
+merge "sky130_fd_pr__pfet_01v8_5/VSUBS" "sky130_fd_pr__pfet_01v8_2/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_2/VSUBS" "sky130_fd_pr__pfet_01v8_0/VSUBS"
+merge "sky130_fd_pr__pfet_01v8_0/VSUBS" "sky130_fd_pr__nfet_01v8_3/B"
+merge "sky130_fd_pr__nfet_01v8_3/B" "sky130_fd_pr__pfet_01v8_3/VSUBS"
+merge "sky130_fd_pr__pfet_01v8_3/VSUBS" "sky130_fd_pr__pfet_01v8_1/VSUBS"
+merge "sky130_fd_pr__pfet_01v8_1/VSUBS" "sky130_fd_pr__nfet_01v8_2/B"
+merge "sky130_fd_pr__nfet_01v8_2/B" "sky130_fd_pr__pfet_01v8_4/VSUBS"
+merge "sky130_fd_pr__pfet_01v8_4/VSUBS" "sky130_fd_pr__nfet_01v8_5/S"
+merge "sky130_fd_pr__nfet_01v8_5/S" "sky130_fd_pr__nfet_01v8_5/B"
+merge "sky130_fd_pr__nfet_01v8_5/B" "sky130_fd_pr__nfet_01v8_4/S"
+merge "sky130_fd_pr__nfet_01v8_4/S" "sky130_fd_pr__nfet_01v8_4/B"
+merge "sky130_fd_pr__nfet_01v8_4/B" "sky130_fd_pr__nfet_01v8_1/B"
+merge "sky130_fd_pr__nfet_01v8_1/B" "sky130_fd_pr__nfet_01v8_0/B"
+merge "sky130_fd_pr__nfet_01v8_0/B" "trim_0/VSS"
+merge "trim_0/VSS" "trim_1/VSS"
+merge "trim_1/VSS" "vss"
+merge "vss" "trim_0/a_842_3849#"
+merge "trim_0/a_842_3849#" "trim_1/a_842_3849#"
+merge "trim_1/a_842_3849#" "VSUBS"
+merge "sky130_fd_pr__pfet_01v8_5/S" "sky130_fd_pr__pfet_01v8_2/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_2/S" "sky130_fd_pr__pfet_01v8_0/S"
+merge "sky130_fd_pr__pfet_01v8_0/S" "sky130_fd_pr__pfet_01v8_3/S"
+merge "sky130_fd_pr__pfet_01v8_3/S" "sky130_fd_pr__pfet_01v8_1/S"
+merge "sky130_fd_pr__pfet_01v8_1/S" "sky130_fd_pr__pfet_01v8_4/S"
+merge "sky130_fd_pr__pfet_01v8_4/S" "vdd"
+merge "sky130_fd_pr__pfet_01v8_0/G" "m1_2664_1048#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "m1_2664_1048#" "sky130_fd_pr__nfet_01v8_3/G"
+merge "sky130_fd_pr__nfet_01v8_3/G" "sky130_fd_pr__pfet_01v8_3/D"
+merge "sky130_fd_pr__pfet_01v8_3/D" "sky130_fd_pr__pfet_01v8_1/D"
+merge "sky130_fd_pr__pfet_01v8_1/D" "sky130_fd_pr__nfet_01v8_2/D"
+merge "sky130_fd_pr__nfet_01v8_2/D" "outn"
+merge "sky130_fd_pr__nfet_01v8_5/D" "sky130_fd_pr__nfet_01v8_4/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_4/D" "sky130_fd_pr__nfet_01v8_1/S"
+merge "sky130_fd_pr__nfet_01v8_1/S" "sky130_fd_pr__nfet_01v8_0/S"
+merge "sky130_fd_pr__nfet_01v8_0/S" "diff"
+merge "sky130_fd_pr__pfet_01v8_5/G" "sky130_fd_pr__pfet_01v8_2/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_2/G" "sky130_fd_pr__pfet_01v8_3/G"
+merge "sky130_fd_pr__pfet_01v8_3/G" "sky130_fd_pr__pfet_01v8_4/G"
+merge "sky130_fd_pr__pfet_01v8_4/G" "sky130_fd_pr__nfet_01v8_5/G"
+merge "sky130_fd_pr__nfet_01v8_5/G" "sky130_fd_pr__nfet_01v8_4/G"
+merge "sky130_fd_pr__nfet_01v8_4/G" "clk"
+merge "trim_1/DRAIN" "sky130_fd_pr__pfet_01v8_4/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_4/D" "m1_244_730#"
+merge "m1_244_730#" "sky130_fd_pr__nfet_01v8_2/S"
+merge "sky130_fd_pr__nfet_01v8_2/S" "sky130_fd_pr__nfet_01v8_0/D"
+merge "sky130_fd_pr__nfet_01v8_0/D" "IN"
+merge "sky130_fd_pr__pfet_01v8_1/B" "w_1946_1054#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_2/D" "sky130_fd_pr__pfet_01v8_0/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_0/D" "sky130_fd_pr__nfet_01v8_3/D"
+merge "sky130_fd_pr__nfet_01v8_3/D" "sky130_fd_pr__pfet_01v8_1/G"
+merge "sky130_fd_pr__pfet_01v8_1/G" "sky130_fd_pr__nfet_01v8_2/G"
+merge "sky130_fd_pr__nfet_01v8_2/G" "outp"
+merge "trim_0/d0" "trimb0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/d1" "trimb1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/d2" "trimb2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/d3" "trimb3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/d4" "trimb4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_1/d0" "trim0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_1/G" "vp" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_1/d1" "trim1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_1/d2" "trim2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_1/d3" "trim3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_1/d4" "trim4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_0/G" "vn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

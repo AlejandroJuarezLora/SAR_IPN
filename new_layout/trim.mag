@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696273955
+timestamp 1696279213
 << psubdiff >>
 rect 842 3849 876 3969
 << locali >>
@@ -21,25 +21,34 @@ rect 2573 3932 2613 3966
 rect 3469 3932 3509 3972
 rect 4037 3932 4077 3972
 << metal1 >>
-rect -43 4946 258 4949
-rect -43 4921 242 4946
+rect -43 4946 1856 4949
+rect 2980 4946 4264 4950
+rect -43 4921 4264 4946
 rect -43 2595 -15 4921
-rect 1810 4918 2542 4946
-rect 2980 4920 4264 4950
+rect 1810 4920 4264 4921
+rect 1810 4918 3062 4920
+rect 1006 4154 1042 4160
+rect 166 4106 1964 4154
+rect 2520 4120 3096 4166
 rect 835 3978 887 3984
 rect 464 3927 516 3933
 rect 835 3920 887 3926
+rect 1006 3878 1042 4106
 rect 2567 3978 2619 3984
 rect 2567 3920 2619 3926
+rect 2770 3884 2806 4120
 rect 3463 3978 3515 3984
 rect 3463 3920 3515 3926
+rect 3682 3886 3714 4129
 rect 4031 3978 4083 3984
 rect 4031 3920 4083 3926
+rect 4228 3878 4260 4121
 rect 4575 3978 4673 3984
 rect 4627 3926 4673 3978
 rect 4575 3920 4673 3926
 rect 464 3869 516 3875
 rect 476 3665 504 3869
+rect 472 3321 508 3564
 rect 645 3470 677 3636
 rect 1188 3531 1220 3833
 rect 2928 3606 2960 3849
@@ -49,7 +58,8 @@ rect 3833 3664 4670 3696
 rect 2928 3574 4670 3606
 rect 1188 3499 4670 3531
 rect 645 3438 4668 3470
-rect -43 2567 366 2595
+rect 204 3292 4274 3321
+rect -43 2567 4296 2595
 << via1 >>
 rect 835 3966 887 3978
 rect 464 3875 516 3927
@@ -102,26 +112,90 @@ rect 4083 3926 4089 3938
 rect 4569 3926 4575 3938
 rect 4627 3926 4633 3978
 rect 516 3875 522 3914
-use nfet_2mimcap_combo  nfet_2mimcap_combo_0
-timestamp 1696271643
-transform 1 0 2262 0 1 3470
-box 28 134 1082 1562
-use nfet_4mimcap_combo  nfet_4mimcap_combo_0
-timestamp 1696271643
-transform 1 0 -1134 0 1 3632
-box 1140 -32 3328 1390
-use nfet_8mimcap_combo  nfet_8mimcap_combo_0
-timestamp 1696271643
-transform 1 0 -1717 0 -1 3871
-box 1722 24 6186 1392
-use nfet_mimcap_combo  nfet_mimcap_combo_0
-timestamp 1696271643
-transform 1 0 4582 0 1 3946
-box -578 -348 -20 1062
-use nfet_mimcap_combo  nfet_mimcap_combo_1
-timestamp 1696271643
-transform 1 0 4014 0 1 3956
-box -578 -348 -20 1062
+use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_0
+timestamp 1696271506
+transform 0 1 2819 -1 0 3832
+box -226 -279 226 279
+use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_1
+timestamp 1696271506
+transform 0 1 4283 -1 0 3828
+box -226 -279 226 279
+use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_2
+timestamp 1696271506
+transform 0 1 527 1 0 3618
+box -226 -279 226 279
+use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_3
+timestamp 1696271506
+transform 0 1 3715 -1 0 3826
+box -226 -279 226 279
+use sky130_fd_pr__nfet_01v8_lvt  sky130_fd_pr__nfet_01v8_lvt_4
+timestamp 1696271506
+transform 0 1 1087 -1 0 3826
+box -226 -279 226 279
+use trimcap  trimcap_0
+timestamp 1696109480
+transform 1 0 4034 0 1 2088
+box 0 376 476 1324
+use trimcap  trimcap_1
+timestamp 1696109480
+transform 1 0 4030 0 1 3698
+box 0 376 476 1324
+use trimcap  trimcap_2
+timestamp 1696109480
+transform 1 0 3454 0 1 3710
+box 0 376 476 1324
+use trimcap  trimcap_3
+timestamp 1696109480
+transform 1 0 2868 0 1 3692
+box 0 376 476 1324
+use trimcap  trimcap_4
+timestamp 1696109480
+transform 1 0 2292 0 1 3702
+box 0 376 476 1324
+use trimcap  trimcap_5
+timestamp 1696109480
+transform 1 0 1714 0 1 3674
+box 0 376 476 1324
+use trimcap  trimcap_6
+timestamp 1696109480
+transform 1 0 1140 0 1 3674
+box 0 376 476 1324
+use trimcap  trimcap_7
+timestamp 1696109480
+transform 1 0 554 0 1 3672
+box 0 376 476 1324
+use trimcap  trimcap_8
+timestamp 1696109480
+transform 1 0 -30 0 1 3668
+box 0 376 476 1324
+use trimcap  trimcap_9
+timestamp 1696109480
+transform 1 0 -24 0 1 2092
+box 0 376 476 1324
+use trimcap  trimcap_10
+timestamp 1696109480
+transform 1 0 549 0 1 2092
+box 0 376 476 1324
+use trimcap  trimcap_11
+timestamp 1696109480
+transform 1 0 1126 0 1 2092
+box 0 376 476 1324
+use trimcap  trimcap_12
+timestamp 1696109480
+transform 1 0 1695 0 1 2096
+box 0 376 476 1324
+use trimcap  trimcap_13
+timestamp 1696109480
+transform 1 0 2288 0 1 2092
+box 0 376 476 1324
+use trimcap  trimcap_14
+timestamp 1696109480
+transform 1 0 2868 0 1 2092
+box 0 376 476 1324
+use trimcap  trimcap_15
+timestamp 1696109480
+transform 1 0 3453 0 1 2092
+box 0 376 476 1324
 << labels >>
 flabel metal1 -43 2567 -15 4949 0 FreeSans 480 0 0 0 DRAIN
 port 0 nsew

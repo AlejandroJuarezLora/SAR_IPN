@@ -42,7 +42,7 @@ rect 182 1294 292 1295
 rect 182 1186 183 1294
 rect 291 1186 292 1294
 rect 182 836 292 1186
-use sky130_fd_pr__cap_mim_m3_1_FJFAMD  XC2
+use sky130_fd_pr__cap_mim_m3_1  XC2
 timestamp 1695772557
 transform 1 0 386 0 1 840
 box -386 -240 90 240

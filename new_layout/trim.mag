@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696114114
+timestamp 1696273955
 << psubdiff >>
 rect 842 3849 876 3969
 << locali >>
@@ -10,19 +10,22 @@ rect 844 3874 878 3896
 rect 2576 3866 2610 3932
 rect 3472 3863 3506 3932
 rect 4040 3809 4074 3932
+rect 854 3750 986 3784
+rect 2596 3756 2728 3790
+rect 3494 3754 3626 3788
+rect 4060 3748 4192 3782
+rect 304 3662 436 3696
 << viali >>
 rect 841 3932 881 3966
 rect 2573 3932 2613 3966
 rect 3469 3932 3509 3972
 rect 4037 3932 4077 3972
 << metal1 >>
-rect -43 4921 258 4949
+rect -43 4946 258 4949
+rect -43 4921 242 4946
 rect -43 2595 -15 4921
-rect 1811 4920 2536 4946
+rect 1810 4918 2542 4946
 rect 2980 4920 4264 4950
-rect 1811 4918 2549 4920
-rect 1829 4122 2531 4150
-rect 2967 4142 4232 4172
 rect 835 3978 887 3984
 rect 464 3927 516 3933
 rect 835 3920 887 3926
@@ -100,23 +103,23 @@ rect 4569 3926 4575 3938
 rect 4627 3926 4633 3978
 rect 516 3875 522 3914
 use nfet_2mimcap_combo  nfet_2mimcap_combo_0
-timestamp 1696112066
+timestamp 1696271643
 transform 1 0 2262 0 1 3470
 box 28 134 1082 1562
 use nfet_4mimcap_combo  nfet_4mimcap_combo_0
-timestamp 1696111957
+timestamp 1696271643
 transform 1 0 -1134 0 1 3632
 box 1140 -32 3328 1390
 use nfet_8mimcap_combo  nfet_8mimcap_combo_0
-timestamp 1696112986
+timestamp 1696271643
 transform 1 0 -1717 0 -1 3871
 box 1722 24 6186 1392
 use nfet_mimcap_combo  nfet_mimcap_combo_0
-timestamp 1696112840
+timestamp 1696271643
 transform 1 0 4582 0 1 3946
 box -578 -348 -20 1062
 use nfet_mimcap_combo  nfet_mimcap_combo_1
-timestamp 1696112840
+timestamp 1696271643
 transform 1 0 4014 0 1 3956
 box -578 -348 -20 1062
 << labels >>

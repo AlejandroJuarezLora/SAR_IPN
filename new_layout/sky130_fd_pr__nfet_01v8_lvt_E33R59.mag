@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696108744
+timestamp 1696271506
 << pwell >>
 rect -226 -279 226 279
 << nmoslvt >>
@@ -12,12 +12,12 @@ rect -88 -101 -76 39
 rect -42 -101 -30 39
 rect -88 -131 -30 -101
 rect 30 39 88 69
-rect 30 -101 42 39
-rect 76 -101 88 39
-rect 30 -131 88 -101
+rect 30 -92 42 39
+rect 76 -92 88 39
+rect 30 -131 88 -92
 << ndiffc >>
 rect -76 -101 -42 39
-rect 42 -101 76 39
+rect 42 -92 76 39
 << psubdiff >>
 rect -190 209 190 243
 rect -190 -209 -156 209
@@ -39,17 +39,15 @@ rect -17 107 17 141
 rect -33 107 -17 141
 rect 17 107 33 141
 rect -76 39 -42 55
-rect 42 39 76 55
 rect -76 -117 -42 -101
-rect 41 -101 42 -92
-rect 41 -117 76 -101
-rect 41 -209 75 -117
+rect 42 39 76 55
+rect 42 -108 76 -92
 rect -91 -243 -75 -209
 rect 75 -243 91 -209
 << viali >>
 rect -17 107 17 141
 rect -76 -101 -42 39
-rect 42 -93 76 31
+rect 42 -92 76 31
 << metal1 >>
 rect -30 141 30 152
 rect -30 107 -17 141
@@ -60,9 +58,9 @@ rect -82 -101 -76 39
 rect -42 -101 -36 39
 rect -82 -113 -36 -101
 rect 36 31 82 43
-rect 36 -93 42 31
-rect 76 -93 82 31
-rect 36 -105 82 -93
+rect 36 -92 42 31
+rect 76 -92 82 31
+rect 36 -105 82 -92
 << labels >>
 flabel metal1 -82 -113 -76 51 0 FreeSans 160 0 0 0 D
 port 0 nsew

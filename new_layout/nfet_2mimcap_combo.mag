@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696112066
+timestamp 1696271643
 << pwell >>
 rect 654 412 712 472
 << metal1 >>
@@ -11,7 +11,7 @@ rect 514 404 544 672
 rect 654 300 712 360
 rect 488 260 552 280
 use sky130_fd_pr__nfet_01v8_lvt_E33R59  sky130_fd_pr__nfet_01v8_lvt_E33R59_0
-timestamp 1696108744
+timestamp 1696271506
 transform 0 1 557 -1 0 360
 box -226 -279 226 279
 use trimcap  trimcap_0

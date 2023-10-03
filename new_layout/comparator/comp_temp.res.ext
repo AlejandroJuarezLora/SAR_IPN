@@ -1,0 +1,807 @@
+scale 1000 1 500000
+rnode "vn.t0" 0 0 1909 -14 0
+rnode "sky130_fd_pr__nfet_01v8_0.G" 0 0 1724 -44 0
+rnode "vn.n0" 0 0 1753 -44 0
+rnode "vn.n1" 0 0 1727 -4069 0
+rnode "vn.n2" 0 0 1753 -4043 0
+rnode "vn" 0 0 1727 -4069 0
+resist "vn.n0" "sky130_fd_pr__nfet_01v8_0.G" 0.0604167
+resist "vn" "vn.n2" 0.0625
+resist "vn.n2" "vn.n1" 4.5625
+resist "vn.n2" "vn.n0" 20.9921
+resist "vn.n0" "vn.t0" 135.523
+rnode "trimb0.t0" 0 0 4377 -3555 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.G" 0 0 4347 -3738 0
+rnode "trimb0.n0" 0 0 4377 -3710 0
+rnode "trimb0" 0 -0 4364 -3990 0
+rnode "trimb0" 0 0 4364 -3990 0
+rnode "trimb0.n1" 0 0 4396 -3976 0
+rnode "trim_0.d0" 0 0 4383 -3964 0
+resist "trim_0.d0" "trimb0.n1" 0.046875
+resist "trimb0.n1" "trimb0" 0.0546875
+resist "trimb0.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.G" 0.0657895
+resist "trimb0.n1" "trimb0" 0.142857
+resist "trim_0.d0" "trimb0.n0" 0.889391
+resist "trimb0.n0" "trimb0.t0" 135.52
+rnode "trim1" 0 -0 251 -3975 0
+rnode "trim1.t0" 0 0 414 -2969 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.G" 0 0 384 -3135 0
+rnode "trim_1.d1" 0 0 267 -3949 0
+rnode "trim1" 0 0 251 -3975 0
+rnode "trim1.n0" 0 0 252 -3961 0
+rnode "trim1" 0 0 251 -3975 0
+resist "trim1.n0" "trim_1.d1" 0.046875
+resist "trim1" "trim1.n0" 0.0546875
+resist "trim1.n0" "trim1" 0.147321
+resist "trim1.n0" "trim1" 1.75
+resist "trim_1.d1" "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.G" 3.57031
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.G" "trim1.t0" 135.586
+rnode "trimb2" 0 -0 4596 -3985 0
+rnode "trimb2.t0" 0 0 4371 -2091 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.G" 0 0 4341 -2274 0
+rnode "trimb2.n0" 0 0 4371 -2246 0
+rnode "trim_0.d2" 0 0 4616 -3967 0
+rnode "trimb2" 0 0 4596 -3985 0
+rnode "trimb2.n1" 0 0 4597 -3971 0
+rnode "trimb2" 0 0 4596 -3985 0
+resist "trimb2.n1" "trim_0.d2" 0.015625
+resist "trimb2" "trimb2.n1" 0.0546875
+resist "trimb2.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.G" 0.0657895
+resist "trimb2.n1" "trimb2" 0.147321
+resist "trimb2.n1" "trimb2" 1.75
+resist "trim_0.d2" "trimb2.n0" 7.55016
+resist "trimb2.n0" "trimb2.t0" 135.52
+rnode "outn.t2" 0 0 1851 528 0
+rnode "outn.t4" 0 0 2856 1068 0
+rnode "sky130_fd_pr__pfet_01v8_0.G" 0 0 2692 1068 0
+rnode "outn.t3" 0 0 2845 502 0
+rnode "sky130_fd_pr__nfet_01v8_3.G" 0 0 2660 501 0
+rnode "outn.n0" 0 0 2446 835 0
+rnode "sky130_fd_pr__pfet_01v8_1.D" 0 0 1830 1018 0
+rnode "outn.t1" 0 0 1828 1046 0
+rnode "outn.n1" 0 0 1828 1017 0
+rnode "outn.n2" 0 0 1824 835 0
+rnode "sky130_fd_pr__pfet_01v8_3.D" 0 0 1068 1018 0
+rnode "outn.t0" 0 0 1070 1046 0
+rnode "outn.n3" 0 0 1070 1017 0
+rnode "outn" 0 0 1416 1532 0
+rnode "outn.n4" 0 0 1430 830 0
+rnode "outn.n5" 0 0 1796 830 0
+rnode "outn.n6" 0 0 1810 580 0
+rnode "sky130_fd_pr__nfet_01v8_2.D" 0 0 1769 574 0
+resist "outn.n3" "sky130_fd_pr__pfet_01v8_3.D" 0.000762195
+resist "outn.n1" "sky130_fd_pr__pfet_01v8_1.D" 0.00543478
+resist "outn.n5" "outn.n2" 0.0223214
+resist "sky130_fd_pr__nfet_01v8_2.D" "outn.n6" 0.111413
+resist "outn.n2" "outn.n1" 0.75755
+resist "outn.n6" "outn.n5" 1.11607
+resist "outn.n5" "outn.n4" 1.56864
+resist "outn.n0" "sky130_fd_pr__pfet_01v8_0.G" 1.96115
+resist "outn.n4" "outn.n3" 2.19778
+resist "outn.n0" "sky130_fd_pr__nfet_01v8_3.G" 2.30014
+resist "outn.n2" "outn.n0" 11.5796
+resist "outn.n4" "outn" 11.9166
+resist "outn.n6" "outn.t2" 17.5174
+resist "outn.n1" "outn.t1" 28.5711
+resist "outn.n3" "outn.t0" 28.5711
+resist "sky130_fd_pr__nfet_01v8_3.G" "outn.t3" 135.583
+resist "sky130_fd_pr__pfet_01v8_0.G" "outn.t4" 142.75
+rnode "trimb1" 0 -0 4506 -3985 0
+rnode "trimb1.t0" 0 0 4377 -2987 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.G" 0 0 4347 -3170 0
+rnode "trimb1.n0" 0 0 4377 -3142 0
+rnode "trim_0.d1" 0 0 4524 -3967 0
+rnode "trimb1" 0 0 4506 -3985 0
+rnode "trimb1.n1" 0 0 4507 -3971 0
+rnode "trimb1" 0 0 4506 -3985 0
+resist "trimb1.n1" "trim_0.d1" 0.015625
+resist "trimb1" "trimb1.n1" 0.0546875
+resist "trimb1.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.G" 0.0657895
+resist "trimb1.n1" "trimb1" 0.147321
+resist "trimb1.n1" "trimb1" 1.75
+resist "trim_0.d1" "trimb1.n0" 3.6361
+resist "trimb1.n0" "trimb1.t0" 135.52
+rnode "trimb4.t0" 0 0 4585 201 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.G" 0 0 4555 18 0
+rnode "trimb4.n0" 0 0 4585 46 0
+rnode "trimb4" 0 -0 4733 -3985 0
+rnode "trimb4" 0 0 4733 -3985 0
+rnode "trimb4.n1" 0 0 4765 -3971 0
+rnode "trim_0.d4" 0 0 4750 -3967 0
+resist "trim_0.d4" "trimb4.n1" 0.015625
+resist "trimb4.n1" "trimb4" 0.0546875
+resist "trimb4.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.G" 0.0657895
+resist "trimb4.n1" "trimb4" 0.142857
+resist "trim_0.d4" "trimb4.n0" 16.1634
+resist "trimb4.n0" "trimb4.t0" 135.52
+rnode "vp.t0" 0 0 2780 -19 0
+rnode "sky130_fd_pr__nfet_01v8_1.G" 0 0 2937 -49 0
+rnode "vp.n0" 0 0 2743 -4071 0
+rnode "vp.n1" 0 0 2769 -4045 0
+rnode "vp" 0 0 2743 -4071 0
+resist "vp" "vp.n1" 0.0625
+resist "vp.n1" "vp.n0" 4.5625
+resist "vp.n1" "sky130_fd_pr__nfet_01v8_1.G" 21.5505
+resist "sky130_fd_pr__nfet_01v8_1.G" "vp.t0" 135.585
+rnode "trim4" 0 -0 25 -3975 0
+rnode "trim4.t0" 0 0 206 219 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.G" 0 0 176 54 0
+rnode "trim_1.d4" 0 0 41 -3949 0
+rnode "trim4" 0 0 25 -3975 0
+rnode "trim4.n0" 0 0 26 -3961 0
+rnode "trim4" 0 0 25 -3975 0
+resist "trim4.n0" "trim_1.d4" 0.046875
+resist "trim4" "trim4.n0" 0.0546875
+resist "trim4.n0" "trim4" 0.147321
+resist "trim4.n0" "trim4" 1.75
+resist "trim_1.d4" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.G" 16.0977
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.G" "trim4.t0" 135.586
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D" 0 46.6873 4661 119 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" 0 586.937 5271 481 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" 0 601.71 5275 -3577 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" 0 627.884 4923 -2993 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" 0 620.787 4923 -2408 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" 0 620.995 4923 -1828 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" 0 620.708 4919 -1235 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" 0 620.292 4923 -666 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" 0 613.498 4923 -89 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" 0 35.2983 4896 225 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t0" 0 5.20322 4615 201 0
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" 0.811443
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" 1.00528
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" 1.05071
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" 2.06657
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" 2.10106
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" 2.11399
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" 2.13554
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" 2.17002
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" 2.24465
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t0" 17.406
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D" 0 52.1333 4295 -441 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" 0 611.767 4123 -96 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" 0 588.471 3695 487 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t2" 0 587.808 3689 -1257 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" 0 617.842 4121 -682 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" 0 35.9025 4097 -327 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t4" 0 6.0768 4347 -359 0
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" 0.517443
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" 0.774457
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" 0.838936
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t2" 1.41076
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" 1.4378
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t4" 17.406
+rnode "trimb3" 0 -0 4671 -3985 0
+rnode "trimb3.t0" 0 0 4377 -359 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.G" 0 0 4347 -542 0
+rnode "trimb3.n0" 0 0 4377 -514 0
+rnode "trim_0.d3" 0 0 4692 -3965 0
+rnode "trimb3" 0 0 4671 -3985 0
+rnode "trimb3.n1" 0 0 4672 -3971 0
+rnode "trimb3" 0 0 4671 -3985 0
+resist "trimb3.n1" "trim_0.d3" 0.0234375
+resist "trimb3" "trimb3.n1" 0.0546875
+resist "trimb3.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.G" 0.0657895
+resist "trimb3.n1" "trimb3" 0.147321
+resist "trimb3.n1" "trimb3" 1.75
+resist "trim_0.d3" "trimb3.n0" 14.6088
+resist "trimb3.n0" "trimb3.t0" 135.52
+rnode "sky130_fd_pr__nfet_01v8_1.D" 0 2.71073 2698 57 0
+rnode "IP" 0 32.3293 2810 47 0
+rnode "trim_0.DRAIN" 0 28.0484 3254 712 0
+rnode "IP" 0 20.9025 2810 47 0
+rnode "sky130_fd_pr__pfet_01v8_5.D" 0 36.66 4438 1014 0
+rnode "IP.t9" 0 4.17349 2780 11 0
+rnode "IP.t11" 0 484.172 3347 490 0
+rnode "IP.t8" 0 4.17145 4436 1042 0
+rnode "IP.t3" 0 399.789 5275 -3577 0
+rnode "IP.t5" 0 415.886 5703 -2995 0
+rnode "IP.t4" 0 412.51 5703 -2410 0
+rnode "IP.t2" 0 412.671 5703 -1830 0
+rnode "IP.t1" 0 412.45 5699 -1237 0
+rnode "IP.t0" 0 412.128 5703 -668 0
+rnode "IP.t7" 0 412.208 5703 -91 0
+rnode "IP.t6" 0 430.386 5703 482 0
+rnode "IP.n0" 0 56.3839 4437 740 0
+rnode "IP.t14" 0 482.612 3665 -3573 0
+rnode "IP.t12" 0 504.443 3305 -2994 0
+rnode "IP.t16" 0 498.342 3323 -2408 0
+rnode "IP.t10" 0 496.951 3313 -1832 0
+rnode "IP.t13" 0 497.241 3341 -1254 0
+rnode "IP.t17" 0 497.135 3341 -680 0
+rnode "IP.t15" 0 492.603 3343 -94 0
+rnode "IP.n1" 0 20.1084 3268 250 0
+rnode "IP" 0 -4.23138 2810 47 0
+rnode "IP" 0 -34.8471 2810 47 0
+rnode "sky130_fd_pr__nfet_01v8_3.S" 0 72.0628 2824 420 0
+resist "IP" "sky130_fd_pr__nfet_01v8_1.D" 0.342391
+resist "sky130_fd_pr__nfet_01v8_3.S" "IP" 0.358654
+resist "IP" "IP" 0.681035
+resist "sky130_fd_pr__nfet_01v8_3.S" "IP" 0.732759
+resist "IP.t11" "trim_0.DRAIN" 0.788688
+resist "IP.n1" "IP.t11" 0.869017
+resist "IP" "IP" 0.875
+resist "IP.n0" "sky130_fd_pr__pfet_01v8_5.D" 1.1336
+resist "IP.n1" "IP.t15" 1.20387
+resist "IP" "IP.n1" 1.91379
+resist "IP.t16" "IP.t12" 2.07318
+resist "IP.t10" "IP.t16" 2.13092
+resist "IP.t17" "IP.t13" 2.13783
+resist "IP.t0" "IP.t1" 2.14916
+resist "IP.t12" "IP.t14" 2.15787
+resist "IP.t6" "IP.t7" 2.16702
+resist "IP.t13" "IP.t10" 2.17556
+resist "IP.t7" "IP.t0" 2.18488
+resist "IP.t2" "IP.t4" 2.19827
+resist "IP.t15" "IP.t17" 2.21128
+resist "IP.t4" "IP.t5" 2.22059
+resist "IP.t1" "IP.t2" 2.2563
+resist "IP.t5" "IP.t3" 2.28837
+resist "trim_0.DRAIN" "IP.n0" 5.21875
+resist "IP.n0" "IP.t6" 6.11981
+resist "IP" "IP.t9" 17.406
+resist "sky130_fd_pr__pfet_01v8_5.D" "IP.t8" 28.5711
+rnode "trim0.t0" 0 0 414 -3537 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.G" 0 0 384 -3720 0
+rnode "trim0.n0" 0 0 411 -3720 0
+rnode "trim0" 0 -0 395 -3974 0
+rnode "trim0" 0 0 395 -3974 0
+rnode "trim0.n1" 0 0 427 -3960 0
+rnode "trim_1.d0" 0 0 408 -3946 0
+resist "trim0.n1" "trim0" 0.0546875
+resist "trim_1.d0" "trim0.n1" 0.0546875
+resist "trim0.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.G" 0.0592105
+resist "trim0.n1" "trim0" 0.142857
+resist "trim_1.d0" "trim0.n0" 0.882812
+resist "trim0.n0" "trim0.t0" 135.527
+rnode "IN" 0 35.0112 1840 49 0
+rnode "trim_1.DRAIN" 0 26.608 -845 730 0
+rnode "IN" 0 18.9558 1840 49 0
+rnode "sky130_fd_pr__pfet_01v8_4.D" 0 36.4836 246 1022 0
+rnode "IN.t9" 0 4.17448 248 1050 0
+rnode "IN.t11" 0 482.933 1126 -3555 0
+rnode "IN.t18" 0 504.838 1590 -2976 0
+rnode "IN.t17" 0 498.704 1572 -2390 0
+rnode "IN.t12" 0 497.311 1582 -1814 0
+rnode "IN.t13" 0 497.602 1554 -1236 0
+rnode "IN.t14" 0 497.496 1554 -662 0
+rnode "IN.t16" 0 492.876 1552 -76 0
+rnode "IN.t10" 0 4.21467 1851 468 0
+rnode "IN" 0 -34.3114 1840 49 0
+rnode "sky130_fd_pr__nfet_01v8_2.S" 0 66.964 1854 416 0
+rnode "IN" 0 -4.48472 1840 49 0
+rnode "IN.t8" 0 4.41629 1909 16 0
+rnode "IN.n0" 0 17.4701 1523 264 0
+rnode "IN.t15" 0 510.936 1548 508 0
+rnode "IN.n1" 0 56.0324 258 758 0
+rnode "IN.t7" 0 162.695 148 992 0
+rnode "IN.n2" 0 250.277 -862 -1863 0
+rnode "IN.t5" 0 400.071 -484 -3559 0
+rnode "IN.t1" 0 416.199 -811 -2977 0
+rnode "IN.t4" 0 412.811 -811 -2392 0
+rnode "IN.t2" 0 412.751 -807 -1219 0
+rnode "IN.t3" 0 412.429 -811 -650 0
+rnode "IN.t6" 0 412.509 -811 -73 0
+rnode "IN.t0" 0 406.028 -811 500 0
+resist "IN.n2" "IN.t7" 0.14908
+resist "sky130_fd_pr__nfet_01v8_2.S" "IN" 0.352885
+resist "IN" "sky130_fd_pr__nfet_01v8_2.S" 0.715517
+resist "IN" "IN" 0.719828
+resist "trim_1.DRAIN" "IN.t0" 0.829636
+resist "IN.t15" "IN.n0" 0.886875
+resist "IN" "IN" 0.926724
+resist "IN.n1" "sky130_fd_pr__pfet_01v8_4.D" 1.08896
+resist "IN.n0" "IN.t16" 1.18601
+resist "IN.n0" "IN" 1.36638
+resist "IN.t17" "IN.t18" 2.07318
+resist "IN.t12" "IN.t17" 2.13092
+resist "IN.t14" "IN.t13" 2.13783
+resist "IN.t3" "IN.t2" 2.14916
+resist "IN.t18" "IN.t11" 2.15887
+resist "IN.t0" "IN.t6" 2.16702
+resist "IN.t13" "IN.t12" 2.17556
+resist "IN.t6" "IN.t3" 2.18488
+resist "IN.n2" "IN.t4" 2.19827
+resist "IN.t16" "IN.t14" 2.21128
+resist "IN.t4" "IN.t1" 2.22059
+resist "IN.t2" "IN.n2" 2.2563
+resist "IN.t1" "IN.t5" 2.28881
+resist "trim_1.DRAIN" "IN.n1" 4.86161
+resist "IN.n1" "IN.t15" 6.43601
+resist "sky130_fd_pr__nfet_01v8_2.S" "IN.t10" 17.4318
+resist "IN" "IN.t8" 17.5555
+resist "sky130_fd_pr__pfet_01v8_4.D" "IN.t9" 28.5711
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D" 0 46.7201 124 137 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" 0 586.877 -480 499 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" 0 601.676 -484 -3559 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" 0 627.919 -28 -2975 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" 0 620.787 -28 -2390 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" 0 620.995 -28 -1810 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" 0 620.708 -24 -1217 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" 0 620.292 -28 -648 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" 0 613.498 -28 -71 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" 0 35.3256 -106 243 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t0" 0 5.20322 176 219 0
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" 0.814915
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" 1.00528
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" 1.05171
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" 2.06657
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" 2.10106
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" 2.11399
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" 2.13554
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" 2.17002
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" 2.24565
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t0" 17.406
+rnode "trim2.t0" 0 0 420 -2073 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.G" 0 0 390 -2229 0
+rnode "trim2" 0 -0 162 -3975 0
+rnode "trim2" 0 0 162 -3975 0
+rnode "trim2.n0" 0 0 194 -3961 0
+rnode "trim_1.d2" 0 0 175 -3949 0
+resist "trim_1.d2" "trim2.n0" 0.046875
+resist "trim2.n0" "trim2" 0.0546875
+resist "trim2.n0" "trim2" 0.142857
+resist "trim_1.d2" "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.G" 7.48438
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.G" "trim2.t0" 135.586
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D" 0 52.1331 490 -423 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" 0 611.791 769 -78 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" 0 588.447 1096 505 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t2" 0 587.783 1102 -1239 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" 0 617.866 771 -664 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" 0 35.9024 694 -309 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t4" 0 6.07678 444 -341 0
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" 0.517443
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" 0.774457
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" 0.838936
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t2" 1.4112
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" 1.43824
+resist "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t4" 17.406
+rnode "vss.t21" 0 0 2612 -654 0
+rnode "sky130_fd_pr__nfet_01v8_4.S" 0 0 2547 -706 0
+rnode "vss.n0" 0 0 2600 -706 0
+rnode "vss.n1" 0 0 2362 -927 0
+rnode "trim_0.VSS" 0 0 4219 -3976 0
+rnode "vss.n2" 0 0 4219 -3941 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.S" 0 0 332 -3611 0
+rnode "vss.t1" 0 0 384 -3537 0
+rnode "vss.n3" 0 0 355 -3538 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.B" 0 0 323 -3359 0
+rnode "vss.n4" 0 0 353 -3359 0
+rnode "vss.n5" 0 0 414 -3342 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.S" 0 0 332 -3043 0
+rnode "vss.t3" 0 0 384 -2969 0
+rnode "vss.n6" 0 0 355 -2970 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.B" 0 0 323 -2791 0
+rnode "vss.n7" 0 0 359 -2791 0
+rnode "vss.n8" 0 0 414 -2774 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.S" 0 0 338 -2147 0
+rnode "vss.t15" 0 0 390 -2073 0
+rnode "vss.n9" 0 0 361 -2074 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.B" 0 0 329 -1895 0
+rnode "vss.n10" 0 0 361 -1895 0
+rnode "vss.n11" 0 0 420 -1878 0
+rnode "sky130_fd_pr__nfet_01v8_0.B" 0 0 2087 61 0
+rnode "vss.n12" 0 0 2104 -14 0
+rnode "vss.t10" 0 0 2104 -14 0
+rnode "sky130_fd_pr__nfet_01v8_1.B" 0 0 2568 56 0
+rnode "vss.n13" 0 0 2375 321 0
+rnode "sky130_fd_pr__nfet_01v8_5.B" 0 0 2286 -545 0
+rnode "vss.t22" 0 0 2303 -620 0
+rnode "vss.t20" 0 0 2612 -624 0
+rnode "vss.n14" 0 0 2417 -624 0
+rnode "vss.n15" 0 0 2303 -620 0
+rnode "sky130_fd_pr__nfet_01v8_4.B" 0 0 2400 -549 0
+rnode "sky130_fd_pr__nfet_01v8_5.B" 0 0 2286 -545 0
+rnode "sky130_fd_pr__nfet_01v8_5.B" 0 0 2286 -545 0
+rnode "vss.n16" 0 0 2330 -532 0
+rnode "vss.n17" 0 0 2358 -51 0
+rnode "vss.n18" 0 0 2585 -19 0
+rnode "vss.t26" 0 0 2780 -19 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.S" 0 0 4453 -433 0
+rnode "vss.t5" 0 0 4407 -359 0
+rnode "vss.n19" 0 0 4436 -360 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.B" 0 -0 4286 -181 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.S" 0 0 4453 -3629 0
+rnode "vss.t9" 0 0 4407 -3555 0
+rnode "vss.n20" 0 0 4436 -3556 0
+rnode "vss.n21" 0 0 414 -3342 0
+rnode "vss.t8" 0 0 4377 -3555 0
+rnode "vss.t0" 0 0 414 -3537 0
+rnode "vss.n22" 0 0 4377 -3360 0
+rnode "vss.n23" 0 0 4377 -3360 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.B" 0 0 4286 -3377 0
+rnode "vss.n24" 0 0 4251 -3337 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.S" 0 0 4453 -3061 0
+rnode "vss.t7" 0 0 4407 -2987 0
+rnode "vss.n25" 0 0 4436 -2988 0
+rnode "vss.n26" 0 0 414 -2774 0
+rnode "vss.t6" 0 0 4377 -2987 0
+rnode "vss.t2" 0 0 414 -2969 0
+rnode "vss.n27" 0 0 4377 -2792 0
+rnode "vss.n28" 0 0 4377 -2792 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.B" 0 0 4286 -2809 0
+rnode "vss.n29" 0 0 4251 -2769 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.S" 0 0 4447 -2165 0
+rnode "vss.t17" 0 0 4401 -2091 0
+rnode "vss.n30" 0 0 4430 -2092 0
+rnode "vss.n31" 0 0 420 -1878 0
+rnode "vss.t16" 0 0 4371 -2091 0
+rnode "vss.t14" 0 0 420 -2073 0
+rnode "vss.n32" 0 0 4371 -1896 0
+rnode "vss.n33" 0 0 4371 -1896 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.B" 0 0 4280 -1913 0
+rnode "vss.n34" 0 0 4274 -1896 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.S" 0 0 4503 127 0
+rnode "vss.t11" 0 0 4585 201 0
+rnode "vss.t24" 0 0 206 219 0
+rnode "vss.n35" 0 0 4585 396 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.B" 0 0 4494 379 0
+rnode "vss.n36" 0 0 4524 379 0
+rnode "vss.t12" 0 0 4555 201 0
+rnode "vss.n37" 0 0 4526 200 0
+rnode "vss.n38" 0 0 4526 200 0
+rnode "vss.n39" 0 0 4274 -164 0
+rnode "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.B" 0 0 4286 -181 0
+rnode "vss.n40" 0 0 4307 -164 0
+rnode "vss.n41" 0 0 4377 -164 0
+rnode "vss.t4" 0 0 4377 -359 0
+rnode "vss.t18" 0 0 414 -341 0
+rnode "vss.n42" 0 0 4377 -164 0
+rnode "vss.n43" 0 0 414 -146 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.S" 0 0 332 -415 0
+rnode "vss.t19" 0 0 384 -341 0
+rnode "vss.n44" 0 0 355 -342 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.B" 0 0 323 -163 0
+rnode "vss.n45" 0 0 355 -163 0
+rnode "vss.n46" 0 0 414 -146 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.B" 0 -0 323 -163 0
+rnode "vss.n47" 0 0 484 -146 0
+rnode "sky130_fd_pr__nfet_01v8_3.B" 0 0 3023 577 0
+rnode "vss.n48" 0 0 3040 502 0
+rnode "vss.t13" 0 0 3040 502 0
+rnode "sky130_fd_pr__nfet_01v8_2.B" 0 0 1639 573 0
+rnode "vss.n49" 0 0 1656 498 0
+rnode "vss.t27" 0 0 1851 498 0
+rnode "vss.n50" 0 0 206 414 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.B" 0 0 115 397 0
+rnode "vss.n51" 0 0 206 414 0
+rnode "vss.t25" 0 0 236 219 0
+rnode "vss.n52" 0 0 265 218 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.S" 0 0 282 145 0
+rnode "vss.n53" 0 0 265 218 0
+rnode "vss.n54" 0 0 560 -146 0
+rnode "vss.n55" 0 0 560 -1878 0
+rnode "vss.n56" 0 0 540 -2751 0
+rnode "vss.n57" 0 0 563 -3342 0
+rnode "trim_1.VSS" 0 0 508 -3958 0
+rnode "vss.n58" 0 0 572 -3941 0
+rnode "vss" 0 0 2140 -4059 0
+rnode "vss.n59" 0 0 2155 -3956 0
+rnode "vss.n60" 0 0 2159 -3926 0
+rnode "vss.n61" 0 0 2159 -942 0
+rnode "vss.t23" 0 0 2108 -650 0
+rnode "vss.n62" 0 0 2108 -679 0
+rnode "sky130_fd_pr__nfet_01v8_5.S" 0 0 2043 -702 0
+resist "vss.n38" "vss.n37" 0.00255354
+resist "vss.n53" "vss.n52" 0.00255354
+resist "vss.n60" "vss.n59" 0.0166667
+resist "vss.n58" "trim_1.VSS" 0.0332031
+resist "vss.n2" "trim_0.VSS" 0.0683594
+resist "vss.n0" "sky130_fd_pr__nfet_01v8_4.S" 0.144022
+resist "sky130_fd_pr__nfet_01v8_5.S" "vss.n62" 0.17663
+resist "vss.n38" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.S" 0.19837
+resist "vss.n53" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.S" 0.19837
+resist "vss.n20" "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.S" 0.200923
+resist "vss.n25" "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.S" 0.200923
+resist "vss.n30" "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.S" 0.200923
+resist "vss.n19" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.S" 0.200923
+resist "vss.n3" "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.S" 0.200923
+resist "vss.n44" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.S" 0.200923
+resist "vss.n9" "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.S" 0.200923
+resist "vss.n6" "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.S" 0.200923
+resist "vss.n15" "vss.t22" 0.233161
+resist "vss.n14" "vss.t20" 0.233161
+resist "vss.t10" "vss.n12" 0.233161
+resist "vss.n51" "vss.n50" 0.233161
+resist "vss.n46" "vss.n43" 0.233161
+resist "vss.n31" "vss.n11" 0.233161
+resist "vss.n26" "vss.n8" 0.233161
+resist "vss.n21" "vss.n5" 0.233161
+resist "vss.n23" "vss.n22" 0.233161
+resist "vss.n28" "vss.n27" 0.233161
+resist "vss.n33" "vss.n32" 0.233161
+resist "vss.n42" "vss.n41" 0.233161
+resist "vss.t26" "vss.n18" 0.233161
+resist "vss.t27" "vss.n49" 0.233161
+resist "vss.t13" "vss.n48" 0.233161
+resist "vss.n15" "vss.n14" 0.345946
+resist "sky130_fd_pr__nfet_01v8_5.B" "sky130_fd_pr__nfet_01v8_4.B" 0.345946
+resist "vss.n59" "vss" 0.429167
+resist "vss.n61" "vss.n1" 0.799569
+resist "vss.n62" "vss.n61" 1.01793
+resist "vss.n1" "vss.n0" 1.80374
+resist "vss.n57" "vss.n56" 2.40667
+resist "vss.n29" "vss.n24" 2.40815
+resist "vss.t27" "vss.t13" 2.63197
+resist "vss.t26" "vss.t10" 3.28997
+resist "vss.n34" "vss.n29" 3.87092
+resist "vss.n56" "vss.n55" 3.87092
+resist "sky130_fd_pr__nfet_01v8_4.B" "vss.n15" 6.14054
+resist "vss.n59" "vss.n58" 6.59583
+resist "vss.n24" "vss.n2" 6.87113
+resist "vss.n54" "vss.n53" 6.87635
+resist "vss.n39" "vss.n38" 6.87635
+resist "vss.n58" "vss.n57" 6.90677
+resist "vss.n40" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.B" 7.46667
+resist "vss.n39" "vss.n34" 7.6016
+resist "vss.n55" "vss.n54" 7.6016
+resist "vss.n40" "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.B" 7.90588
+resist "vss.n60" "vss.n2" 8.58333
+resist "vss.n34" "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.B" 9.90214
+resist "vss.n36" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.B" 11.2941
+resist "vss.n4" "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.B" 11.2941
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.B" "vss.n39" 11.4917
+resist "vss.t0" "vss.t8" 11.8439
+resist "vss.n22" "vss.n21" 11.8439
+resist "vss.t2" "vss.t6" 11.8439
+resist "vss.n27" "vss.n26" 11.8439
+resist "vss.t14" "vss.t16" 11.8439
+resist "vss.n32" "vss.n31" 11.8439
+resist "vss.t18" "vss.t4" 11.8439
+resist "vss.n43" "vss.n42" 11.8439
+resist "vss.t24" "vss.t11" 11.8439
+resist "vss.n45" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.B" 12.0471
+resist "vss.n10" "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.B" 12.0471
+resist "vss.n24" "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.B" 12.0496
+resist "vss.n29" "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.B" 12.0496
+resist "vss.n61" "vss.n60" 12.4333
+resist "vss.n7" "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.B" 13.5529
+resist "vss.n37" "vss.t12" 17.4058
+resist "vss.n20" "vss.t9" 17.4058
+resist "vss.n25" "vss.t7" 17.4058
+resist "vss.n30" "vss.t17" 17.4058
+resist "vss.n19" "vss.t5" 17.4058
+resist "vss.n3" "vss.t1" 17.4058
+resist "vss.n52" "vss.t25" 17.4058
+resist "vss.n44" "vss.t19" 17.4058
+resist "vss.n9" "vss.t15" 17.4058
+resist "vss.n6" "vss.t3" 17.4058
+resist "vss.n62" "vss.t23" 17.4097
+resist "vss.n0" "vss.t21" 17.4423
+resist "vss.n54" "vss.n47" 18.9584
+resist "vss.n8" "vss.n7" 20.7059
+resist "vss.n46" "vss.n45" 22.2118
+resist "vss.n11" "vss.n10" 22.2118
+resist "vss.n5" "vss.n4" 22.9647
+resist "vss.n36" "vss.n35" 23.1979
+resist "vss.n41" "vss.n40" 26.3529
+resist "vss.n47" "vss.n46" 26.3529
+resist "vss.n18" "sky130_fd_pr__nfet_01v8_1.B" 27.4824
+resist "vss.n12" "sky130_fd_pr__nfet_01v8_0.B" 28.2353
+resist "vss.n48" "sky130_fd_pr__nfet_01v8_3.B" 28.2353
+resist "vss.n49" "sky130_fd_pr__nfet_01v8_2.B" 28.2353
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.B" "vss.n23" 34.2588
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.B" "vss.n28" 34.2588
+resist "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.B" "vss.n33" 34.2588
+resist "vss.n51" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.B" 34.2588
+resist "vss.n55" "vss.n11" 44.161
+resist "vss.n57" "vss.n5" 46.3079
+resist "vss.n56" "vss.n8" 46.3084
+resist "vss.n50" "vss.t27" 55.2714
+resist "vss.n47" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.B" 57.2444
+resist "vss.n7" "vss.n6" 66.6353
+resist "vss.n37" "vss.n36" 67.0327
+resist "vss.n4" "vss.n3" 67.0327
+resist "vss.n45" "vss.n44" 67.3882
+resist "vss.n10" "vss.n9" 67.3882
+resist "vss.n43" "vss.t26" 83.5651
+resist "vss.n18" "vss.n17" 85.4588
+resist "vss.n28" "vss.n25" 87.3412
+resist "vss.n33" "vss.n30" 89.6
+resist "vss.n41" "vss.n19" 89.6
+resist "vss.n23" "vss.n20" 89.9974
+resist "vss.n52" "vss.n51" 89.9974
+resist "vss.n14" "vss.n1" 98.2571
+resist "vss.n22" "vss.t0" 116.465
+resist "vss.n27" "vss.t2" 116.465
+resist "vss.n32" "vss.t14" 116.465
+resist "vss.n42" "vss.t18" 116.465
+resist "vss.n35" "vss.t24" 116.465
+resist "vss.n17" "vss.n13" 127.247
+resist "vss.n16" "sky130_fd_pr__nfet_01v8_5.B" 187.733
+resist "vss.n16" "sky130_fd_pr__nfet_01v8_5.B" 231.438
+resist "vss.n17" "vss.n16" 299.42
+resist "vss.n16" "sky130_fd_pr__nfet_01v8_5.B" 563.2
+rnode "trim3.t0" 0 0 414 -341 0
+rnode "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.G" 0 0 384 -524 0
+rnode "trim3.n0" 0 0 414 -496 0
+rnode "trim3" 0 -0 87 -3975 0
+rnode "trim3" 0 0 87 -3975 0
+rnode "trim3.n1" 0 0 119 -3961 0
+rnode "trim_1.d3" 0 0 99 -3947 0
+resist "trim3.n1" "trim3" 0.0546875
+resist "trim_1.d3" "trim3.n1" 0.0546875
+resist "trim3.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.G" 0.0583333
+resist "trim3.n1" "trim3" 0.142857
+resist "trim_1.d3" "trim3.n0" 14.5576
+resist "trim3.n0" "trim3.t0" 135.52
+rnode "vdd.t4" 0 0 3614 1098 0
+rnode "sky130_fd_pr__pfet_01v8_2.S" 0 0 3614 1128 0
+rnode "vdd.t0" 0 0 2856 1098 0
+rnode "sky130_fd_pr__pfet_01v8_0.S" 0 0 2856 1128 0
+rnode "vdd.t5" 0 0 1828 1106 0
+rnode "sky130_fd_pr__pfet_01v8_1.S" 0 0 1828 1136 0
+rnode "vdd.t3" 0 0 1070 1106 0
+rnode "sky130_fd_pr__pfet_01v8_3.S" 0 0 1070 1136 0
+rnode "vdd.t2" 0 0 248 1110 0
+rnode "sky130_fd_pr__pfet_01v8_4.S" 0 0 248 1140 0
+rnode "vdd.n0" 0 0 1082 1377 0
+rnode "vdd.n1" 0 0 1849 1377 0
+rnode "vdd" 0 0 2286 1473 0
+rnode "vdd.n2" 0 0 2300 1405 0
+rnode "vdd.n3" 0 0 2860 1377 0
+rnode "vdd.n4" 0 0 3616 1377 0
+rnode "vdd.t1" 0 0 4436 1102 0
+rnode "sky130_fd_pr__pfet_01v8_5.S" 0 0 4436 1132 0
+resist "vdd.n2" "vdd" 0.303571
+resist "vdd.n1" "sky130_fd_pr__pfet_01v8_1.S" 0.998832
+resist "vdd.n0" "sky130_fd_pr__pfet_01v8_3.S" 0.998832
+resist "vdd.n4" "sky130_fd_pr__pfet_01v8_2.S" 1.03455
+resist "vdd.n3" "sky130_fd_pr__pfet_01v8_0.S" 1.03455
+resist "vdd.n2" "vdd.n1" 2.01339
+resist "vdd.n3" "vdd.n2" 2.5
+resist "vdd.n4" "vdd.n3" 3.375
+resist "vdd.n1" "vdd.n0" 3.42411
+resist "vdd.n0" "sky130_fd_pr__pfet_01v8_4.S" 4.63276
+resist "sky130_fd_pr__pfet_01v8_5.S" "vdd.n4" 4.65508
+resist "sky130_fd_pr__pfet_01v8_5.S" "vdd.t1" 28.5759
+resist "sky130_fd_pr__pfet_01v8_2.S" "vdd.t4" 28.5759
+resist "sky130_fd_pr__pfet_01v8_0.S" "vdd.t0" 28.5759
+resist "sky130_fd_pr__pfet_01v8_1.S" "vdd.t5" 28.5759
+resist "sky130_fd_pr__pfet_01v8_3.S" "vdd.t3" 28.5759
+resist "sky130_fd_pr__pfet_01v8_4.S" "vdd.t2" 28.576
+rnode "outp.t2" 0 0 3614 1038 0
+rnode "outp.t1" 0 0 2856 1038 0
+rnode "sky130_fd_pr__pfet_01v8_0.D" 0 0 2854 1010 0
+rnode "outp.n0" 0 0 2856 1009 0
+rnode "outp.t3" 0 0 1828 1076 0
+rnode "sky130_fd_pr__pfet_01v8_1.G" 0 0 1992 1076 0
+rnode "outp.t4" 0 0 1851 498 0
+rnode "sky130_fd_pr__nfet_01v8_2.G" 0 0 2023 468 0
+rnode "outp.n1" 0 0 2163 759 0
+rnode "outp.t0" 0 0 2845 532 0
+rnode "sky130_fd_pr__nfet_01v8_3.D" 0 0 2763 578 0
+rnode "outp.n2" 0 0 2845 561 0
+rnode "outp.n3" 0 0 2896 759 0
+rnode "outp.n4" 0 0 2922 799 0
+rnode "outp" 0 0 3223 1518 0
+rnode "outp.n5" 0 0 3236 813 0
+rnode "outp.n6" 0 0 3614 1009 0
+rnode "sky130_fd_pr__pfet_01v8_2.D" 0 0 3616 1010 0
+resist "sky130_fd_pr__pfet_01v8_2.D" "outp.n6" 0.000762195
+resist "outp.n0" "sky130_fd_pr__pfet_01v8_0.D" 0.00543478
+resist "outp.n4" "outp.n3" 0.125
+resist "outp.n2" "sky130_fd_pr__nfet_01v8_3.D" 0.222826
+resist "outp.n3" "outp.n2" 0.87698
+resist "outp.n4" "outp.n0" 0.924767
+resist "outp.n5" "outp.n4" 1.40179
+resist "outp.n1" "sky130_fd_pr__nfet_01v8_2.G" 1.67608
+resist "outp.n1" "sky130_fd_pr__pfet_01v8_1.G" 1.96621
+resist "outp.n6" "outp.n5" 2.48182
+resist "outp.n5" "outp" 11.9322
+resist "outp.n3" "outp.n1" 12.1411
+resist "outp.n2" "outp.t0" 17.406
+resist "outp.n6" "outp.t2" 28.5711
+resist "outp.n0" "outp.t1" 28.5711
+resist "sky130_fd_pr__nfet_01v8_2.G" "outp.t4" 135.556
+resist "sky130_fd_pr__pfet_01v8_1.G" "outp.t3" 142.75
+rnode "clk.t5" 0 0 4436 1072 0
+rnode "sky130_fd_pr__pfet_01v8_5.G" 0 0 4600 1072 0
+rnode "clk.n0" 0 0 3778 1068 0
+rnode "clk.t0" 0 0 3614 1068 0
+rnode "clk.n1" 0 0 3778 1068 0
+rnode "sky130_fd_pr__pfet_01v8_2.G" 0 0 3778 1068 0
+rnode "clk.n2" 0 0 3754 1069 0
+rnode "clk.n3" 0 0 3754 1069 0
+rnode "clk.n4" 0 0 3777 1084 0
+rnode "clk.t4" 0 0 1070 1076 0
+rnode "sky130_fd_pr__pfet_01v8_3.G" 0 0 881 1076 0
+rnode "clk.t2" 0 0 248 1080 0
+rnode "sky130_fd_pr__pfet_01v8_4.G" 0 0 84 1080 0
+rnode "clk" 0 0 -443 1552 0
+rnode "clk.n5" 0 0 85 1084 0
+rnode "clk.n6" 0 0 904 1084 0
+rnode "clk.n7" 0 0 2256 1054 0
+rnode "clk.n8" 0 0 1976 -620 0
+rnode "clk.t1" 0 0 2108 -620 0
+rnode "clk.n9" 0 0 1953 -620 0
+rnode "clk.n10" 0 0 1952 -595 0
+rnode "clk.n11" 0 0 1952 -595 0
+rnode "sky130_fd_pr__nfet_01v8_5.G" 0 0 1923 -624 0
+rnode "clk.n12" 0 0 1952 -624 0
+rnode "clk.n13" 0 0 2286 -618 0
+rnode "clk.t3" 0 0 2612 -624 0
+rnode "clk.n14" 0 0 2746 -624 0
+rnode "sky130_fd_pr__nfet_01v8_4.G" 0 0 2784 -654 0
+resist "clk.n4" "clk.n3" 0.0011242
+resist "clk.n10" "clk.n9" 0.00173611
+resist "clk.n2" "sky130_fd_pr__pfet_01v8_2.G" 0.00208333
+resist "clk.n12" "clk.n10" 0.00235497
+resist "clk.n12" "clk.n8" 0.00580322
+resist "clk.n5" "sky130_fd_pr__pfet_01v8_4.G" 0.00743321
+resist "sky130_fd_pr__pfet_01v8_2.G" "clk.n0" 0.0107152
+resist "clk.n11" "clk.n10" 0.0138459
+resist "clk.n6" "sky130_fd_pr__pfet_01v8_3.G" 0.0182196
+resist "clk.n3" "clk.n2" 0.0315091
+resist "sky130_fd_pr__nfet_01v8_5.G" "clk.n11" 0.0373839
+resist "sky130_fd_pr__nfet_01v8_4.G" "clk.n14" 0.06147
+resist "clk.n13" "clk.n12" 0.217338
+resist "clk.n14" "clk.n13" 0.391263
+resist "clk.n6" "clk.n5" 0.63685
+resist "clk.n4" "sky130_fd_pr__pfet_01v8_5.G" 0.666171
+resist "clk.n7" "clk.n6" 1.05672
+resist "clk.n7" "clk.n4" 1.1891
+resist "clk.n13" "clk.n7" 1.30973
+resist "clk.n5" "clk" 4.22923
+resist "clk.n12" "sky130_fd_pr__nfet_01v8_5.G" 9
+resist "clk.n3" "clk.n0" 9.06769
+resist "clk.n2" "clk.n1" 9.37647
+resist "clk.n9" "clk.t1" 135.444
+resist "clk.n14" "clk.t3" 135.445
+resist "clk.n1" "clk.t0" 138.1
+resist "sky130_fd_pr__pfet_01v8_5.G" "clk.t5" 142.674
+resist "sky130_fd_pr__pfet_01v8_3.G" "clk.t4" 142.674
+resist "sky130_fd_pr__pfet_01v8_4.G" "clk.t2" 142.674
+device csubckt sky130_fd_pr__cap_mim_m3_1 5071 -292 5072 -291  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" 2880 0 "IP.t7" -1080 249345,2302
+device msubckt sky130_fd_pr__pfet_01v8 4336 1042 4337 1043  "sky130_fd_pr__pfet_01v8_5.B" "clk.t5" 120 0 "IP.t8" 200 11600,516 "vdd.t1" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 5067 -1438 5068 -1437  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" 2880 0 "IP.t1" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -680 299 -679 300  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t8" 2880 0 "IN.t0" -1080 249345,2302
+device msubckt sky130_fd_pr__pfet_01v8 970 1046 971 1047  "sky130_fd_pr__pfet_01v8_3.B" "clk.t4" 120 0 "outn.t0" 200 11600,516 "vdd.t3" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 938 -3179 939 -3178  "None" "IN.t18" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.D" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8 1809 -44 1810 -43  "vss.t10" "vn.t0" 120 0 "diff" 200 11600,516 "IN.t8" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 2756 1038 2757 1039  "sky130_fd_pr__pfet_01v8_0.B" "outn.t4" 120 0 "outp.t1" 200 11600,516 "vdd.t0" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 920 -2593 921 -2592  "None" "IN.t17" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.D" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -680 -3178 -679 -3177  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t7" 2880 0 "IN.t1" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 3489 -883 3490 -882  "None" "IP.t17" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 900 -279 901 -278  "None" "IN.t16" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8 2512 -654 2513 -653  "vss.t20" "clk.t3" 120 0 "vss.t21" 200 11600,516 "diff" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 2745 472 2746 473  "vss.t13" "outn.t3" 120 0 "sky130_fd_pr__nfet_01v8_3.S" 200 11600,516 "outp.t0" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 5071 -2031 5072 -2030  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" 2880 0 "IP.t2" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4347 -3655 4348 -3654  "vss.t8" "trimb0.t0" 120 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.D" 200 11600,516 "vss.t9" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 384 -3069 385 -3068  "vss.t2" "trim1.t0" 120 0 "vss.t3" 200 11600,516 "trim_1.sky130_fd_pr__nfet_01v8_lvt_3.D" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 896 305 897 306  "None" "IN.t15" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 5075 -3777 5076 -3776  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" 2880 0 "IP.t3" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 3471 -2611 3472 -2610  "None" "IP.t16" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.D" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 3491 -297 3492 -296  "None" "IP.t15" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t1" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -676 -1420 -675 -1419  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t6" 2880 0 "IN.t2" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 5071 -3196 5072 -3195  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" 2880 0 "IP.t5" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 5071 -869 5072 -868  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" 2880 0 "IP.t0" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 902 -865 903 -864  "None" "IN.t14" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t0" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -680 -851 -679 -850  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t5" 2880 0 "IN.t3" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4341 -2191 4342 -2190  "vss.t16" "trimb2.t0" 120 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.D" 200 11600,516 "vss.t17" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 3465 -3773 3466 -3772  "None" "IP.t14" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_1.D" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 5071 281 5072 282  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" 2880 0 "IP.t6" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 3489 -1457 3490 -1456  "None" "IP.t13" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t2" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8 1751 468 1752 469  "vss.t27" "outp.t4" 120 0 "IN.t10" 200 11600,516 "outn.t2" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 3453 -3197 3454 -3196  "None" "IP.t12" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.D" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -680 -2593 -679 -2592  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t4" 2880 0 "IN.t4" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 902 -1439 903 -1438  "None" "IN.t13" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t2" -1080 249345,2302
+device msubckt sky130_fd_pr__pfet_01v8 1728 1046 1729 1047  "sky130_fd_pr__pfet_01v8_1.B" "outp.t3" 120 0 "outn.t1" 200 11600,516 "vdd.t5" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 148 1050 149 1051  "sky130_fd_pr__pfet_01v8_4.B" "clk.t2" 120 0 "IN.t9" 200 11600,516 "vdd.t2" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4347 -3087 4348 -3086  "vss.t6" "trimb1.t0" 120 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_3.D" 200 11600,516 "vss.t7" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4555 101 4556 102  "vss.t11" "trimb4.t0" 120 0 "vss.t12" 200 11600,516 "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t0" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 2680 -49 2681 -48  "vss.t26" "vp.t0" 120 0 "diff" 200 11600,516 "IP.t9" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 -684 -3759 -683 -3758  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t3" 2880 0 "IN.t5" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -680 -274 -679 -273  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t2" 2880 0 "IN.t6" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 3495 287 3496 288  "None" "IP.t11" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t3" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8_lvt 176 119 177 120  "vss.t24" "trim4.t0" 120 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t0" 200 11600,516 "vss.t25" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 5071 -2611 5072 -2610  "None" "trim_0.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" 2880 0 "IP.t4" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 930 -2017 931 -2016  "None" "IN.t12" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.D" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4347 -459 4348 -458  "vss.t4" "trimb3.t0" 120 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_4.D.t4" 200 11600,516 "vss.t5" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 3461 -2035 3462 -2034  "None" "IP.t10" 2880 0 "trim_0.sky130_fd_pr__nfet_01v8_lvt_0.D" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8_lvt 384 -3637 385 -3636  "vss.t0" "trim0.t0" 120 0 "vss.t1" 200 11600,516 "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.D" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 2008 -650 2009 -649  "vss.t22" "clk.t1" 120 0 "vss.t23" 200 11600,516 "diff" 200 11600,516
+device csubckt sky130_fd_pr__cap_mim_m3_1 926 -3755 927 -3754  "None" "IN.t11" 2880 0 "trim_1.sky130_fd_pr__nfet_01v8_lvt_1.D" -1080 249345,2302
+device csubckt sky130_fd_pr__cap_mim_m3_1 -680 -2013 -679 -2012  "None" "trim_1.sky130_fd_pr__nfet_01v8_lvt_2.D.t1" 2880 0 "IN.t7" -1080 249345,2302
+device msubckt sky130_fd_pr__nfet_01v8_lvt 390 -2173 391 -2172  "vss.t14" "trim2.t0" 120 0 "vss.t15" 200 11600,516 "trim_1.sky130_fd_pr__nfet_01v8_lvt_0.D" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 384 -441 385 -440  "vss.t18" "trim3.t0" 120 0 "vss.t19" 200 11600,516 "trim_1.sky130_fd_pr__nfet_01v8_lvt_4.D.t4" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 3514 1038 3515 1039  "sky130_fd_pr__pfet_01v8_2.B" "clk.t0" 120 0 "outp.t2" 200 11600,516 "vdd.t4" 200 11600,516

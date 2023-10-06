@@ -1,0 +1,19 @@
+magic
+tech sky130B
+timestamp 1696364841
+<< metal4 >>
+rect -5 139 315 160
+rect -5 21 16 139
+rect 134 21 176 139
+rect 294 21 315 139
+rect -5 0 315 21
+<< via4 >>
+rect 16 21 134 139
+rect 176 21 294 139
+<< metal5 >>
+rect -5 139 315 160
+rect -5 21 16 139
+rect 134 21 176 139
+rect 294 21 315 139
+rect -5 0 315 21
+<< end >>

@@ -1,0 +1,169 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< metal1 >>
+rect 460 1966 1892 2012
+rect 128 1694 293 1834
+rect 38 584 88 680
+rect 128 602 188 1694
+rect 407 1153 453 1725
+rect 525 1153 571 1725
+rect 643 1153 689 1725
+rect 761 1153 807 1725
+rect 879 1153 925 1725
+rect 997 1153 1043 1725
+rect 1115 1153 1161 1725
+rect 1233 1153 1279 1725
+rect 1351 1153 1397 1725
+rect 1469 1153 1515 1725
+rect 1587 1153 1633 1725
+rect 460 875 1580 921
+rect 1158 358 1218 426
+rect 1158 298 1341 358
+rect 38 40 88 136
+<< metal2 >>
+rect 954 1573 1054 2308
+rect 508 1493 1650 1573
+rect 390 1305 1650 1385
+rect 276 45 356 765
+rect 788 -40 852 358
+rect 990 260 1050 918
+rect 1832 769 1892 2002
+rect 1158 709 1892 769
+rect 1158 361 1218 709
+rect 1618 260 1678 420
+rect 990 200 1678 260
+<< metal3 >>
+rect 310 1245 1730 1405
+use decap_3  decap_3_0
+timestamp 1696364841
+transform 1 0 1656 0 1 80
+box 0 -40 352 600
+use decap_8  decap_8_0
+timestamp 1696364841
+transform 1 0 0 0 1 80
+box 0 -40 812 600
+use gr_contact_1  gr_contact_1_0
+timestamp 1696364841
+transform -1 0 339 0 1 1734
+box 0 -40 46 295
+use gr_contact_1  gr_contact_1_1
+timestamp 1696364841
+transform -1 0 339 0 1 889
+box 0 -40 46 295
+use inv_4  inv_4_0
+timestamp 1696364841
+transform 1 0 1196 0 1 80
+box 0 -40 536 600
+use inv_4  inv_4_1
+timestamp 1696364841
+transform 1 0 736 0 1 80
+box 0 -40 536 600
+use M1_3  M1_3_0
+timestamp 1696364841
+transform 1 0 1020 0 1 1901
+box -757 -324 757 244
+use M2_2  M2_2_0
+timestamp 1696364841
+transform 1 0 1020 0 -1 982
+box -747 -309 747 229
+use via1_5  via1_5_0
+timestamp 1696364841
+transform 1 0 1276 0 1 345
+box 0 -40 58 6
+use via2_3  via2_3_0
+timestamp 1696364841
+transform 0 1 316 -1 0 895
+box 0 -40 140 40
+use via2_3  via2_3_1
+timestamp 1696364841
+transform 1 0 246 0 1 85
+box 0 -40 140 40
+use via12  via12_0
+timestamp 1696364841
+transform 0 1 1862 -1 0 2012
+box 0 -40 140 40
+use via12  via12_1
+timestamp 1696364841
+transform -1 0 1090 0 -1 891
+box 0 -40 140 40
+use via12  via12_2
+timestamp 1696364841
+transform 0 1 1492 -1 0 1623
+box 0 -40 140 40
+use via12_2  via12_2_0
+timestamp 1696364841
+transform 0 1 1656 -1 0 426
+box 0 -40 64 24
+use via12_2  via12_2_1
+timestamp 1696364841
+transform 0 1 1196 -1 0 426
+box 0 -40 64 24
+use via12_2  via12_2_2
+timestamp 1696364841
+transform 0 1 828 -1 0 358
+box 0 -40 64 24
+use via12  via12_3
+timestamp 1696364841
+transform 0 1 1256 -1 0 1623
+box 0 -40 140 40
+use via12  via12_4
+timestamp 1696364841
+transform 0 1 1020 -1 0 1623
+box 0 -40 140 40
+use via12  via12_5
+timestamp 1696364841
+transform 0 1 784 -1 0 1623
+box 0 -40 140 40
+use via12  via12_6
+timestamp 1696364841
+transform 0 1 548 -1 0 1623
+box 0 -40 140 40
+use via12  via12_7
+timestamp 1696364841
+transform 0 1 1610 -1 0 1395
+box 0 -40 140 40
+use via12  via12_8
+timestamp 1696364841
+transform 0 1 1374 -1 0 1395
+box 0 -40 140 40
+use via12  via12_9
+timestamp 1696364841
+transform 0 1 1138 -1 0 1395
+box 0 -40 140 40
+use via12  via12_10
+timestamp 1696364841
+transform 0 1 902 -1 0 1395
+box 0 -40 140 40
+use via12  via12_11
+timestamp 1696364841
+transform 0 1 666 -1 0 1395
+box 0 -40 140 40
+use via12  via12_12
+timestamp 1696364841
+transform 0 1 430 -1 0 1395
+box 0 -40 140 40
+use via23_6  via23_6_0
+timestamp 1696364841
+transform 0 -1 1770 1 0 1244
+box 1 40 161 120
+use via23_6  via23_6_1
+timestamp 1696364841
+transform 0 -1 430 1 0 1244
+box 1 40 161 120
+<< labels >>
+flabel metal2 s 954 2258 1054 2308 2 FreeSans 44 0 0 0 out
+port 2 nsew
+flabel metal2 s 788 -40 852 -9 2 FreeSans 44 0 0 0 en
+port 3 nsew
+flabel metal1 s 38 584 88 680 2 FreeSans 44 0 0 0 vdd
+port 5 nsew
+flabel metal1 s 38 40 88 136 2 FreeSans 44 0 0 0 vss
+port 6 nsew
+flabel metal3 s 1000 1245 1040 1405 2 FreeSans 96 0 0 0 in
+port 7 nsew
+<< properties >>
+string FIXED_BBOX 38 -40 1970 2308
+string path 41.250 33.125 9.750 33.125 
+<< end >>

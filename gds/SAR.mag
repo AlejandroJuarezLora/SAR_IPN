@@ -1,0 +1,1383 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< error_s >>
+rect 24818 17065 25494 17151
+rect 24818 15065 24904 17065
+rect 25408 15065 25494 17065
+rect 24818 14979 25494 15065
+<< metal1 >>
+rect 20945 17272 21882 17332
+rect 20945 17139 21005 17272
+rect 21822 16586 21882 17272
+rect 19311 16039 20340 16099
+rect 19196 15415 19361 15475
+rect 19301 14589 19361 15415
+rect 20945 14866 21005 14999
+rect 21822 14866 21882 15562
+rect 20945 14806 21882 14866
+rect 19301 14529 21952 14589
+<< metal2 >>
+rect 22130 26864 24056 27004
+rect 2844 5767 2924 26371
+rect 22566 25582 22646 26864
+rect 22566 25502 23067 25582
+rect 4024 25226 23067 25306
+rect 4024 23121 4080 25226
+rect 5956 24950 23067 25030
+rect 5956 23121 6012 24950
+rect 7980 24674 23067 24754
+rect 7980 23121 8036 24674
+rect 10004 24398 23067 24478
+rect 10004 23121 10060 24398
+rect 12028 24122 23067 24202
+rect 12028 23121 12084 24122
+rect 13960 23846 23079 23926
+rect 13960 23121 14016 23846
+rect 15984 23570 23067 23650
+rect 15984 23121 16040 23570
+rect 18008 23294 23067 23374
+rect 18008 23121 18064 23294
+rect 19216 22487 20642 22547
+rect 19216 21263 20502 21323
+rect 20442 20861 20502 21263
+rect 20582 20981 20642 22487
+rect 20582 20921 21952 20981
+rect 20442 20801 21952 20861
+rect 20442 20681 21953 20741
+rect 20442 20235 20502 20681
+rect 19216 20175 20502 20235
+rect 20582 20561 21952 20621
+rect 20582 19011 20642 20561
+rect 19216 18951 20642 19011
+rect 20722 20441 21952 20501
+rect 20722 17923 20782 20441
+rect 19216 17863 20782 17923
+rect 20310 17515 22206 17595
+rect 20310 16942 20390 17515
+rect 19196 16639 19364 16699
+rect 19304 16029 19364 16639
+rect 19216 14327 20782 14387
+rect 19216 13103 20642 13163
+rect 19216 12015 20502 12075
+rect 20442 11457 20502 12015
+rect 20582 11577 20642 13103
+rect 20722 11697 20782 14327
+rect 20722 11637 21952 11697
+rect 20582 11517 21952 11577
+rect 20442 11397 21953 11457
+rect 20442 11277 21952 11337
+rect 20442 10851 20502 11277
+rect 19216 10791 20502 10851
+rect 20582 11157 21952 11217
+rect 20582 9763 20642 11157
+rect 19216 9703 20642 9763
+rect 4024 6912 4080 9121
+rect 5956 7188 6012 9121
+rect 7980 7464 8036 9121
+rect 10004 7740 10060 9121
+rect 12028 8016 12084 9121
+rect 13960 8292 14016 9121
+rect 15984 8568 16040 9121
+rect 18008 8844 18064 9121
+rect 18008 8764 23067 8844
+rect 15984 8488 23067 8568
+rect 13960 8212 23067 8292
+rect 12028 7936 23067 8016
+rect 10004 7660 23067 7740
+rect 7980 7384 23067 7464
+rect 5956 7108 23067 7188
+rect 4024 6832 23067 6912
+rect 22566 6556 23067 6636
+rect 22566 5614 22646 6556
+rect 22130 5134 24056 5274
+<< metal3 >>
+rect 21936 26824 23206 27044
+rect 21776 26444 23206 26664
+rect 2844 26291 23067 26371
+rect 1227 22487 3086 22547
+rect 1227 16859 1287 22487
+rect 0 16799 1287 16859
+rect 1367 21535 3086 21595
+rect 1367 16719 1427 21535
+rect 21966 21041 22046 22599
+rect 22126 21041 22206 22599
+rect 0 16659 1427 16719
+rect 1507 20447 3086 20507
+rect 1507 16579 1567 20447
+rect 0 16519 1567 16579
+rect 1647 19495 3086 19555
+rect 1647 16439 1707 19495
+rect 0 16379 1707 16439
+rect 1787 18543 3086 18603
+rect 1787 16299 1847 18543
+rect 0 16239 1847 16299
+rect 1927 17455 3086 17515
+rect 1927 16159 1987 17455
+rect 21666 16902 22046 17062
+rect 0 16099 1987 16159
+rect 2067 16503 3086 16563
+rect 2067 16019 2127 16503
+rect 0 15959 2127 16019
+rect 0 15819 2127 15879
+rect 0 15679 1847 15739
+rect 0 15539 1707 15599
+rect 0 15399 1567 15459
+rect 0 15259 1427 15319
+rect 0 15119 1287 15179
+rect 1227 9627 1287 15119
+rect 1367 10579 1427 15259
+rect 1507 11531 1567 15399
+rect 1647 12619 1707 15539
+rect 1787 13571 1847 15679
+rect 2067 15611 2127 15819
+rect 2067 15551 3086 15611
+rect 21666 15076 22046 15236
+rect 2925 14463 3086 14523
+rect 1787 13511 3086 13571
+rect 1647 12559 3086 12619
+rect 1507 11471 3086 11531
+rect 1367 10519 3086 10579
+rect 1227 9567 3086 9627
+rect 21966 9539 22046 11097
+rect 22126 9539 22206 11097
+rect 2844 5767 23067 5847
+rect 21776 5474 23206 5694
+rect 22096 5094 23206 5314
+<< metal4 >>
+rect 0 30312 2455 31912
+rect 0 26916 1376 28516
+rect 736 22865 1376 26916
+rect 1815 25254 2455 30312
+rect 8290 22225 8610 25894
+rect 13562 22225 13882 25894
+rect 21966 22519 22046 26634
+rect 22126 22484 22206 27014
+rect 22661 26474 23301 26856
+rect 23740 26854 24380 31912
+rect 71193 30312 74147 31912
+rect 71193 26854 71833 30312
+rect 72272 26916 74147 28519
+rect 72273 26634 72913 26916
+rect 25852 16219 26599 16319
+rect 72913 16219 74147 16379
+rect 25852 15819 26599 15919
+rect 72913 15759 74147 15919
+rect 736 5222 1376 8977
+rect 0 3622 1376 5222
+rect 1815 1826 2455 6871
+rect 8290 6231 8610 9617
+rect 13562 6231 13882 9617
+rect 21966 5504 22046 9619
+rect 22126 5124 22206 9654
+rect 22661 5282 23301 5664
+rect 0 226 2455 1826
+rect 23740 226 24380 5284
+rect 71193 1826 71833 5284
+rect 72273 5222 72913 5504
+rect 72272 3619 74147 5222
+rect 71193 226 74147 1826
+<< metal5 >>
+rect 2455 31592 19784 31912
+rect 23740 31577 71833 31912
+rect 736 28919 19904 29909
+rect 22661 28919 72912 29909
+rect 736 26916 1376 28919
+rect 2455 26916 19978 27236
+rect 22661 26537 23301 28919
+rect 23740 26916 71833 27251
+rect 72272 26917 72912 28919
+rect 1815 25254 13882 25894
+rect 736 22865 16518 23505
+rect 736 8337 16518 8977
+rect 1815 6231 13882 6871
+rect 736 3219 1376 5222
+rect 2455 4902 19978 5222
+rect 22661 3219 23301 5601
+rect 23740 4887 71833 5222
+rect 72272 3219 72912 5221
+rect 736 2229 19904 3219
+rect 22661 2229 72912 3219
+rect 2455 226 19784 546
+rect 23740 226 71833 561
+use comparator  comparator_0
+timestamp 1696364841
+transform 0 1 21932 1 0 11017
+box 0 -40 10104 4020
+use DAC  DAC_0
+timestamp 1696364841
+transform 1 0 25818 0 -1 26189
+box -2832 -855 47095 10020
+use DAC  DAC_1
+timestamp 1696364841
+transform 1 0 25818 0 1 5949
+box -2832 -855 47095 10020
+use decap_3$1  decap_3$1_0
+timestamp 1696364841
+transform 0 -1 72381 -1 0 16245
+box 0 -40 352 600
+use latch  latch_0
+timestamp 1696364841
+transform 0 -1 21628 -1 0 17222
+box -62 -41 2368 1393
+use sarlogic  sarlogic_0
+timestamp 1696364841
+transform 1 0 3086 0 1 9161
+box 0 -40 16000 13960
+use via23_1  via23_1_0
+timestamp 1696364841
+transform 1 0 2845 0 -1 14533
+box 0 -40 80 120
+use via23_1  via23_1_1
+timestamp 1696364841
+transform -1 0 21666 0 -1 15196
+box 0 -40 80 120
+use via23_1  via23_1_2
+timestamp 1696364841
+transform 0 1 19126 1 0 15405
+box 0 -40 80 120
+use via23_1  via23_1_3
+timestamp 1696364841
+transform 0 1 19126 1 0 9693
+box 0 -40 80 120
+use via23_1  via23_1_4
+timestamp 1696364841
+transform 0 1 19126 1 0 10781
+box 0 -40 80 120
+use via23_1  via23_1_5
+timestamp 1696364841
+transform 0 1 19126 1 0 13093
+box 0 -40 80 120
+use via23_1  via23_1_6
+timestamp 1696364841
+transform 0 1 19126 1 0 12005
+box 0 -40 80 120
+use via23_1  via23_1_7
+timestamp 1696364841
+transform 0 1 19126 1 0 14317
+box 0 -40 80 120
+use via23_1  via23_1_8
+timestamp 1696364841
+transform -1 0 22212 0 -1 5246
+box 0 -40 80 120
+use via23_1  via23_1_9
+timestamp 1696364841
+transform 0 1 22566 1 0 5614
+box 0 -40 80 120
+use via23_1  via23_1_10
+timestamp 1696364841
+transform 1 0 2844 0 -1 5887
+box 0 -40 80 120
+use via23_1  via23_1_11
+timestamp 1696364841
+transform 0 1 22566 -1 0 26944
+box 0 -40 80 120
+use via23_1  via23_1_12
+timestamp 1696364841
+transform 0 1 19126 1 0 20165
+box 0 -40 80 120
+use via23_1  via23_1_13
+timestamp 1696364841
+transform 0 1 19126 1 0 21253
+box 0 -40 80 120
+use via23_1  via23_1_14
+timestamp 1696364841
+transform 0 1 19126 1 0 16629
+box 0 -40 80 120
+use via23_1  via23_1_15
+timestamp 1696364841
+transform 0 1 19126 1 0 17853
+box 0 -40 80 120
+use via23_1  via23_1_16
+timestamp 1696364841
+transform 0 1 19126 1 0 18941
+box 0 -40 80 120
+use via23_1  via23_1_17
+timestamp 1696364841
+transform 0 1 19126 1 0 22477
+box 0 -40 80 120
+use via23_1  via23_1_18
+timestamp 1696364841
+transform -1 0 22206 0 1 17515
+box 0 -40 80 120
+use via23_1  via23_1_19
+timestamp 1696364841
+transform -1 0 21666 0 -1 17022
+box 0 -40 80 120
+use via23_1  via23_1_20
+timestamp 1696364841
+transform 1 0 2844 0 -1 26331
+box 0 -40 80 120
+use via23_1  via23_1_21
+timestamp 1696364841
+transform -1 0 22212 0 -1 26976
+box 0 -40 80 120
+use via_M1_M2  via_M1_M2_0
+timestamp 1696364841
+transform 0 1 21852 -1 0 15662
+box 0 -40 140 40
+use via_M1_M2  via_M1_M2_1
+timestamp 1696364841
+transform -1 0 19236 0 -1 15445
+box 0 -40 140 40
+use via_M1_M2  via_M1_M2_2
+timestamp 1696364841
+transform 0 1 21852 -1 0 16616
+box 0 -40 140 40
+use via_M1_M2  via_M1_M2_3
+timestamp 1696364841
+transform -1 0 19434 0 -1 16069
+box 0 -40 140 40
+use via_M3_M4  via_M3_M4_0
+timestamp 1696364841
+transform -1 0 72593 0 -1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_1
+timestamp 1696364841
+transform -1 0 72753 0 -1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_2
+timestamp 1696364841
+transform -1 0 72753 0 -1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_3
+timestamp 1696364841
+transform -1 0 72913 0 -1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_4
+timestamp 1696364841
+transform -1 0 72913 0 -1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_5
+timestamp 1696364841
+transform -1 0 71354 0 1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_6
+timestamp 1696364841
+transform -1 0 71354 0 1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_7
+timestamp 1696364841
+transform -1 0 71514 0 1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_8
+timestamp 1696364841
+transform -1 0 71514 0 1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_9
+timestamp 1696364841
+transform -1 0 71674 0 1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_10
+timestamp 1696364841
+transform -1 0 71674 0 1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_11
+timestamp 1696364841
+transform -1 0 71834 0 1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_12
+timestamp 1696364841
+transform -1 0 71834 0 1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_13
+timestamp 1696364841
+transform -1 0 72433 0 -1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_14
+timestamp 1696364841
+transform -1 0 72433 0 -1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_15
+timestamp 1696364841
+transform -1 0 72593 0 -1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_16
+timestamp 1696364841
+transform 0 1 22006 1 0 9539
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_17
+timestamp 1696364841
+transform 0 1 22166 1 0 9699
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_18
+timestamp 1696364841
+transform 0 1 22166 1 0 9539
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_19
+timestamp 1696364841
+transform 0 1 22006 1 0 9699
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_20
+timestamp 1696364841
+transform -1 0 22286 0 1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_21
+timestamp 1696364841
+transform -1 0 22286 0 1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_22
+timestamp 1696364841
+transform -1 0 22821 0 1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_23
+timestamp 1696364841
+transform -1 0 21966 0 1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_24
+timestamp 1696364841
+transform -1 0 22821 0 1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_25
+timestamp 1696364841
+transform -1 0 23900 0 -1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_26
+timestamp 1696364841
+transform -1 0 23900 0 -1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_27
+timestamp 1696364841
+transform -1 0 24060 0 -1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_28
+timestamp 1696364841
+transform -1 0 24060 0 -1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_29
+timestamp 1696364841
+transform -1 0 24380 0 -1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_30
+timestamp 1696364841
+transform -1 0 24380 0 -1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_31
+timestamp 1696364841
+transform -1 0 24220 0 -1 5244
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_32
+timestamp 1696364841
+transform -1 0 24220 0 -1 5164
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_33
+timestamp 1696364841
+transform -1 0 22981 0 1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_34
+timestamp 1696364841
+transform -1 0 22981 0 1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_35
+timestamp 1696364841
+transform -1 0 23141 0 1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_36
+timestamp 1696364841
+transform -1 0 23141 0 1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_37
+timestamp 1696364841
+transform -1 0 23301 0 1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_38
+timestamp 1696364841
+transform -1 0 23301 0 1 5624
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_39
+timestamp 1696364841
+transform -1 0 21966 0 1 5544
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_40
+timestamp 1696364841
+transform -1 0 22821 0 -1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_41
+timestamp 1696364841
+transform -1 0 21966 0 -1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_42
+timestamp 1696364841
+transform -1 0 22126 0 -1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_43
+timestamp 1696364841
+transform -1 0 22126 0 -1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_44
+timestamp 1696364841
+transform -1 0 21966 0 -1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_45
+timestamp 1696364841
+transform 0 1 22006 -1 0 22599
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_46
+timestamp 1696364841
+transform 0 1 22006 -1 0 22439
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_47
+timestamp 1696364841
+transform -1 0 22821 0 -1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_48
+timestamp 1696364841
+transform -1 0 23900 0 1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_49
+timestamp 1696364841
+transform -1 0 23900 0 1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_50
+timestamp 1696364841
+transform -1 0 24060 0 1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_51
+timestamp 1696364841
+transform -1 0 24060 0 1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_52
+timestamp 1696364841
+transform -1 0 24380 0 1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_53
+timestamp 1696364841
+transform -1 0 24380 0 1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_54
+timestamp 1696364841
+transform -1 0 24220 0 1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_55
+timestamp 1696364841
+transform -1 0 24220 0 1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_56
+timestamp 1696364841
+transform -1 0 22981 0 -1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_57
+timestamp 1696364841
+transform -1 0 22981 0 -1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_58
+timestamp 1696364841
+transform -1 0 23141 0 -1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_59
+timestamp 1696364841
+transform -1 0 23141 0 -1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_60
+timestamp 1696364841
+transform -1 0 23301 0 -1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_61
+timestamp 1696364841
+transform -1 0 23301 0 -1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_62
+timestamp 1696364841
+transform 0 1 22166 -1 0 22439
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_63
+timestamp 1696364841
+transform 0 1 22166 -1 0 22599
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_64
+timestamp 1696364841
+transform -1 0 71834 0 -1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_65
+timestamp 1696364841
+transform -1 0 71834 0 -1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_66
+timestamp 1696364841
+transform -1 0 71674 0 -1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_67
+timestamp 1696364841
+transform -1 0 71674 0 -1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_68
+timestamp 1696364841
+transform -1 0 71514 0 -1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_69
+timestamp 1696364841
+transform -1 0 71514 0 -1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_70
+timestamp 1696364841
+transform -1 0 71354 0 -1 26894
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_71
+timestamp 1696364841
+transform -1 0 71354 0 -1 26974
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_72
+timestamp 1696364841
+transform -1 0 72913 0 1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_73
+timestamp 1696364841
+transform -1 0 72913 0 1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_74
+timestamp 1696364841
+transform -1 0 72753 0 1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_75
+timestamp 1696364841
+transform -1 0 72753 0 1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_76
+timestamp 1696364841
+transform -1 0 72593 0 1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_77
+timestamp 1696364841
+transform -1 0 72593 0 1 26514
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_78
+timestamp 1696364841
+transform -1 0 72433 0 1 26594
+box 0 -40 160 40
+use via_M3_M4  via_M3_M4_79
+timestamp 1696364841
+transform -1 0 72433 0 1 26514
+box 0 -40 160 40
+use via_M4_M5$1  via_M4_M5$1_0
+timestamp 1696364841
+transform -1 0 71823 0 1 4902
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_1
+timestamp 1696364841
+transform -1 0 72902 0 1 4901
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_2
+timestamp 1696364841
+transform -1 0 71823 0 1 226
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_3
+timestamp 1696364841
+transform 1 0 1825 0 1 3622
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_4
+timestamp 1696364841
+transform 1 0 1825 0 1 4902
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_5
+timestamp 1696364841
+transform 1 0 1825 0 1 4582
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_6
+timestamp 1696364841
+transform 1 0 1825 0 1 3942
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_7
+timestamp 1696364841
+transform 1 0 1825 0 1 4262
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_8
+timestamp 1696364841
+transform 1 0 746 0 1 3622
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_9
+timestamp 1696364841
+transform 1 0 746 0 1 3942
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_10
+timestamp 1696364841
+transform 1 0 746 0 1 4262
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_11
+timestamp 1696364841
+transform 1 0 746 0 1 4582
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_12
+timestamp 1696364841
+transform 1 0 1825 0 1 6551
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_13
+timestamp 1696364841
+transform 1 0 1825 0 1 866
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_14
+timestamp 1696364841
+transform 1 0 1825 0 1 546
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_15
+timestamp 1696364841
+transform 1 0 1825 0 1 226
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_16
+timestamp 1696364841
+transform 0 1 1056 -1 0 8967
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_17
+timestamp 1696364841
+transform 1 0 1825 0 1 6231
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_18
+timestamp 1696364841
+transform 0 1 736 -1 0 8967
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_19
+timestamp 1696364841
+transform 1 0 22671 0 1 5281
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_20
+timestamp 1696364841
+transform 1 0 746 0 1 4902
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_21
+timestamp 1696364841
+transform 1 0 23750 0 1 226
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_22
+timestamp 1696364841
+transform 1 0 23750 0 1 4902
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_23
+timestamp 1696364841
+transform 1 0 22671 0 -1 26857
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_24
+timestamp 1696364841
+transform 1 0 23750 0 -1 31912
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_25
+timestamp 1696364841
+transform 1 0 23750 0 -1 27236
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_26
+timestamp 1696364841
+transform 1 0 1825 0 -1 31272
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_27
+timestamp 1696364841
+transform 1 0 1825 0 -1 28516
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_28
+timestamp 1696364841
+transform 1 0 1825 0 -1 27236
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_29
+timestamp 1696364841
+transform 1 0 1825 0 -1 27556
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_30
+timestamp 1696364841
+transform 1 0 1825 0 -1 28196
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_31
+timestamp 1696364841
+transform 1 0 1825 0 -1 27876
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_32
+timestamp 1696364841
+transform 1 0 1825 0 -1 31912
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_33
+timestamp 1696364841
+transform 1 0 1825 0 -1 31592
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_34
+timestamp 1696364841
+transform 1 0 746 0 -1 28516
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_35
+timestamp 1696364841
+transform 1 0 746 0 -1 28196
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_36
+timestamp 1696364841
+transform 1 0 746 0 -1 27876
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_37
+timestamp 1696364841
+transform 1 0 746 0 -1 27556
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_38
+timestamp 1696364841
+transform 1 0 1825 0 -1 25574
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_39
+timestamp 1696364841
+transform 0 1 1056 1 0 22875
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_40
+timestamp 1696364841
+transform 1 0 1825 0 -1 25894
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_41
+timestamp 1696364841
+transform 0 1 736 1 0 22875
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_42
+timestamp 1696364841
+transform 1 0 746 0 -1 27236
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_43
+timestamp 1696364841
+transform -1 0 71823 0 -1 31912
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_44
+timestamp 1696364841
+transform -1 0 71823 0 -1 27236
+box -10 0 630 320
+use via_M4_M5$1  via_M4_M5$1_45
+timestamp 1696364841
+transform -1 0 72902 0 -1 27237
+box -10 0 630 320
+use via_M4_M5$2  via_M4_M5$2_0
+timestamp 1696364841
+transform 0 1 5694 -1 0 9607
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_1
+timestamp 1696364841
+transform 0 1 13602 -1 0 6861
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_2
+timestamp 1696364841
+transform 0 1 8330 -1 0 6861
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_3
+timestamp 1696364841
+transform 0 1 16238 -1 0 9607
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_4
+timestamp 1696364841
+transform 0 1 10966 -1 0 9607
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_5
+timestamp 1696364841
+transform 0 1 8330 1 0 25264
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_6
+timestamp 1696364841
+transform 0 1 16238 1 0 22235
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_7
+timestamp 1696364841
+transform 0 1 10966 1 0 22235
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_8
+timestamp 1696364841
+transform 0 1 5694 1 0 22235
+box -10 -40 630 280
+use via_M4_M5$2  via_M4_M5$2_9
+timestamp 1696364841
+transform 0 1 13602 1 0 25264
+box -10 -40 630 280
+use vpp_cap  vpp_cap_0
+timestamp 1696364841
+transform 1 0 45332 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_1
+timestamp 1696364841
+transform 1 0 42730 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_2
+timestamp 1696364841
+transform 1 0 40128 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_3
+timestamp 1696364841
+transform 1 0 37526 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_4
+timestamp 1696364841
+transform 1 0 68750 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_5
+timestamp 1696364841
+transform 1 0 66148 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_6
+timestamp 1696364841
+transform 1 0 63546 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_7
+timestamp 1696364841
+transform 1 0 60944 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_8
+timestamp 1696364841
+transform 1 0 58342 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_9
+timestamp 1696364841
+transform 1 0 55740 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_10
+timestamp 1696364841
+transform 1 0 53138 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_11
+timestamp 1696364841
+transform 1 0 50536 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_12
+timestamp 1696364841
+transform 1 0 47934 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_13
+timestamp 1696364841
+transform 1 0 45332 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_14
+timestamp 1696364841
+transform 1 0 42730 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_15
+timestamp 1696364841
+transform 1 0 40128 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_16
+timestamp 1696364841
+transform 1 0 37526 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_17
+timestamp 1696364841
+transform 1 0 68750 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_18
+timestamp 1696364841
+transform 1 0 66148 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_19
+timestamp 1696364841
+transform 1 0 63546 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_20
+timestamp 1696364841
+transform 1 0 60944 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_21
+timestamp 1696364841
+transform 1 0 58342 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_22
+timestamp 1696364841
+transform 1 0 55740 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_23
+timestamp 1696364841
+transform 1 0 53138 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_24
+timestamp 1696364841
+transform 1 0 50536 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_25
+timestamp 1696364841
+transform 1 0 47934 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_26
+timestamp 1696364841
+transform -1 0 7778 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_27
+timestamp 1696364841
+transform -1 0 15584 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_28
+timestamp 1696364841
+transform -1 0 12982 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_29
+timestamp 1696364841
+transform -1 0 20788 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_30
+timestamp 1696364841
+transform -1 0 10380 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_31
+timestamp 1696364841
+transform -1 0 18186 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_32
+timestamp 1696364841
+transform 1 0 32322 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_33
+timestamp 1696364841
+transform 1 0 29720 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_34
+timestamp 1696364841
+transform 1 0 32322 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_35
+timestamp 1696364841
+transform 1 0 29720 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_36
+timestamp 1696364841
+transform 1 0 27118 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_37
+timestamp 1696364841
+transform 1 0 27118 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_38
+timestamp 1696364841
+transform -1 0 5176 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_39
+timestamp 1696364841
+transform -1 0 5176 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_40
+timestamp 1696364841
+transform -1 0 18186 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_41
+timestamp 1696364841
+transform -1 0 15584 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_42
+timestamp 1696364841
+transform -1 0 20788 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_43
+timestamp 1696364841
+transform -1 0 10380 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_44
+timestamp 1696364841
+transform -1 0 7778 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_45
+timestamp 1696364841
+transform -1 0 12982 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_46
+timestamp 1696364841
+transform 1 0 24516 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_47
+timestamp 1696364841
+transform 1 0 24516 0 -1 2568
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_48
+timestamp 1696364841
+transform 1 0 24516 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_49
+timestamp 1696364841
+transform 1 0 27118 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_50
+timestamp 1696364841
+transform 1 0 29720 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_51
+timestamp 1696364841
+transform 1 0 32322 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_52
+timestamp 1696364841
+transform 1 0 32322 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_53
+timestamp 1696364841
+transform 1 0 29720 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_54
+timestamp 1696364841
+transform 1 0 27118 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_55
+timestamp 1696364841
+transform 1 0 24516 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_56
+timestamp 1696364841
+transform -1 0 5176 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_57
+timestamp 1696364841
+transform -1 0 5176 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_58
+timestamp 1696364841
+transform -1 0 20788 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_59
+timestamp 1696364841
+transform -1 0 20788 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_60
+timestamp 1696364841
+transform -1 0 18186 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_61
+timestamp 1696364841
+transform -1 0 15584 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_62
+timestamp 1696364841
+transform -1 0 12982 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_63
+timestamp 1696364841
+transform -1 0 10380 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_64
+timestamp 1696364841
+transform -1 0 18186 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_65
+timestamp 1696364841
+transform -1 0 15584 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_66
+timestamp 1696364841
+transform -1 0 12982 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_67
+timestamp 1696364841
+transform -1 0 10380 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_68
+timestamp 1696364841
+transform -1 0 7778 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_69
+timestamp 1696364841
+transform -1 0 7778 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_70
+timestamp 1696364841
+transform 1 0 37526 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_71
+timestamp 1696364841
+transform 1 0 40128 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_72
+timestamp 1696364841
+transform 1 0 42730 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_73
+timestamp 1696364841
+transform 1 0 45332 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_74
+timestamp 1696364841
+transform 1 0 47934 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_75
+timestamp 1696364841
+transform 1 0 50536 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_76
+timestamp 1696364841
+transform 1 0 53138 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_77
+timestamp 1696364841
+transform 1 0 55740 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_78
+timestamp 1696364841
+transform 1 0 58342 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_79
+timestamp 1696364841
+transform 1 0 60944 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_80
+timestamp 1696364841
+transform 1 0 63546 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_81
+timestamp 1696364841
+transform 1 0 66148 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_82
+timestamp 1696364841
+transform 1 0 68750 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_83
+timestamp 1696364841
+transform 1 0 68750 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_84
+timestamp 1696364841
+transform 1 0 66148 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_85
+timestamp 1696364841
+transform 1 0 63546 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_86
+timestamp 1696364841
+transform 1 0 60944 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_87
+timestamp 1696364841
+transform 1 0 58342 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_88
+timestamp 1696364841
+transform 1 0 55740 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_89
+timestamp 1696364841
+transform 1 0 53138 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_90
+timestamp 1696364841
+transform 1 0 50536 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_91
+timestamp 1696364841
+transform 1 0 47934 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_92
+timestamp 1696364841
+transform 1 0 45332 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_93
+timestamp 1696364841
+transform 1 0 42730 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_94
+timestamp 1696364841
+transform 1 0 40128 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_95
+timestamp 1696364841
+transform 1 0 37526 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_96
+timestamp 1696364841
+transform 1 0 34924 0 1 29570
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_97
+timestamp 1696364841
+transform 1 0 34924 0 -1 29258
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_98
+timestamp 1696364841
+transform 1 0 34924 0 1 2880
+box 4 4 2286 2342
+use vpp_cap  vpp_cap_99
+timestamp 1696364841
+transform 1 0 34924 0 -1 2568
+box 4 4 2286 2342
+<< labels >>
+flabel metal2 s 19304 16200 19364 16261 1 FreeSans 100 0 0 0 comp
+port 2 nsew
+flabel metal2 s 23027 7108 23067 7188 1 FreeSans 100 0 0 0 ctln1
+port 3 nsew
+flabel metal2 s 23027 6832 23067 6912 1 FreeSans 100 0 0 0 ctln0
+port 4 nsew
+flabel metal2 s 23027 24950 23067 25030 1 FreeSans 100 0 0 0 ctlp1
+port 5 nsew
+flabel metal2 s 23027 25226 23067 25306 1 FreeSans 100 0 0 0 ctlp0
+port 6 nsew
+flabel metal2 s 23027 7384 23067 7464 1 FreeSans 100 0 0 0 ctln7
+port 7 nsew
+flabel metal2 s 23027 7660 23067 7740 1 FreeSans 100 0 0 0 ctln6
+port 8 nsew
+flabel metal2 s 23027 7936 23067 8016 1 FreeSans 100 0 0 0 ctln5
+port 9 nsew
+flabel metal2 s 23027 8212 23067 8292 1 FreeSans 100 0 0 0 ctln4
+port 10 nsew
+flabel metal2 s 23027 8488 23067 8568 1 FreeSans 100 0 0 0 ctln3
+port 11 nsew
+flabel metal2 s 23027 8764 23067 8844 1 FreeSans 100 0 0 0 ctln2
+port 12 nsew
+flabel metal2 s 21922 11637 21952 11697 1 FreeSans 100 0 0 0 trim4
+port 13 nsew
+flabel metal2 s 21922 11517 21952 11577 1 FreeSans 100 0 0 0 trim1
+port 14 nsew
+flabel metal2 s 21922 11397 21952 11457 1 FreeSans 100 0 0 0 trim0
+port 15 nsew
+flabel metal2 s 21922 11277 21952 11337 1 FreeSans 100 0 0 0 trim2
+port 16 nsew
+flabel metal2 s 21922 11157 21952 11217 1 FreeSans 100 0 0 0 trim3
+port 17 nsew
+flabel metal2 s 21922 20921 21952 20981 1 FreeSans 100 0 0 0 trimb3
+port 18 nsew
+flabel metal2 s 21922 20801 21952 20861 1 FreeSans 100 0 0 0 trimb2
+port 19 nsew
+flabel metal2 s 21922 20681 21952 20741 1 FreeSans 100 0 0 0 trimb0
+port 20 nsew
+flabel metal2 s 21922 20561 21952 20621 1 FreeSans 100 0 0 0 trimb1
+port 21 nsew
+flabel metal2 s 21922 20441 21952 20501 1 FreeSans 100 0 0 0 trimb4
+port 22 nsew
+flabel metal2 s 23027 23294 23067 23374 1 FreeSans 100 0 0 0 ctlp2
+port 23 nsew
+flabel metal2 s 23027 23570 23067 23650 1 FreeSans 100 0 0 0 ctlp3
+port 24 nsew
+flabel metal2 s 23027 23846 23067 23926 1 FreeSans 100 0 0 0 ctlp4
+port 25 nsew
+flabel metal2 s 23027 24122 23067 24202 1 FreeSans 100 0 0 0 ctlp5
+port 26 nsew
+flabel metal2 s 23027 24398 23067 24478 1 FreeSans 100 0 0 0 ctlp6
+port 27 nsew
+flabel metal2 s 23027 24674 23067 24754 1 FreeSans 100 0 0 0 ctlp7
+port 28 nsew
+flabel metal1 s 19236 15415 19301 15475 1 FreeSans 100 0 0 0 clkc
+port 29 nsew
+flabel metal3 s 23046 5807 23046 5807 1 FreeSans 100 0 0 0 sample
+flabel metal3 s 0 16799 30 16859 1 FreeSans 100 0 0 0 result7
+port 31 nsew
+flabel metal3 s 0 16659 30 16719 1 FreeSans 100 0 0 0 result6
+port 32 nsew
+flabel metal3 s 0 16519 30 16579 1 FreeSans 100 0 0 0 result5
+port 33 nsew
+flabel metal3 s 0 16379 30 16439 1 FreeSans 100 0 0 0 result4
+port 34 nsew
+flabel metal3 s 0 15119 30 15179 1 FreeSans 100 0 0 0 rstn
+port 35 nsew
+flabel metal3 s 0 16239 30 16299 1 FreeSans 100 0 0 0 result3
+port 36 nsew
+flabel metal3 s 0 16099 30 16159 1 FreeSans 100 0 0 0 result2
+port 37 nsew
+flabel metal3 s 0 15959 30 16019 1 FreeSans 100 0 0 0 result1
+port 38 nsew
+flabel metal3 s 0 15819 30 15879 1 FreeSans 100 0 0 0 result0
+port 39 nsew
+flabel metal3 s 0 15679 30 15739 1 FreeSans 100 0 0 0 valid
+port 40 nsew
+flabel metal3 s 0 15539 30 15599 1 FreeSans 100 0 0 0 cal
+port 41 nsew
+flabel metal3 s 0 15399 30 15459 1 FreeSans 100 0 0 0 en
+port 42 nsew
+flabel metal3 s 0 15259 30 15319 1 FreeSans 100 0 0 0 clk
+port 43 nsew
+flabel metal4 s 0 226 227 1826 8 FreeSans 4000 0 0 0 dvss
+port 45 nsew
+flabel metal4 s 0 3622 227 5222 8 FreeSans 4000 0 0 0 dvdd
+port 46 nsew
+flabel metal4 s 0 30312 227 31912 8 FreeSans 4000 0 0 0 dvss
+port 45 nsew
+flabel metal4 s 0 26916 227 28516 8 FreeSans 4000 0 0 0 dvdd
+port 46 nsew
+flabel metal4 s 73920 226 74147 1826 2 FreeSans 4000 0 0 0 avdd
+port 47 nsew
+flabel metal4 s 73920 3619 74147 5222 2 FreeSans 4000 0 0 0 avss
+port 48 nsew
+flabel metal4 s 74086 16219 74147 16379 1 FreeSans 100 0 0 0 vinp
+port 49 nsew
+flabel metal4 s 74086 15759 74147 15919 1 FreeSans 100 0 0 0 vinn
+port 50 nsew
+flabel metal4 s 73920 30312 74147 31912 2 FreeSans 4000 0 0 0 avdd
+port 47 nsew
+flabel metal4 s 73920 26916 74147 28519 2 FreeSans 4000 0 0 0 avss
+port 48 nsew
+<< properties >>
+string FIXED_BBOX 0 0 74147 32160
+string path 663.725 396.725 647.550 396.725 
+<< end >>

@@ -1,0 +1,39 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< nwell >>
+rect -38 221 130 542
+<< pwell >>
+rect 28 -51 52 -29
+<< locali >>
+rect 0 487 29 521
+rect 63 487 92 521
+rect 0 -57 29 -23
+rect 63 -57 92 -23
+<< viali >>
+rect 29 487 63 521
+rect 29 -57 63 -23
+<< metal1 >>
+rect 0 521 92 552
+rect 0 487 29 521
+rect 63 487 92 521
+rect 0 456 92 487
+rect 0 -23 92 8
+rect 0 -57 29 -23
+rect 63 -57 92 -23
+rect 0 -88 92 -57
+<< labels >>
+rlabel comment s 0 -40 0 -40 4 fill_1
+flabel metal1 s 22 487 58 517 0 FreeSans 250 0 0 0 VPWR
+port 2 nsew
+flabel metal1 s 22 -53 58 -24 0 FreeSans 250 0 0 0 VGND
+port 3 nsew
+flabel nwell s 31 494 51 511 0 FreeSans 200 0 0 0 VPB
+port 5 nsew
+flabel pwell s 28 -51 52 -29 0 FreeSans 200 0 0 0 VNB
+port 6 nsew
+<< properties >>
+string FIXED_BBOX 0 -40 92 504
+string path 0.000 -1.000 2.300 -1.000 
+<< end >>

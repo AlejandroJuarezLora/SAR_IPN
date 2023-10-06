@@ -1,0 +1,77 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+use C0  C0_0
+timestamp 1696364841
+transform 1 0 0 0 1 23
+box 0 -63 316 878
+use C0  C0_1
+timestamp 1696364841
+transform 1 0 1904 0 1 23
+box 0 -63 316 878
+use C0  C0_2
+timestamp 1696364841
+transform 1 0 1792 0 1 23
+box 0 -63 316 878
+use C0  C0_3
+timestamp 1696364841
+transform 1 0 1680 0 1 23
+box 0 -63 316 878
+use C0  C0_4
+timestamp 1696364841
+transform 1 0 1568 0 1 23
+box 0 -63 316 878
+use C0  C0_5
+timestamp 1696364841
+transform 1 0 1456 0 1 23
+box 0 -63 316 878
+use C0  C0_6
+timestamp 1696364841
+transform 1 0 1344 0 1 23
+box 0 -63 316 878
+use C0  C0_7
+timestamp 1696364841
+transform 1 0 1232 0 1 23
+box 0 -63 316 878
+use C0  C0_8
+timestamp 1696364841
+transform 1 0 1120 0 1 23
+box 0 -63 316 878
+use C0  C0_9
+timestamp 1696364841
+transform 1 0 1008 0 1 23
+box 0 -63 316 878
+use C0  C0_10
+timestamp 1696364841
+transform 1 0 896 0 1 23
+box 0 -63 316 878
+use C0  C0_11
+timestamp 1696364841
+transform 1 0 784 0 1 23
+box 0 -63 316 878
+use C0  C0_12
+timestamp 1696364841
+transform 1 0 672 0 1 23
+box 0 -63 316 878
+use C0  C0_13
+timestamp 1696364841
+transform 1 0 560 0 1 23
+box 0 -63 316 878
+use C0  C0_14
+timestamp 1696364841
+transform 1 0 448 0 1 23
+box 0 -63 316 878
+use C0  C0_15
+timestamp 1696364841
+transform 1 0 336 0 1 23
+box 0 -63 316 878
+use C0  C0_16
+timestamp 1696364841
+transform 1 0 224 0 1 23
+box 0 -63 316 878
+use C0  C0_17
+timestamp 1696364841
+transform 1 0 112 0 1 23
+box 0 -63 316 878
+<< end >>

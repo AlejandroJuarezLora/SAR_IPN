@@ -1,0 +1,196 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< nwell >>
+rect -38 221 314 542
+<< pwell >>
+rect 3 -19 273 163
+rect 29 -57 63 -19
+<< scnmos >>
+rect 81 7 111 137
+rect 165 7 195 137
+<< scpmoshvt >>
+rect 81 257 111 457
+rect 165 257 195 457
+<< ndiff >>
+rect 29 125 81 137
+rect 29 91 37 125
+rect 71 91 81 125
+rect 29 53 81 91
+rect 29 19 37 53
+rect 71 19 81 53
+rect 29 7 81 19
+rect 111 125 165 137
+rect 111 91 121 125
+rect 155 91 165 125
+rect 111 53 165 91
+rect 111 19 121 53
+rect 155 19 165 53
+rect 111 7 165 19
+rect 195 125 247 137
+rect 195 91 205 125
+rect 239 91 247 125
+rect 195 53 247 91
+rect 195 19 205 53
+rect 239 19 247 53
+rect 195 7 247 19
+<< pdiff >>
+rect 29 445 81 457
+rect 29 411 37 445
+rect 71 411 81 445
+rect 29 377 81 411
+rect 29 343 37 377
+rect 71 343 81 377
+rect 29 309 81 343
+rect 29 275 37 309
+rect 71 275 81 309
+rect 29 257 81 275
+rect 111 445 165 457
+rect 111 411 121 445
+rect 155 411 165 445
+rect 111 377 165 411
+rect 111 343 121 377
+rect 155 343 165 377
+rect 111 309 165 343
+rect 111 275 121 309
+rect 155 275 165 309
+rect 111 257 165 275
+rect 195 445 247 457
+rect 195 411 205 445
+rect 239 411 247 445
+rect 195 377 247 411
+rect 195 343 205 377
+rect 239 343 247 377
+rect 195 309 247 343
+rect 195 275 205 309
+rect 239 275 247 309
+rect 195 257 247 275
+<< ndiffc >>
+rect 37 91 71 125
+rect 37 19 71 53
+rect 121 91 155 125
+rect 121 19 155 53
+rect 205 91 239 125
+rect 205 19 239 53
+<< pdiffc >>
+rect 37 411 71 445
+rect 37 343 71 377
+rect 37 275 71 309
+rect 121 411 155 445
+rect 121 343 155 377
+rect 121 275 155 309
+rect 205 411 239 445
+rect 205 343 239 377
+rect 205 275 239 309
+<< poly >>
+rect 81 457 111 483
+rect 165 457 195 483
+rect 81 225 111 257
+rect 165 225 195 257
+rect 21 209 195 225
+rect 21 175 37 209
+rect 71 175 195 209
+rect 21 159 195 175
+rect 81 137 111 159
+rect 165 137 195 159
+rect 81 -19 111 7
+rect 165 -19 195 7
+<< polycont >>
+rect 37 175 71 209
+<< locali >>
+rect 0 487 29 521
+rect 63 487 121 521
+rect 155 487 213 521
+rect 247 487 276 521
+rect 25 445 71 487
+rect 25 411 37 445
+rect 25 377 71 411
+rect 25 343 37 377
+rect 25 309 71 343
+rect 25 275 37 309
+rect 25 259 71 275
+rect 105 445 171 453
+rect 105 411 121 445
+rect 155 411 171 445
+rect 105 377 171 411
+rect 105 343 121 377
+rect 155 343 171 377
+rect 105 309 171 343
+rect 105 275 121 309
+rect 155 275 171 309
+rect 105 257 171 275
+rect 205 445 247 487
+rect 239 411 247 445
+rect 205 377 247 411
+rect 239 343 247 377
+rect 205 309 247 343
+rect 239 275 247 309
+rect 205 259 247 275
+rect 21 209 87 225
+rect 21 175 37 209
+rect 71 175 87 209
+rect 25 125 71 141
+rect 121 137 171 257
+rect 25 91 37 125
+rect 25 53 71 91
+rect 25 19 37 53
+rect 25 -23 71 19
+rect 105 125 171 137
+rect 105 91 121 125
+rect 155 91 171 125
+rect 105 53 171 91
+rect 105 19 121 53
+rect 155 19 171 53
+rect 105 11 171 19
+rect 205 125 247 141
+rect 239 91 247 125
+rect 205 53 247 91
+rect 239 19 247 53
+rect 205 -23 247 19
+rect 0 -57 29 -23
+rect 63 -57 121 -23
+rect 155 -57 213 -23
+rect 247 -57 276 -23
+<< viali >>
+rect 29 487 63 521
+rect 121 487 155 521
+rect 213 487 247 521
+rect 29 -57 63 -23
+rect 121 -57 155 -23
+rect 213 -57 247 -23
+<< metal1 >>
+rect 0 521 276 552
+rect 0 487 29 521
+rect 63 487 121 521
+rect 155 487 213 521
+rect 247 487 276 521
+rect 0 456 276 487
+rect 0 -23 276 8
+rect 0 -57 29 -23
+rect 63 -57 121 -23
+rect 155 -57 213 -23
+rect 247 -57 276 -23
+rect 0 -88 276 -57
+<< labels >>
+rlabel comment s 0 -40 0 -40 4 inv_2
+flabel metal1 s 29 487 63 521 0 FreeSans 200 0 0 0 VPWR
+port 2 nsew
+flabel metal1 s 29 -57 63 -23 0 FreeSans 200 0 0 0 VGND
+port 3 nsew
+flabel nwell s 29 487 63 521 0 FreeSans 200 0 0 0 VPB
+port 5 nsew
+flabel pwell s 29 -57 63 -23 0 FreeSans 200 0 0 0 VNB
+port 6 nsew
+flabel locali s 29 181 63 215 0 FreeSans 340 0 0 0 A
+port 8 nsew
+flabel locali s 121 113 155 147 0 FreeSans 340 0 0 0 Y
+port 7 nsew
+flabel locali s 121 249 155 283 0 FreeSans 340 0 0 0 Y
+port 7 nsew
+flabel locali s 121 181 155 215 0 FreeSans 340 0 0 0 Y
+port 7 nsew
+<< properties >>
+string FIXED_BBOX 0 -40 276 504
+string path 0.000 -1.000 6.900 -1.000 
+<< end >>

@@ -1,0 +1,24 @@
+magic
+tech sky130B
+timestamp 1696364841
+<< error_p >>
+rect 3 3 9 6
+rect 50 3 56 6
+rect -3 -6 0 0
+rect 59 -6 62 0
+rect -3 -17 0 -11
+rect 59 -17 62 -11
+rect 3 -23 9 -20
+rect 50 -23 56 -20
+<< locali >>
+rect 20 -17 39 0
+<< viali >>
+rect 3 -17 20 0
+rect 39 -17 56 0
+<< metal1 >>
+rect 0 0 59 3
+rect 0 -17 3 0
+rect 20 -17 39 0
+rect 56 -17 59 0
+rect 0 -20 59 -17
+<< end >>

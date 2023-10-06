@@ -1,0 +1,33 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< metal1 >>
+rect 200 565 272 741
+rect 170 505 272 565
+rect 200 329 272 505
+<< metal2 >>
+rect 289 257 335 822
+use M1_inv  M1_inv_0
+timestamp 1696364841
+transform 1 0 236 0 1 268
+box -124 -197 124 117
+use M2_inv  M2_inv_0
+timestamp 1696364841
+transform 1 0 236 0 1 886
+box -236 -324 236 244
+use via_12  via_12_0
+timestamp 1696364841
+transform 0 1 312 -1 0 267
+box 0 -40 140 40
+use via_12  via_12_1
+timestamp 1696364841
+transform 0 1 312 -1 0 952
+box 0 -40 140 40
+use via_12  via_12_2
+timestamp 1696364841
+transform 0 -1 375 1 0 465
+box 0 -40 140 40
+<< properties >>
+string path 7.800 19.975 7.800 7.000 
+<< end >>

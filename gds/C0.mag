@@ -1,0 +1,13 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< metal2 >>
+rect 0 814 316 878
+rect 88 52 116 814
+rect 144 24 172 786
+rect 200 52 228 814
+rect 135 -63 181 24
+<< properties >>
+string path 0.790 0.005 0.790 -0.200 
+<< end >>

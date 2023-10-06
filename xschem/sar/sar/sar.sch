@@ -154,8 +154,8 @@ C {sar/dac/dac.sym} 330 -270 0 0 {name=xdn
 }
 C {sar/dac/dac.sym} 330 -590 0 0 {name=xdp
 }
-C {sar/comparator/comparator.sym} 1020 -510 0 0 {name=xcom
-spice_ignore=true
+C {sar/comparator/comparator.sym} 810 -280 0 0 {name=xcom
+spice_ignore=false
 }
 C {devices/lab_wire.sym} 1300 -70 0 0 {name=l27 sig_type=std_logic lab=rstn
 }
@@ -174,4 +174,5 @@ Ada [dctlp0 dctlp1 dctlp2 dctlp3 dctlp4 dctlp5 dctlp6 dctlp7 dctln0 dctln1 dctln
 Ada2 [dtrim4 dtrim3 dtrim2 dtrim1 dtrim0 dtrimb4 dtrimb3 dtrimb2 dtrimb1 dtrimb0] [trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trimb_4_ trimb_3_ trimb_2_ trimb_1_ trimb_0_ ] dac_buff
 
 "}
-C {sar/comparator/comp_temp.sym} 810 -280 0 0 {name=x1}
+C {sar/comparator/comp_temp.sym} 780 -520 0 0 {name=x1
+spice_ignore=true}

@@ -16,4 +16,4 @@ C {devices/capa.sym} 200 -170 0 0 {name=C1
 m=1 value=2f
 spice_ignore=true
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 70 -110 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 70 -110 0 0 {name=C2 model=cap_mim_m3_1 W=2 L=2 MF=1 spiceprefix=X}

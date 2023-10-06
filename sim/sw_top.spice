@@ -1,0 +1,18 @@
+** sch_path: /media/psf/Home/EDA/SAR_IPN/xschem/sar/sw/sw_top.sch
+**.subckt sw_top out en vss vdd in
+*.iopin out
+*.ipin en
+*.iopin vss
+*.iopin vdd
+*.iopin in
+x2 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+x4 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
+x1 VGND VNB VPB VPWR sky130_fd_sc_hd__decap_3
+XM1 in en out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=10 m=10
+XM2 in en_buf out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=10 m=10
+**.ends
+.end

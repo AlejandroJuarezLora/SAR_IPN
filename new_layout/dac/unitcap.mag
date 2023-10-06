@@ -1,0 +1,17 @@
+magic
+tech sky130B
+timestamp 1696453761
+<< metal3 >>
+rect 49 147 194 189
+<< metal4 >>
+rect 48 68 193 110
+use sky130_fd_pr__cap_mim_m3_1_FJK8MD  sky130_fd_pr__cap_mim_m3_1_FJK8MD_0
+timestamp 1696373079
+transform 1 0 193 0 1 120
+box -193 -120 50 120
+<< labels >>
+flabel metal3 84 167 84 167 0 FreeSans 160 0 0 0 cn
+port 1 nsew
+flabel metal4 48 68 193 110 0 FreeSans 160 0 0 0 cp
+port 0 nsew
+<< end >>

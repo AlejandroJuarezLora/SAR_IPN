@@ -1,0 +1,126 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< metal1 >>
+rect 557 1496 2525 1542
+rect 136 1221 2065 1267
+rect 136 709 182 1221
+rect 799 982 1841 1028
+rect 799 686 845 982
+rect 1226 775 1341 821
+rect 1393 775 1508 821
+rect 1226 709 1272 775
+rect 1462 709 1508 775
+rect 2479 709 2525 1496
+<< metal2 >>
+rect 2423 2556 2477 2620
+rect 19 1679 438 1725
+rect 2296 1679 2761 1725
+rect 19 526 65 1679
+rect 504 1626 550 1679
+rect 616 1351 662 1679
+rect 728 1626 774 1679
+rect 840 1112 886 1679
+rect 952 1626 998 1679
+rect 1064 1351 1110 1679
+rect 1176 1626 1222 1679
+rect 1288 905 1334 1679
+rect 1400 905 1446 1679
+rect 1512 1626 1558 1679
+rect 1624 1351 1670 1679
+rect 1736 1626 1782 1679
+rect 1848 1112 1894 1679
+rect 1960 1626 2006 1679
+rect 2072 1351 2118 1679
+rect 2184 1626 2230 1679
+rect 2715 526 2761 1679
+use trim_array  trim_array_0
+timestamp 1696364841
+transform 1 0 257 0 1 1719
+box 0 -40 2220 901
+use trim_sw  trim_sw_0
+timestamp 1696364841
+transform 1 0 0 0 1 0
+box -1 -40 2781 755
+use via2  via2_0
+timestamp 1696364841
+transform 0 -1 2207 1 0 1496
+box 0 -40 140 40
+use via2  via2_1
+timestamp 1696364841
+transform 0 -1 2095 1 0 1221
+box 0 -40 140 40
+use via2  via2_2
+timestamp 1696364841
+transform 0 -1 1423 1 0 775
+box 0 -40 140 40
+use via2  via2_3
+timestamp 1696364841
+transform 0 -1 1535 1 0 1496
+box 0 -40 140 40
+use via2  via2_4
+timestamp 1696364841
+transform 0 -1 1647 1 0 1221
+box 0 -40 140 40
+use via2  via2_5
+timestamp 1696364841
+transform 0 -1 1759 1 0 1496
+box 0 -40 140 40
+use via2  via2_6
+timestamp 1696364841
+transform 0 -1 1871 1 0 982
+box 0 -40 140 40
+use via2  via2_7
+timestamp 1696364841
+transform 0 -1 1983 1 0 1496
+box 0 -40 140 40
+use via2  via2_8
+timestamp 1696364841
+transform 0 1 527 1 0 1496
+box 0 -40 140 40
+use via2  via2_9
+timestamp 1696364841
+transform 0 1 639 1 0 1221
+box 0 -40 140 40
+use via2  via2_10
+timestamp 1696364841
+transform 0 1 1311 1 0 775
+box 0 -40 140 40
+use via2  via2_11
+timestamp 1696364841
+transform 0 1 1199 1 0 1496
+box 0 -40 140 40
+use via2  via2_12
+timestamp 1696364841
+transform 0 1 1087 1 0 1221
+box 0 -40 140 40
+use via2  via2_13
+timestamp 1696364841
+transform 0 1 975 1 0 1496
+box 0 -40 140 40
+use via2  via2_14
+timestamp 1696364841
+transform 0 1 863 1 0 982
+box 0 -40 140 40
+use via2  via2_15
+timestamp 1696364841
+transform 0 1 751 1 0 1496
+box 0 -40 140 40
+<< labels >>
+flabel metal2 s 2423 2556 2477 2620 1 FreeSans 44 0 0 0 drain
+port 0 nsew
+flabel metal1 s 136 1221 182 1267 1 FreeSans 44 0 0 0 n3
+port 2 nsew
+flabel metal1 s 2479 709 2525 755 1 FreeSans 44 0 0 0 n4
+port 3 nsew
+flabel metal1 s 799 709 845 755 1 FreeSans 44 0 0 0 n2
+port 4 nsew
+flabel metal1 s 1462 709 1508 755 1 FreeSans 44 0 0 0 n1
+port 5 nsew
+flabel metal1 s 1226 709 1272 755 1 FreeSans 44 0 0 0 n0
+port 6 nsew
+<< properties >>
+string FIXED_BBOX 0 -40 2780 2620
+string path 20.550 17.725 20.550 25.125 22.925 25.125 
+<< end >>

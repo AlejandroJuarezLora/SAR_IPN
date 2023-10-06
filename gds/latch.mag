@@ -1,0 +1,173 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1696364841
+<< nwell >>
+rect 53 680 2253 1318
+<< metal1 >>
+rect 150 1248 918 1308
+rect 197 1100 243 1248
+rect 825 1100 871 1248
+rect 1123 859 1183 1348
+rect 1361 1248 2156 1308
+rect 1435 1100 1481 1248
+rect 2063 1100 2109 1248
+rect 1033 813 1424 859
+rect 1033 700 1079 813
+rect 53 623 223 683
+rect 458 623 633 683
+rect 573 493 633 623
+rect 725 623 881 683
+rect 1425 623 1581 683
+rect 725 415 785 623
+rect 1226 493 1272 606
+rect 881 447 1272 493
+rect 649 355 785 415
+rect 1521 415 1581 623
+rect 1673 623 1848 683
+rect 2083 623 2253 683
+rect 1673 493 1733 623
+rect 1521 355 1657 415
+rect 197 32 243 215
+rect 511 32 557 215
+rect 825 32 871 215
+rect 1435 32 1481 215
+rect 1749 32 1795 215
+rect 2063 32 2109 215
+rect 150 -28 2156 32
+<< metal2 >>
+rect 160 1238 2146 1318
+rect 160 -38 2146 42
+use Guardring_N  Guardring_N_0
+timestamp 1696364841
+transform 1 0 681 0 1 892
+box -671 -933 1615 -279
+use Guardring_P  Guardring_P_0
+timestamp 1696364841
+transform 1 0 681 0 1 148
+box -743 509 1687 1245
+use inv_lvt  inv_lvt_0
+timestamp 1696364841
+transform -1 0 2253 0 1 118
+box 0 71 472 1130
+use inv_lvt  inv_lvt_1
+timestamp 1696364841
+transform 1 0 53 0 1 118
+box 0 71 472 1130
+use inv_lvt  inv_lvt_2
+timestamp 1696364841
+transform 1 0 681 0 1 118
+box 0 71 472 1130
+use inv_lvt  inv_lvt_3
+timestamp 1696364841
+transform -1 0 1625 0 1 118
+box 0 71 472 1130
+use M1_2  M1_2_0
+timestamp 1696364841
+transform -1 0 603 0 -1 306
+box -124 -197 124 117
+use M2_1  M2_1_0
+timestamp 1696364841
+transform -1 0 1703 0 -1 306
+box -124 -197 124 117
+use via1_3  via1_3_0
+timestamp 1696364841
+transform -1 0 1879 0 -1 1261
+box -6 -46 124 12
+use via1_3  via1_3_1
+timestamp 1696364841
+transform -1 0 1679 0 -1 1261
+box -6 -46 124 12
+use via1_3  via1_3_2
+timestamp 1696364841
+transform -1 0 679 0 -1 1261
+box -6 -46 124 12
+use via1_3  via1_3_3
+timestamp 1696364841
+transform -1 0 479 0 -1 1261
+box -6 -46 124 12
+use via1_3  via1_3_4
+timestamp 1696364841
+transform -1 0 1766 0 -1 -15
+box -6 -46 124 12
+use via1_3  via1_3_5
+timestamp 1696364841
+transform -1 0 1566 0 -1 -15
+box -6 -46 124 12
+use via1_3  via1_3_6
+timestamp 1696364841
+transform -1 0 1366 0 -1 -15
+box -6 -46 124 12
+use via1_3  via1_3_7
+timestamp 1696364841
+transform -1 0 1166 0 -1 -15
+box -6 -46 124 12
+use via1_3  via1_3_8
+timestamp 1696364841
+transform -1 0 966 0 -1 -15
+box -6 -46 124 12
+use via1_3  via1_3_9
+timestamp 1696364841
+transform -1 0 766 0 -1 -15
+box -6 -46 124 12
+use via1_3  via1_3_10
+timestamp 1696364841
+transform -1 0 566 0 -1 -15
+box -6 -46 124 12
+use via_12  via_12_0
+timestamp 1696364841
+transform -1 0 2156 0 -1 2
+box 0 -40 140 40
+use via_12  via_12_1
+timestamp 1696364841
+transform -1 0 1842 0 -1 2
+box 0 -40 140 40
+use via_12  via_12_2
+timestamp 1696364841
+transform -1 0 290 0 -1 2
+box 0 -40 140 40
+use via_12  via_12_3
+timestamp 1696364841
+transform -1 0 604 0 -1 2
+box 0 -40 140 40
+use via_12  via_12_4
+timestamp 1696364841
+transform -1 0 918 0 -1 2
+box 0 -40 140 40
+use via_12  via_12_5
+timestamp 1696364841
+transform -1 0 1528 0 -1 2
+box 0 -40 140 40
+use via_12  via_12_6
+timestamp 1696364841
+transform -1 0 918 0 1 1278
+box 0 -40 140 40
+use via_12  via_12_7
+timestamp 1696364841
+transform -1 0 2156 0 1 1278
+box 0 -40 140 40
+use via_12  via_12_8
+timestamp 1696364841
+transform -1 0 1528 0 1 1278
+box 0 -40 140 40
+use via_12  via_12_9
+timestamp 1696364841
+transform -1 0 290 0 1 1278
+box 0 -40 140 40
+<< labels >>
+flabel metal2 s 160 1238 203 1318 2 FreeSans 44 0 0 0 vdd
+port 2 nsew
+flabel metal2 s 160 -38 203 42 2 FreeSans 44 0 0 0 vss
+port 3 nsew
+flabel metal1 s 1104 447 1178 493 1 FreeSans 44 0 0 0 Qn
+port 5 nsew
+flabel metal1 s 53 623 83 683 1 FreeSans 44 0 0 0 S
+port 6 nsew
+flabel metal1 s 2223 623 2253 683 1 FreeSans 44 0 0 0 R
+port 7 nsew
+flabel metal1 s 1123 1318 1183 1348 1 FreeSans 44 0 0 0 Q
+port 8 nsew
+<< properties >>
+string FIXED_BBOX 0 -40 2306 1331
+string path 28.825 21.075 28.825 32.950 
+<< end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696109480
+timestamp 1696628372
 << metal1 >>
 rect 176 1185 182 1295
 rect 292 1185 298 1295
@@ -42,10 +42,10 @@ rect 182 1294 292 1295
 rect 182 1186 183 1294
 rect 291 1186 292 1294
 rect 182 836 292 1186
-use sky130_fd_pr__cap_mim_m3_1  XC2
-timestamp 1695772557
+use sky130_fd_pr__cap_mim_m3_1_FJK8MD  sky130_fd_pr__cap_mim_m3_1_FJK8MD_0
+timestamp 1696628329
 transform 1 0 386 0 1 840
-box -386 -240 90 240
+box -386 -240 94 240
 << labels >>
 flabel space 152 376 320 526 0 FreeSans 800 0 0 0 cn
 port 0 nsew

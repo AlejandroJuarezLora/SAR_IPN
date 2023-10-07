@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -47,8 +47,8 @@ C {sar/dac/carray.sym} 500 -540 0 0 {name=xca}
 C {devices/lab_wire.sym} 200 -670 2 1 {name=l50 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 200 -630 0 0 {name=l51 sig_type=std_logic lab=vss}
 C {devices/ipin.sym} 260 -440 0 0 {name=p1 lab=dum}
-C {devices/iopin.sym} 260 -240 2 0 {name=p6 lab=vdd}
-C {devices/iopin.sym} 260 -210 2 0 {name=p8 lab=vss}
+C {devices/iopin.sym} 260 -410 2 0 {name=p6 lab=vdd}
+C {devices/iopin.sym} 260 -380 2 0 {name=p8 lab=vss}
 C {devices/lab_wire.sym} 590 -410 3 0 {name=l1 sig_type=std_logic lab=ctl[7]}
 C {sky130_stdcells/inv_2.sym} 810 -450 3 0 {name=xi6 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ 
 C \{devices/lab_wire.sym\}}

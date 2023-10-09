@@ -77,15 +77,14 @@ X0 a_30_n309# a_n33_n87# a_n88_n309# a_n190_n421# sky130_fd_pr__nfet_01v8 ad=0.2
 X1 a_30_117# a_n33_29# a_n88_117# a_n190_n421# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 .ends
 
-.subckt comparator clk vdd vss outp outn trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ trimb_4_
-+ trimb_3_ trimb_2_ trimb_1_ trimb_0_
+.subckt comparator vn vp clk vdd vss outp outn trim_4_ trim_3_ trim_2_ trim_1_ trim_0_
++ trimb_4_ trimb_3_ trimb_2_ trimb_1_ trimb_0_
 Xsky130_fd_pr__pfet_01v8_QE5SNW_0 outp outp clk vdd outn vdd clk vdd vdd ip sky130_fd_pr__pfet_01v8_QE5SNW
 Xsky130_fd_pr__pfet_01v8_QE5SNW_1 outn outn clk vdd outp vdd clk vdd vdd in sky130_fd_pr__pfet_01v8_QE5SNW
 Xtrim_0 in trim_4_ trim_3_ trim_2_ trim_1_ trim_0_ vss trim
 Xtrim_1 ip trimb_4_ trimb_3_ trimb_2_ trimb_1_ trimb_0_ vss trim
 Xsky130_fd_pr__nfet_01v8_7UX3DE_0 clk vss vss diff diff clk vss sky130_fd_pr__nfet_01v8_7UX3DE
 Xsky130_fd_pr__nfet_01v8_7UX3DE_1 outp ip in outn outp outn vss sky130_fd_pr__nfet_01v8_7UX3DE
-Xsky130_fd_pr__nfet_01v8_7UX3DE_2 sky130_fd_pr__nfet_01v8_7UX3DE_2/a_n33_n87# diff
-+ diff in ip sky130_fd_pr__nfet_01v8_7UX3DE_2/a_n33_29# vss sky130_fd_pr__nfet_01v8_7UX3DE
+Xsky130_fd_pr__nfet_01v8_7UX3DE_2 vn diff diff in ip vp vss sky130_fd_pr__nfet_01v8_7UX3DE
 .ends
 

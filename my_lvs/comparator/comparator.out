@@ -122,7 +122,7 @@ Number of nets: 20                         |Number of nets: 20
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: comparator                      |Circuit 2: comparator                      
@@ -138,14 +138,15 @@ trim_1_                                    |trim_1_
 trimb_1_                                   |trimb_1_                                   
 trim_0_                                    |trim_0_                                    
 trimb_0_                                   |trimb_0_                                   
+vn                                         |vn                                         
+vp                                         |vp                                         
 vdd                                        |vdd                                        
 clk                                        |clk                                        
 outn                                       |outn                                       
 outp                                       |outp                                       
-(no matching pin)                          |vn                                         
-(no matching pin)                          |vp                                         
 ---------------------------------------------------------------------------------------
-Cell pin lists for comparator and comparator altered to match.
+Cell pin lists are equivalent.
 Device classes comparator and comparator are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

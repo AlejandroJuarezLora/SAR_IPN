@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696896819
+timestamp 1693170804
 << nwell >>
 rect -38 261 774 582
 << pwell >>
@@ -164,7 +164,6 @@ rlabel metal1 s 0 -48 736 48 1 VGND
 port 1 nsew ground bidirectional abutment
 rlabel metal1 s 0 496 736 592 1 VPWR
 port 4 nsew power bidirectional abutment
-rlabel space -52 481 158 636 1 name
 << properties >>
 string FIXED_BBOX 0 0 736 544
 string GDS_END 3319600

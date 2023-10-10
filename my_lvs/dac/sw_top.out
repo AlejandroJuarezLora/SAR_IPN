@@ -1,0 +1,190 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__decap_3 and Circuit 2 cell sky130_fd_sc_hd__decap_3 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__inv_4 is a black box; will not flatten Circuit 1
+Class sky130_fd_sc_hd__inv_4 (0):  Merged 6 parallel devices.
+Warning: Equate pins:  cell sky130_fd_sc_hd__inv_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__inv_4          |Circuit 2: sky130_fd_sc_hd__inv_4          
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |1                                          
+(no matching pin)                          |2                                          
+(no matching pin)                          |3                                          
+(no matching pin)                          |4                                          
+(no matching pin)                          |5                                          
+(no matching pin)                          |6                                          
+A                                          |(no matching pin)                          
+VGND                                       |(no matching pin)                          
+VNB                                        |(no matching pin)                          
+VPB                                        |(no matching pin)                          
+VPWR                                       |(no matching pin)                          
+Y                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__inv_4 and sky130_fd_sc_hd__inv_4 are equivalent.
+
+Circuit 1 cell sky130_fd_sc_hd__decap_8 and Circuit 2 cell sky130_fd_sc_hd__decap_8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VVAZD4 in circuit sw_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_JJRV6Y in circuit sw_top (0)(1 instance)
+
+Class sw_top (0):  Merged 18 parallel devices.
+Subcircuit summary:
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (10->1)            |sky130_fd_pr__pfet_01v8 (10->1)            
+sky130_fd_sc_hd__decap_3 (1)               |sky130_fd_sc_hd__decap_3 (1)               
+sky130_fd_sc_hd__inv_4 (1)                 |sky130_fd_sc_hd__inv_4 (1)                 
+sky130_fd_sc_hd__decap_8 (1)               |sky130_fd_sc_hd__decap_8 (1)               
+sky130_fd_pr__nfet_01v8 (10->1)            |sky130_fd_pr__nfet_01v8 (10->1)            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 13 **Mismatch**            |Number of nets: 12 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+
+---------------------------------------------------------------------------------------
+Net: vss                                   |Net: vss                                   
+  sky130_fd_sc_hd__decap_3/1 = 1           |  sky130_fd_sc_hd__decap_3/1 = 1           
+  sky130_fd_sc_hd__decap_3/2 = 1           |  sky130_fd_sc_hd__decap_3/2 = 1           
+  sky130_fd_sc_hd__inv_4/VGND = 1          |  sky130_fd_sc_hd__inv_4/2 = 1             
+  sky130_fd_sc_hd__inv_4/VNB = 1           |  sky130_fd_sc_hd__inv_4/3 = 1             
+  sky130_fd_sc_hd__decap_8/1 = 1           |  sky130_fd_sc_hd__decap_8/1 = 1           
+  sky130_fd_sc_hd__decap_8/2 = 1           |  sky130_fd_sc_hd__decap_8/2 = 1           
+  sky130_fd_pr__nfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/4 = 1            
+                                           |                                           
+Net: vdd                                   |Net: vdd                                   
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/4 = 1            
+  sky130_fd_sc_hd__decap_3/4 = 1           |  sky130_fd_sc_hd__decap_3/4 = 1           
+  sky130_fd_sc_hd__inv_4/VPWR = 1          |  sky130_fd_sc_hd__inv_4/4 = 1             
+  sky130_fd_sc_hd__decap_8/4 = 1           |  sky130_fd_sc_hd__decap_8/4 = 1           
+                                           |  sky130_fd_sc_hd__decap_3/3 = 1           
+                                           |  sky130_fd_sc_hd__inv_4/5 = 1             
+                                           |  sky130_fd_sc_hd__decap_8/3 = 1           
+                                           |                                           
+Net: sky130_fd_sc_hd__inv_4_0/VPB          |(no matching net)                          
+  sky130_fd_sc_hd__decap_3/3 = 1           |                                           
+  sky130_fd_sc_hd__inv_4/VPB = 1           |                                           
+  sky130_fd_sc_hd__decap_8/3 = 1           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_12                              |Net: dummy_12                              
+  sky130_fd_sc_hd__inv_4/proxy5 = 1        |  sky130_fd_sc_hd__inv_4/proxyY = 1        
+                                           |                                           
+Net: dummy_11                              |Net: dummy_11                              
+  sky130_fd_sc_hd__inv_4/proxy4 = 1        |  sky130_fd_sc_hd__inv_4/proxyVPWR = 1     
+                                           |                                           
+Net: dummy_10                              |Net: dummy_10                              
+  sky130_fd_sc_hd__inv_4/proxy3 = 1        |  sky130_fd_sc_hd__inv_4/proxyVPB = 1      
+                                           |                                           
+Net: dummy_9                               |Net: dummy_9                               
+  sky130_fd_sc_hd__inv_4/proxy2 = 1        |  sky130_fd_sc_hd__inv_4/proxyVNB = 1      
+                                           |                                           
+Net: dummy_8                               |Net: dummy_8                               
+  sky130_fd_sc_hd__inv_4/proxy1 = 1        |  sky130_fd_sc_hd__inv_4/proxyVGND = 1     
+                                           |                                           
+Net: dummy_13                              |Net: dummy_7                               
+  sky130_fd_sc_hd__inv_4/proxy6 = 1        |  sky130_fd_sc_hd__inv_4/proxyA = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: en_buf                                |Net: en_buf                                
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_sc_hd__inv_4/Y = 1             |  sky130_fd_sc_hd__inv_4/6 = 1             
+                                           |                                           
+Net: en                                    |Net: en                                    
+  sky130_fd_sc_hd__inv_4/A = 1             |  sky130_fd_sc_hd__inv_4/1 = 1             
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__inv_4_0         |Instance: sky130_fd_sc_hd__inv_4:4         
+  A = 2                                    |  proxyA = 1                               
+  VGND = 7                                 |  proxyVGND = 1                            
+  VNB = 7                                  |  proxyVNB = 1                             
+  VPB = 3                                  |  proxyVPB = 1                             
+  VPWR = 4                                 |  proxyVPWR = 1                            
+  Y = 2                                    |  proxyY = 1                               
+  proxy1 = 1                               |  1 = 2                                    
+  proxy2 = 1                               |  2 = 7                                    
+  proxy3 = 1                               |  3 = 7                                    
+  proxy4 = 1                               |  4 = 7                                    
+  proxy5 = 1                               |  5 = 7                                    
+  proxy6 = 1                               |  6 = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: sw_top                          |Circuit 2: sw_top                          
+-------------------------------------------|-------------------------------------------
+vdd                                        |vss **Mismatch**                           
+vss                                        |vdd **Mismatch**                           
+en                                         |(no matching pin)                          
+in                                         |in                                         
+out                                        |out                                        
+(no matching pin)                          |en                                         
+en                                         |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for sw_top and sw_top altered to match.
+Device classes sw_top and sw_top are equivalent.
+
+Final result: Top level cell failed pin matching.

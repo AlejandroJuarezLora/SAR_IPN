@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696555175
+timestamp 1696887389
 << locali >>
 rect 14183 4004 19393 4064
 rect 14196 3724 14230 4004
@@ -138,7 +138,7 @@ timestamp 1693170804
 transform 0 1 13365 1 0 3732
 box -38 -48 314 592
 use sw_top  sw_top_0
-timestamp 1696555175
+timestamp 1696887389
 transform 1 0 20949 0 -1 3885
-box -839 -1844 2074 570
+box -817 -1844 2074 554
 << end >>

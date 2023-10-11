@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696895697
+timestamp 1696984848
 << error_p >>
 rect -560 145 -502 151
 rect -442 145 -384 151
@@ -343,6 +343,8 @@ rect 331 -118 377 -106
 rect 567 -106 573 34
 rect 607 -106 613 34
 rect 567 -118 613 -106
+<< labels >>
+flabel metal1 s -536 126 -532 128 0 FreeSans 480 0 0 0 G0
 << properties >>
 string FIXED_BBOX -704 -231 704 231
 string gencell sky130_fd_pr__pfet_01v8

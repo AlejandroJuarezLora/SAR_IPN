@@ -20,4 +20,4 @@
 #
 #--------------------------------------------------------------------------------
 #netgen -batch lvs "dac_lay.spice DAC" "dac_sch.spice dac" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl dac.out
-netgen -batch lvs "dac_lay.spice DAC" "../tr_sar.spice dac" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl dac.out
+netgen -batch lvs "dac_lay.spice dac" "dac_sch.spice dac" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl dac.out

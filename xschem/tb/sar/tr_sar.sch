@@ -225,7 +225,7 @@ value="
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=0.1
+.param vin=1.4
 .param vcm=0.7
 .param vsigp=\{vcm + vin/2\\\}
 .param vsign=\{vcm - vin/2\\\}

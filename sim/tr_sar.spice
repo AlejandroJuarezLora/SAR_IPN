@@ -588,7 +588,7 @@ xdummy_0_ top dum_bot_0_ unitcap
 *.iopin in
 x2 vss vss vdd vdd sky130_fd_sc_hd__decap_8
 x4 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
-x1 VGND VNB VPB VPWR sky130_fd_sc_hd__decap_3
+x5 vss vss vdd vdd sky130_fd_sc_hd__decap_3
 XM1 in en out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=10 m=10
@@ -688,7 +688,7 @@ XC2 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 .subckt trimcap cp cn
 *.iopin cp
 *.iopin cn
-XC3 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
+XC2 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 .ends
 
 .GLOBAL GND
@@ -703,7 +703,7 @@ XC3 cp cn sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=0.1
+.param vin=1.4
 .param vcm=0.7
 .param vsigp={vcm + vin/2}
 .param vsign={vcm - vin/2}

@@ -1,6 +1,6 @@
 * SPICE3 file created from comparator_flat.ext - technology: sky130B
 
-.subckt comparator_flat vn vp clk vdd outp outn trim_3_ trim_2_ trim_1_ trim_4_ trimb_1_
+.subckt comparator vn vp clk vdd outp outn trim_3_ trim_2_ trim_1_ trim_4_ trimb_1_
 + trimb_2_ trimb_3_ trimb_4_ trimb_0_ trim_0_ vss
 X0 trim_1.n4.t10 trimb_4_.t0 vss.t35 vss.t34 sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
 X1 ip.t3 trim_1.n4.t12 sky130_fd_pr__cap_mim_m3_1 l=2 w=2

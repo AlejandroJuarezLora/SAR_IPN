@@ -28,24 +28,20 @@ L 4 11 36 11 40 {dash=4}
 L 4 -27 36 -27 40 {dash=4}
 L 4 -130 90 -130 130 {}
 L 4 130 90 130 130 {}
-L 4 -150 100 -130 100 {}
-L 4 -150 110 -130 110 {}
-B 5 -152.5 97.5 -147.5 102.5 {name=enb dir=in sim_pinnumber=0}
-B 5 -152.5 107.5 -147.5 112.5 {name=en_buf dir=in sim_pinnumber=1}
-B 5 -152.5 7.5 -147.5 12.5 {name=ctl1 dir=in sim_pinnumber=2}
-B 5 -152.5 -2.5 -147.5 2.5 {name=ctl0 dir=in sim_pinnumber=3}
-B 5 -152.5 87.5 -147.5 92.5 {name=dum dir=in sim_pinnumber=4}
-B 5 -152.5 27.5 -147.5 32.5 {name=ctl3 dir=in sim_pinnumber=5}
-B 5 -152.5 37.5 -147.5 42.5 {name=ctl4 dir=in sim_pinnumber=6}
-B 5 -152.5 47.5 -147.5 52.5 {name=ctl5 dir=in sim_pinnumber=7}
-B 5 -152.5 57.5 -147.5 62.5 {name=ctl6 dir=in sim_pinnumber=8}
-B 5 -152.5 67.5 -147.5 72.5 {name=ctl7 dir=in sim_pinnumber=9}
-B 5 -152.5 17.5 -147.5 22.5 {name=ctl2 dir=in sim_pinnumber=10}
-B 5 -2.5 -92.5 2.5 -87.5 {name=vdd dir=inout sim_pinnumber=11}
-B 5 -2.5 147.5 2.5 152.5 {name=vss dir=inout sim_pinnumber=12}
-B 5 -152.5 -42.5 -147.5 -37.5 {name=sample dir=in sim_pinnumber=13}
-B 5 147.5 -12.5 152.5 -7.5 {name=out dir=out sim_pinnumber=14}
-B 5 -152.5 -22.5 -147.5 -17.5 {name=vin dir=in sim_pinnumber=15}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=sample dir=in sim_pinnumber=0}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=vin dir=in sim_pinnumber=1}
+B 5 -152.5 -2.5 -147.5 2.5 {name=ctl_0_ dir=in sim_pinnumber=2}
+B 5 -152.5 7.5 -147.5 12.5 {name=ctl_1_ dir=in sim_pinnumber=3}
+B 5 -152.5 27.5 -147.5 32.5 {name=ctl_3_ dir=in sim_pinnumber=4}
+B 5 -152.5 17.5 -147.5 22.5 {name=ctl_2_ dir=in sim_pinnumber=4}
+B 5 -152.5 37.5 -147.5 42.5 {name=ctl_4_ dir=in sim_pinnumber=5}
+B 5 -152.5 47.5 -147.5 52.5 {name=ctl_5_ dir=in sim_pinnumber=6}
+B 5 -152.5 57.5 -147.5 62.5 {name=ctl_6_ dir=in sim_pinnumber=7}
+B 5 -152.5 67.5 -147.5 72.5 {name=ctl_7_ dir=in sim_pinnumber=8}
+B 5 -152.5 87.5 -147.5 92.5 {name=dum dir=in sim_pinnumber=9}
+B 5 -2.5 147.5 2.5 152.5 {name=vss dir=inout sim_pinnumber=10}
+B 5 147.5 -12.5 152.5 -7.5 {name=out dir=out sim_pinnumber=11}
+B 5 -2.5 -92.5 2.5 -87.5 {name=vdd dir=inout sim_pinnumber=12}
 A 4 -2.64285714285711 -4.78571428571431 1.821078397711702 138.1798301198641 360 {}
 A 4 -7.64285714285711 -4.78571428571431 1.821078397711702 138.1798301198641 360 {}
 A 4 -12.64285714285711 -4.78571428571431 1.821078397711702 138.1798301198641 360 {}
@@ -108,10 +104,6 @@ T {vin} -125 -34 0 0 0.2 0.2 {}
 T {dum
 } -125 86 0 0 0.2 0.2 {}
 T {PL} 10 -40 0 0 0.4 0.4 {}
-T {en_buf
-} -125 106 0 0 0.2 0.2 {}
-T {enb
-} -125 96 0 0 0.2 0.2 {}
 T {@pinlist} 50 147 0 0 0.2 0.2 {}
 T {ctl0
 } -125 -14 0 0 0.2 0.2 {}

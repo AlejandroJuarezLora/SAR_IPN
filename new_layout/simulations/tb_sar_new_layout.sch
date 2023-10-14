@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 10 20 810 420 {flags=graph
+B 2 -10 0 790 400 {flags=graph
 y1=0
 y2=1.3
 ypos1=0
@@ -17,26 +17,23 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-
-
+node="xsar.res7
+xsar.res6
+xsar.res5
+xsar.res4
+xsar.res3
+xsar.res2
+xsar.res1
+xsar.res0"
+color="4 5 6 7 8 9 10 11"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1
-
-color="11 11 11 11 11 11 11 11"
-node="result_7_
-result_6_
-result_5_
-result_4_
-result_3_
-result_2_
-result_1_
-result_0_"}
+digital=1}
 B 2 0 440 800 840 {flags=graph
-y1=0.017
-y2=1.2
+y1=0.053
+y2=0.81
 ypos1=0
 ypos2=2
 divy=5
@@ -54,8 +51,8 @@ logx=0
 logy=0
 
 color="4 7"
-node="xsar_post.vp
-xsar_post.vn"}
+node="xsar.vp
+xsar.vn"}
 B 2 10 870 810 1270 {flags=graph
 y1=0
 y2=1.3
@@ -76,11 +73,11 @@ logx=0
 logy=0
 hilight_wave=0
 color="7 11 4 8 8 9"
-node="xsar_post.clkc
+node="xsar.clkc
 clk
-xsar_post.comp
+xsar.comp
 en
-xsar_post.sample
+xsar.sample
 rstn"
 digital=1}
 B 2 850 20 1650 420 {flags=graph
@@ -95,14 +92,14 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node="xsar_post.ctlp_7_
-xsar_post.ctlp_6_
-xsar_post.ctlp_5_
-xsar_post.ctlp_4_
-xsar_post.ctlp_3_
-xsar_post.ctlp_2_
-xsar_post.ctlp_1_
-xsar_post.ctlp_0_"
+node="xsar.ctlp_7_
+xsar.ctlp_6_
+xsar.ctlp_5_
+xsar.ctlp_4_
+xsar.ctlp_3_
+xsar.ctlp_2_
+xsar.ctlp_1_
+xsar.ctlp_0_"
 color="4 4 4 4 4 4 4 4"
 dataset=-1
 unitx=1
@@ -121,14 +118,14 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node="xsar_post.ctln_7_
-xsar_post.ctln_6_
-xsar_post.ctln_5_
-xsar_post.ctln_4_
-xsar_post.ctln_3_
-xsar_post.ctln_2_
-xsar_post.ctln_1_
-xsar_post.ctln_0_"
+node="xsar.ctln_7_
+xsar.ctln_6_
+xsar.ctln_5_
+xsar.ctln_4_
+xsar.ctln_3_
+xsar.ctln_2_
+xsar.ctln_1_
+xsar.ctln_0_"
 color="4 4 4 4 4 4 4 4"
 dataset=-1
 unitx=1
@@ -136,8 +133,8 @@ logx=0
 logy=0
 digital=1}
 B 2 840 880 1640 1280 {flags=graph
-y1=-0.246934
-y2=1.82012
+y1=-0.239942
+y2=1.4826
 ypos1=0
 ypos2=2
 divy=5
@@ -147,7 +144,7 @@ x1=0
 x2=4.8e-05
 divx=5
 subdivx=1
-node=xsar_post.comp
+node=xsar.comp
 color=4
 dataset=-1
 unitx=1
@@ -210,13 +207,14 @@ name=STDCELLS
 only_toplevel=false
 format="tcleval( @value )"
 value="
-.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/comparator/comparator.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/latch/latch.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/dac/DAC.spice
-*.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sarlogic/sar_logic_light.spice
-.include /home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sarlogic/sar_logic_full.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/comparator.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/latch.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/dac.spice
+
+.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/cmos_cells_digital.sp
+.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/sar_logic.sp
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/sky130_ef_sc_hd__decap_12.spice
+
 "
 place=header}
 C {devices/code.sym} 40 -170 0 0 {
@@ -233,7 +231,7 @@ value="
 .options warn 1
 
 .param MC_SWITCH=0
-.param vin=0.1
+.param vin=0.2
 .param vcm=0.7
 .param vsigp=\{vcm + vin/2\\\}
 .param vsign=\{vcm - vin/2\\\}
@@ -243,33 +241,32 @@ value="
 .control
 
 run
-*write full_ext_sim_light.raw
-write full_ext_sim_full.raw
-*meas tran d0 find v(xsar_post.res0) at=47e-6
-*meas tran d1 find v(xsar_post.res1) at=47e-6
-*meas tran d2 find v(xsar_post.res2) at=47e-6
-*meas tran d3 find v(xsar_post.res3) at=47e-6
-*meas tran d4 find v(xsar_post.res4) at=47e-6
-*meas tran d5 find v(xsar_post.res5) at=47e-6
-*meas tran d6 find v(xsar_post.res6) at=47e-6
-*meas tran d7 find v(xsar_post.res7) at=47e-6
+write tb_sar_new_layout.raw
+meas tran d0 find v(xsar.res0) at=47e-6
+meas tran d1 find v(xsar.res1) at=47e-6
+meas tran d2 find v(xsar.res2) at=47e-6
+meas tran d3 find v(xsar.res3) at=47e-6
+meas tran d4 find v(xsar.res4) at=47e-6
+meas tran d5 find v(xsar.res5) at=47e-6
+meas tran d6 find v(xsar.res6) at=47e-6
+meas tran d7 find v(xsar.res7) at=47e-6
 
-meas tran d0 find v(xsar.result_0_) at=47e-6
-meas tran d1 find v(xsar.result_1_) at=47e-6
-meas tran d2 find v(xsar.result_2_) at=47e-6
-meas tran d3 find v(xsar.result_3_) at=47e-6
-meas tran d4 find v(xsar.result_4_) at=47e-6
-meas tran d5 find v(xsar.result_5_) at=47e-6
-meas tran d6 find v(xsar.result_6_) at=47e-6
-meas tran d7 find v(xsar.result_7_) at=47e-6
+* meas tran d0 find v(xsar.result0) at=47e-6
+* meas tran d1 find v(xsar.result1) at=47e-6
+* meas tran d2 find v(xsar.result2) at=47e-6
+* meas tran d3 find v(xsar.result3) at=47e-6
+* meas tran d4 find v(xsar.result4) at=47e-6
+* meas tran d5 find v(xsar.result5) at=47e-6
+* meas tran d6 find v(xsar.result6) at=47e-6
+* meas tran d7 find v(xsar.result7) at=47e-6
 
-meas tran vpmax max xsar_post.vp
-meas tran vpmin min xsar_post.vp
-meas tran vpend find v(xsar_post.vp) at=39e-6
+meas tran vpmax max xsar.vp
+meas tran vpmin min xsar.vp
+meas tran vpend find v(xsar.vp) at=39e-6
 
-meas tran vnmax max xsar_post.vn
-meas tran vnmin min xsar_post.vn
-meas tran vnend find v(xsar_post.vn) at=39e-6
+meas tran vnmax max xsar.vn
+meas tran vnmin min xsar.vn
+meas tran vnend find v(xsar.vn) at=39e-6
 
 print d0
 print d1
@@ -314,23 +311,18 @@ C {devices/vsource.sym} 1010 -160 0 0 {name=V3 value=0}
 C {devices/lab_wire.sym} 1040 -220 0 0 {name=l40 sig_type=std_logic lab=cal}
 C {devices/gnd.sym} 1010 -90 0 0 {name=l43 lab=GND}
 C {devices/lab_wire.sym} 840 -540 3 1 {name=l44 sig_type=std_logic lab=cal}
-C {devices/launcher.sym} 200 -620 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
+C {devices/launcher.sym} 200 -480 0 0 {name=h1 descr="simulation netlist" tclcommand="set dummy_ignore true"}
 C {devices/noconn.sym} 1020 -450 2 0 {name=l49[7:0]}
-C {/home/alex/Desktop/EDA/SAR_IPN/full_ext_sim/sar/sar_post/sar_post.sym} 890 -270 0 0 {name=xsar_post}
+C {/media/psf/Home/EDA/SAR_IPN/new_layout/simulations/symbols/sar_post.sym} 890 -270 0 0 {name=xsar}
 C {devices/vsource.sym} 580 -160 0 0 {name=V7 value="PWL(0 0 4e-6 0 4.001e-6 1.4)"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=l5 sig_type=std_logic lab=rstn}
 C {devices/gnd.sym} 580 -90 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 890 -360 3 0 {name=l9 sig_type=std_logic lab=rstn}
-C {devices/launcher.sym} 200 -580 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
+C {devices/launcher.sym} 200 -430 0 0 {name=h2 descr="lvs netlist" tclcommand="set dummy_ignore false"}
 C {sky130_fd_pr/corner.sym} 170 -170 0 0 {name=CORNER only_toplevel=false corner=tt
 place=header
-spice_ignore=false
-}
-C {devices/launcher.sym} 120 -460 0 0 {name=h4
-descr="load waves (light extraction)" 
-tclcommand="xschem raw_read $netlist_dir/full_ext_sim_light.raw tran"
-}
-C {devices/launcher.sym} 120 -380 0 0 {name=h3
-descr="load waves (full extraction)" 
-tclcommand="xschem raw_read $netlist_dir/full_ext_sim_full.raw tran"
+spice_ignore=false}
+C {devices/launcher.sym} 180 -380 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/tb_sar_new_layout.raw tran"
 }

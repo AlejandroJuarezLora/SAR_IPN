@@ -2,9 +2,10 @@
 .subckt sw_top out en vss vdd in
 *.PININFO out:B en:I vss:B vdd:B in:B
 x2 vss vss vdd vdd sky130_fd_sc_hd__decap_8
-x4 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
+x4 en_buf vss vss vdd vdd net1 sky130_fd_sc_hd__inv_4
 x5 vss vss vdd vdd sky130_fd_sc_hd__decap_3
-XM1 in en out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 m=10
+XM1 in net1 out vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 m=10
 XM2 in en_buf out vdd sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 m=10
+x1 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
 .ends
 .end

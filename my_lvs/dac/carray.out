@@ -1,0 +1,63 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_FJK8MD in circuit unitcap (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: unitcap                         |Circuit 2: unitcap                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: unitcap                         |Circuit 2: unitcap                         
+-------------------------------------------|-------------------------------------------
+cp                                         |cp                                         
+cn                                         |cn                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes unitcap and unitcap are equivalent.
+
+Subcircuit summary:
+Circuit 1: carray                          |Circuit 2: carray                          
+-------------------------------------------|-------------------------------------------
+unitcap (340)                              |unitcap (340)                              
+Number of devices: 340                     |Number of devices: 340                     
+Number of nets: 94                         |Number of nets: 94                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 9 symmetries.
+
+Subcircuit pins:
+Circuit 1: carray                          |Circuit 2: carray                          
+-------------------------------------------|-------------------------------------------
+n3                                         |n3                                         
+n4                                         |n4                                         
+n1                                         |n1                                         
+n7                                         |n7                                         
+n2                                         |n2                                         
+n6                                         |n6                                         
+ndum                                       |ndum                                       
+n0                                         |n0                                         
+n5                                         |n5                                         
+top                                        |top                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes carray and carray are equivalent.
+
+Final result: Circuits match uniquely.
+.

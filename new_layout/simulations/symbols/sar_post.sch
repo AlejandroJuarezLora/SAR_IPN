@@ -53,9 +53,9 @@ N 330 -400 330 -360 { lab=avdd}
 N 820 -210 900 -210 { lab=clkc}
 N 1220 -70 1340 -70 { lab=rstn}
 N 150 -310 180 -310 {
-lab=#net2}
+lab=sample}
 N 150 -630 180 -630 {
-lab=#net3}
+lab=sample}
 C {devices/lab_wire.sym} 730 -410 0 0 {name=l58 sig_type=std_logic lab=vn}
 C {devices/lab_wire.sym} 150 -630 0 0 {name=l80 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 180 -270 0 0 {name=l44 sig_type=std_logic lab=ctln[0]}

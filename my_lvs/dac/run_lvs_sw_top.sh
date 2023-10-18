@@ -20,4 +20,4 @@
 #
 #--------------------------------------------------------------------------------
 
-netgen -batch lvs "sw_top_redrawn_lay.spice sw_top" "sw_top_sch.spice sw_top" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl sw_top_redrawn.out
+netgen -batch lvs "sw_top_lay.spice sw_top" "sw_top_sch.spice sw_top" /home/alex/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl sw_top.out

@@ -1,0 +1,329 @@
+timestamp 1697488441
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "trimb_4" 5 4431 -650 4477 -604 m1
+port "vp" 10 1440 -83 1440 -83 li
+port "vn" 11 1322 -81 1322 -81 li
+port "trim_4" 0 -1775 -627 -1690 -581 m1
+port "trimb_3" 6 4422 592 4466 636 m1
+port "trimb_2" 7 4443 1680 4489 1726 m1
+port "outp" 12 1630 448 1662 1212 m1
+port "outn" 13 1098 438 1130 1198 m1
+port "clk" 14 951 2134 981 2164 m2
+port "trim_3" 1 -1772 615 -1728 659 m1
+port "trim_2" 2 -1805 1703 -1759 1749 m1
+port "trimb_1" 8 4430 2199 4474 2243 m1
+port "trim_1" 3 -1776 2222 -1732 2266 m1
+port "trimb_0" 9 4445 2933 4495 2983 m1
+port "trim_0" 4 -1769 2956 -1719 3006 m1
+port "vdd" 15 1358 1929 1410 1981 li
+port "vss" 16 950 -875 993 -832 li
+node "trimb_4" 3468 2064.69 4431 -650 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153888 6080 0 0 65930 3778 56730 2638 0 0 0 0 0 0 0 0 0 0
+equiv "trimb_4" "trim_1.d_4_"
+node "trim_1.n4" 3666 4718.17 2944 -1245 ndif 0 0 0 0 0 0 0 0 58000 2580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29240 2060 277827 14554 108072 3744 2010120 18480 0 0 0 0 0 0
+node "vp" 338 213.371 1440 -83 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19236 760 0 0 7906 520 3600 240 0 0 0 0 0 0 0 0 0 0
+node "diff" 2859 554.327 1064 -504 ndif 0 0 0 0 0 0 0 0 46400 2064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23392 1648 61408 3284 0 0 0 0 0 0 0 0 0 0
+node "vn" 305 185.409 1322 -81 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19236 760 0 0 4352 324 3600 240 0 0 0 0 0 0 0 0 0 0
+node "trim_4" 3468 2064.12 -1775 -627 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153888 6080 0 0 65930 3778 56730 2638 0 0 0 0 0 0 0 0 0 0
+equiv "trim_4" "trim_0.d_4_"
+node "trim_0.n4" 3666 4745.76 -442 -1222 ndif 0 0 0 0 0 0 0 0 58000 2580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29240 2060 277827 14554 108072 3744 2010120 18480 0 0 0 0 0 0
+node "trimb_3" 1634 1251.46 4422 592 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76944 3040 0 0 21304 1428 69406 3200 0 0 0 0 0 0 0 0 0 0
+equiv "trimb_3" "trim_1.d_3_"
+node "trim_1.n3" 2087 2485.49 2944 353 ndif 0 0 0 0 0 0 0 0 34800 1548 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17544 1236 158553 8518 54036 1872 1005060 9240 0 0 0 0 0 0
+node "trimb_2" 872 868.286 4443 1680 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38472 1520 0 0 29650 1586 56092 2592 0 0 0 0 0 0 0 0 0 0
+equiv "trimb_2" "trim_1.d_2_"
+node "trim_1.n2" 1291 1178.26 2944 1334 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11696 824 77229 3922 27018 936 502530 4620 0 0 0 0 0 0
+node "ip" 2117 7197.47 1495 -46 ndif 0 0 0 0 0 0 0 0 23200 1032 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17544 1236 533415 27804 227520 7680 210880 7360 2176384 30016 0 0 0 0
+equiv "ip" "trim_1.drain"
+node "outp" 3260 461.227 1630 448 m1 0 0 0 0 0 0 0 0 11600 516 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39012 1538 0 0 22032 1636 67296 3642 15104 928 0 0 0 0 0 0 0 0
+node "outn" 3260 478.867 1098 438 m1 0 0 0 0 0 0 0 0 11600 516 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39012 1538 0 0 22032 1636 68287 3662 15360 944 0 0 0 0 0 0 0 0
+node "in" 2117 7345.4 1069 -46 ndif 0 0 0 0 0 0 0 0 23200 1032 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17544 1236 536605 28024 227520 7680 210880 7360 2176384 30016 0 0 0 0
+equiv "in" "trim_0.drain"
+node "clk" 2437 1496.19 951 2134 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117576 4632 0 0 13464 1200 41666 2596 112224 7392 0 0 0 0 0 0 0 0
+node "trim_3" 1634 1254.69 -1772 615 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76944 3040 0 0 21304 1428 69758 3216 0 0 0 0 0 0 0 0 0 0
+equiv "trim_3" "trim_0.d_3_"
+node "trim_0.n3" 2087 2485.49 -442 376 ndif 0 0 0 0 0 0 0 0 34800 1548 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17544 1236 158553 8518 54036 1872 1005060 9240 0 0 0 0 0 0
+node "trim_2" 872 876.503 -1805 1703 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38472 1520 0 0 29650 1586 56920 2628 0 0 0 0 0 0 0 0 0 0
+equiv "trim_2" "trim_0.d_2_"
+node "trim_0.n2" 1291 1178.21 -442 1357 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11696 824 77229 3922 27018 936 502530 4620 0 0 0 0 0 0
+node "trim_1.n1" 480 473.887 3118 1968 ndif 0 0 0 0 0 0 0 0 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5848 412 27841 1298 13509 468 251265 2310 0 0 0 0 0 0
+equiv "trim_1.n1" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.D"
+node "trimb_1" 468 658.22 4430 2199 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19236 760 0 0 26752 1402 44540 2176 0 0 0 0 0 0 0 0 0 0
+equiv "trimb_1" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.G"
+equiv "trimb_1" "trim_1.d_1_"
+node "trim_0.n1" 480 473.867 -474 1991 ndif 0 0 0 0 0 0 0 0 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5848 412 27841 1298 13509 468 251265 2310 0 0 0 0 0 0
+equiv "trim_0.n1" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.D"
+node "trim_1" 468 659.799 -1776 2222 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19236 760 0 0 26752 1402 44716 2184 0 0 0 0 0 0 0 0 0 0
+equiv "trim_1" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.G"
+equiv "trim_1" "trim_0.d_1_"
+node "trim_1.n0" 480 616.538 3131 2527 ndif 0 0 0 0 0 0 0 0 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5848 412 27314 1264 13509 468 251265 2310 0 0 0 0 0 0
+equiv "trim_1.n0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.D"
+node "trimb_0" 285 806.958 4445 2933 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19236 760 0 0 2244 200 80530 3318 0 0 0 0 0 0 0 0 0 0
+equiv "trimb_0" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.G"
+equiv "trimb_0" "trim_1.d_0_"
+node "trim_0.n0" 480 616.538 -487 2550 ndif 0 0 0 0 0 0 0 0 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5848 412 27314 1264 13509 468 251265 2310 0 0 0 0 0 0
+equiv "trim_0.n0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.D"
+node "trim_0" 285 797.248 -1769 2956 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19236 760 0 0 2244 200 79330 3270 0 0 0 0 0 0 0 0 0 0
+equiv "trim_0" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.G"
+equiv "trim_0" "trim_0.d_0_"
+node "vdd" 22564 3782.58 1358 1929 li 0 0 0 0 1078638 4258 0 0 207942 9850 69600 3096 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 176818 7296 35880 2112 0 0 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 950 -875 li 0 0 0 0 0 0 0 0 232000 10320 954584 56152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 786633 42346 119600 7040 0 0 0 0 0 0 0 0 0 0
+equiv "vss" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.B"
+equiv "vss" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.S"
+equiv "vss" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.B"
+equiv "vss" "trim_0.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.S"
+equiv "vss" "trim_0.vss"
+equiv "vss" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.B"
+equiv "vss" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_1.S"
+equiv "vss" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.B"
+equiv "vss" "trim_1.sky130_fd_pr__nfet_01v8_lvt_763N5J_0.S"
+equiv "vss" "trim_1.vss"
+cap "trim_4" "trim_0.n2" 1.87581
+cap "outp" "trim_1.n4" 11.3771
+cap "trim_0.n4" "trim_0.n3" 461.099
+cap "trimb_2" "trimb_1" 68.9287
+cap "in" "trim_2" 95.7767
+cap "trim_2" "trim_1" 69.2653
+cap "trim_1.n4" "vdd" 57.3409
+cap "clk" "ip" 86.3364
+cap "trimb_3" "trim_1.n4" 16.6384
+cap "clk" "trim_0.n1" 0.0525046
+cap "outp" "trim_0.n3" 0.0598711
+cap "trim_3" "outn" 0.0968138
+cap "outn" "vp" 12.2853
+cap "clk" "trim_2" 0.621557
+cap "ip" "trim_1.n0" 556.026
+cap "trim_0.n4" "trim_0.n2" 187.165
+cap "trim_0.n4" "trim_0.n0" 51.9553
+cap "ip" "outn" 30.2692
+cap "trim_3" "trim_4" 15.9824
+cap "trimb_4" "diff" 0.0480511
+cap "diff" "vp" 48.6331
+cap "trim_1.n3" "trim_1.n2" 263.635
+cap "trim_1.n1" "trimb_0" 3.97436
+cap "trim_1.n0" "trimb_1" 59.4258
+cap "clk" "trimb_2" 0.495624
+cap "vp" "vn" 63.1131
+cap "in" "trim_1" 87.7122
+cap "trim_1.n1" "trim_1.n2" 216.834
+cap "trim_1.n3" "outp" 0.0192826
+cap "ip" "diff" 158.308
+cap "trim_1.n3" "trimb_3" 230.731
+cap "trimb_2" "trim_1.n0" 0.284201
+cap "ip" "vn" 6.90257
+cap "clk" "in" 326.187
+cap "trim_0.n4" "trim_3" 16.6384
+cap "clk" "trim_1" 0.134195
+cap "trim_0.n4" "vp" 1.04683
+cap "trimb_3" "trim_1.n1" 1.2206
+cap "trim_1.n2" "trimb_4" 1.87581
+cap "outp" "trim_3" 0.466317
+cap "outp" "vp" 0.808293
+cap "trim_0.n4" "trim_0" 10.0898
+cap "ip" "trimb_0" 29.7392
+cap "trim_0.n4" "ip" 15.2146
+cap "trim_3" "vdd" 0.379444
+cap "ip" "trim_1.n2" 1179.19
+cap "vp" "vdd" 0.39081
+cap "trim_0.n4" "trim_0.n1" 52.6743
+cap "in" "outn" 239.479
+cap "trimb_3" "trimb_4" 15.6999
+cap "ip" "outp" 265.698
+cap "trim_0.n4" "trim_2" 23.3795
+cap "trim_0.n3" "trim_0.n2" 263.635
+cap "trim_1.n3" "trim_1.n4" 461.099
+cap "ip" "vdd" 288.766
+cap "ip" "trimb_3" 101.68
+cap "clk" "outn" 122.168
+cap "trim_1.n1" "trim_1.n4" 52.6743
+cap "trimb_0" "trimb_1" 41.8277
+cap "in" "trim_4" 104.085
+cap "trim_1.n2" "trimb_1" 7.3994
+cap "in" "diff" 147.725
+cap "trim_2" "vdd" 0.470768
+cap "in" "vn" 34.9296
+cap "trimb_2" "trimb_0" 1.28627
+cap "trimb_4" "trim_1.n4" 359.403
+cap "vp" "trim_1.n4" 1.93168
+cap "trim_0.n0" "trim_0.n2" 0.116001
+cap "clk" "trim_4" 1.53838
+cap "trim_1.n2" "trimb_2" 242.509
+cap "clk" "diff" 103.912
+cap "trimb_3" "trimb_1" 0.0759692
+cap "trim_3" "trim_0.n3" 230.731
+cap "clk" "vn" 11.9225
+cap "ip" "trim_1.n4" 4880.42
+cap "trim_0.n4" "in" 4878.83
+cap "trim_0.n4" "trim_1" 15.4014
+cap "trimb_2" "vdd" 0.498984
+cap "trimb_3" "trimb_2" 31.3456
+cap "outn" "diff" 3.28439
+cap "in" "outp" 25.9666
+cap "trim_0.n4" "clk" 69.6833
+cap "clk" "trim_1.n2" 0.0588409
+cap "in" "vdd" 257.1
+cap "outn" "vn" 1.26236
+cap "trim_3" "trim_0.n2" 126.71
+cap "trim_0.n3" "trim_2" 1.22594
+cap "clk" "outp" 74.0984
+cap "trimb_1" "trim_1.n4" 15.4014
+cap "trimb_0" "trim_1.n0" 117.159
+cap "trim_1.n2" "trim_1.n0" 0.116001
+cap "trim_0" "trim_0.n2" 0.98262
+cap "trim_0" "trim_0.n0" 117.159
+cap "diff" "trim_4" 0.0462451
+cap "clk" "vdd" 895.563
+cap "trim_1.n3" "trimb_4" 319.251
+cap "trim_0.n4" "outn" 8.41045
+cap "trimb_2" "trim_1.n4" 23.3795
+cap "trim_0.n1" "trim_0.n0" 206.797
+cap "trim_0.n1" "trim_0.n2" 216.834
+cap "diff" "vn" 17.7247
+cap "outp" "outn" 618.879
+cap "trim_1.n3" "ip" 2465.02
+cap "trim_2" "trim_0.n2" 242.544
+cap "trim_0.n0" "trim_2" 0.284201
+cap "outn" "vdd" 469.17
+cap "in" "trim_1.n4" 15.6423
+cap "ip" "trim_1.n1" 577.659
+cap "trimb_3" "outn" 1.01734
+cap "trim_0.n4" "trim_4" 359.403
+cap "trim_0.n4" "diff" 5.38854
+cap "in" "trim_0.n3" 2465.02
+cap "trim_0.n3" "trim_1" 0.049002
+cap "clk" "trim_1.n4" 23.2759
+cap "trim_0.n4" "vn" 1.26967
+cap "outp" "diff" 2.86663
+cap "ip" "trimb_4" 104.085
+cap "ip" "vp" 20.5806
+cap "trim_0.n1" "trim_3" 1.2206
+cap "trim_1.n3" "trimb_1" 0.049002
+cap "diff" "vdd" 1.21768
+cap "clk" "trim_0.n3" 0.661122
+cap "outp" "vn" 12.9606
+cap "trim_1.n0" "trim_1.n4" 51.9553
+cap "trim_1.n1" "trimb_1" 182.498
+cap "trim_3" "trim_2" 31.6674
+cap "vdd" "vn" 0.33939
+cap "trim_0.n1" "trim_0" 3.97436
+cap "trim_1.n2" "trimb_0" 0.98262
+cap "trim_1.n3" "trimb_2" 1.22594
+cap "outn" "trim_1.n4" 10.9718
+cap "in" "trim_0.n2" 1179.19
+cap "trim_0.n0" "trim_1" 59.4258
+cap "in" "trim_0.n0" 556.026
+cap "trim_1" "trim_0.n2" 7.3994
+cap "trim_0" "trim_2" 0.761206
+cap "trim_1.n1" "trimb_2" 71.477
+cap "trim_0.n4" "outp" 9.8038
+cap "trim_0.n1" "trim_2" 71.477
+cap "trim_0.n4" "vdd" 51.4426
+cap "clk" "trim_0.n2" 0.542472
+cap "trimb_3" "trim_1.n2" 126.664
+cap "diff" "trim_1.n4" 6.25515
+cap "ip" "trimb_1" 87.7057
+cap "outp" "vdd" 489.171
+cap "trimb_3" "outp" 0.211932
+cap "trimb_3" "vdd" 0.423221
+cap "trim_1.n4" "vn" 0.0272932
+cap "trim_0.n3" "trim_4" 319.251
+cap "trim_3" "trim_1" 0.0759692
+cap "in" "trim_3" 101.68
+cap "ip" "trimb_2" 95.7775
+cap "in" "vp" 0.253995
+cap "trim_1.n1" "trim_1.n0" 206.797
+cap "in" "trim_0" 29.7392
+cap "trimb_0" "trim_1.n4" 10.0898
+cap "trim_0" "trim_1" 41.6493
+cap "trim_0.n4" "trim_1.n4" 119.929
+cap "trim_1.n3" "outn" 0.0963913
+cap "clk" "trim_3" 1.76497
+cap "clk" "vp" 10.0396
+cap "trim_1.n2" "trim_1.n4" 187.165
+cap "ip" "in" 294.786
+cap "clk" "trimb_4" 0.245768
+cap "in" "trim_0.n1" 577.659
+cap "trim_0.n1" "trim_1" 182.528
+device csubckt sky130_fd_pr__cap_mim_m3_1 3645 -1764 3646 -1763 w=400 l=400 "None" "ip" 1280 0 "trim_1.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2126 -1757 2127 -1756 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 176 -1734 177 -1733 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1343 -1741 -1342 -1740 w=400 l=400 "None" "in" 1280 0 "trim_0.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3641 -1158 3642 -1157 w=400 l=400 "None" "ip" 1280 0 "trim_1.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2130 -1151 2131 -1150 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 172 -1128 173 -1127 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1339 -1135 -1338 -1134 w=400 l=400 "None" "in" 1280 0 "trim_0.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3647 -556 3648 -555 w=400 l=400 "None" "ip" 1280 0 "trim_1.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2124 -549 2125 -548 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 178 -526 179 -525 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1345 -533 -1344 -532 w=400 l=400 "None" "in" 1280 0 "trim_0.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3643 50 3644 51 w=400 l=400 "None" "ip" 1280 0 "trim_1.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2128 57 2129 58 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 174 80 175 81 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1341 73 -1340 74 w=400 l=400 "None" "in" 1280 0 "trim_0.n3" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3647 644 3648 645 w=400 l=400 "None" "ip" 1280 0 "trim_1.n2" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2124 651 2125 652 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 178 674 179 675 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1345 667 -1344 668 w=400 l=400 "None" "in" 1280 0 "trim_0.n2" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3648 1252 3649 1253 w=400 l=400 "None" "ip" 1280 0 "trim_1.n2" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2128 1257 2129 1258 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 174 1280 175 1281 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1346 1275 -1345 1276 w=400 l=400 "None" "in" 1280 0 "trim_0.n2" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3649 1852 3650 1853 w=400 l=400 "None" "ip" 1280 0 "trim_1.n1" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2122 1859 2123 1860 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 180 1882 181 1883 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1347 1875 -1346 1876 w=400 l=400 "None" "in" 1280 0 "trim_0.n1" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 3645 2458 3646 2459 w=400 l=400 "None" "ip" 1280 0 "trim_1.n0" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 2126 2465 2127 2466 w=400 l=400 "None" "ip" 1280 0 "trim_1.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 176 2488 177 2489 w=400 l=400 "None" "in" 1280 0 "trim_0.n4" 0 251265,2310
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1343 2481 -1342 2482 w=400 l=400 "None" "in" 1280 0 "trim_0.n0" 0 251265,2310
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -1187 2945 -1186 l=60 w=200 "vss" "trimb_4" 120 0 "trim_1.n4" 200 11600,516 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -1069 2945 -1068 l=60 w=200 "vss" "trimb_4" 120 0 "vss" 200 5800,258 "trim_1.n4" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -951 2945 -950 l=60 w=200 "vss" "trimb_4" 120 0 "trim_1.n4" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -833 2945 -832 l=60 w=200 "vss" "trimb_4" 120 0 "vss" 200 5800,258 "trim_1.n4" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -715 2945 -714 l=60 w=200 "vss" "trimb_4" 120 0 "trim_1.n4" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -597 2945 -596 l=60 w=200 "vss" "trimb_4" 120 0 "vss" 200 5800,258 "trim_1.n4" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -479 2945 -478 l=60 w=200 "vss" "trimb_4" 120 0 "trim_1.n4" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 -361 2945 -360 l=60 w=200 "vss" "trimb_4" 120 0 "vss" 200 5800,258 "trim_1.n4" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1490 -564 1491 -563 l=60 w=200 "vss" "clk" 120 0 "vss" 200 11600,516 "diff" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1064 -564 1065 -563 l=60 w=200 "vss" "clk" 120 0 "vss" 200 11600,516 "diff" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -1164 -441 -1163 l=60 w=200 "vss" "trim_4" 120 0 "trim_0.n4" 200 11600,516 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -1046 -441 -1045 l=60 w=200 "vss" "trim_4" 120 0 "vss" 200 5800,258 "trim_0.n4" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -928 -441 -927 l=60 w=200 "vss" "trim_4" 120 0 "trim_0.n4" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -810 -441 -809 l=60 w=200 "vss" "trim_4" 120 0 "vss" 200 5800,258 "trim_0.n4" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -692 -441 -691 l=60 w=200 "vss" "trim_4" 120 0 "trim_0.n4" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -574 -441 -573 l=60 w=200 "vss" "trim_4" 120 0 "vss" 200 5800,258 "trim_0.n4" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -456 -441 -455 l=60 w=200 "vss" "trim_4" 120 0 "trim_0.n4" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8 1495 -106 1496 -105 l=60 w=200 "vss" "vp" 120 0 "diff" 200 11600,516 "ip" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1069 -106 1070 -105 l=60 w=200 "vss" "vn" 120 0 "diff" 200 11600,516 "in" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 -338 -441 -337 l=60 w=200 "vss" "trim_4" 120 0 "vss" 200 5800,258 "trim_0.n4" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 411 2945 412 l=60 w=200 "vss" "trimb_3" 120 0 "trim_1.n3" 200 11600,516 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 529 2945 530 l=60 w=200 "vss" "trimb_3" 120 0 "vss" 200 5800,258 "trim_1.n3" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 647 2945 648 l=60 w=200 "vss" "trimb_3" 120 0 "trim_1.n3" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 765 2945 766 l=60 w=200 "vss" "trimb_3" 120 0 "vss" 200 5800,258 "trim_1.n3" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1498 354 1499 355 l=60 w=200 "vss" "outn" 120 0 "ip" 200 11600,516 "outp" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1072 354 1073 355 l=60 w=200 "vss" "outp" 120 0 "in" 200 11600,516 "outn" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 1392 2945 1393 l=60 w=200 "vss" "trimb_2" 120 0 "trim_1.n2" 200 11600,516 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2944 1510 2945 1511 l=60 w=200 "vss" "trimb_2" 120 0 "vss" 200 5800,258 "trim_1.n2" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1534 832 1535 833 l=60 w=200 "vdd" "outn" 120 0 "vdd" 200 11600,516 "outp" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1534 1133 1535 1134 l=60 w=200 "vdd" "clk" 120 0 "vdd" 200 11600,516 "outp" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1534 1498 1535 1499 l=60 w=200 "vdd" "clk" 120 0 "vdd" 200 11600,516 "ip" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1175 832 1176 833 l=60 w=200 "vdd" "outp" 120 0 "outn" 200 11600,516 "vdd" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1175 1133 1176 1134 l=60 w=200 "vdd" "clk" 120 0 "outn" 200 11600,516 "vdd" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1175 1498 1176 1499 l=60 w=200 "vdd" "clk" 120 0 "in" 200 11600,516 "vdd" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 434 -441 435 l=60 w=200 "vss" "trim_3" 120 0 "trim_0.n3" 200 11600,516 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 552 -441 553 l=60 w=200 "vss" "trim_3" 120 0 "vss" 200 5800,258 "trim_0.n3" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 670 -441 671 l=60 w=200 "vss" "trim_3" 120 0 "trim_0.n3" 200 5800,258 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 788 -441 789 l=60 w=200 "vss" "trim_3" 120 0 "vss" 200 5800,258 "trim_0.n3" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 1415 -441 1416 l=60 w=200 "vss" "trim_2" 120 0 "trim_0.n2" 200 11600,516 "vss" 200 5800,258
+device msubckt sky130_fd_pr__nfet_01v8_lvt -442 1533 -441 1534 l=60 w=200 "vss" "trim_2" 120 0 "vss" 200 5800,258 "trim_0.n2" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3058 1968 3059 1969 l=60 w=200 "vss" "trimb_1" 120 0 "vss" 200 11600,516 "trim_1.n1" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt -416 1991 -415 1992 l=60 w=200 "vss" "trim_1" 120 0 "trim_0.n1" 200 11600,516 "vss" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3071 2527 3072 2528 l=60 w=200 "vss" "trimb_0" 120 0 "vss" 200 11600,516 "trim_1.n0" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8_lvt -429 2550 -428 2551 l=60 w=200 "vss" "trim_0" 120 0 "trim_0.n0" 200 11600,516 "vss" 200 11600,516

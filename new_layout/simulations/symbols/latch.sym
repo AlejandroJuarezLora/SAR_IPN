@@ -16,12 +16,12 @@ L 4 -70 35 80 35 {}
 L 4 -70 -35 -70 35 {}
 L 4 80 -35 80 35 {}
 L 4 -70 -35 80 -35 {}
-B 5 -2.5 -52.5 2.5 -47.5 {name=vdd dir=inout }
-B 5 -2.5 47.5 2.5 52.5 {name=vss dir=inout }
-B 5 97.5 17.5 102.5 22.5 {name=Qn dir=out }
-B 5 -92.5 -22.5 -87.5 -17.5 {name=S dir=in }
-B 5 -92.5 17.5 -87.5 22.5 {name=R dir=in }
-B 5 97.5 -22.5 102.5 -17.5 {name=Q dir=out }
+B 5 -2.5 -52.5 2.5 -47.5 {name=vdd dir=inout sim_pinnumber=0}
+B 5 -2.5 47.5 2.5 52.5 {name=vss dir=inout sim_pinnumber=1}
+B 5 97.5 17.5 102.5 22.5 {name=Qn dir=out sim_pinnumber=2}
+B 5 -92.5 -22.5 -87.5 -17.5 {name=S dir=in sim_pinnumber=3}
+B 5 -92.5 17.5 -87.5 22.5 {name=R dir=in sim_pinnumber=4}
+B 5 97.5 -22.5 102.5 -17.5 {name=Q dir=out sim_pinnumber=5}
 P 4 2 0 35 -0 50 {}
 P 4 2 0 -50 -0 -35 {}
 T {@symname} -15.5 -6 0 0 0.3 0.3 {}

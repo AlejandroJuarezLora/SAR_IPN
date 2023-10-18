@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1696886287
+timestamp 1697488162
 << pwell >>
 rect 1564 -377 1600 -133
 rect 1144 -411 1602 -377
@@ -34,21 +34,21 @@ rect 950 -725 1546 -682
 rect 950 -1883 993 -725
 rect -169 -1926 2869 -1883
 << metal1 >>
-rect -1764 2956 -1678 3006
-rect 4384 2933 4473 2983
-rect -1769 2222 -1692 2266
-rect 4394 2199 4483 2243
+rect -1769 2956 -1677 3006
+rect 4384 2933 4495 2983
+rect -1776 2222 -1686 2266
+rect 4392 2199 4474 2243
 rect 1181 1784 1233 1790
-rect -1765 1703 -1686 1749
+rect -1805 1703 -1690 1749
 rect 1233 1743 1594 1773
 rect 1181 1726 1233 1732
-rect 4392 1680 4482 1726
+rect 4392 1680 4489 1726
 rect 782 1614 1159 1643
 rect 1621 1609 1920 1638
 rect 1178 1422 1230 1428
 rect 1230 1381 1601 1411
 rect 1178 1364 1230 1370
-rect -1766 615 -1684 659
+rect -1772 615 -1686 659
 rect 1098 582 1130 1198
 rect 1630 882 1662 1212
 rect 1616 852 1662 882
@@ -71,7 +71,7 @@ rect 1424 576 1476 582
 rect 1424 518 1476 524
 rect 1430 352 1462 518
 rect 1630 448 1662 642
-rect 4388 592 4465 636
+rect 4382 592 4466 636
 rect 1141 174 1179 331
 rect 782 145 1179 174
 rect 1580 148 1618 328
@@ -86,8 +86,8 @@ rect 1564 -468 1600 -411
 rect 1293 -512 1345 -506
 rect 1345 -553 1453 -523
 rect 1293 -570 1345 -564
-rect -1765 -627 -1683 -581
-rect 4384 -650 4463 -604
+rect -1775 -627 -1690 -581
+rect 4391 -650 4477 -604
 << via1 >>
 rect 1181 1732 1233 1784
 rect 1178 1370 1230 1422
@@ -155,40 +155,40 @@ transform 0 1 3379 1 0 2410
 box -4358 -1541 573 1059
 << labels >>
 flabel metal1 1098 438 1130 1198 0 FreeSans 640 0 0 0 outn
-port 6 nsew
+port 13 nsew
 flabel metal1 1630 448 1662 1212 0 FreeSans 640 0 0 0 outp
-port 5 nsew
+port 12 nsew
 flabel metal1 1580 -10 1618 328 0 FreeSans 640 0 0 0 ip
 flabel metal1 1141 -7 1179 331 0 FreeSans 640 0 0 0 in
 flabel metal1 1144 -411 1602 -377 0 FreeSans 640 0 0 0 diff
 flabel locali 950 -875 993 -832 0 FreeSans 640 0 0 0 vss
-port 4 nsew
-flabel locali 1358 1929 1410 1981 0 FreeSans 640 0 0 0 vdd
-port 3 nsew
-flabel metal2 951 2134 981 2164 0 FreeSans 640 0 0 0 clk
-port 2 nsew
-flabel locali 1440 -83 1440 -83 0 FreeSans 640 0 0 0 vp
-port 1 nsew
-flabel locali 1322 -81 1322 -81 0 FreeSans 640 0 0 0 vn
-port 0 nsew
-flabel metal1 -1764 2956 -1714 3006 0 FreeSans 640 0 0 0 trim_0_
-port 11 nsew
-flabel metal1 -1769 2222 -1725 2266 0 FreeSans 640 0 0 0 trim_1_
-port 10 nsew
-flabel metal1 -1765 1703 -1719 1749 0 FreeSans 640 0 0 0 trim_2_
-port 9 nsew
-flabel metal1 -1766 615 -1722 659 0 FreeSans 640 0 0 0 trim_3_
-port 8 nsew
-flabel metal1 -1765 -627 -1719 -581 0 FreeSans 640 0 0 0 trim_4_
-port 7 nsew
-flabel metal1 4423 2933 4473 2983 0 FreeSans 640 0 0 0 trimb_0_
 port 16 nsew
-flabel metal1 4439 2199 4483 2243 0 FreeSans 640 0 0 0 trimb_1_
+flabel locali 1358 1929 1410 1981 0 FreeSans 640 0 0 0 vdd
 port 15 nsew
-flabel metal1 4436 1680 4482 1726 0 FreeSans 640 0 0 0 trimb_2_
+flabel metal2 951 2134 981 2164 0 FreeSans 640 0 0 0 clk
 port 14 nsew
-flabel metal1 4421 592 4465 636 0 FreeSans 640 0 0 0 trimb_3_
-port 13 nsew
-flabel metal1 4417 -650 4463 -604 0 FreeSans 640 0 0 0 trimb_4_
-port 12 nsew
+flabel locali 1440 -83 1440 -83 0 FreeSans 640 0 0 0 vp
+port 10 nsew
+flabel locali 1322 -81 1322 -81 0 FreeSans 640 0 0 0 vn
+port 11 nsew
+flabel metal1 -1775 -627 -1690 -581 0 FreeSans 800 0 0 0 trim_4
+port 0 nsew
+flabel metal1 -1772 615 -1728 659 0 FreeSans 800 0 0 0 trim_3
+port 1 nsew
+flabel metal1 -1805 1703 -1759 1749 0 FreeSans 800 0 0 0 trim_2
+port 2 nsew
+flabel metal1 -1776 2222 -1732 2266 0 FreeSans 800 0 0 0 trim_1
+port 3 nsew
+flabel metal1 -1769 2956 -1719 3006 0 FreeSans 800 0 0 0 trim_0
+port 4 nsew
+flabel metal1 4431 -650 4477 -604 0 FreeSans 800 0 0 0 trimb_4
+port 5 nsew
+flabel metal1 4422 592 4466 636 0 FreeSans 800 0 0 0 trimb_3
+port 6 nsew
+flabel metal1 4443 1680 4489 1726 0 FreeSans 800 0 0 0 trimb_2
+port 7 nsew
+flabel metal1 4430 2199 4474 2243 0 FreeSans 800 0 0 0 trimb_1
+port 8 nsew
+flabel metal1 4445 2933 4495 2983 0 FreeSans 800 0 0 0 trimb_0
+port 9 nsew
 << end >>

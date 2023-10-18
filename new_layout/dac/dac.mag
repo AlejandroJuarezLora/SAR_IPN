@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1697659686
+timestamp 1697663034
 << viali >>
 rect 28179 2935 28219 2975
 rect 28179 2836 28219 2876
@@ -302,7 +302,7 @@ rect 3014 3601 3015 3671
 rect 3085 3601 3086 3671
 rect 3014 3600 3086 3601
 use carray  carray_0
-timestamp 1697065033
+timestamp 1697663034
 transform 1 0 -62 0 1 5400
 box 62 -5400 27238 480
 use sky130_fd_sc_hd__inv_2  sky130_fd_sc_hd__inv_2_0
@@ -358,19 +358,19 @@ timestamp 1693170804
 transform 1 0 8304 0 1 1616
 box -38 -48 222 592
 use sw_top  sw_top_0
-timestamp 1697571680
+timestamp 1697661741
 transform 1 0 6753 0 1 2396
 box -410 -892 1590 1027
 use sw_top  sw_top_1
-timestamp 1697571680
+timestamp 1697661741
 transform 1 0 4830 0 1 2396
 box -410 -892 1590 1027
 use sw_top  sw_top_2
-timestamp 1697571680
+timestamp 1697661741
 transform 1 0 984 0 1 2396
 box -410 -892 1590 1027
 use sw_top  sw_top_3
-timestamp 1697571680
+timestamp 1697661741
 transform 1 0 2907 0 1 2396
 box -410 -892 1590 1027
 << labels >>

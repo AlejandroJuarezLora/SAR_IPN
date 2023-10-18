@@ -1,0 +1,451 @@
+* NGSPICE file created from dac.ext - technology: sky130B
+
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_FJK8MD m3_n386_n240# c1_n346_n200#
+X0 c1_n346_n200# m3_n386_n240# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+.ends
+
+.subckt unitcap cp cn
+Xsky130_fd_pr__cap_mim_m3_1_FJK8MD_0 cn cp sky130_fd_pr__cap_mim_m3_1_FJK8MD
+.ends
+
+.subckt carray n7 n6 n5 ndum n4 n3 n1 n0 top n2
+Xunitcap_190 top n5 unitcap
+Xunitcap_191 top unitcap_191/cn unitcap
+Xunitcap_180 top n6 unitcap
+Xunitcap_181 top n6 unitcap
+Xunitcap_170 top n6 unitcap
+Xunitcap_192 top unitcap_192/cn unitcap
+Xunitcap_330 top unitcap_330/cn unitcap
+Xunitcap_182 top n6 unitcap
+Xunitcap_171 top n6 unitcap
+Xunitcap_160 top unitcap_160/cn unitcap
+Xunitcap_193 top n6 unitcap
+Xunitcap_183 top unitcap_183/cn unitcap
+Xunitcap_150 top n6 unitcap
+Xunitcap_331 top unitcap_331/cn unitcap
+Xunitcap_172 top n6 unitcap
+Xunitcap_194 top n6 unitcap
+Xunitcap_161 top n6 unitcap
+Xunitcap_320 top unitcap_320/cn unitcap
+Xunitcap_332 top n2 unitcap
+Xunitcap_310 top n6 unitcap
+Xunitcap_321 top unitcap_321/cn unitcap
+Xunitcap_151 top unitcap_151/cn unitcap
+Xunitcap_173 top n6 unitcap
+Xunitcap_140 top n7 unitcap
+Xunitcap_195 top n6 unitcap
+Xunitcap_162 top n6 unitcap
+Xunitcap_184 top unitcap_184/cn unitcap
+Xunitcap_174 top n6 unitcap
+Xunitcap_141 top n7 unitcap
+Xunitcap_333 top n2 unitcap
+Xunitcap_196 top n6 unitcap
+Xunitcap_163 top n6 unitcap
+Xunitcap_130 top n6 unitcap
+Xunitcap_311 top n6 unitcap
+Xunitcap_300 top n7 unitcap
+Xunitcap_322 top unitcap_322/cn unitcap
+Xunitcap_152 top unitcap_152/cn unitcap
+Xunitcap_185 top n5 unitcap
+Xunitcap_334 top unitcap_334/cn unitcap
+Xunitcap_312 top n5 unitcap
+Xunitcap_301 top n7 unitcap
+Xunitcap_323 top n0 unitcap
+Xunitcap_175 top unitcap_175/cn unitcap
+Xunitcap_142 top n7 unitcap
+Xunitcap_197 top n6 unitcap
+Xunitcap_164 top n6 unitcap
+Xunitcap_131 top n6 unitcap
+Xunitcap_186 top n5 unitcap
+Xunitcap_120 top unitcap_120/cn unitcap
+Xunitcap_153 top n6 unitcap
+Xunitcap_90 top n7 unitcap
+Xunitcap_198 top n6 unitcap
+Xunitcap_143 top unitcap_143/cn unitcap
+Xunitcap_110 top n7 unitcap
+Xunitcap_165 top n6 unitcap
+Xunitcap_132 top n6 unitcap
+Xunitcap_335 top n2 unitcap
+Xunitcap_187 top n5 unitcap
+Xunitcap_154 top n6 unitcap
+Xunitcap_313 top n6 unitcap
+Xunitcap_302 top n7 unitcap
+Xunitcap_121 top n7 unitcap
+Xunitcap_176 top unitcap_176/cn unitcap
+Xunitcap_324 top unitcap_324/cn unitcap
+Xunitcap_336 top unitcap_336/cn unitcap
+Xunitcap_91 top n7 unitcap
+Xunitcap_314 top n5 unitcap
+Xunitcap_303 top n7 unitcap
+Xunitcap_80 top unitcap_80/cn unitcap
+Xunitcap_325 top ndum unitcap
+Xunitcap_199 top unitcap_199/cn unitcap
+Xunitcap_166 top n6 unitcap
+Xunitcap_111 top unitcap_111/cn unitcap
+Xunitcap_133 top n6 unitcap
+Xunitcap_188 top n5 unitcap
+Xunitcap_100 top n7 unitcap
+Xunitcap_155 top n6 unitcap
+Xunitcap_122 top n7 unitcap
+Xunitcap_144 top unitcap_144/cn unitcap
+Xunitcap_177 top n6 unitcap
+Xunitcap_70 top n7 unitcap
+Xunitcap_337 top unitcap_337/cn unitcap
+Xunitcap_101 top n7 unitcap
+Xunitcap_92 top n7 unitcap
+Xunitcap_326 top unitcap_326/cn unitcap
+Xunitcap_315 top n5 unitcap
+Xunitcap_304 top n7 unitcap
+Xunitcap_81 top n7 unitcap
+Xunitcap_112 top unitcap_112/cn unitcap
+Xunitcap_167 top unitcap_167/cn unitcap
+Xunitcap_134 top n6 unitcap
+Xunitcap_189 top n5 unitcap
+Xunitcap_156 top n6 unitcap
+Xunitcap_123 top n7 unitcap
+Xunitcap_178 top n6 unitcap
+Xunitcap_145 top n6 unitcap
+Xunitcap_338 top unitcap_338/cn unitcap
+Xunitcap_71 top unitcap_71/cn unitcap
+Xunitcap_93 top n7 unitcap
+Xunitcap_60 top n7 unitcap
+Xunitcap_327 top n1 unitcap
+Xunitcap_82 top n7 unitcap
+Xunitcap_316 top n5 unitcap
+Xunitcap_305 top n6 unitcap
+Xunitcap_135 top unitcap_135/cn unitcap
+Xunitcap_102 top n7 unitcap
+Xunitcap_157 top n6 unitcap
+Xunitcap_124 top n7 unitcap
+Xunitcap_179 top n6 unitcap
+Xunitcap_146 top n6 unitcap
+Xunitcap_113 top n7 unitcap
+Xunitcap_168 top unitcap_168/cn unitcap
+Xunitcap_339 top n2 unitcap
+Xunitcap_94 top n7 unitcap
+Xunitcap_61 top n7 unitcap
+Xunitcap_83 top n7 unitcap
+Xunitcap_50 top n7 unitcap
+Xunitcap_328 top unitcap_328/cn unitcap
+Xunitcap_317 top n4 unitcap
+Xunitcap_306 top n6 unitcap
+Xunitcap_72 top unitcap_72/cn unitcap
+Xunitcap_158 top n6 unitcap
+Xunitcap_103 top unitcap_103/cn unitcap
+Xunitcap_125 top n7 unitcap
+Xunitcap_147 top n6 unitcap
+Xunitcap_114 top n7 unitcap
+Xunitcap_136 top unitcap_136/cn unitcap
+Xunitcap_169 top n6 unitcap
+Xunitcap_95 top unitcap_95/cn unitcap
+Xunitcap_62 top n7 unitcap
+Xunitcap_84 top n7 unitcap
+Xunitcap_51 top n7 unitcap
+Xunitcap_329 top n1 unitcap
+Xunitcap_318 top n4 unitcap
+Xunitcap_307 top n6 unitcap
+Xunitcap_40 top unitcap_40/cn unitcap
+Xunitcap_73 top n7 unitcap
+Xunitcap_159 top unitcap_159/cn unitcap
+Xunitcap_126 top n7 unitcap
+Xunitcap_148 top n6 unitcap
+Xunitcap_115 top n7 unitcap
+Xunitcap_104 top unitcap_104/cn unitcap
+Xunitcap_137 top n7 unitcap
+Xunitcap_63 top unitcap_63/cn unitcap
+Xunitcap_30 top n7 unitcap
+Xunitcap_85 top n7 unitcap
+Xunitcap_52 top n7 unitcap
+Xunitcap_74 top n7 unitcap
+Xunitcap_319 top n3 unitcap
+Xunitcap_308 top n6 unitcap
+Xunitcap_41 top n7 unitcap
+Xunitcap_96 top unitcap_96/cn unitcap
+Xunitcap_127 top unitcap_127/cn unitcap
+Xunitcap_149 top n6 unitcap
+Xunitcap_116 top n7 unitcap
+Xunitcap_138 top n7 unitcap
+Xunitcap_105 top n7 unitcap
+Xunitcap_86 top n7 unitcap
+Xunitcap_31 top unitcap_31/cn unitcap
+Xunitcap_53 top n7 unitcap
+Xunitcap_20 top n7 unitcap
+Xunitcap_75 top n7 unitcap
+Xunitcap_42 top n7 unitcap
+Xunitcap_64 top unitcap_64/cn unitcap
+Xunitcap_97 top n7 unitcap
+Xunitcap_117 top n7 unitcap
+Xunitcap_139 top n7 unitcap
+Xunitcap_106 top n7 unitcap
+Xunitcap_309 top n6 unitcap
+Xunitcap_128 top unitcap_128/cn unitcap
+Xunitcap_87 top unitcap_87/cn unitcap
+Xunitcap_54 top n7 unitcap
+Xunitcap_21 top n7 unitcap
+Xunitcap_76 top n7 unitcap
+Xunitcap_43 top n7 unitcap
+Xunitcap_98 top n7 unitcap
+Xunitcap_10 top unitcap_10/cn unitcap
+Xunitcap_32 top unitcap_32/cn unitcap
+Xunitcap_65 top n7 unitcap
+Xunitcap_118 top n7 unitcap
+Xunitcap_107 top n7 unitcap
+Xunitcap_129 top n6 unitcap
+Xunitcap_290 top n7 unitcap
+Xunitcap_55 top unitcap_55/cn unitcap
+Xunitcap_22 top n7 unitcap
+Xunitcap_77 top n7 unitcap
+Xunitcap_44 top n7 unitcap
+Xunitcap_99 top n7 unitcap
+Xunitcap_11 top unitcap_11/cn unitcap
+Xunitcap_66 top n7 unitcap
+Xunitcap_0 top unitcap_0/cn unitcap
+Xunitcap_33 top n7 unitcap
+Xunitcap_88 top unitcap_88/cn unitcap
+Xunitcap_119 top unitcap_119/cn unitcap
+Xunitcap_108 top n7 unitcap
+Xunitcap_291 top n7 unitcap
+Xunitcap_1 top n7 unitcap
+Xunitcap_280 top n5 unitcap
+Xunitcap_78 top n7 unitcap
+Xunitcap_23 top unitcap_23/cn unitcap
+Xunitcap_45 top n7 unitcap
+Xunitcap_12 top unitcap_12/cn unitcap
+Xunitcap_67 top n7 unitcap
+Xunitcap_34 top n7 unitcap
+Xunitcap_56 top unitcap_56/cn unitcap
+Xunitcap_89 top n7 unitcap
+Xunitcap_109 top n7 unitcap
+Xunitcap_292 top n7 unitcap
+Xunitcap_270 top n7 unitcap
+Xunitcap_281 top n6 unitcap
+Xunitcap_79 top unitcap_79/cn unitcap
+Xunitcap_46 top n7 unitcap
+Xunitcap_68 top n7 unitcap
+Xunitcap_13 top unitcap_13/cn unitcap
+Xunitcap_35 top n7 unitcap
+Xunitcap_2 top n7 unitcap
+Xunitcap_24 top unitcap_24/cn unitcap
+Xunitcap_57 top n7 unitcap
+Xunitcap_3 top n7 unitcap
+Xunitcap_293 top n7 unitcap
+Xunitcap_260 top n7 unitcap
+Xunitcap_271 top n7 unitcap
+Xunitcap_282 top n5 unitcap
+Xunitcap_47 top unitcap_47/cn unitcap
+Xunitcap_14 top unitcap_14/cn unitcap
+Xunitcap_69 top n7 unitcap
+Xunitcap_36 top n7 unitcap
+Xunitcap_58 top n7 unitcap
+Xunitcap_25 top n7 unitcap
+Xunitcap_4 top n7 unitcap
+Xunitcap_250 top n3 unitcap
+Xunitcap_294 top n7 unitcap
+Xunitcap_283 top n5 unitcap
+Xunitcap_261 top n7 unitcap
+Xunitcap_272 top n7 unitcap
+Xunitcap_15 top unitcap_15/cn unitcap
+Xunitcap_37 top n7 unitcap
+Xunitcap_59 top n7 unitcap
+Xunitcap_26 top n7 unitcap
+Xunitcap_48 top unitcap_48/cn unitcap
+Xunitcap_5 top n7 unitcap
+Xunitcap_251 top n3 unitcap
+Xunitcap_295 top n7 unitcap
+Xunitcap_240 top unitcap_240/cn unitcap
+Xunitcap_262 top n7 unitcap
+Xunitcap_273 top n6 unitcap
+Xunitcap_284 top n5 unitcap
+Xunitcap_38 top n7 unitcap
+Xunitcap_27 top n7 unitcap
+Xunitcap_16 top unitcap_16/cn unitcap
+Xunitcap_49 top n7 unitcap
+Xunitcap_230 top n5 unitcap
+Xunitcap_6 top n7 unitcap
+Xunitcap_252 top n3 unitcap
+Xunitcap_296 top n7 unitcap
+Xunitcap_285 top n4 unitcap
+Xunitcap_241 top n4 unitcap
+Xunitcap_263 top n7 unitcap
+Xunitcap_274 top n6 unitcap
+Xunitcap_39 top unitcap_39/cn unitcap
+Xunitcap_28 top n7 unitcap
+Xunitcap_17 top n7 unitcap
+Xunitcap_231 top unitcap_231/cn unitcap
+Xunitcap_7 top unitcap_7/cn unitcap
+Xunitcap_253 top n3 unitcap
+Xunitcap_220 top n5 unitcap
+Xunitcap_242 top n4 unitcap
+Xunitcap_297 top n7 unitcap
+Xunitcap_286 top n4 unitcap
+Xunitcap_264 top n7 unitcap
+Xunitcap_275 top n6 unitcap
+Xunitcap_29 top n7 unitcap
+Xunitcap_18 top n7 unitcap
+Xunitcap_254 top n3 unitcap
+Xunitcap_221 top n5 unitcap
+Xunitcap_243 top n4 unitcap
+Xunitcap_210 top n5 unitcap
+Xunitcap_298 top n7 unitcap
+Xunitcap_287 top n3 unitcap
+Xunitcap_8 top unitcap_8/cn unitcap
+Xunitcap_232 top unitcap_232/cn unitcap
+Xunitcap_265 top n7 unitcap
+Xunitcap_276 top n6 unitcap
+Xunitcap_19 top n7 unitcap
+Xunitcap_255 top unitcap_255/cn unitcap
+Xunitcap_222 top n5 unitcap
+Xunitcap_244 top n4 unitcap
+Xunitcap_211 top n5 unitcap
+Xunitcap_299 top n7 unitcap
+Xunitcap_288 top unitcap_288/cn unitcap
+Xunitcap_9 top unitcap_9/cn unitcap
+Xunitcap_200 top unitcap_200/cn unitcap
+Xunitcap_233 top n4 unitcap
+Xunitcap_266 top n7 unitcap
+Xunitcap_277 top n6 unitcap
+Xunitcap_223 top unitcap_223/cn unitcap
+Xunitcap_245 top n4 unitcap
+Xunitcap_212 top n5 unitcap
+Xunitcap_234 top n4 unitcap
+Xunitcap_289 top n7 unitcap
+Xunitcap_201 top n6 unitcap
+Xunitcap_256 top unitcap_256/cn unitcap
+Xunitcap_267 top n7 unitcap
+Xunitcap_278 top n6 unitcap
+Xunitcap_246 top n4 unitcap
+Xunitcap_213 top n5 unitcap
+Xunitcap_235 top n4 unitcap
+Xunitcap_202 top n6 unitcap
+Xunitcap_224 top unitcap_224/cn unitcap
+Xunitcap_257 top n7 unitcap
+Xunitcap_268 top n7 unitcap
+Xunitcap_279 top n6 unitcap
+Xunitcap_247 top unitcap_247/cn unitcap
+Xunitcap_214 top n5 unitcap
+Xunitcap_236 top n4 unitcap
+Xunitcap_203 top n6 unitcap
+Xunitcap_225 top n5 unitcap
+Xunitcap_258 top n7 unitcap
+Xunitcap_269 top n7 unitcap
+Xunitcap_215 top unitcap_215/cn unitcap
+Xunitcap_237 top n4 unitcap
+Xunitcap_204 top n6 unitcap
+Xunitcap_226 top n5 unitcap
+Xunitcap_248 top unitcap_248/cn unitcap
+Xunitcap_259 top n7 unitcap
+Xunitcap_238 top n4 unitcap
+Xunitcap_205 top n6 unitcap
+Xunitcap_227 top n5 unitcap
+Xunitcap_216 top unitcap_216/cn unitcap
+Xunitcap_249 top n3 unitcap
+Xunitcap_239 top unitcap_239/cn unitcap
+Xunitcap_206 top n6 unitcap
+Xunitcap_228 top n5 unitcap
+Xunitcap_217 top n5 unitcap
+Xunitcap_207 top unitcap_207/cn unitcap
+Xunitcap_229 top n5 unitcap
+Xunitcap_218 top n5 unitcap
+Xunitcap_219 top n5 unitcap
+Xunitcap_208 top unitcap_208/cn unitcap
+Xunitcap_209 top n5 unitcap
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_VVAZD4 a_89_n136# a_n501_n136# a_26_95# a_561_n136#
++ a_n383_n136# a_n328_95# a_n446_95# w_n757_n284# a_443_n136# a_n265_n136# a_n210_95#
++ a_n619_n136# G0 a_325_n136# a_n147_n136# a_498_95# a_144_95# a_207_n136# a_262_95#
++ a_n29_n136# a_380_95# a_n92_95#
+X0 a_443_n136# a_380_95# a_325_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X1 a_n383_n136# a_n446_95# a_n501_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X2 a_n29_n136# a_n92_95# a_n147_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X3 a_325_n136# a_262_95# a_207_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X4 a_561_n136# a_498_95# a_443_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.3
+X5 a_n265_n136# a_n328_95# a_n383_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X6 a_89_n136# a_26_95# a_n29_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X7 a_207_n136# a_144_95# a_89_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X8 a_n501_n136# G0 a_n619_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.3
+X9 a_n147_n136# a_n210_95# a_n265_n136# w_n757_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+.ends
+
+.subckt sky130_fd_sc_hd__decap_3 VGND VNB VPB VPWR
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.226 pd=2.26 as=0.452 ps=4.52 w=0.87 l=0.59
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0.286 ps=3.24 w=0.55 l=0.59
+.ends
+
+.subckt sky130_fd_sc_hd__inv_4 A VGND VNB VPB VPWR Y
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.135 ps=1.27 w=1 l=0.15
+X4 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X6 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.0878 ps=0.92 w=0.65 l=0.15
+X7 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.0878 pd=0.92 as=0.0878 ps=0.92 w=0.65 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__decap_8 VGND VNB VPB VPWR
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.226 pd=2.26 as=0.452 ps=4.52 w=0.87 l=2.89
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0.286 ps=3.24 w=0.55 l=2.89
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_JJRV6Y a_n501_n131# a_561_n131# a_26_91# a_n383_n131#
++ a_n328_91# a_n446_91# a_n564_91# a_443_n131# a_n265_n131# a_n619_n131# a_n210_91#
++ a_n721_n243# a_325_n131# a_n147_n131# a_498_91# a_207_n131# a_144_91# a_262_91#
++ a_n29_n131# a_380_91# a_n92_91# a_89_n131#
+X0 a_561_n131# a_498_91# a_443_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.3
+X1 a_n265_n131# a_n328_91# a_n383_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X2 a_89_n131# a_26_91# a_n29_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X3 a_207_n131# a_144_91# a_89_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X4 a_n501_n131# a_n564_91# a_n619_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.3
+X5 a_n147_n131# a_n210_91# a_n265_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X6 a_443_n131# a_380_91# a_325_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X7 a_n383_n131# a_n446_91# a_n501_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X8 a_n29_n131# a_n92_91# a_n147_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+X9 a_325_n131# a_262_91# a_207_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
+.ends
+
+.subckt sw_top out en in vdd vss
+Xsky130_fd_pr__pfet_01v8_VVAZD4_0 in out en_buf in in en_buf en_buf vdd out out en_buf
++ in en_buf in in en_buf en_buf out en_buf out en_buf en_buf sky130_fd_pr__pfet_01v8_VVAZD4
+Xsky130_fd_sc_hd__decap_3_0 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+Xsky130_fd_sc_hd__inv_4_0 en_buf vss vss vdd vdd net1 sky130_fd_sc_hd__inv_4
+Xsky130_fd_sc_hd__inv_4_1 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
+Xsky130_fd_sc_hd__decap_8_0 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+Xsky130_fd_pr__nfet_01v8_JJRV6Y_0 out in net1 in net1 net1 net1 out out in net1 vss
++ in in net1 out net1 net1 out net1 net1 in sky130_fd_pr__nfet_01v8_JJRV6Y
+.ends
+
+.subckt dac ctl0 ctl1 ctl2 ctl3 ctl4 ctl5 ctl6 ctl7 dum vin vdd sample out vss
+Xsky130_fd_sc_hd__inv_2_0 ctl5 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n5
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_1 ctl6 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n6
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_2 ctl7 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n7
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_3 ctl3 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n3
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_4 ctl1 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n1
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_6 ctl0 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n0
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_5 ctl2 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n2
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_7 dum vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/ndum
++ sky130_fd_sc_hd__inv_2
+Xsky130_fd_sc_hd__inv_2_8 ctl4 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n4
++ sky130_fd_sc_hd__inv_2
+Xcarray_0 carray_0/n7 carray_0/n6 carray_0/n5 carray_0/ndum carray_0/n4 carray_0/n3
++ carray_0/n1 carray_0/n0 out carray_0/n2 carray
+Xsw_top_0 out sample vin vdd vss sw_top
+Xsw_top_1 out sample vin vdd vss sw_top
+Xsw_top_2 out sample vin vdd vss sw_top
+Xsw_top_3 out sample vin vdd vss sw_top
+.ends
+

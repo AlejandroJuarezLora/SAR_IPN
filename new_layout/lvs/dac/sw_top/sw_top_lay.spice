@@ -54,18 +54,13 @@ X9 a_325_n131# a_262_91# a_207_n131# a_n721_n243# sky130_fd_pr__nfet_01v8 ad=0.1
 .ends
 
 .subckt sw_top out en vss vdd in
-Xsky130_fd_pr__pfet_01v8_VVAZD4_0 in out sky130_fd_sc_hd__inv_4_1/Y in in sky130_fd_sc_hd__inv_4_1/Y
-+ sky130_fd_sc_hd__inv_4_1/Y vdd out out sky130_fd_sc_hd__inv_4_1/Y in sky130_fd_sc_hd__inv_4_1/Y
-+ in in sky130_fd_sc_hd__inv_4_1/Y sky130_fd_sc_hd__inv_4_1/Y out sky130_fd_sc_hd__inv_4_1/Y
-+ out sky130_fd_sc_hd__inv_4_1/Y sky130_fd_sc_hd__inv_4_1/Y sky130_fd_pr__pfet_01v8_VVAZD4
+Xsky130_fd_pr__pfet_01v8_VVAZD4_0 in out en_buf in in en_buf en_buf vdd out out en_buf
++ in en_buf in in en_buf en_buf out en_buf out en_buf en_buf sky130_fd_pr__pfet_01v8_VVAZD4
 Xsky130_fd_sc_hd__decap_3_0 vss vss vdd vdd sky130_fd_sc_hd__decap_3
-Xsky130_fd_sc_hd__inv_4_0 sky130_fd_sc_hd__inv_4_1/Y vss vss vdd vdd sky130_fd_sc_hd__inv_4_0/Y
-+ sky130_fd_sc_hd__inv_4
-Xsky130_fd_sc_hd__inv_4_1 en vss vss vdd vdd sky130_fd_sc_hd__inv_4_1/Y sky130_fd_sc_hd__inv_4
+Xsky130_fd_sc_hd__inv_4_0 en_buf vss vss vdd vdd net1 sky130_fd_sc_hd__inv_4
+Xsky130_fd_sc_hd__inv_4_1 en vss vss vdd vdd en_buf sky130_fd_sc_hd__inv_4
 Xsky130_fd_sc_hd__decap_8_0 vss vss vdd vdd sky130_fd_sc_hd__decap_8
-Xsky130_fd_pr__nfet_01v8_JJRV6Y_0 out in sky130_fd_sc_hd__inv_4_0/Y in sky130_fd_sc_hd__inv_4_0/Y
-+ sky130_fd_sc_hd__inv_4_0/Y sky130_fd_sc_hd__inv_4_0/Y out out in sky130_fd_sc_hd__inv_4_0/Y
-+ vss in in sky130_fd_sc_hd__inv_4_0/Y out sky130_fd_sc_hd__inv_4_0/Y sky130_fd_sc_hd__inv_4_0/Y
-+ out sky130_fd_sc_hd__inv_4_0/Y sky130_fd_sc_hd__inv_4_0/Y in sky130_fd_pr__nfet_01v8_JJRV6Y
+Xsky130_fd_pr__nfet_01v8_JJRV6Y_0 out in net1 in net1 net1 net1 out out in net1 vss
++ in in net1 out net1 net1 out net1 net1 in sky130_fd_pr__nfet_01v8_JJRV6Y
 .ends
 

@@ -15,7 +15,7 @@ X0 c1_n346_n200# m3_n386_n240# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 Xsky130_fd_pr__cap_mim_m3_1_FJK8MD_0 cn cp sky130_fd_pr__cap_mim_m3_1_FJK8MD
 .ends
 
-.subckt carray unitcap_9/cp n7 n6 n5 ndum n1 n0 n2 n3 n4
+.subckt carray n7 n6 n5 ndum n4 n3 n1 n0 unitcap_9/cp n2
 Xunitcap_190 unitcap_9/cp n5 unitcap
 Xunitcap_191 unitcap_9/cp unitcap_191/cn unitcap
 Xunitcap_180 unitcap_9/cp n6 unitcap
@@ -422,28 +422,27 @@ Xsky130_fd_pr__nfet_01v8_JJRV6Y_0 out in net1 in net1 net1 net1 out out in net1 
 + in in net1 out net1 net1 out net1 net1 in sky130_fd_pr__nfet_01v8_JJRV6Y
 .ends
 
-.subckt dac vin sample out ctl_7_ ctl_6_ ctl_5_ ctl_4_ ctl_3_ ctl_2_ ctl_1_ ctl_0_
-+ dum vdd vss
-Xsky130_fd_sc_hd__inv_2_0 carray_0/n6 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_6_
+.subckt dac ctl0 ctl1 ctl2 ctl3 ctl4 ctl5 ctl6 ctl7 dum vin vdd sample out vss
+Xsky130_fd_sc_hd__inv_2_0 ctl5 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n5
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_2 carray_0/ndum vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd dum
+Xsky130_fd_sc_hd__inv_2_1 ctl6 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n6
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_3 carray_0/n1 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_1_
+Xsky130_fd_sc_hd__inv_2_2 ctl7 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n7
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_4 carray_0/n4 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_4_
+Xsky130_fd_sc_hd__inv_2_3 ctl3 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n3
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_5 carray_0/n5 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_5_
+Xsky130_fd_sc_hd__inv_2_4 ctl1 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n1
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_6 carray_0/n2 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_2_
+Xsky130_fd_sc_hd__inv_2_6 ctl0 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n0
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_7 carray_0/n3 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_3_
+Xsky130_fd_sc_hd__inv_2_5 ctl2 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n2
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_8 carray_0/n0 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_0_
+Xsky130_fd_sc_hd__inv_2_7 dum vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/ndum
 + sky130_fd_sc_hd__inv_2
-Xsky130_fd_sc_hd__inv_2_9 carray_0/n7 vss vss sky130_fd_sc_hd__inv_2_9/VPB vdd ctl_7_
+Xsky130_fd_sc_hd__inv_2_8 ctl4 vss vss sky130_fd_sc_hd__tap_2_1/VPB vdd carray_0/n4
 + sky130_fd_sc_hd__inv_2
-Xcarray_0 out carray_0/n7 carray_0/n6 carray_0/n5 carray_0/ndum carray_0/n1 carray_0/n0
-+ carray_0/n2 carray_0/n3 carray_0/n4 carray
+Xcarray_0 carray_0/n7 carray_0/n6 carray_0/n5 carray_0/ndum carray_0/n4 carray_0/n3
++ carray_0/n1 carray_0/n0 out carray_0/n2 carray
 Xsw_top_0 out sample vin vdd vss sw_top
 Xsw_top_1 out sample vin vdd vss sw_top
 Xsw_top_2 out sample vin vdd vss sw_top

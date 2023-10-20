@@ -1,7 +1,7 @@
 v {xschem version=3.4.3 file_version=1.2
 }
 G {}
-K {type=subcircuit
+K {type=primitive
 format="@name @pinlist @symname"
 template="name=x1"
 }
@@ -32,17 +32,17 @@ L 7 0 80 0 100 {}
 B 4 -40 -20 0 -0 {}
 B 4 -40 20 0 40 {}
 B 4 50 0 70 10 {}
-B 5 147.5 57.5 152.5 62.5 {name=sample dir=in}
-B 5 -2.5 -102.5 2.5 -97.5 {name=avdd dir=inout}
-B 5 -2.5 97.5 2.5 102.5 {name=avss dir=inout}
-B 5 -152.5 -52.5 -147.5 -47.5 {name=vinp dir=in}
-B 5 -152.5 -32.5 -147.5 -27.5 {name=vinn dir=in}
-B 5 147.5 -12.5 152.5 -7.5 {name=ctlp[7:0] dir=in}
-B 5 147.5 7.5 152.5 12.5 {name=ctln[7:0] dir=in}
-B 5 77.5 -102.5 82.5 -97.5 {name=trim[4:0] dir=in}
-B 5 47.5 -102.5 52.5 -97.5 {name=trimb[4:0] dir=in}
-B 5 147.5 -72.5 152.5 -67.5 {name=clkc dir=in}
-B 5 -92.5 -102.5 -87.5 -97.5 {name=comp dir=out}
+B 5 147.5 -12.5 152.5 -7.5 {name=ctlp[7:0] dir=in sim_pinnumber=0:1:2:3:4:5:6:7}
+B 5 147.5 7.5 152.5 12.5 {name=ctln[7:0] dir=in sim_pinnumber=8:9:10:11:12:13:14:15}
+B 5 47.5 -102.5 52.5 -97.5 {name=trimb[4:0] dir=in sim_pinnumber=16:17:18:19:20}
+B 5 77.5 -102.5 82.5 -97.5 {name=trim[4:0] dir=in sim_pinnumber=21:22:23:24:25}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=vinp dir=in sim_pinnumber=26}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=vinn dir=in sim_pinnumber=27}
+B 5 147.5 57.5 152.5 62.5 {name=sample dir=in sim_pinnumber=28}
+B 5 -92.5 -102.5 -87.5 -97.5 {name=comp dir=out sim_pinnumber=29}
+B 5 147.5 -72.5 152.5 -67.5 {name=clkc dir=in sim_pinnumber=30}
+B 5 -2.5 -102.5 2.5 -97.5 {name=avdd dir=inout sim_pinnumber=31}
+B 5 -2.5 97.5 2.5 102.5 {name=avss dir=inout sim_pinnumber=32}
 T {@symname} -63 -76 0 0 0.3 0.3 {}
 T {@name} 135 -92 0 0 0.2 0.2 {}
 T {sample} 85 56 0 0 0.2 0.2 {}
@@ -60,3 +60,4 @@ T {latch} 50 10 0 0 0.1 0.1 {}
 T {comparator} 20 20 0 0 0.1 0.1 {}
 T {dac2} -40 40 0 0 0.1 0.1 {}
 T {dac1} -40 0 0 0 0.1 0.1 {}
+T {IPN-UCI} -120 50 0 0 0.4 0.4 {}

@@ -133,4 +133,4 @@ Xuut dclk drstn den dcomp dcal dvalid dres0 dres1 dres2 dres3 dres4 dres5 dres6 
 "}
 C {devices/noconn.sym} -210 -520 0 0 {name=l67}
 C {devices/noconn.sym} -210 -490 0 0 {name=l68}
-C {/home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/symbols/sar_merged.sym} 340 -160 0 0 {name=x1}
+C {/home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/symbols/sar_analog.sym} 340 -160 0 0 {name=x1}

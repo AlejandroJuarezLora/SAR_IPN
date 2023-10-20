@@ -207,7 +207,7 @@ name=STDCELLS
 only_toplevel=false
 format="tcleval( @value )"
 value="
-.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/sar_merged.spice
+.include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/sar_analog.spice
 .include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/cmos_cells_digital.sp
 .include /home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/spice/sar_logic.sp
 .include \\\\$::SKYWATER_STDCELLS\\\\/sky130_fd_sc_hd.spice
@@ -238,7 +238,7 @@ value="
 .control
 
 run
-write tb_sar_final.raw
+write tb_sar_analog.raw
 meas tran d0 find v(xsar.res0) at=47e-6
 meas tran d1 find v(xsar.res1) at=47e-6
 meas tran d2 find v(xsar.res2) at=47e-6
@@ -320,6 +320,6 @@ place=header
 spice_ignore=false}
 C {devices/launcher.sym} 180 -380 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tb_sar_new_layout.raw tran"
+tclcommand="xschem raw_read $netlist_dir/tb_sar_analog.raw tran"
 }
-C {/home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/symbols/sar_final.sym} 890 -270 0 0 {name=x1}
+C {/home/alex/Desktop/EDA/SAR_IPN/new_layout/simulations/symbols/sar_post2.sym} 890 -270 0 0 {name=x1}

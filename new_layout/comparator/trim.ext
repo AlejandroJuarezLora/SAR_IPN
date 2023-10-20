@@ -1,0 +1,385 @@
+timestamp 1696628412
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use trimcap trimcap_9 1 0 -2999 0 -1 -215
+use trimcap trimcap_10 1 0 -3601 0 -1 -209
+use trimcap trimcap_11 1 0 -4207 0 -1 -213
+use trimcap trimcap_8 1 0 -2393 0 -1 -211
+use trimcap trimcap_13 1 0 -1799 0 -1 -215
+use trimcap trimcap_12 1 0 -1193 0 -1 -211
+use trimcap trimcap_15 1 0 -591 0 -1 -217
+use trimcap trimcap_14 1 0 15 0 -1 -213
+use sky130_fd_pr__nfet_01v8_lvt_3SNHZA sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0 1 0 -3154 0 1 -304
+use trimcap trimcap_0 1 0 -4214 0 1 -374
+use trimcap trimcap_1 1 0 -3608 0 1 -378
+use trimcap trimcap_2 1 0 -3006 0 1 -372
+use sky130_fd_pr__nfet_01v8_lvt_FS2HZA sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0 1 0 -1792 0 1 -304
+use trimcap trimcap_3 1 0 -2400 0 1 -376
+use trimcap trimcap_5 1 0 -1806 0 1 -372
+use sky130_fd_pr__nfet_01v8_lvt_763N5J sky130_fd_pr__nfet_01v8_lvt_763N5J_0 0 1 -311 -1 0 -291
+use sky130_fd_pr__nfet_01v8_lvt_THUHZA sky130_fd_pr__nfet_01v8_lvt_THUHZA_0 1 0 -929 0 1 -304
+use trimcap trimcap_4 1 0 -1198 0 1 -371
+use trimcap trimcap_6 1 0 -598 0 1 -370
+use sky130_fd_pr__nfet_01v8_lvt_763N5J sky130_fd_pr__nfet_01v8_lvt_763N5J_1 0 1 248 -1 0 -278
+use trimcap trimcap_7 1 0 8 0 1 -374
+port "d_0_" 5 523 1005 573 1055 m1
+port "drain" 0 -4166 845 267 874 m1
+port "vss" 6 -4356 -547 -4322 -513 li
+port "d_1_" 4 -211 1015 -167 1059 m1
+port "d_2_" 3 -730 1013 -684 1059 m1
+port "d_3_" 2 -1818 1010 -1774 1054 m1
+port "d_4_" 1 -3060 1009 -3014 1055 m1
+node "d_0_" 4 604.861 523 1005 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76600 3164 0 0 0 0 0 0 0 0 0 0
+node "n0" 1 71.6333 230 -216 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9920 702 0 0 0 0 0 0 0 0 0 0
+node "n1" 1 56.3622 -375 -225 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9920 702 0 0 0 0 0 0 0 0 0 0
+node "n2" 6 390.798 -1584 46 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48980 3222 0 0 0 0 0 0 0 0 0 0
+node "n4" 26 1347.67 -3950 -686 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173739 12040 0 0 0 0 0 0 0 0 0 0
+node "n3" 15 777.55 -3990 52 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97556 6786 0 0 0 0 0 0 0 0 0 0
+node "drain" 48 4154.75 -4166 845 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 326686 22490 0 0 0 0 0 0 0 0 0 0
+node "vss" 2211 2433.99 -4356 -547 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 213114 12206 0 0 0 0 0 0 0 0 0 0 0 0
+node "d_1_" 165 467.75 -211 1015 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24508 1202 41588 2052 0 0 0 0 0 0 0 0 0 0
+node "d_2_" 156 518.393 -730 1013 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25162 1186 52038 2434 0 0 0 0 0 0 0 0 0 0
+node "d_3_" 79 622.691 -1818 1010 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12328 628 67954 3134 0 0 0 0 0 0 0 0 0 0
+node "d_4_" 294 741.324 -3060 1009 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47978 2178 54936 2560 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "d_1_" "n1" 76.9399
+cap "n2" "vss" 56.8026
+cap "n2" "d_4_" 0.0222022
+cap "n1" "drain" 1.705
+cap "n2" "n4" 84.037
+cap "d_2_" "d_1_" 70.6028
+cap "vss" "n1" 1.77824
+cap "n3" "drain" 112.233
+cap "vss" "n3" 125.977
+cap "d_4_" "n3" 205.336
+cap "d_2_" "drain" 71.1052
+cap "n4" "n1" 2.82988
+cap "n2" "d_3_" 22.3259
+cap "d_2_" "d_0_" 0.870341
+cap "d_1_" "drain" 64.8827
+cap "d_2_" "vss" 4.79225
+cap "n4" "n3" 220.249
+cap "d_1_" "d_0_" 36.7162
+cap "d_1_" "vss" 3.46851
+cap "d_2_" "n4" 9.67129
+cap "n0" "d_1_" 31.4989
+cap "d_0_" "drain" 4.16993
+cap "vss" "drain" 31.5137
+cap "d_4_" "drain" 67.5654
+cap "d_1_" "n4" 4.94374
+cap "d_3_" "n3" 87.7265
+cap "n2" "n1" 1.32808
+cap "d_0_" "vss" 0.0993886
+cap "d_4_" "vss" 11.8325
+cap "n0" "drain" 1.7244
+cap "n2" "n3" 19.0642
+cap "d_3_" "d_2_" 28.2163
+cap "n0" "d_0_" 45.1282
+cap "n4" "drain" 282.724
+cap "d_3_" "d_1_" 0.0759692
+cap "vss" "n4" 390.07
+cap "d_4_" "n4" 132.004
+cap "n2" "d_2_" 91.7572
+cap "n0" "n4" 2.778
+cap "n2" "d_1_" 4.18214
+cap "d_3_" "drain" 80.9432
+cap "d_3_" "vss" 5.28285
+cap "d_3_" "d_4_" 11.0588
+cap "d_2_" "n1" 36.4011
+cap "n2" "drain" 34.3178
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" 142.407
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" "trimcap_5/m1_176_1185#" 8.1266
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "trimcap_5/m1_176_1185#" 6.81113
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" 83.7592
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" "trimcap_3/m1_179_405#" 5.98706
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" 97.7805
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "trimcap_3/m1_179_405#" 10.1791
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "trimcap_5/m1_176_1185#" 157.614
+cap "trimcap_3/m1_179_405#" "trimcap_5/m1_176_1185#" 2.59678
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "trimcap_3/m1_179_405#" 50.6054
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 57.7981
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 16.6384
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "trimcap_6/m1_176_1185#" 3.89301
+cap "trimcap_4/m1_179_405#" "trimcap_3/m1_179_405#" -1.40569
+cap "trimcap_6/m1_176_1185#" "trimcap_3/m1_179_405#" 7.21298
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 59.1226
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 0.0918531
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 11.1551
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 92.3573
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 2.35442
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 0.509275
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 8.34298
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_4/m1_179_405#" 10.8344
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_6/m1_176_1185#" 1.99554
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "trimcap_3/m1_179_405#" 7.6914
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 48.556
+cap "trimcap_4/m1_179_405#" "trimcap_6/m1_176_1185#" 0.676075
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "trimcap_3/m1_179_405#" 81.2359
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 46.6814
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" 3.7556
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "trimcap_3/m1_179_405#" 40.5193
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_3/m1_179_405#" 54.0129
+cap "trimcap_4/m1_179_405#" "trimcap_14/m1_179_405#" 47.9099
+cap "trimcap_7/m1_176_1185#" "trimcap_14/m1_176_1185#" 28.0488
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 7.206
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" 0.870329
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 2.4247
+cap "trimcap_14/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 26.2859
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 19.8486
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" 0.0325142
+cap "trimcap_3/m1_179_405#" "trimcap_14/m1_176_1185#" 0.719459
+cap "trimcap_7/m1_176_1185#" "trimcap_3/m1_179_405#" 0.0466358
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 2.04027
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 0.131492
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "trimcap_14/m1_179_405#" 13.7082
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" -0.013498
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 51.9859
+cap "trimcap_14/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 76.5364
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 14.9722
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 2.35442
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 42.2637
+cap "trimcap_7/m1_176_1185#" "trimcap_14/m1_179_405#" -2.03139
+cap "trimcap_14/m1_176_1185#" "trimcap_14/m1_179_405#" 88.8333
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "trimcap_14/m1_176_1185#" 2.09243
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 0.226753
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 0.0740546
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 1.61085
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 0.148631
+cap "trimcap_4/m1_179_405#" "trimcap_14/m1_176_1185#" 6.1262
+cap "trimcap_4/m1_179_405#" "trimcap_7/m1_176_1185#" 0.0154279
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 3.69966
+cap "trimcap_3/m1_179_405#" "trimcap_14/m1_179_405#" 5.02828
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 0.049002
+cap "trimcap_4/m1_179_405#" "trimcap_3/m1_179_405#" 20.494
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 33.7693
+cap "trimcap_14/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 2.73195
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 0.919375
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "trimcap_14/m1_176_1185#" 3.70911
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" -0.69084
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" -1.78388
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "trimcap_14/m1_179_405#" 10.2742
+cap "trimcap_14/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 9.25169
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 0.0566273
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 0.0264886
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 2.94684
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "trimcap_14/m1_179_405#" 0.223244
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 1.89066
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "trimcap_14/m1_179_405#" 1.65226
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "trimcap_14/m1_179_405#" 10.0898
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 9.69426
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "trimcap_7/m1_176_1185#" -0.0124472
+cap "trimcap_14/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 2.65696
+cap "trimcap_14/m1_176_1185#" "trimcap_7/m1_176_1185#" 11.2929
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 0.053469
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 7.00772
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "trimcap_14/m1_179_405#" 37.6287
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 0.000370291
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "trimcap_4/m1_179_405#" 0.0108561
+cap "trimcap_14/m1_179_405#" "trimcap_7/m1_176_1185#" -1.44348
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 3.64398
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 0.0671647
+cap "trimcap_14/m1_176_1185#" "trimcap_14/m1_179_405#" 17.3505
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "trimcap_7/m1_176_1185#" 1.09139
+cap "trimcap_14/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 2.69987
+cap "trimcap_14/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 27.1232
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 7.26111
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "trimcap_4/m1_179_405#" 0.135583
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "trimcap_7/m1_176_1185#" 0.0200903
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 0.193299
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 1.8887
+cap "trimcap_14/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 0.00100312
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 9.78469
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "trimcap_7/m1_176_1185#" 0.00700462
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "trimcap_14/m1_176_1185#" 1.62148
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" 12.5282
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" 0.00252415
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" -0.0031002
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "trimcap_3/m1_179_405#" 56.19
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" 20.5398
+cap "trimcap_5/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" 15.3902
+cap "trimcap_5/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" 0.00551735
+cap "trimcap_5/m1_176_1185#" "trimcap_3/m1_179_405#" 150.579
+cap "trimcap_5/m1_176_1185#" "trimcap_5/m1_179_405#" 0.0047129
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" -0.124797
+cap "trimcap_5/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" 7.01235
+cap "trimcap_5/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 4.71465
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" 78.3899
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "trimcap_5/m1_179_405#" 1.85361
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" -0.154942
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 47.7907
+cap "trimcap_6/m1_176_1185#" "trimcap_4/m1_179_405#" 19.5094
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_4/m1_179_405#" 92.8082
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 0.0094258
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 3.68435
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 1.21874
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" 17.6548
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_6/m1_176_1185#" 18.6952
+cap "trimcap_3/m1_179_405#" "trimcap_4/m1_179_405#" 222.676
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 7.67435
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 0.0162813
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 7.51392
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" -1.45204
+cap "trimcap_6/m1_176_1185#" "trimcap_3/m1_179_405#" 78.6064
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_3/m1_179_405#" 49.4551
+cap "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "trimcap_4/m1_179_405#" 11.5166
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 27.8872
+cap "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "trimcap_3/m1_179_405#" 0.00590319
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" 6.27215
+cap "trimcap_6/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" 10.4249
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" 0.00423349
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" -0.0527578
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "trimcap_7/m1_176_1185#" 29.958
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 21.589
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_4/m1_179_405#" -0.372991
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 33.4651
+cap "trimcap_3/m1_179_405#" "trimcap_4/m1_179_405#" 2.80711
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "trimcap_7/m1_176_1185#" 0.0410461
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "trimcap_4/m1_179_405#" 27.1702
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 4.4612
+cap "trimcap_7/m1_176_1185#" "trimcap_3/m1_179_405#" 0.619377
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 0.00185948
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 8.74283
+cap "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" -1.45474
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 19.3403
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "trimcap_4/m1_179_405#" 0.0531793
+cap "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 1.19355
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 12.7337
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 6.30421
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 11.5624
+cap "trimcap_4/m1_179_405#" "trimcap_14/m1_176_1185#" 0.0526923
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 17.8924
+cap "trimcap_7/m1_176_1185#" "trimcap_14/m1_176_1185#" 28.0488
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 0.196815
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "trimcap_14/m1_179_405#" -0.0397112
+cap "trimcap_14/m1_179_405#" "trimcap_4/m1_179_405#" 32.5462
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "trimcap_4/m1_179_405#" 0.270425
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "trimcap_14/m1_176_1185#" 0.0530805
+cap "trimcap_7/m1_176_1185#" "trimcap_14/m1_179_405#" 1.72688
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" -1.01081
+cap "trimcap_7/m1_176_1185#" "trimcap_4/m1_179_405#" 62.2398
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 17.2995
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "trimcap_7/m1_176_1185#" 0.0299219
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "trimcap_14/m1_179_405#" 20.5314
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 76.0756
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "trimcap_4/m1_179_405#" 213.465
+cap "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 78.3108
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" -4.83428
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" 23.9108
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 14.1799
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" 3.90296
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "trimcap_4/m1_179_405#" 0.0628222
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 3.12377
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" 0.074642
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" -1.47989
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "trimcap_14/m1_176_1185#" 0.0533795
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 15.271
+cap "trimcap_7/m1_176_1185#" "trimcap_4/m1_179_405#" 0.0449405
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "trimcap_4/m1_179_405#" 0.971764
+cap "trimcap_7/m1_176_1185#" "trimcap_14/m1_176_1185#" 11.2929
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 0.0133318
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "trimcap_14/m1_179_405#" 22.054
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" 3.7457
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" 0.38253
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" 2.61169
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" 0.0337755
+cap "trimcap_7/m1_176_1185#" "trimcap_14/m1_179_405#" -0.0632019
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "trimcap_14/m1_179_405#" 1.3749
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" -0.0888923
+cap "trimcap_7/m1_176_1185#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 10.7924
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 188.905
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" 53.125
+cap "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" 4.27126
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/S" "trimcap_7/VSUBS" -1405.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -73627 -5292 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trimcap_7/VSUBS" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/B"
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/B" "trimcap_6/VSUBS"
+merge "trimcap_6/VSUBS" "trimcap_4/VSUBS"
+merge "trimcap_4/VSUBS" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n249_n243#"
+merge "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n249_n243#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n29_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n29_n131#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S"
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/S" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/B"
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/B" "trimcap_14/VSUBS"
+merge "trimcap_14/VSUBS" "trimcap_15/VSUBS"
+merge "trimcap_15/VSUBS" "trimcap_12/VSUBS"
+merge "trimcap_12/VSUBS" "trimcap_5/VSUBS"
+merge "trimcap_5/VSUBS" "trimcap_3/VSUBS"
+merge "trimcap_3/VSUBS" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n367_n243#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_89_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_89_n131#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n147_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n147_n131#" "trimcap_2/VSUBS"
+merge "trimcap_2/VSUBS" "trimcap_1/VSUBS"
+merge "trimcap_1/VSUBS" "trimcap_0/VSUBS"
+merge "trimcap_0/VSUBS" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n603_n243#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n603_n243#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_325_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_325_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_89_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_89_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n147_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n147_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n383_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n383_n131#" "vss"
+merge "vss" "trimcap_13/VSUBS"
+merge "trimcap_13/VSUBS" "trimcap_8/VSUBS"
+merge "trimcap_8/VSUBS" "trimcap_11/VSUBS"
+merge "trimcap_11/VSUBS" "trimcap_10/VSUBS"
+merge "trimcap_10/VSUBS" "trimcap_9/VSUBS"
+merge "trimcap_9/VSUBS" "VSUBS"
+merge "trimcap_14/m1_179_405#" "trimcap_15/m1_179_405#" -3146.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35496 -3202 0 0 0 0 0 0 0 0 0 0
+merge "trimcap_15/m1_179_405#" "trimcap_12/m1_179_405#"
+merge "trimcap_12/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_443_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_207_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_207_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n29_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n29_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n265_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n265_n131#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n501_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n501_n131#" "trimcap_13/m1_179_405#"
+merge "trimcap_13/m1_179_405#" "trimcap_8/m1_179_405#"
+merge "trimcap_8/m1_179_405#" "trimcap_11/m1_179_405#"
+merge "trimcap_11/m1_179_405#" "trimcap_10/m1_179_405#"
+merge "trimcap_10/m1_179_405#" "trimcap_9/m1_179_405#"
+merge "trimcap_9/m1_179_405#" "n4"
+merge "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n92_91#" -116.609 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5612 -428 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n92_91#" "d_2_"
+merge "trimcap_4/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_89_n131#" -996.794 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12305 -1044 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_89_n131#" "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n147_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_THUHZA_0/a_n147_n131#" "trimcap_5/m1_179_405#"
+merge "trimcap_5/m1_179_405#" "n2"
+merge "trimcap_7/m1_176_1185#" "trimcap_14/m1_176_1185#" -5166.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -55735 -4766 0 0 0 0 0 0 0 0 0 0
+merge "trimcap_14/m1_176_1185#" "trimcap_6/m1_176_1185#"
+merge "trimcap_6/m1_176_1185#" "trimcap_4/m1_176_1185#"
+merge "trimcap_4/m1_176_1185#" "trimcap_15/m1_176_1185#"
+merge "trimcap_15/m1_176_1185#" "trimcap_12/m1_176_1185#"
+merge "trimcap_12/m1_176_1185#" "trimcap_5/m1_176_1185#"
+merge "trimcap_5/m1_176_1185#" "trimcap_3/m1_176_1185#"
+merge "trimcap_3/m1_176_1185#" "trimcap_2/m1_176_1185#"
+merge "trimcap_2/m1_176_1185#" "trimcap_1/m1_176_1185#"
+merge "trimcap_1/m1_176_1185#" "trimcap_0/m1_176_1185#"
+merge "trimcap_0/m1_176_1185#" "trimcap_13/m1_176_1185#"
+merge "trimcap_13/m1_176_1185#" "trimcap_8/m1_176_1185#"
+merge "trimcap_8/m1_176_1185#" "trimcap_11/m1_176_1185#"
+merge "trimcap_11/m1_176_1185#" "trimcap_10/m1_176_1185#"
+merge "trimcap_10/m1_176_1185#" "trimcap_9/m1_176_1185#"
+merge "trimcap_9/m1_176_1185#" "drain"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_26_91#" -174.756 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10672 -832 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n92_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n92_91#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n210_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n210_91#" "d_3_"
+merge "trimcap_7/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" -307.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2883 -310 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/D" "n0"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_380_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_262_91#" -281.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21344 -1664 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_262_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_144_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_144_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_26_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_26_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n92_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n92_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n210_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n210_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n328_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n328_91#" "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n446_91#"
+merge "sky130_fd_pr__nfet_01v8_lvt_3SNHZA_0/a_n446_91#" "d_4_"
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_1/G" "d_0_" -73.3874 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2600 -204 0 0 0 0 0 0 0 0 0 0
+merge "trimcap_6/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" -436.099 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2356 -276 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/D" "n1"
+merge "trimcap_3/m1_179_405#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_207_n131#" -1667.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15051 -1444 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_207_n131#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n29_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n29_n131#" "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n265_n131#"
+merge "sky130_fd_pr__nfet_01v8_lvt_FS2HZA_0/a_n265_n131#" "trimcap_2/m1_179_405#"
+merge "trimcap_2/m1_179_405#" "trimcap_1/m1_179_405#"
+merge "trimcap_1/m1_179_405#" "trimcap_0/m1_179_405#"
+merge "trimcap_0/m1_179_405#" "n3"
+merge "sky130_fd_pr__nfet_01v8_lvt_763N5J_0/G" "d_1_" -89.0164 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2112 -184 0 0 0 0 0 0 0 0 0 0

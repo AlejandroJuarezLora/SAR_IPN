@@ -13,27 +13,29 @@ ypos2=1.3
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4.8e-05
+x1=-2.4e-06
+x2=4.56e-05
 divx=5
 subdivx=1
-node="xsar.res7
-xsar.res6
-xsar.res5
-xsar.res4
-xsar.res3
-xsar.res2
-xsar.res1
-xsar.res0"
-color="4 5 6 7 8 9 10 11"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+color="4 4 4 4 4 4 4 4"
+node="x1.res7
+x1.res6
+x1.res5
+x1.res4
+x1.res3
+x1.res2
+x1.res1
+x1.res0"}
 B 2 0 440 800 840 {flags=graph
-y1=0.35979
-y2=1.04979
+y1=0.39
+y2=1
 ypos1=0
 ypos2=2
 divy=5
@@ -51,8 +53,8 @@ logx=0
 logy=0
 
 color="4 7"
-node="xsar.vp
-xsar.vn"}
+node="x1.x1.dac_1.out
+x1.x1.comparator_0.vp"}
 B 2 10 870 810 1270 {flags=graph
 y1=0
 y2=1.3
@@ -61,8 +63,8 @@ ypos2=1.09872
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4.8e-05
+x1=-2.4e-06
+x2=4.56e-05
 divx=5
 subdivx=1
 
@@ -88,24 +90,26 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4.8e-05
+x1=-2.4e-06
+x2=4.56e-05
 divx=5
 subdivx=1
-node="xsar.ctlp_7_
-xsar.ctlp_6_
-xsar.ctlp_5_
-xsar.ctlp_4_
-xsar.ctlp_3_
-xsar.ctlp_2_
-xsar.ctlp_1_
-xsar.ctlp_0_"
-color="4 4 4 4 4 4 4 4"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+color="4 4 4 4 4 4 4 4"
+node="x1.ctlp_7_
+x1.ctlp_6_
+x1.ctlp_5_
+x1.ctlp_4_
+x1.ctlp_3_
+x1.ctlp_2_
+x1.ctlp_1_
+x1.ctlp_0_"}
 B 2 850 460 1650 860 {flags=graph
 y1=0
 y2=2
@@ -114,24 +118,26 @@ ypos2=2.2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4.8e-05
+x1=-2.4e-06
+x2=4.56e-05
 divx=5
 subdivx=1
-node="xsar.ctln_7_
-xsar.ctln_6_
-xsar.ctln_5_
-xsar.ctln_4_
-xsar.ctln_3_
-xsar.ctln_2_
-xsar.ctln_1_
-xsar.ctln_0_"
-color="4 4 4 4 4 4 4 4"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-digital=1}
+digital=1
+color="4 4 4 4 4 4 4 4"
+node="x1.ctln_7_
+x1.ctln_6_
+x1.ctln_5_
+x1.ctln_4_
+x1.ctln_3_
+x1.ctln_2_
+x1.ctln_1_
+x1.ctln_0_"}
 B 2 840 880 1640 1280 {flags=graph
 y1=-0.239942
 y2=1.4826
@@ -140,17 +146,18 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4.8e-05
+x1=-2.4e-06
+x2=4.56e-05
 divx=5
 subdivx=1
-node=xsar.comp
-color=4
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+color=4
+node=x1.comp}
 P 4 5 0 -660 1370 -660 1370 0 0 0 0 -660 {}
 P 4 2 500 -660 500 0 {}
 P 4 2 -0 -250 500 -250 {}

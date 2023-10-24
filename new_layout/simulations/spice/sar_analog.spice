@@ -1,7 +1,7 @@
 * SPICE3 file created from sar_analog_flat.ext - technology: sky130B
 
-.subckt sar_analog_flat ctlp7 ctlp6 ctlp5 ctlp4 ctlp3 ctlp2 ctlp1 ctlp0 ctln7 ctln6 ctln5 ctln4 ctln3 ctln2 ctln1 ctln0     
-+  trim4 trim3 trim2 trim1 trim0 trimb4 trimb3 trimb2 trimb1 trimb0  vinp  vinn sample comp clkc avss  avdd
+.subckt sar_analog ctlp7 ctlp6 ctlp5 ctlp4 ctlp3 ctlp2 ctlp1 ctlp0 ctln7 ctln6 ctln5 ctln4 ctln3 ctln2 ctln1 ctln0     
++  trim4 trim3 trim2 trim1 trim0 trimb4 trimb3 trimb2 trimb1 trimb0 vinp vinn sample comp clkc avdd avss
 X0 comparator_0.vp dac_0.sky130_fd_sc_hd__inv_2_2.Y sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 X1 vinp.t9 dac_0.sw_top_0.en_buf comparator_0.vp.t9 avdd.t70 sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.3
 X2 comparator_0.trim_0.n4.t15 trim4.t0 avss.t374 avss.t373 sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.3
